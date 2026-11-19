@@ -1,0 +1,73 @@
+name: Refresh public folklore responses
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        description: Refresh or moderate a public Webmention
+        options: [sync, approve, block]
+        default: sync
+      mention_id:
+        type: string
+        description: Numeric mention ID for approve/block
+        default: ''
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: folklore-public-responses
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - run: bundle exec ruby tests/responses_test.rb
+      - name: Build old and new target inventory
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --quiet
+      - name: Apply requested moderation
+        if: inputs.mode == 'approve' || inputs.mode == 'block'
+        env:
+          MODE: ${{ inputs.mode }}
+          MENTION_ID: ${{ inputs.mention_id }}
+        run: bundle exec ruby _code/indieweb.rb "$MODE" --id "$MENTION_ID"
+      - uses: actions/cache/restore@v4
+        with:
+          path: cache/webmention-incoming.json
+          key: folklore-responses-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: folklore-responses-v1-
+      - name: Fetch public targets only and retain moderation
+        run: bundle exec ruby _code/indieweb.rb sync
+      - name: Save changes and request deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git add _data/webmentions.json _data/webmention_policy.json
+          if git diff --cached --quiet; then
+            echo 'No public response changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(indieweb): refresh approved public responses'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          gh workflow run deploy.yml --ref main
+      - uses: actions/cache/save@v4
+        if: always() && hashFiles('cache/webmention-incoming.json') != ''
+        with:
+          path: cache/webmention-incoming.json
+          key: folklore-responses-v1-${{ github.run_id }}-${{ github.run_attempt }}

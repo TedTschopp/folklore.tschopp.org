@@ -1,0 +1,432 @@
+/* The Märchen Engine — Design System V2 — generated from tokens.json */
+:root, [data-theme="light"] {
+  --paper-0: #f3ecdb;
+  --paper-1: #e9e0cb;
+  --paper-2: #ddd0b3;
+  --paper-3: #cdba97;
+  --paper-edge: #b89e76;
+  --ink-0: #2a2018;
+  --ink-1: #3d3024;
+  --ink-2: #5a4736;
+  --ink-3: #695036;
+  --ink-4: #9c8568;
+  --umbra-0: #15110d;
+  --umbra-1: #1c1813;
+  --umbra-2: #262019;
+  --umbra-3: #322a21;
+  --umbra-4: #45392c;
+  --bone-0: #ece3d0;
+  --bone-1: #d8caae;
+  --bone-2: #b3a385;
+  --bone-3: #968a6e;
+  --moss-50: #e4e6d4;
+  --moss-100: #d0d4b8;
+  --moss-200: #b9c09a;
+  --moss-300: #a0a97e;
+  --moss-400: #8a936a;
+  --moss-500: #6b7350;
+  --moss-600: #545c3f;
+  --moss-700: #3c4430;
+  --moss-800: #2c3225;
+  --moss-900: #232a1d;
+  --brass-50: #f7eedc;
+  --brass-100: #f0e4c0;
+  --brass-200: #e6cf9a;
+  --brass-300: #d8b878;
+  --brass-400: #c9a25a;
+  --brass-500: #b0843e;
+  --brass-600: #8f6a30;
+  --brass-700: #6b4f24;
+  --brass-800: #4e3a1a;
+  --brass-900: #362812;
+  --blood-50: #f5e4e2;
+  --blood-100: #f0c8c4;
+  --blood-200: #dc9d97;
+  --blood-300: #c2685c;
+  --blood-400: #a8392e;
+  --blood-500: #8f2f2a;
+  --blood-600: #6b1f1a;
+  --blood-700: #521812;
+  --blood-800: #3a1411;
+  --blood-900: #250d0a;
+  --verdigris: #5c7a6a;
+  --glacier-50: #edf1f3;
+  --glacier-100: #d8e4e8;
+  --glacier-200: #b9cfd6;
+  --glacier-300: #93b2bd;
+  --glacier-400: #7a9faa;
+  --glacier-500: #6f8893;
+  --glacier-600: #517080;
+  --glacier-700: #3f5b66;
+  --glacier-800: #2d4250;
+  --glacier-900: #1e2d38;
+  --glacier: var(--glacier-500);
+  --amethyst-50: #ede6ed;
+  --amethyst-100: #ddd1dc;
+  --amethyst-200: #c2afc0;
+  --amethyst-300: #a487a0;
+  --amethyst-400: #8a6887;
+  --amethyst-500: #6e4f6b;
+  --amethyst-600: #573d55;
+  --amethyst-700: #46314a;
+  --amethyst-800: #352440;
+  --amethyst-900: #251830;
+  --ember-50: #f8eddf;
+  --ember-100: #f0d9bc;
+  --ember-200: #e0bc8e;
+  --ember-300: #cf9a63;
+  --ember-400: #ba7a46;
+  --ember-500: #a85d2e;
+  --ember-600: #8a4922;
+  --ember-700: #6f3c1d;
+  --ember-800: #52300f;
+  --ember-900: #3a2208;
+  --indigo-50: #e9eaf2;
+  --indigo-100: #d4d6e8;
+  --indigo-200: #b6bad6;
+  --indigo-300: #9398bd;
+  --indigo-400: #757ca2;
+  --indigo-500: #5a6188;
+  --indigo-600: #474d70;
+  --indigo-700: #373c59;
+  --indigo-800: #282c42;
+  --indigo-900: #1c1f30;
+  --indigo: var(--indigo-500);
+  --indigo-text: var(--indigo-700);
+  --surface-page: var(--paper-1);
+  --surface-raised: var(--paper-0);
+  --surface-sunken: var(--paper-2);
+  --surface-card: var(--paper-0);
+  --surface-inset: var(--paper-2);
+  --surface-overlay: rgba(26, 19, 13, 0.55);
+  --text-strong: var(--ink-0);
+  --text-body: var(--ink-1);
+  --text-muted: var(--ink-2);
+  --text-faint: var(--ink-3);
+  --text-disabled: var(--ink-4);
+  --text-on-accent: var(--paper-0);
+  --border-hair: var(--paper-edge);
+  --border-strong: var(--ink-2);
+  --rule-ink: var(--ink-1);
+  --accent: var(--blood-500);
+  --accent-hover: var(--blood-600);
+  --accent-quiet: var(--blood-300);
+  --gilt: var(--brass-500);
+  --gilt-quiet: var(--brass-400);
+  --herb: var(--moss-500);
+  --herb-deep: var(--moss-700);
+  --status-omen: var(--blood-500);
+  --status-ward: var(--moss-600);
+  --status-augur: var(--brass-600);
+  --status-rumor: var(--glacier);
+  --gilt-text: var(--brass-700);
+  --accent-text: var(--accent);
+  --herb-text: var(--moss-700);
+  --status-omen-text: var(--accent-text);
+  --status-ward-text: var(--herb-text);
+  --status-augur-text: var(--brass-700);
+  --status-rumor-text: var(--glacier-700);
+  --aspect-fitness: var(--blood-500);
+  --aspect-academic: var(--glacier);
+  --aspect-mystical: var(--amethyst-500);
+  --aspect-emotional: var(--ember-500);
+  --coin: var(--brass-600);
+  --selection-bg: #8f2f2a47;
+  --aspect-fitness-ink: var(--blood-600);
+  --aspect-academic-ink: var(--glacier-700);
+  --aspect-mystical-ink: var(--amethyst-700);
+  --aspect-emotional-ink: var(--ember-700);
+  --currency-color: var(--brass-600);
+  --shadow-0: none;
+  --shadow-1: 0 1px 1px rgba(42, 26, 14, 0.10);
+  --shadow-2: 0 2px 5px rgba(42, 26, 14, 0.14), 0 1px 1px rgba(42, 26, 14, 0.10);
+  --shadow-3: 0 6px 18px rgba(34, 20, 10, 0.18), 0 2px 4px rgba(34, 20, 10, 0.12);
+  --shadow-4: 0 16px 40px rgba(24, 14, 6, 0.26), 0 4px 10px rgba(24, 14, 6, 0.16);
+  --shadow-inset: inset 0 1px 3px rgba(42, 26, 14, 0.18), inset 0 0 0 1px rgba(42, 26, 14, 0.04);
+  --edge-gilt: inset 0 1px 0 rgba(230, 207, 154, 0.45), inset 0 -1px 0 rgba(107, 79, 36, 0.30);
+  --shadow-dark-3: 0 8px 26px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+[data-theme="dark"] {
+  --paper-0: #f3ecdb;
+  --paper-1: #e9e0cb;
+  --paper-2: #ddd0b3;
+  --paper-3: #cdba97;
+  --paper-edge: #b89e76;
+  --ink-0: #2a2018;
+  --ink-1: #3d3024;
+  --ink-2: #5a4736;
+  --ink-3: #695036;
+  --ink-4: #9c8568;
+  --umbra-0: #15110d;
+  --umbra-1: #1c1813;
+  --umbra-2: #262019;
+  --umbra-3: #322a21;
+  --umbra-4: #45392c;
+  --bone-0: #ece3d0;
+  --bone-1: #d8caae;
+  --bone-2: #b3a385;
+  --bone-3: #968a6e;
+  --moss-50: #e4e6d4;
+  --moss-100: #d0d4b8;
+  --moss-200: #b9c09a;
+  --moss-300: #a0a97e;
+  --moss-400: #8a936a;
+  --moss-500: #6b7350;
+  --moss-600: #545c3f;
+  --moss-700: #3c4430;
+  --moss-800: #2c3225;
+  --moss-900: #232a1d;
+  --brass-50: #f7eedc;
+  --brass-100: #f0e4c0;
+  --brass-200: #e6cf9a;
+  --brass-300: #d8b878;
+  --brass-400: #c9a25a;
+  --brass-500: #b0843e;
+  --brass-600: #8f6a30;
+  --brass-700: #6b4f24;
+  --brass-800: #4e3a1a;
+  --brass-900: #362812;
+  --blood-50: #f5e4e2;
+  --blood-100: #f0c8c4;
+  --blood-200: #dc9d97;
+  --blood-300: #c2685c;
+  --blood-400: #a8392e;
+  --blood-500: #8f2f2a;
+  --blood-600: #6b1f1a;
+  --blood-700: #521812;
+  --blood-800: #3a1411;
+  --blood-900: #250d0a;
+  --verdigris: #5c7a6a;
+  --glacier-50: #edf1f3;
+  --glacier-100: #d8e4e8;
+  --glacier-200: #b9cfd6;
+  --glacier-300: #93b2bd;
+  --glacier-400: #7a9faa;
+  --glacier-500: #6f8893;
+  --glacier-600: #517080;
+  --glacier-700: #3f5b66;
+  --glacier-800: #2d4250;
+  --glacier-900: #1e2d38;
+  --glacier: var(--glacier-500);
+  --amethyst-50: #ede6ed;
+  --amethyst-100: #ddd1dc;
+  --amethyst-200: #c2afc0;
+  --amethyst-300: #a487a0;
+  --amethyst-400: #8a6887;
+  --amethyst-500: #6e4f6b;
+  --amethyst-600: #573d55;
+  --amethyst-700: #46314a;
+  --amethyst-800: #352440;
+  --amethyst-900: #251830;
+  --ember-50: #f8eddf;
+  --ember-100: #f0d9bc;
+  --ember-200: #e0bc8e;
+  --ember-300: #cf9a63;
+  --ember-400: #ba7a46;
+  --ember-500: #a85d2e;
+  --ember-600: #8a4922;
+  --ember-700: #6f3c1d;
+  --ember-800: #52300f;
+  --ember-900: #3a2208;
+  --indigo-50: #e9eaf2;
+  --indigo-100: #d4d6e8;
+  --indigo-200: #b6bad6;
+  --indigo-300: #9398bd;
+  --indigo-400: #757ca2;
+  --indigo-500: #5a6188;
+  --indigo-600: #474d70;
+  --indigo-700: #373c59;
+  --indigo-800: #282c42;
+  --indigo-900: #1c1f30;
+  --indigo: var(--indigo-500);
+  --indigo-text: var(--indigo-300);
+  --surface-page: var(--umbra-1);
+  --surface-raised: var(--umbra-2);
+  --surface-sunken: var(--umbra-0);
+  --surface-card: var(--umbra-2);
+  --surface-inset: var(--umbra-0);
+  --surface-overlay: rgba(0, 0, 0, 0.6);
+  --text-strong: var(--bone-0);
+  --text-body: var(--bone-1);
+  --text-muted: var(--bone-2);
+  --text-faint: var(--bone-3);
+  --text-disabled: #5a4f3f;
+  --text-on-accent: var(--bone-0);
+  --border-hair: var(--umbra-4);
+  --border-strong: var(--bone-3);
+  --rule-ink: var(--bone-2);
+  --accent: var(--blood-400);
+  --accent-hover: var(--blood-300);
+  --accent-quiet: var(--blood-300);
+  --gilt: var(--brass-400);
+  --gilt-quiet: var(--brass-500);
+  --herb: var(--moss-400);
+  --herb-deep: var(--moss-700);
+  --status-omen: var(--blood-400);
+  --status-ward: var(--moss-400);
+  --status-augur: var(--brass-400);
+  --status-rumor: var(--glacier);
+  --gilt-text: var(--brass-300);
+  --accent-text: var(--blood-200);
+  --herb-text: var(--moss-400);
+  --status-omen-text: var(--accent-text);
+  --status-ward-text: var(--herb-text);
+  --status-augur-text: var(--brass-300);
+  --status-rumor-text: var(--glacier-400);
+  --aspect-fitness: var(--blood-400);
+  --aspect-academic: var(--glacier);
+  --aspect-mystical: var(--amethyst-300);
+  --aspect-emotional: var(--ember-300);
+  --coin: var(--brass-400);
+  --selection-bg: #8f2f2a47;
+  --aspect-fitness-ink: var(--blood-200);
+  --aspect-academic-ink: var(--glacier-300);
+  --aspect-mystical-ink: var(--amethyst-300);
+  --aspect-emotional-ink: var(--ember-300);
+  --currency-color: var(--brass-400);
+}
+:root {
+  --space-px: 1px;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --gutter: 1.5rem;
+  --pad-card: 1.5rem;
+  --pad-card-lg: 2rem;
+  --inset-page: 3rem;
+  --bw-hair: 1px;
+  --bw-rule: 1.5px;
+  --bw-strong: 2px;
+  --bw-frame: 3px;
+  --w-prose: 42rem;
+  --w-page: 64rem;
+  --w-wide: 84rem;
+  --radius-0: 0;
+  --radius-1: 2px;
+  --radius-2: 3px;
+  --radius-3: 5px;
+  --radius-pill: 999px;
+  --radius-card: 3px;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  --ease-inout: cubic-bezier(0.45, 0.05, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 360ms;
+  --dur-4: 640ms;
+  --dur-slow: 1200ms;
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.125rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-4xl: 3.815rem;
+  --text-5xl: 5.96rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 800;
+  --weight-heavy: 900;
+  --leading-tight: 1.12;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-reading: 1.66;
+  --leading-loose: 1.9;
+  --leading-body: 1.66;
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.14em;
+  --tracking-widest: 0.28em;
+  --stack: 1rem;
+  --vignette: radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(21, 17, 13, 0.45) 100%);
+  --candle-glow: radial-gradient(60% 50% at 50% 40%, rgba(176, 132, 62, 0.16), transparent 70%);
+  --z-base: 0;
+  --z-raised: 10;
+  --z-sticky: 100;
+  --z-overlay: 1000;
+  --z-toast: 1200;
+  --font-display: 'IM Fell English', 'Alegreya', 'Alegreya Fallback', Georgia, serif;
+  --font-serif: 'Alegreya', 'Alegreya Fallback', 'IM Fell English', Georgia, serif;
+  --font-sans: 'Alegreya Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sc: 'Alegreya Sans SC', 'Alegreya Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-hand: 'Dana Library Hand', 'Caveat', cursive;
+  --font-script: 'Old Man Eloquent', 'Pinyon Script', 'Caveat', cursive;
+  --font-fraktur: 'UnifrakturMaguntia', 'UnifrakturCook', 'Old English Text MT', 'Luminari', 'IM Fell English', 'Alegreya', 'Alegreya Fallback', Georgia, serif, serif;
+  --font-features-body: "kern" 1, "liga" 1, "dlig" 1, "onum" 1, "calt" 1;
+  --font-features-display: "kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "onum" 1, "calt" 1, "swsh" 1;
+  --font-features-tabular: "kern" 1, "liga" 1, "tnum" 1, "lnum" 1;
+}
+.body { font-family: var(--font-serif); font-size: 18px; line-height: 1.66; }
+.h1 { font-family: var(--font-serif); font-size: 48.83px; line-height: 1.12; font-weight: 800; letter-spacing: -0.01em; }
+.h2 { font-family: var(--font-serif); font-size: 39.06px; line-height: 1.12; font-weight: 800; letter-spacing: -0.01em; }
+.h3 { font-family: var(--font-serif); font-size: 31.25px; line-height: 1.12; font-weight: 800; letter-spacing: -0.01em; }
+.h4 { font-family: var(--font-serif); font-size: 25px; line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; }
+.h5 { font-family: var(--font-serif); font-size: 20px; line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; }
+.h6 { font-family: var(--font-serif); font-size: 15px; line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; }
+.small { font-family: var(--font-serif); font-size: 13px; line-height: 1.66; }
+.code { font-family: var(--font-sans); font-size: 0.9em; line-height: 1.66; }
+.kbd { font-family: var(--font-sans); font-size: 0.9em; line-height: 1.66; }
+.display-hero { font-family: var(--font-display); font-size: 5.96rem; line-height: 1.12; font-weight: 400; }
+.display-lg { font-family: var(--font-display); font-size: 3.815rem; line-height: 1.12; font-weight: 400; }
+.fraktur-title { font-family: var(--font-fraktur); font-size: 1em; line-height: 1.15; font-weight: 400; letter-spacing: 0.02em; }
+.fraktur-passage { font-family: var(--font-fraktur); font-size: 1.18em; line-height: 1.82; font-weight: 400; letter-spacing: 0.012em; }
+.eyebrow { font-family: var(--font-sc); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.14em; }
+.folio { font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.28em; }
+.field-label { font-family: var(--font-sc); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.08em; }
+.chip { font-family: var(--font-sc); font-size: 0.6875rem; line-height: 1; font-weight: 700; letter-spacing: 0.1em; }
+.control-label { font-family: var(--font-sans); font-size: 0.9375rem; line-height: 1; font-weight: 700; letter-spacing: 0.02em; }
+.hint { font-family: var(--font-sans); font-size: 0.8125rem; }
+.marginalia { font-family: var(--font-hand); font-size: 1.25rem; line-height: 1.3; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-400i-latinext.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-400i-latin.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-500i-latinext.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-500i-latin.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-700i-latinext.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-700i-latin.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-400-latinext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-500-latinext.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-500-latin.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-700-latinext.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-700-latin.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-800-latinext.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-800-latin.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-900-latinext.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya"; src: url("fonts/Alegreya-900-latin.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-400i-latinext.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-400i-latin.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-500i-latinext.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-500i-latin.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-400-latinext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-500-latinext.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-500-latin.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-700-latinext.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans"; src: url("fonts/AlegreyaSans-700-latin.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-400-latinext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-500-latinext.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-500-latin.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-700-latinext.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("fonts/AlegreyaSansSC-700-latin.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "IM Fell English"; src: url("fonts/IMFellEnglish-400i-latin.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "IM Fell English"; src: url("fonts/IMFellEnglish-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("fonts/Caveat-400-latinext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("fonts/Caveat-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("fonts/Caveat-600-latinext.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("fonts/Caveat-600-latin.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Pinyon Script"; src: url("fonts/PinyonScript-400-latinext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Pinyon Script"; src: url("fonts/PinyonScript-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }

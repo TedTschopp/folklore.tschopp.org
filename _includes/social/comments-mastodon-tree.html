@@ -1,0 +1,16 @@
+{%- assign discussion_url = page.mastodon-post-url | default: '' | strip -%}
+{%- assign discussion_id = page.mastodon-post-id | append: '' | strip -%}
+{%- if discussion_url == '' and discussion_id != '' -%}
+  {%- capture discussion_url -%}https://{{ site.mastodon_comments.host }}/@{{ site.mastodon_comments.username }}/{{ discussion_id }}{%- endcapture -%}
+{%- endif -%}
+{%- if discussion_url != '' -%}
+<section id="comments" class="article-content mastodon-comments" data-mastodon-discussion data-status-url="{{ discussion_url | escape }}" aria-labelledby="Comments-Header">
+  <h2 id="Comments-Header">Comments</h2>
+  <p><a href="{{ discussion_url | escape }}" rel="external noopener noreferrer">Join the discussion on Mastodon</a> using your Fediverse account. Public replies known to the publishing server appear here.</p>
+  <p data-discussion-state role="status" aria-live="polite">Loading the discussion…</p>
+  <button type="button" class="btn btn-outline-secondary" data-discussion-retry hidden>Retry loading comments</button>
+  <div data-discussion-thread hidden></div>
+  <noscript><p>Read and reply to the discussion using the Mastodon link above.</p></noscript>
+</section>
+<script src="{{ '/js/comments-mastodon-tree.js' | relative_url }}" defer></script>
+{%- endif -%}

@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+node_modules/
+vendor/
+.bundle/
+cache/
+test-results/
+playwright-report/
+.DS_Store

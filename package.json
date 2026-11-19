@@ -1,0 +1,15 @@
+{
+  "name": "swiss-folklore-publication",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:search": "pagefind --site _site --glob 'stories/*/index.html' --output-subdir pagefind",
+    "test": "node tests/browser.mjs",
+    "test:responses": "bundle exec ruby tests/responses_test.rb"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@playwright/test": "^1.56.1",
+    "pagefind": "1.6.0"
+  }
+}

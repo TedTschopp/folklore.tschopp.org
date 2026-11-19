@@ -1,0 +1,85 @@
+# Swiss Folklore
+
+The public reading site at **https://folklore.tschopp.org/**. It has its own
+Jekyll build, Pagefind index, sitemap, and GitHub Pages deployment.
+
+This repository contains the approved public edition: 201 bilingual tales,
+747 reader notes, and two held source-note pages. The private authoring corpus,
+raw source documents, unreviewed backlog and editorial tools remain in
+`TedTschopp/swiss-folklore`. A domain move does not approve additional stories.
+
+## Build and verify
+
+Use Ruby 3.2+ and Node 22+:
+
+```sh
+bundle install
+npm ci
+make build
+npx playwright install chromium
+npm test
+```
+
+`make check` also runs response-routing tests and browser checks. Browser tests
+intercept the Webmention receiver and analytics; they never publish a response.
+
+The source files remain in `folklore/` to retain their existing source identities;
+their explicit permalinks publish at `/stories/`, `/search/`, `/locations/`,
+`/themes/`, `/entities/`, `/page/N/` and `/`.
+
+## Publication and design
+
+English translations always supply the page heading. Historical original titles
+remain with the original-language text and in search. Existing duplicate groups
+share a page. The four comparison pairs remain separate. Do not change the
+approved paragraph text when adding notes or changing a template.
+
+The interface uses **Märchen Engine Design v2**: parchment and dusk grounds,
+Alegreya reading type, IM Fell English display, brass rules and herbarium greens.
+Its tokens, CSS component styles and OFL fonts are self-hosted. No game rules,
+character sheets or TTRPG runtime are included. Commercial font files are omitted.
+The public reading site also retains mobile and print access.
+
+The shared global header and analytics runtime are loaded from TedT.org. The
+appearance preference is local to this hostname because tschopp.org and tedt.org
+are different root domains. The existing GA4 and Clarity configuration is shared;
+the TedT.org-specific Cloudflare beacon token is not reused on the new root.
+
+## Hosting and migration
+
+GitHub Actions builds and deploys this small site independently of TedT.org.
+The native Pages origin is `https://tedtschopp.github.io/folklore.tschopp.org/`.
+A small Cloudflare Worker owns the public custom domain and fetches that static
+origin. The Worker also redirects explicitly mapped old collection URLs directly
+to their new canonical pages, retaining query strings and browser fragments.
+Unrelated routes, including the embedded Blood Comet fragment and the older
+Brunnegg article alias, continue to belong to TedT.org.
+
+`_data/folklore/migration.json` records the old canonical URLs and aliases. All
+approved source records, the four comparison pairs and story slugs are retained.
+See [the architecture decision](docs/ADR-TBD-dedicated-swiss-folklore-site.md).
+
+The origin repository must not have a GitHub Pages custom domain/CNAME: the
+Cloudflare Worker is the public hostname and fetches the native origin directly.
+This avoids a redirect loop. `_code/domain-router` documents deployment/rollback.
+
+## Discussions and Webmentions
+
+Existing Mastodon post IDs and thread links are unchanged. Each story advertises
+the existing account endpoint, and the homepage advertises it for domain proof.
+The public response refresh queries both new URLs and all old aliases, through
+webmention.io's public API only. Existing moderation rules remain in effect;
+unknown sources are held until approved. Raw incoming responses and private
+account-level queries are never published. All entries disable outgoing mentions.
+
+The response workflow runs hourly or manually. A refresh failure retains the last
+approved snapshot. Use its manual approve/block action for a numeric mention ID,
+then refresh to publish the moderated result. No migration workflow creates a
+Mastodon thread or sends an outgoing Webmention.
+
+## Future stories
+
+Export newly reviewed release batches from the private authoring repository into
+this site, check the source/reader-note comparison, build search, run browser and
+accessibility checks, then publish through its own deployment. The publication
+exporter's target configuration must use the new origin with an empty URL prefix.

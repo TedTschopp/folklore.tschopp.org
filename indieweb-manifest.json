@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /indieweb-manifest.json
+sitemap: false
+---
+{"version":1,"entries":[{% assign first = true %}{% for document in site.pages %}{% if document.story_id and document.redirect_to == nil %}{% unless first %},{% endunless %}{% assign first = false %}{"url":{{ document.url | absolute_url | jsonify }},"published":{{ document.web_published_at | default: document.last_modified_at | date_to_xmlschema | jsonify }},"aliases":{% if document.redirect_from %}{{ document.redirect_from | concat: document.legacy_urls | jsonify }}{% else %}{{ document.legacy_urls | jsonify }}{% endif %},"outgoing":false}{% endif %}{% endfor %}]}

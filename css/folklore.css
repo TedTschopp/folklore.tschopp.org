@@ -1,0 +1,185 @@
+.folklore-frame {
+  width: min(68rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+main.folklore-frame {
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+.folklore-reading {
+  max-width: 46rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.folklore-frame h1 {
+  margin-block: .5rem 1rem;
+  font-size: clamp(2.45rem, 6vw, 4.25rem);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.folklore-reading-header,
+.folklore-catalog-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.folklore-reading section {
+  margin-top: 2rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.folklore-reading-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .75rem;
+  padding: .375rem;
+  margin-block: 1.5rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  background: var(--bs-tertiary-bg);
+}
+
+.folklore-reading-nav a {
+  display: block;
+  padding: .5rem .75rem;
+  font-weight: 600;
+}
+
+.folklore-discussion-links {
+  margin-block: .75rem 1.5rem;
+}
+
+.folklore-context,
+.folklore-responses {
+  margin-block: 2rem;
+  padding-block-start: 1.5rem;
+  border-top: 1px solid var(--bs-border-color);
+  scroll-margin-top: 5.5rem;
+}
+
+#english,
+#reader-notes,
+#original,
+#webmentions-section {
+  scroll-margin-top: 5.5rem;
+}
+
+.folklore-credits p {
+  margin-block: .3rem;
+}
+
+.folklore-links,
+.folklore-footer .folklore-frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+  align-items: baseline;
+}
+
+.folklore-catalog {
+  list-style: none;
+  padding: 0;
+}
+
+.folklore-catalog li {
+  padding-block: .9rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.folklore-catalog h3 {
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+.folklore-catalog p {
+  margin: 0;
+  color: var(--bs-secondary-color);
+}
+
+.folklore-catalog .folklore-catalog-summary {
+  margin-bottom: .3rem;
+  color: var(--bs-body-color);
+}
+
+.folklore-context dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+}
+
+.folklore-context dd {
+  margin-bottom: 0;
+}
+
+.folklore-footnotes li,
+.folklore-note-reference a {
+  scroll-margin-top: 5.5rem;
+}
+
+.folklore-footnotes li:target {
+  background: var(--bs-tertiary-bg);
+}
+
+.folklore-footnotes li + li {
+  margin-top: 1rem;
+}
+
+.folklore-footnotes p {
+  margin-block: .25rem;
+}
+
+.folklore-note-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.25rem;
+  align-items: baseline;
+}
+
+.folklore-note-reference {
+  margin-inline: .12em;
+}
+
+.folklore-note-return {
+  font-size: .875em;
+}
+
+.folklore-intro {
+  max-width: 58ch;
+  font-size: 1.125rem;
+}
+
+.folklore-source-notes,
+.folklore-footer {
+  margin-top: 2rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.folklore-skip:focus {
+  position: fixed;
+  inset: .5rem auto auto .5rem;
+  z-index: 2000;
+  padding: .5rem .75rem;
+  background: var(--bs-body-bg);
+}
+
+pagefind-input,
+pagefind-summary,
+pagefind-results {
+  display: block;
+  max-width: 54rem;
+  margin-block: 1rem;
+  --pf-background: var(--bs-body-bg);
+  --pf-text: var(--bs-body-color);
+  --pf-text-secondary: var(--bs-secondary-color);
+  --pf-text-muted: var(--bs-secondary-color);
+  --pf-border: var(--bs-border-color);
+  --pf-border-focus: var(--bs-link-color);
+  --pf-outline-focus: var(--bs-link-color);
+  --pf-hover: var(--bs-tertiary-bg);
+  --pf-mark: var(--bs-body-color);
+}

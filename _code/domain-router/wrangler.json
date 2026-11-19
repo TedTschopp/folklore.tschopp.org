@@ -1,0 +1,30 @@
+{
+  "name": "swiss-folklore-publication",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-19",
+  "account_id": "13ebf849f1787412dc2c48a262de0407",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "redact_query_string": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": false,
+      "persist": false,
+      "head_sampling_rate": 0
+    }
+  },
+  "routes": [
+    {
+      "pattern": "folklore.tschopp.org",
+      "custom_domain": true
+    }
+  ]
+}

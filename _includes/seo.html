@@ -1,0 +1,18 @@
+{% assign canonical = page.url | absolute_url %}
+<title>{{ page.title | escape }}{% unless page.url == '/' %} | Swiss Folklore{% endunless %}</title>
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
+<meta name="author" content="Ted Tschopp">
+<link rel="canonical" href="{{ canonical | escape }}">
+{% if page.noindex %}<meta name="robots" content="noindex,follow">{% endif %}
+<meta property="og:type" content="{% if page.story_id %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<meta property="og:url" content="{{ canonical | escape }}">
+<meta property="og:site_name" content="Swiss Folklore">
+{% assign social_image = page.image | default: '/assets/marchen/emblem.svg' %}
+<meta property="og:image" content="{{ social_image | absolute_url | escape }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+<link rel="icon" href="/assets/marchen/emblem.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"{% if page.story_id %}CreativeWork{% else %}WebPage{% endif %}","@id":{{ canonical | jsonify }},"url":{{ canonical | jsonify }},"name":{{ page.title | jsonify }},"description":{{ page.description | default: site.description | jsonify }},"inLanguage":"en","isPartOf":{"@type":"WebSite","@id":"https://folklore.tschopp.org/#website","name":"Swiss Folklore","url":"https://folklore.tschopp.org/"}{% if page.edition %},"author":{"@type":"Person","name":{{ page.edition.author | jsonify }}},"translator":{"@type":"Person","name":"Ted Tschopp","url":"https://tedt.org/profile/"},"isBasedOn":{"@type":"CreativeWork","name":{{ page.edition.original_title | jsonify }},"inLanguage":{{ page.edition.original_language | jsonify }},"url":{{ page.edition.edition_url | jsonify }} }{% endif %}}</script>

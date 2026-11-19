@@ -1,0 +1,132 @@
+# Swiss Folklore Stories Index
+# Generated from Story-Output.json - keyed by story_id
+# Annotated pilot entries retain their locations, entities, and classification metadata.
+
+b94b31288d269cdbc55a79dfbeef72fce89895d0:
+  title: "Das Wütisheer (The Wild Hunt)"
+  author: "Hans Michel"
+  source_url: "https://www.maerchenstiftung.ch/maerchendatenbank/6705/das-wuetisheer-h-michel"
+  edition_citation: "Hans Michel, Ein Kratten voll Lauterbrunner Sagen (Wengen, 1936)."
+
+2980bfdf495e5b36f6b87ae59d36a9c8440e56c5:
+  title: "Das Wydenweiblein (The Wyden Woman)"
+  author: "K. Freuler and H. Thürer"
+  source_url: "https://www.maerchenstiftung.ch/maerchendatenbank/9410/das-wydenweiblein"
+  edition_citation: "K. Freuler and H. Thürer, Glarner Sagen (Glarus, 1953)."
+
+434e1c6212cefb2c179cebaefb73d062fb021de8:
+  title: "Das Zauberbuch"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/maerchendatenbank/3763/das-zauberbuch"
+  original_language: "German / Swiss German"
+  location_ids:
+  - "0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5"
+  entity_ids:
+  - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+  - "c6b5a4b3c2d1e0f9a8b7c6d5e4f3029182736455"
+  myth_classification:
+    myth_type: "Legend"
+    primary_themes:
+    - "Magic book"
+    - "Speech-act power (reading aloud)"
+    - "Fear of uncanny gifts"
+    secondary_themes:
+    - "Monastic cellar"
+    - "Everyday domestic setting"
+    narrative_function: "Explanatory anecdote about a magic book; also mild moral about fear and missed benefit."
+    belief_context: "Christian folk milieu (Capuchin, 'clerical') with tolerated marvel."
+  atu_inference:
+    atu_candidates: []
+    notes: "Short legend/anecdote; ATU typology not clearly applicable."
+  thompson_motif_inference:
+    motif_candidates:
+    - motif_label: "Magic book produces goods when read"
+      confidence: 0.74
+    notes: "Motif code omitted; label reflects the described magical mechanism."
+  notes_on_translation: "Preserved informant line; rendered 'Geistlicher Schild' as a title; avoided interpretive claims about real monastic involvement."
+  extracted_metadata:
+    informant: "Heinrich Baumann, 72 J. alt, Attinghausen"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."
+
+6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a:
+  title: "Das Zauberbuch der drei armen Büblein"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/maerchendatenbank/3775/das-zauberbuch-der-drei-armen-bueblein"
+  original_language: "German / Swiss German"
+  location_ids:
+  - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+  - "5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b"
+  entity_ids:
+  - "e9a5c3d2b1f0a9876543210fedcba9876543210f"
+  - "1f2e3d4c5b6a79808192a3b4c5d6e7f8091a2b3c"
+  - "2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e"
+  myth_classification:
+    myth_type: "Moral Warning"
+    primary_themes:
+    - "Magic book"
+    - "Invisibility"
+    - "Temptation and petty taking"
+    - "Prevention of moral slide"
+    secondary_themes:
+    - "Christian household conscience"
+    - "Priest as authority"
+    - "Hunger and poverty"
+    narrative_function: "Moral enforcement: small wrongdoing can lead to greater; book is removed to avert worse."
+    belief_context: "Explicit Christian framing ('christliche Frau') and schoolbook proverb; folk-magic treated as perilous."
+  atu_inference:
+    atu_candidates: []
+    notes: "Legend/moral anecdote; ATU tale-type not confidently applicable."
+  thompson_motif_inference:
+    motif_candidates:
+    - motif_label: "Magic book grants invisibility"
+      confidence: 0.70
+    - motif_label: "Cleric destroys magical object"
+      confidence: 0.66
+    notes: "No reliable Thompson codes supplied; motif labels are conservative."
+  notes_on_translation: "Dialect speech kept close; proverb translated literally; avoided interpreting exact geography of 'Ruossdiele'."
+  extracted_metadata:
+    informant: "Jos. Maria Aschwanden, 60 J. alt"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."
+
+fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f:
+  title: "Das Zauberbuch hilft in der Not"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/maerchendatenbank/3776/das-zauberbuch-hilft-in-der-not"
+  original_language: "German / Swiss German"
+  location_ids:
+  - "6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708"
+  - "ad7c50f76f1d5d9d24d3b9b11365bb57e9c7b3f0"
+  entity_ids:
+  - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+  - "4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f"
+  myth_classification:
+    myth_type: "Religious Legend"
+    primary_themes:
+    - "Confession and absolution"
+    - "Magic book as contested aid"
+    - "Deliverance from robbers"
+    secondary_themes:
+    - "Storm as crisis"
+    - "Moral question to clergy"
+    narrative_function: "Tests clerical judgment; demonstrates practical saving power of the forbidden book."
+    belief_context: "Christian sacramental framework (confession/absolution) interwoven with tolerated magical practice."
+  atu_inference:
+    atu_candidates: []
+    notes: "Legend-like anecdote; not clearly an ATU fairy-tale type."
+  thompson_motif_inference:
+    motif_candidates:
+    - motif_label: "Magic text used for protection against attackers"
+      confidence: 0.70
+    - motif_label: "Adversaries frozen/immobilized by spell"
+      confidence: 0.68
+    notes: "Labels only; motif codes not supplied to avoid fabrication."
+  notes_on_translation: "Retained rhetorical closing question; translated 'Gädemli' as small hut/shed; kept 'Geistlicher Schild' as fixed title."
+  extracted_metadata:
+    informant: "Jos. Maria Tresch, 70 J. alt, Silenen"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."

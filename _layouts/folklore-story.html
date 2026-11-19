@@ -1,0 +1,139 @@
+---
+layout: folklore-shell
+---
+{% assign story_id = page.story_id %}
+{% assign story = site.data.folklore.stories[story_id] %}
+{% assign guide = site.data.folklore.reader_guides.stories[story_id] %}
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12" id="content-column">
+          <main id="folklore-main" class="h-entry folklore-reading" role="main"{% if page.edition %} data-pagefind-body{% endif %}>
+            <article class="card h-100 no-padding">
+              
+              {%- comment -%} Hero Image Section {%- endcomment -%}
+              {% if page.image %}
+                {% assign image_URL = page.image %}
+                {% assign image_alt = page.image-alt | default: story.title %}
+              {% else %}
+                {% assign image_URL = site.url | append: "/img/categories/folklore.webp" %}
+                {% assign image_alt = "Swiss Alps folklore illustration" %}
+              {% endif %}
+
+              <div class="card rounded-bottom-0 h-100">
+                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
+                <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                  <div class="post-hero mb-2">
+                    <h1 class="p-name card-title post-title mb-1">{{ page.title | default: story.title }}</h1>
+                    {% if story.author %}
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">
+                      Source author: <span class="p-author h-card"><span class="p-name">{{ story.author | escape }}</span></span>
+                    </p>
+                    {% endif %}
+                  </div>
+                  <p class="small text-body-secondary mb-2 content-credits">
+                    <span class="content-credit content-credit-translation-editor">Translator and curator: <a class="p-translator h-card" href="{{ 'https://tedt.org/profile/' | relative_url }}">{{ site.profile.name | default: 'Ted Tschopp' }}</a></span>
+                    <span aria-hidden="true"> · </span>
+                    <a href="{{ 'https://tedt.org/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a>
+                  </p>
+                  <div class="small text-body-secondary mb-1">
+                    <span class="badge bg-secondary me-1">{{ story.myth_classification.myth_type }}</span>
+                    <span class="badge bg-info text-dark me-1">{{ story.original_language }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body rounded-top-0 p-4 h-100">
+                {% include seo/entry-metadata.html %}
+                {% include social/syndication-links.html %}
+                {% include folklore/discussion-links.html %}
+                {% if guide %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
+
+                {%- comment -%} Translation Tabs {%- endcomment -%}
+                <div class="e-content">
+                  <h2 class="h5 mb-3">The Story</h2>
+                  {% if page.edition %}
+                    <p><a href="{{ page.edition.edition_url | escape }}">{{ page.edition.edition_citation | escape }}</a></p>
+                    {% include folklore/edition-text.html edition=page.edition %}
+                  {% else %}
+                    {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                  {% endif %}
+                </div>
+                {% if guide %}{% include folklore/story-context.html hide_places=true %}{% endif %}
+
+                {%- comment -%} Locations Section {%- endcomment -%}
+                {% if story.location_ids and story.location_ids.size > 0 %}
+                <div class="mb-4">
+                  <h2 class="h5">Locations in this Story</h2>
+                  <div class="d-flex flex-wrap">
+                    {% for loc_id in story.location_ids %}
+                      {% include folklore/location-badge.html location_id=loc_id %}
+                    {% endfor %}
+                  </div>
+                </div>
+                {% endif %}
+
+                {%- comment -%} Entities Section {%- endcomment -%}
+                {% if story.entity_ids and story.entity_ids.size > 0 %}
+                <div class="mb-4">
+                  <h2 class="h5">Mythological Entities</h2>
+                  <div class="d-flex flex-wrap mb-3">
+                    {% for entity_id in story.entity_ids %}
+                      {% include folklore/entity-card.html entity_id=entity_id compact=true %}
+                    {% endfor %}
+                  </div>
+                  
+                  <details>
+                    <summary class="text-body-secondary">View detailed entity information</summary>
+                    <div class="mt-3">
+                      {% for entity_id in story.entity_ids %}
+                        {% include folklore/entity-card.html entity_id=entity_id %}
+                      {% endfor %}
+                    </div>
+                  </details>
+                </div>
+                {% endif %}
+
+                {%- comment -%} Story Metadata {%- endcomment -%}
+                {% include folklore/story-metadata.html story=story %}
+
+                {%- comment -%} Any additional page content {%- endcomment -%}
+                {% if content and content != '' %}
+                <div class="e-content mt-4">
+                  {% assign __folklore_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                  {{ __folklore_content }}
+                </div>
+                {% endif %}
+
+                {%- comment -%} Navigation to browse pages {%- endcomment -%}
+                <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/" class="btn btn-outline-secondary w-100">
+                        All Stories
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/locations/" class="btn btn-outline-secondary w-100">
+                        Browse Locations
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/entities/" class="btn btn-outline-secondary w-100">
+                        Browse Entities
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+
+              </div>
+            </article>
+          </main>
+
+          {% include folklore/discussion.html target_label='this tale' %}
+
+        </div>
+      </div>
+      <hr>
+    </div>
+

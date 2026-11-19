@@ -1,0 +1,99 @@
+/* Swiss Folklore consumer of Märchen Engine Design v2. The game is separate. */
+:root, [data-theme] {
+  --bs-body-bg: var(--surface-page);
+  --bs-body-color: var(--text-body);
+  --bs-emphasis-color: var(--text-strong);
+  --bs-secondary-color: var(--text-muted);
+  --bs-secondary-bg: var(--surface-inset);
+  --bs-tertiary-bg: var(--surface-inset);
+  --bs-tertiary-color: var(--text-faint);
+  --bs-border-color: var(--border-hair);
+  --bs-border-radius: var(--radius-card);
+  --bs-link-color: var(--gilt-text);
+  --bs-link-hover-color: var(--accent-text);
+  --bs-body-font-family: var(--font-serif);
+  --bs-body-font-size: var(--text-base);
+  --pagefind-ui-primary: var(--accent-text);
+  --pagefind-ui-text: var(--text-body);
+  --pagefind-ui-background: var(--surface-card);
+  --pagefind-ui-border: var(--border-strong);
+  --pagefind-ui-border-radius: var(--radius-card);
+  --pagefind-ui-font: var(--font-serif);
+  color-scheme: light;
+}
+[data-theme="dark"] { color-scheme: dark; }
+body.folklore-publication { min-width: 0; margin: 0; font-family: var(--font-serif); font-size: var(--text-base); line-height: var(--leading-reading); color: var(--text-body); background: var(--surface-page); font-feature-settings: var(--font-features-body); }
+body.folklore-publication.me-paper { background-color: var(--surface-page); }
+body.folklore-publication.me-dark-ground { background-color: var(--surface-page); }
+.folklore-publication h1, .folklore-publication h2, .folklore-publication h3, .folklore-publication h4 { color: var(--text-strong); font-family: var(--font-serif); line-height: var(--leading-tight); font-weight: var(--weight-black); text-wrap: balance; }
+.folklore-publication h1 { font-family: var(--font-display); font-weight: var(--weight-regular); letter-spacing: var(--tracking-tight); }
+.folklore-publication a { color: var(--gilt-text); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.folklore-publication a:hover { color: var(--accent-text); }
+.folklore-publication :focus-visible { outline: 2px solid var(--gilt-text); outline-offset: 3px; }
+.folklore-frame { width: min(76rem, calc(100% - 2 * var(--inset-page))); }
+.folklore-masthead { display: flex; justify-content: space-between; align-items: center; gap: var(--gutter); padding-block: var(--space-6); border-bottom: 3px double var(--gilt); }
+.folklore-wordmark { display: flex; gap: var(--space-4); align-items: center; font: var(--text-xl)/var(--leading-tight) var(--font-display); text-decoration: none; }
+.folklore-wordmark img { flex: 0 0 auto; }
+.folklore-colophon { display: block; margin-top: var(--space-2); font: var(--text-xs)/var(--leading-normal) var(--font-sc); letter-spacing: var(--tracking-wide); color: var(--text-muted); }
+.folklore-publication .folklore-reading { max-width: calc(var(--w-prose) + 2 * var(--pad-card-lg)); font-size: var(--text-base); line-height: var(--leading-reading); }
+main.folklore-frame { padding-block: var(--space-7); }
+.folklore-reading article { background: var(--surface-card); padding: var(--pad-card-lg); border: var(--bw-hair) solid var(--border-hair); border-radius: var(--radius-card); box-shadow: var(--shadow-1); }
+.folklore-reading-header { border-bottom: 3px double var(--gilt); padding-bottom: var(--space-6); }
+.folklore-reading-header > a, .folklore-catalog-header > a { font: var(--text-xs)/var(--leading-normal) var(--font-sc); letter-spacing: var(--tracking-wider); }
+.folklore-frame h1 { font-size: clamp(2.441rem, 5vw, 3.815rem); line-height: var(--leading-tight); overflow-wrap: anywhere; }
+.folklore-intro { max-width: var(--w-prose); color: var(--text-muted); font-size: var(--text-md); }
+.folklore-catalog-header { padding-bottom: var(--space-6); margin-bottom: var(--space-6); border-bottom: var(--bw-hair) solid var(--border-hair); }
+.folklore-credits, .indieweb-entry-meta, .folklore-discussion-links, .folklore-context, .folklore-footer { font-size: var(--text-sm); }
+.folklore-credits { color: var(--text-muted); }
+.folklore-reading-nav { background: var(--surface-inset); border-color: var(--border-strong); border-radius: var(--radius-card); gap: var(--space-2); padding: var(--space-2); }
+.folklore-reading-nav a { min-height: 44px; display: flex; align-items: center; padding: var(--space-2) var(--space-3); font: var(--weight-bold) var(--text-sm)/var(--leading-normal) var(--font-sc); }
+.folklore-reading section { margin-block-start: var(--space-7); }
+.folklore-reading #english h2, .folklore-reading #original h2, .folklore-reading #reader-notes h2 { font-size: var(--text-xl); }
+.folklore-footnotes { background: var(--surface-inset); padding: var(--pad-card); border-left: 2px solid var(--herb); border-radius: var(--radius-card); font-size: var(--text-sm); }
+.folklore-note-reference a { font-family: var(--font-sans); padding: .2em; color: var(--accent-text); }
+.folklore-catalog { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--gutter); }
+.folklore-catalog li { display: flex; flex-direction: column; padding: var(--pad-card); background: var(--surface-card); border: var(--bw-hair) solid var(--border-hair); border-radius: var(--radius-card); box-shadow: var(--shadow-1); }
+.folklore-catalog h3 { font-size: var(--text-lg); margin-bottom: var(--space-3); }
+.folklore-catalog p { font-size: var(--text-sm); }
+.folklore-catalog .folklore-catalog-summary { margin-bottom: var(--space-4); color: var(--text-body); flex: 1; }
+.folklore-links { gap: var(--space-3) var(--space-5); }
+.folklore-links a { padding-block: var(--space-2); min-height: 44px; }
+.folklore-context, .folklore-responses { border-top: 3px double var(--gilt); }
+.folklore-footer { border-top: 3px double var(--gilt); padding-block: var(--space-6); color: var(--text-muted); background: var(--surface-inset); }
+.folklore-publication .card { --bs-card-bg: var(--surface-card); --bs-card-color: var(--text-body); --bs-card-border-color: var(--border-hair); --bs-card-cap-bg: var(--surface-inset); --bs-card-border-radius: var(--radius-card); }
+.folklore-publication .badge { color: var(--text-strong) !important; background: var(--surface-inset) !important; border: 1px solid var(--border-strong); border-radius: var(--radius-card); font-family: var(--font-sc); }
+.folklore-publication .btn, .folklore-publication button, .folklore-publication .form-control { border-radius: var(--radius-card); font-family: var(--font-sans); }
+.folklore-publication .btn-primary { color: var(--text-on-accent); background: var(--accent); border-color: var(--accent); }
+.folklore-publication .btn-primary:hover { background: var(--accent-hover); }
+.folklore-publication .btn-outline-secondary { color: var(--text-muted); border-color: var(--border-strong); }
+.folklore-publication .form-control { background: var(--surface-inset); color: var(--text-body); border-color: var(--border-strong); }
+.folklore-publication .form-control::placeholder { color: var(--text-faint); }
+.folklore-publication .form-text { color: var(--text-muted); }
+.folklore-publication .container { max-width: 76rem; }
+.folklore-publication .folklore-reading .card { padding: 0; }
+.folklore-publication .card-img-top { max-height: 28rem; object-fit: cover; border-radius: var(--radius-card); }
+.folklore-publication .folklore-reading .card .card { border: none; }
+.folklore-publication .folklore-reading .folklore-reading { max-width: var(--w-prose); margin: auto; }
+.folklore-publication #content-column > main { margin: var(--space-7) auto; }
+.folklore-publication #content-column > .folklore-responses { max-width: var(--w-prose); margin-inline: auto; }
+.folklore-publication .folklore-reading .e-content { overflow-wrap: anywhere; }
+/* The public reading site retains mobile access; the brand's game-table width is not imposed here. */
+@media (max-width: 48rem) {
+  .folklore-frame { width: calc(100% - var(--space-6)); }
+  .folklore-masthead { gap: var(--space-3); padding-block: var(--space-4); }
+  .folklore-wordmark { gap: var(--space-3); font-size: var(--text-lg); }
+  .folklore-colophon { max-width: 15rem; font-size: var(--text-xs); }
+  .folklore-wordmark img { width: 40px; height: 40px; }
+  .folklore-catalog { grid-template-columns: 1fr; }
+  .folklore-reading article { padding: var(--pad-card); }
+  .folklore-reading-nav { display: grid; grid-template-columns: 1fr; }
+  .folklore-reading-nav a { padding-block: var(--space-2); }
+  .folklore-publication .folklore-reading .card-body { padding: var(--space-4) !important; }
+  .folklore-publication .container { padding-inline: var(--space-4); }
+  .folklore-publication .row.w-100 { margin-inline: 0; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+@media print { tedt-global-header, .folklore-masthead button, .folklore-responses, .folklore-footer { display: none; } .folklore-frame { width: 100%; } .folklore-reading article { padding: 0; border: 0; box-shadow: none; } }
+
+/* Keep the primary action legible when the dusk hover token becomes lighter. */
+.folklore-publication .btn-primary:hover, .folklore-publication .btn-primary:focus-visible { background: var(--accent); color: var(--text-on-accent); text-decoration: underline; }

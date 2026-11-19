@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-mode="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {% include seo.html %}
+  <link rel="webmention" href="{{ site.indieweb.webmention_endpoint | escape }}">
+  <link rel="pingback" href="https://webmention.io/tedt.org/xmlrpc">
+  <link rel="me" href="https://tedt.org/profile/">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self' https://webmention.io; img-src 'self' data: https:; font-src 'self'; style-src 'self' 'unsafe-inline' https://tedt.org/assets/global-header/v1/; script-src 'self' 'unsafe-inline' https://tedt.org/assets/global-header/v1/{% if page.url == '/search/' %} 'wasm-unsafe-eval'{% endif %}; connect-src 'self' https:; worker-src 'self' blob:; frame-src 'none'">
+  <link rel="stylesheet" href="/css/bootstrap-build.css">
+  <link rel="stylesheet" href="/assets/marchen/tokens.css">
+  <link rel="stylesheet" href="/assets/marchen/components/bundle.css">
+  <link rel="stylesheet" href="/css/folklore.css">
+  <link rel="stylesheet" href="/css/indieweb.css">
+  <link rel="stylesheet" href="/css/comments-mastodon-tree.css">
+  <link rel="stylesheet" href="/css/field-guide.css">
+  <script>try { if (!/(?:^|;\s*)tedt-appearance=/.test(document.cookie) && !localStorage.getItem('color-scheme')) localStorage.setItem('color-scheme', 'light'); } catch (_) {}</script>
+  <script src="https://tedt.org/assets/global-header/v1/theme.js"></script>
+  <script defer src="/js/field-guide.js"></script>
+  {% if page.url == '/search/' %}
+  <link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">
+  <script type="module" src="/pagefind/pagefind-component-ui.js"></script>
+  {% endif %}
+</head>
+<body class="me-paper folklore-publication">
+  <a class="visually-hidden-focusable folklore-skip" href="#folklore-main">Skip to content</a>
+  {% include header.html %}
+  <div class="folklore-masthead folklore-frame"><a class="folklore-wordmark" href="/"><img src="/assets/marchen/emblem.svg" alt="" width="52" height="52"><span>Swiss Folklore<span class="folklore-colophon">Collected tales · English translations · Reader notes</span></span></a><button type="button" class="me-btn me-btn--quiet me-btn--sm" data-folklore-theme aria-pressed="false">Dusk</button></div>
+  {{ content }}
+  <footer class="folklore-footer"><div class="folklore-frame"><a href="/">Swiss Folklore Collection</a><a href="https://tedt.org/profile/#translation-and-folklore-disclosure">Translation disclosure</a><a href="https://tedt.org/Privacy-Policy/">Privacy policy</a><a href="https://tedt.org/stories/">More stories at TedT.org</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,1109 @@
+/* ── styles.css ── */
+/* ============================================================
+   The Märchen Engine — Design System entry point
+   Consumers link THIS one file. It only @imports; no rules here.
+   ============================================================ */
+
+/* ── tokens/fonts.css ── */
+/* ============================================================
+   The Märchen Engine — Webfonts  (FULLY SELF-HOSTED · no CDN)
+   ------------------------------------------------------------
+   FONT POLICY (see fonts/README.md for the full licensing table):
+
+   • The OFL spine is self-hosted from fonts/webfonts/ (woff2, latin
+     + latin-ext subsets) — zero CDN dependency, works offline:
+       Alegreya · Alegreya Sans · Alegreya Sans SC   (Huerta Tipográfica)
+       IM Fell English                               (Igino Marini)
+       Caveat                                        (Pablo Impallari)
+       Pinyon Script                                 (Nicole Fally)
+       UnifrakturMaguntia · UnifrakturCook           (j. 'mach' wust et al.)
+     All SIL Open Font License — free to embed & redistribute.
+
+   • Dana Library Hand and Old Man Eloquent are LICENSED commercial
+     faces, self-hosted from fonts/ (local() tried first).
+
+   • 'Alegreya Fallback' (metric-tuned Georgia) covers the body until
+     the self-hosted Alegreya paints. All faces use font-display: swap.
+
+   To regenerate/extend the OFL subsets, re-run the harvest documented
+   in fonts/README.md.
+   ============================================================ */
+
+/* ───────────────────────── OFL spine — self-hosted ───────────────────────── */
+/* @font-face Alegreya 400 italic: declared by tokens.json (fonts/Alegreya-400i-latinext.woff2) */
+/* @font-face Alegreya 400 italic: declared by tokens.json (fonts/Alegreya-400i-latin.woff2) */
+/* @font-face Alegreya 500 italic: declared by tokens.json (fonts/Alegreya-500i-latinext.woff2) */
+/* @font-face Alegreya 500 italic: declared by tokens.json (fonts/Alegreya-500i-latin.woff2) */
+/* @font-face Alegreya 700 italic: declared by tokens.json (fonts/Alegreya-700i-latinext.woff2) */
+/* @font-face Alegreya 700 italic: declared by tokens.json (fonts/Alegreya-700i-latin.woff2) */
+/* @font-face Alegreya 400 normal: declared by tokens.json (fonts/Alegreya-400-latinext.woff2) */
+/* @font-face Alegreya 400 normal: declared by tokens.json (fonts/Alegreya-400-latin.woff2) */
+/* @font-face Alegreya 500 normal: declared by tokens.json (fonts/Alegreya-500-latinext.woff2) */
+/* @font-face Alegreya 500 normal: declared by tokens.json (fonts/Alegreya-500-latin.woff2) */
+/* @font-face Alegreya 700 normal: declared by tokens.json (fonts/Alegreya-700-latinext.woff2) */
+/* @font-face Alegreya 700 normal: declared by tokens.json (fonts/Alegreya-700-latin.woff2) */
+/* @font-face Alegreya 800 normal: declared by tokens.json (fonts/Alegreya-800-latinext.woff2) */
+/* @font-face Alegreya 800 normal: declared by tokens.json (fonts/Alegreya-800-latin.woff2) */
+/* @font-face Alegreya 900 normal: declared by tokens.json (fonts/Alegreya-900-latinext.woff2) */
+/* @font-face Alegreya 900 normal: declared by tokens.json (fonts/Alegreya-900-latin.woff2) */
+/* @font-face Alegreya Sans 400 italic: declared by tokens.json (fonts/AlegreyaSans-400i-latinext.woff2) */
+/* @font-face Alegreya Sans 400 italic: declared by tokens.json (fonts/AlegreyaSans-400i-latin.woff2) */
+/* @font-face Alegreya Sans 500 italic: declared by tokens.json (fonts/AlegreyaSans-500i-latinext.woff2) */
+/* @font-face Alegreya Sans 500 italic: declared by tokens.json (fonts/AlegreyaSans-500i-latin.woff2) */
+/* @font-face Alegreya Sans 400 normal: declared by tokens.json (fonts/AlegreyaSans-400-latinext.woff2) */
+/* @font-face Alegreya Sans 400 normal: declared by tokens.json (fonts/AlegreyaSans-400-latin.woff2) */
+/* @font-face Alegreya Sans 500 normal: declared by tokens.json (fonts/AlegreyaSans-500-latinext.woff2) */
+/* @font-face Alegreya Sans 500 normal: declared by tokens.json (fonts/AlegreyaSans-500-latin.woff2) */
+/* @font-face Alegreya Sans 700 normal: declared by tokens.json (fonts/AlegreyaSans-700-latinext.woff2) */
+/* @font-face Alegreya Sans 700 normal: declared by tokens.json (fonts/AlegreyaSans-700-latin.woff2) */
+/* @font-face Alegreya Sans SC 400 normal: declared by tokens.json (fonts/AlegreyaSansSC-400-latinext.woff2) */
+/* @font-face Alegreya Sans SC 400 normal: declared by tokens.json (fonts/AlegreyaSansSC-400-latin.woff2) */
+/* @font-face Alegreya Sans SC 500 normal: declared by tokens.json (fonts/AlegreyaSansSC-500-latinext.woff2) */
+/* @font-face Alegreya Sans SC 500 normal: declared by tokens.json (fonts/AlegreyaSansSC-500-latin.woff2) */
+/* @font-face Alegreya Sans SC 700 normal: declared by tokens.json (fonts/AlegreyaSansSC-700-latinext.woff2) */
+/* @font-face Alegreya Sans SC 700 normal: declared by tokens.json (fonts/AlegreyaSansSC-700-latin.woff2) */
+/* @font-face IM Fell English 400 italic: declared by tokens.json (fonts/IMFellEnglish-400i-latin.woff2) */
+/* @font-face IM Fell English 400 normal: declared by tokens.json (fonts/IMFellEnglish-400-latin.woff2) */
+/* @font-face Caveat 400 normal: declared by tokens.json (fonts/Caveat-400-latinext.woff2) */
+/* @font-face Caveat 400 normal: declared by tokens.json (fonts/Caveat-400-latin.woff2) */
+/* @font-face Caveat 600 normal: declared by tokens.json (fonts/Caveat-600-latinext.woff2) */
+/* @font-face Caveat 600 normal: declared by tokens.json (fonts/Caveat-600-latin.woff2) */
+/* @font-face Pinyon Script 400 normal: declared by tokens.json (fonts/PinyonScript-400-latinext.woff2) */
+/* @font-face Pinyon Script 400 normal: declared by tokens.json (fonts/PinyonScript-400-latin.woff2) */
+/* @font-face UnifrakturMaguntia 400 normal: declared by tokens.json (fonts/UnifrakturMaguntia-400-latin.woff2) */
+/* @font-face UnifrakturCook 700 normal: declared by tokens.json (fonts/UnifrakturCook-700-latin.woff2) */
+
+/* ───────────────────────── Fallback + licensed faces ─────────────────────── */
+/* ── Metric-sympathetic fallback for the body serif ──
+   Used while Alegreya loads / if the CDN is down. Georgia is the
+   closest ubiquitous old-style serif; size-adjust trims its slightly
+   larger run to Alegreya's measure to minimise reflow. Tune with
+   https://screenspan.net/fallback if you change the body face. */
+@font-face {
+  font-family: 'Alegreya Fallback';
+  src: local('Georgia'), local('Times New Roman');
+  font-display: swap;
+  size-adjust: 96%;
+  ascent-override: 108%;
+  descent-override: 30%;
+  line-gap-override: 0%;
+}
+
+/* ─ Dana Library Hand (Margo Burns) — licensed · self-hosted ─ */
+/* @font-face Dana Library Hand 400 normal: declared by tokens.json (fonts/DanaLibraryHand-Regular.woff2) */
+/* @font-face Dana Library Hand 400 italic: declared by tokens.json (fonts/DanaLibraryHand-Italic.woff2) */
+/* @font-face Dana Library Hand 700 normal: declared by tokens.json (fonts/DanaLibraryHand-Bold.woff2) */
+/* @font-face Dana Library Hand 700 italic: declared by tokens.json (fonts/DanaLibraryHand-BoldItalic.woff2) */
+
+/* ─ Old Man Eloquent (Brian Willson / Three Islands Press) — licensed · self-hosted ─ */
+/* @font-face Old Man Eloquent 400 normal: declared by tokens.json (fonts/OldManEloquent-Regular.woff) */
+/* @font-face Old Man Eloquent 700 normal: declared by tokens.json (fonts/OldManEloquent-Bold.woff) */
+
+/* ── styles.css ── */
+
+/* ── tokens/colors.css ── */
+/* ============================================================
+   The Märchen Engine — Color
+   A field guide to a haunted Alpine Europe.
+   Charming herbarium surface (parchment & ink) giving way to
+   candlelit dread (umber-black, oxblood). All values warm-biased.
+   ============================================================ */
+
+:root {
+
+  /* Focus ring */
+  --ring: color-mix(in oklab, var(--brass-500) 70%, white 20%);
+}
+
+/* ============================================================
+   DARK MODE — "after dusk". Apply [data-mode="dark"] to a
+   container (whole bestiary entry, landing hero, etc.)
+   ============================================================ */
+[data-mode="dark"] {
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/typography.css ── */
+/* ============================================================
+   The Märchen Engine — Typography
+   Humanist old-style serif. Read like a 19th-c. field guide:
+   generous leading, ample measure, small-caps labels, italic asides.
+   ============================================================ */
+
+:root {
+  --measure: 68ch;          /* per-paragraph max line length (set on <p>) */
+  --measure-narrow: 46ch;   /* tighter measure — asides, captions */
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/spacing.css ── */
+/* ============================================================
+   The Märchen Engine — Spacing, Radii, Borders, Shadows, Motion
+   Bookbinding logic: tight, deliberate gutters; soft physical
+   shadows like leaves resting on a desk; almost-square corners
+   (paper is cut, not rounded).
+   ============================================================ */
+
+:root {   /* wide spread — galleries, dashboards */
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/base.css ── */
+/* ============================================================
+   The Märchen Engine — Base layer
+   Element defaults + a few brand utilities (paper grain, deckle
+   rules, drop caps). Tokens only; safe for consumers to inherit.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: var(--text-body);
+  background-color: var(--surface-page);
+  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "onum" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--selection-bg); }
+
+/* ---- Headings: humanist serif, tight leading ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-tight);
+  color: var(--text-strong);
+  margin: 0 0 var(--space-3);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); font-weight: var(--weight-bold); }
+h5 { font-size: var(--text-md); font-weight: var(--weight-bold); }
+h6 { font-size: var(--text-sm); font-weight: var(--weight-bold); }
+
+p { margin: 0 0 var(--space-4); max-width: var(--measure); text-wrap: pretty; }
+
+a { color: var(--gilt-text); text-decoration-color: color-mix(in oklab, var(--gilt-text) 45%, transparent);
+    text-underline-offset: 3px; transition: color var(--dur-1) var(--ease-out); }
+a:hover { color: var(--accent-text); }
+
+strong, b { font-weight: var(--weight-bold); }
+em, i { font-style: italic; }
+
+small { font-size: var(--text-xs); }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--rule-ink);
+  opacity: 0.5;
+  margin: var(--space-6) 0;
+}
+
+blockquote {
+  margin: var(--space-5) 0;
+  padding-left: var(--space-5);
+  border-left: var(--bw-strong) solid var(--gilt);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+code, kbd, samp {
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  background: var(--surface-inset);
+  padding: 0.08em 0.4em;
+  border-radius: var(--radius-1);
+}
+
+/* ============================================================
+   BRAND UTILITIES
+   ============================================================ */
+
+/* Eyebrow / kicker — spaced small-caps label */
+.me-eyebrow {
+  font-family: var(--font-sc);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  color: var(--gilt-text);
+}
+
+/* Folio / running-head micro label */
+.me-folio {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  font-size: var(--text-2xs);
+  color: var(--text-faint);
+}
+
+/* Marginalia — handwritten field note */
+.me-margin {
+  font-family: var(--font-hand);
+  font-size: var(--text-md);
+  color: var(--accent);
+  line-height: var(--leading-snug);
+  transform: rotate(-1.5deg);
+}
+
+/* Drop cap — antiquarian chapter opener */
+.me-dropcap::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.78;
+  padding: 0.06em 0.12em 0 0;
+  margin-right: 0.04em;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+/* Fraktur drop cap — illuminated blackletter initial (add alongside .me-dropcap).
+   Fraktur capitals are ornate and ambiguous in isolation, so this is purely a
+   DECORATIVE initial: the eye reads the word from the body text that follows,
+   the capital is the gilt anchor. Sized a touch larger to carry the extra
+   blackletter ornament, and gilt by default to read as gold-leaf illumination. */
+.me-dropcap--fraktur::first-letter {
+  font-family: var(--font-fraktur);
+  font-size: 4.1em;
+  line-height: 0.66;
+  padding: 0.1em 0.16em 0 0.02em;
+  margin-right: 0.06em;
+  color: var(--gilt);
+  text-shadow: 0 1px 0 color-mix(in oklab, var(--gilt) 40%, transparent);
+}
+
+/* Blackletter — display use (chapter titles, the wordmark, incantations).
+   Tight, dense texture; opened a hair with tracking. For sustained reading
+   use .me-fraktur-body below, which tunes size/leading/measure for legibility. */
+.me-fraktur {
+  font-family: var(--font-fraktur);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+/* Blackletter — content / body setting. Fraktur was the German book face for
+   centuries; it reads fine in passages IF you give it room. UnifrakturMaguntia
+   runs small and dense, so this bumps the size for x-height parity, opens the
+   leading, adds a touch of tracking, and shortens the measure — the same moves
+   a 19th-c. compositor made. Use on <p>/article runs, modern spelling. */
+.me-fraktur-body {
+  font-family: var(--font-fraktur);
+  font-weight: 400;
+  font-size: 1.18em;
+  line-height: 1.82;
+  letter-spacing: 0.012em;
+  max-width: 52ch;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+.me-fraktur-body em,
+.me-fraktur-body i { font-style: normal; color: var(--accent); }  /* Fraktur has no italic — emphasis was set in a contrasting colour / spaced */
+
+/* ---- Mode-switch helper: suppress transitions for one frame when toggling
+   [data-mode] at runtime, so var()-driven backgrounds repaint immediately.
+   (Browsers don't re-resolve a transitioned `background: var(--x)` when the
+   custom property itself changes — add this class, flip the mode, reflow,
+   then remove it on the next frame.) ---- */
+.me-no-transition,
+.me-no-transition *,
+.me-no-transition *::before,
+.me-no-transition *::after {
+  transition: none !important;
+}
+
+/* ---- Paper grain: subtle warm tooth + foxing. Apply to a surface. ---- */
+.me-paper {
+  background-color: var(--surface-page);
+  background-image:
+    radial-gradient(rgba(122, 92, 62, 0.05) 1px, transparent 1.4px),
+    radial-gradient(rgba(122, 92, 62, 0.035) 1px, transparent 1.4px),
+    linear-gradient(135deg, rgba(176,132,62,0.02), rgba(107,31,26,0.018));
+  background-size: 3px 3px, 5px 5px, 100% 100%;
+  background-position: 0 0, 2px 1px, 0 0;
+}
+
+/* Aged dark ground — candlelit umber with visible grain, foxing & ember glow */
+.me-dark-ground {
+  background-color: var(--umbra-1);
+  background-image:
+    /* Fine warm cross-grain — paper fiber at low opacity */
+    repeating-linear-gradient(
+      17deg,
+      transparent 0px, transparent 2px,
+      rgba(220,190,130,0.026) 2px, rgba(220,190,130,0.026) 3px
+    ),
+    repeating-linear-gradient(
+      107deg,
+      transparent 0px, transparent 3px,
+      rgba(180,150,90,0.018) 3px, rgba(180,150,90,0.018) 4px
+    ),
+    /* Foxing — irregular aging blotches at varied positions */
+    radial-gradient(ellipse 14% 9%  at  6% 35%, rgba(107,79,36,0.10) 0%, transparent 100%),
+    radial-gradient(ellipse  9% 16% at 80% 62%, rgba(107,79,36,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 20%  7% at 48% 91%, rgba(107,79,36,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse  7% 13% at 93% 17%, rgba(107,79,36,0.06) 0%, transparent 100%),
+    radial-gradient(ellipse 12%  8% at 36%  7%, rgba(107,79,36,0.05) 0%, transparent 100%),
+    radial-gradient(ellipse  6% 10% at 58% 48%, rgba(107,79,36,0.04) 0%, transparent 100%),
+    /* Ember glow — low left, warm oxblood */
+    radial-gradient(ellipse 55% 40% at 14% 92%, rgba(143,47,42,0.13) 0%, transparent 60%),
+    /* Secondary candle warmth — upper right offset */
+    radial-gradient(ellipse 40% 35% at 82% 12%, rgba(176,132,62,0.07) 0%, transparent 60%),
+    /* Main candle glow — warm centre-high */
+    radial-gradient(60% 50% at 50% 38%, rgba(176,132,62,0.19) 0%, transparent 70%),
+    /* Edge vignette — pulls darkness back in at the perimeter */
+    radial-gradient(130% 95% at 50% 35%, transparent 45%, rgba(14,11,8,0.65) 100%);
+}
+
+/* ---- Deckle / printed double-rule divider ---- */
+.me-rule {
+  border: 0;
+  height: 4px;
+  background:
+    linear-gradient(var(--rule-ink), var(--rule-ink)) top/100% 1.5px no-repeat,
+    linear-gradient(var(--rule-ink), var(--rule-ink)) bottom/100% 1px no-repeat;
+  opacity: 0.6;
+  margin: var(--space-5) 0;
+}
+
+/* Fleuron divider — centered ornament between rules (set content via ::before) */
+.me-fleuron {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--gilt);
+  margin: var(--space-6) 0;
+}
+.me-fleuron::before, .me-fleuron::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gilt-quiet), transparent);
+}
+
+/* Gilt frame — antiquarian plate border */
+.me-frame {
+  border: var(--bw-hair) solid var(--gilt);
+  outline: var(--bw-hair) solid var(--gilt);
+  outline-offset: 3px;
+  padding: var(--space-5);
+}
+
+/* Wax-seal token shape */
+.me-seal {
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem; height: 2.5rem;
+  border-radius: var(--radius-pill);
+  background: radial-gradient(circle at 38% 32%, var(--blood-400), var(--blood-600) 70%, var(--blood-800));
+  color: var(--bone-0);
+  box-shadow: var(--shadow-2), inset 0 1px 2px rgba(255,255,255,0.15), inset 0 -2px 4px rgba(0,0,0,0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/aspects.css ── */
+/* ============================================================
+   The Märchen Engine — The Four Aspects + Currency
+   Four Aspects, each a Swiss-mythic glyph + a setting hue, and each
+   holding three Characteristics scored −4…+4 (a 0 is left blank).
+   Base hues live in tokens/colors.css (--aspect-*). This file derives
+   the ink / soft-tint / glyph tokens and the inline utility classes.
+
+     ♑︎ FITNESS    Muscle · Agility · Stamina
+     ⚒︎ ACADEMIC   Intellect · Cunning · Reasoning
+     ⍾ MYSTICAL    Skepticism · Faith · Mystery
+     ⚭ EMOTIONAL   Manners · Personality · Identity
+   ============================================================ */
+
+:root {   /* @kind color */
+  --aspect-fitness-soft:  color-mix(in oklab, var(--aspect-fitness) 13%, var(--surface-card)); /* @kind color */
+  --aspect-fitness-glyph: "\2651\FE0E";  /* @kind color */
+  --aspect-academic-soft:  color-mix(in oklab, var(--aspect-academic) 16%, var(--surface-card)); /* @kind color */
+  --aspect-academic-glyph: "\2692\FE0E"; /* @kind color */
+  --aspect-mystical-soft:  color-mix(in oklab, var(--aspect-mystical) 17%, var(--surface-card)); /* @kind color */
+  --aspect-mystical-glyph: "\237E\FE0E";  /* @kind color */
+  --aspect-emotional-soft:  color-mix(in oklab, var(--aspect-emotional) 17%, var(--surface-card)); /* @kind color */
+  --aspect-emotional-glyph: "\26AD\FE0E";       /* @kind other */
+
+  /* ── ₢ CURRENCY · U+20A2 · the common coin of the realm ──
+     Brass-tinted; set with tabular-nums and font-sc for legibility. */
+  --currency-mark:  "\20A2";          /* @kind color */
+}
+
+/* Adjusted inks for dusk grounds */
+[data-mode="dark"] {    /* @kind color */
+}
+
+/* ─ Utility classes for inline Aspect references ─ */
+.me-aspect-fitness   { color: var(--aspect-fitness-ink);   }
+.me-aspect-academic  { color: var(--aspect-academic-ink);  }
+.me-aspect-mystical  { color: var(--aspect-mystical-ink);  }
+.me-aspect-emotional { color: var(--aspect-emotional-ink); }
+
+.me-aspect-fitness::before   { content: var(--aspect-fitness-glyph)   " "; }
+.me-aspect-academic::before  { content: var(--aspect-academic-glyph)  " "; }
+.me-aspect-mystical::before  { content: var(--aspect-mystical-glyph)  " "; }
+.me-aspect-emotional::before { content: var(--aspect-emotional-glyph) " "; }
+
+/* ─ Force MONOCHROME TEXT presentation for the four Aspect glyphs ──
+   ♑ Capricorn (U+2651) and ⚒ hammer-and-pick (U+2692) carry default
+   EMOJI presentation on many platforms. This utility forces the text
+   (non-emoji) glyph. Apply .me-aspect-glyph to any element that
+   renders an Aspect glyph, and keep the U+FE0E text variation selector
+   in the string. ─ */
+.me-aspect-glyph {
+  font-variant-emoji: text;            /* modern browsers: force text form */
+  font-family: 'Segoe UI Symbol', 'Noto Sans Symbols', 'Noto Sans Symbols 2',
+               'Apple Symbols', 'DejaVu Sans', var(--font-serif), serif;
+}
+.me-aspect-fitness::before, .me-aspect-academic::before,
+.me-aspect-mystical::before, .me-aspect-emotional::before { font-variant-emoji: text; }
+
+/* ₢ price display */
+.me-price {
+  font-family: var(--font-sc);
+  font-variant-numeric: tabular-nums;
+  color: var(--currency-color);
+  letter-spacing: 0.02em;
+}
+.me-price::before { content: "\20A2\A0"; }
+
+/* ── styles.css ── */
+
+/* ── tokens/annotations.css ── */
+/* ============================================================
+   The Märchen Engine — Manuscript Annotation Symbols
+   The scribal tradition of the Alpine Klöster gave us a precise
+   vocabulary of marginal marks. These are semantic design tokens
+   for the brand's annotation register — used in callouts, prose
+   asides, footnotes, and the Keeper's rulebook margin rail.
+
+   All glyphs are BMP Unicode text characters (no emoji).
+   ============================================================ */
+
+/* ============================================================
+   The Märchen Engine — Manuscript Annotation Symbols
+   The scribal tradition of the Alpine Klöster gave us a precise
+   vocabulary of marginal marks. These are semantic design tokens
+   for the brand’s annotation register — used in callouts, prose
+   asides, footnotes, and the Keeper’s rulebook margin rail.
+
+   Taxonomy drawn from Evina Steinová,
+   “Most Common Western Annotation Symbols in the Early Middle Ages”
+   (CC BY-SA 3.0, mittelalter.hypotheses.org/22292)
+
+   All glyphs are BMP Unicode text characters (no emoji).
+   ============================================================ */
+
+:root {
+  /* ─ Existing marks ─ */
+  --mark-manicule:    "\261E"; /* @kind other */
+  --mark-manicule-l:  "\261C"; /* @kind other */
+  --mark-pilcrow:     "\00B6"; /* @kind other */
+  --mark-section:     "\00A7"; /* @kind other */
+  --mark-dagger:      "\2020"; /* @kind other */
+  --mark-ddagger:     "\2021"; /* @kind other */
+  --mark-asterism:    "\2042"; /* @kind other */
+  --mark-hedera:      "\2767"; /* @kind other */
+  --mark-caret:       "\2038"; /* @kind other */
+  --mark-refmark:     "\203B"; /* @kind other */
+  --mark-diple:       "\203A"; /* @kind other */
+  --mark-capitulum:   "\212D"; /* @kind other */
+  --mark-lemniscate:  "\221E"; /* @kind other */
+  --mark-per-mille:   "\00B7"; /* @kind other */
+
+  /* ─ Attention Signs (Steinová §3) ─ */
+  --mark-nota:        "N";     /* @kind other */
+  --mark-lege:        "\2113"; /* @kind other */
+  --mark-trigon:      "\25B3"; /* @kind other */
+  --mark-chresimon:   "\2731"; /* @kind other */
+  --mark-horaion:     "\03D5"; /* @kind other */
+  --mark-dignum:      "DM";   /* @kind other */
+
+  /* ─ Critical Signs (Steinová §7) ─ */
+  --mark-obelus:      "\00F7"; /* @kind other */
+  --mark-asteriscus:  "\2736"; /* @kind other */
+  --mark-theta:       "\03B8"; /* @kind other */
+
+  /* ─ Correction / Deletion Signs (Steinová §2) ─ */
+  --mark-require:     "\211E"; /* @kind other */
+  --mark-cryphia:     "\222A"; /* @kind other */
+
+  /* ─ Text-Structuring Signs (Steinová §4) ─ */
+  --mark-coronis:     "\2767"; /* @kind other */
+  --mark-kaput:       "K";    /* @kind other */
+
+  /* ─ Excerption Signs (Steinová §6) ─ */
+  --mark-positura:    "\2E34"; /* @kind other */
+  --mark-distigme:    "\205A"; /* @kind other */
+}
+
+/* ============================================================
+   ANNOTATION UTILITY CLASSES
+   Place on inline elements or the opening of a block to add
+   the traditional marginal mark in the brand's gilt ink.
+   ============================================================ */
+
+/* ☞ Manicule — "nota": draws the reader's eye to an aside */
+.me-nota {
+  display: inline;
+}
+.me-nota::before {
+  content: "\261E\A0";
+  color: var(--gilt);
+  font-size: 1.1em;
+  line-height: 1;
+}
+.me-nota--left::before { content: "\261C\A0"; }
+
+/* ¶ Pilcrow — paragraph / scene break marker (inline) */
+.me-pilcrow::before {
+  content: "\B6\A0";
+  color: var(--accent);
+  font-size: 0.9em;
+}
+
+/* § Section sign — rule reference, legal cross-reference */
+.me-section-mark::before {
+  content: "\A7\A0";
+  color: var(--gilt);
+  font-size: 0.9em;
+}
+
+/* † Dagger — footnote reference superscript */
+.me-dagger {
+  font-size: 0.78em;
+  vertical-align: super;
+  color: var(--accent);
+  line-height: 0;
+}
+/* ‡ Double dagger — secondary footnote */
+.me-ddagger {
+  font-size: 0.78em;
+  vertical-align: super;
+  color: var(--accent);
+  line-height: 0;
+}
+.me-dagger::before  { content: "\2020"; }
+.me-ddagger::before { content: "\2021"; }
+
+/* ⁂ Asterism — major section break (block) */
+.me-asterism {
+  display: block;
+  text-align: center;
+  color: var(--gilt);
+  letter-spacing: 0.55em;
+  font-size: 1.1em;
+  margin: var(--space-6) 0;
+  line-height: 1;
+}
+.me-asterism::before { content: "\2042"; }
+
+/* ※ Reference mark — "see also" inline cross-reference */
+.me-refmark {
+  color: var(--gilt);
+  font-size: 0.9em;
+}
+.me-refmark::before { content: "\203B\A0"; }
+
+/* › Diple — marginal notation opener (single angle quote used by Alpine scribes) */
+.me-diple {
+  color: var(--gilt);
+  font-size: 1.05em;
+}
+.me-diple::before { content: "\203A\A0"; }
+
+/* ℭ Capitulum opener — preceding a chapter heading for the Fraktur-C mark */
+.me-capitulum::before {
+  content: "\212D\A0";
+  font-family: var(--font-display);
+  color: var(--accent);
+  font-size: 1.2em;
+}
+
+/* ℓ Lege — “read this!” attention mark */
+.me-lege {
+  display: inline;
+}
+.me-lege::before {
+  content: "\2113\A0";
+  color: var(--gilt);
+  font-size: 1.05em;
+  font-style: italic;
+}
+
+/* △ Trigon — triangular attention / notable passage */
+.me-trigon::before {
+  content: "\25B3\A0";
+  color: var(--gilt);
+  font-size: 0.9em;
+}
+
+/* ✱ Chresimon — “useful / notable passage” */
+.me-chresimon::before {
+  content: "\2731\A0";
+  color: var(--gilt);
+  font-size: 0.95em;
+}
+
+/* ÷ Obelus — marks doubtful, spurious, or contested text */
+.me-obelus {
+  display: inline;
+}
+.me-obelus::before {
+  content: "\00F7\A0";
+  color: var(--ink-3);
+  font-size: 1em;
+}
+
+/* ✶ Asteriscus — marks a notable or restored passage */
+.me-asteriscus {
+  display: inline;
+}
+.me-asteriscus::before {
+  content: "\2736\A0";
+  color: var(--gilt);
+  font-size: 1em;
+}
+
+/* ℞ Require — marks text needing correction */
+.me-require::before {
+  content: "\211E\A0";
+  color: var(--accent);
+  font-size: 0.95em;
+}
+
+/* θ Theta — marks condemned / deleted passage */
+.me-theta {
+  font-size: 0.9em;
+  color: var(--ink-3);
+}
+.me-theta::before { content: "\03B8\A0"; }
+
+/* ⸴ Positura — end-of-excerpt marker */
+.me-positura::after {
+  content: "\A0\2E34";
+  color: var(--gilt);
+  font-size: 0.9em;
+}
+
+/* ⁚ Distigme — double-dot variant ending / paragraph close */
+.me-distigme::after {
+  content: "\A0\205A";
+  color: var(--ink-3);
+  font-size: 0.85em;
+}
+
+/* DM Dignum memoriae — “worthy of memory” block stamp */
+.me-dignum {
+  display: inline-flex; align-items: baseline; gap: .18em;
+  font-family: var(--font-sc); letter-spacing: .12em; font-size: .82em;
+  color: var(--gilt); text-transform: uppercase;
+}
+.me-dignum::before { content: "DM\A0"; }
+
+/* ─ Footnote list ─ */
+.me-footnotes {
+  margin: var(--space-6) 0 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-hair);
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.me-footnotes li { display: flex; gap: var(--space-2); }
+.me-footnotes li::before {
+  content: "\2020";
+  color: var(--accent);
+  flex: none;
+}
+.me-footnotes li:nth-child(even)::before { content: "\2021"; }
+
+/* ─ Ligature specimen helper (display only) ─ */
+.me-liga { font-feature-settings: var(--font-features-display); }
+
+/* ── styles.css ── */
+
+/* ── components.css ── */
+/* ============================================================
+   The Märchen Engine — Component styles
+   Class-based styling for the React primitives. Tokens only.
+   Shipped via styles.css so @dsCard / consumer pages get them.
+   ============================================================ */
+
+/* ---------------- Button ---------------- */
+.me-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  font-family: var(--font-sans); font-weight: var(--weight-bold);
+  letter-spacing: 0.02em; line-height: 1; cursor: pointer;
+  border: var(--bw-rule) solid transparent; border-radius: var(--radius-2);
+  padding: 0.7em 1.15em; font-size: var(--text-sm);
+  transition: background var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out),
+              border-color var(--dur-2) var(--ease-out), transform var(--dur-1) var(--ease-out),
+              box-shadow var(--dur-2) var(--ease-out);
+  text-decoration: none; -webkit-user-select: none; user-select: none;
+}
+.me-btn:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.me-btn:active { transform: translateY(1px); }
+.me-btn[disabled], .me-btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; transform: none; }
+.me-btn--sm { font-size: var(--text-xs); padding: 0.55em 0.85em; }
+.me-btn--lg { font-size: var(--text-base); padding: 0.8em 1.5em; }
+
+/* solid — oxblood seal */
+.me-btn--solid { background: var(--accent); color: var(--text-on-accent);
+  box-shadow: var(--shadow-2), inset 0 1px 0 rgba(255,255,255,0.12); border-color: var(--blood-600); }
+.me-btn--solid:hover { background: var(--accent-hover); }
+/* gilt — brass outline, the formal action */
+.me-btn--gilt { background: transparent; color: var(--brass-700); border-color: var(--gilt); }
+.me-btn--gilt:hover { background: color-mix(in oklab, var(--gilt) 16%, transparent); color: var(--brass-600); }
+[data-mode="dark"] .me-btn--gilt,
+[data-theme="dark"] .me-btn--gilt { color: var(--brass-200); }
+/* herb — secondary, naturalist green */
+.me-btn--herb { background: var(--herb-deep); color: var(--paper-0); border-color: var(--moss-900); box-shadow: var(--shadow-1); }
+.me-btn--herb:hover { background: var(--moss-600); }
+/* ghost — quiet ink */
+.me-btn--ghost { background: transparent; color: var(--text-body); border-color: var(--border-hair); }
+.me-btn--ghost:hover { background: color-mix(in oklab, var(--text-body) 10%, transparent); border-color: var(--border-strong); }
+/* quiet — text only */
+.me-btn--quiet { background: transparent; color: var(--text-muted); border-color: transparent; padding-left: 0.4em; padding-right: 0.4em; }
+.me-btn--quiet:hover { color: var(--accent); }
+
+.me-icon-btn { width: 2.4em; height: 2.4em; padding: 0; border-radius: var(--radius-2); }
+.me-icon-btn.me-btn--sm { width: 2em; height: 2em; }
+.me-icon-btn.me-btn--lg { width: 2.9em; height: 2.9em; }
+
+/* ---------------- Badge / Tag / Seal ---------------- */
+.me-badge {
+  display: inline-flex; align-items: center; gap: 0.35em;
+  font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.1em;
+  font-size: var(--text-2xs); font-weight: var(--weight-bold); line-height: 1;
+  padding: 0.38em 0.66em; border-radius: var(--radius-1);
+  border: 1px solid currentColor; color: var(--text-muted);
+}
+.me-badge--solid { border-color: transparent; }
+.me-badge--omen  { color: var(--status-omen-text); }
+.me-badge--omen.me-badge--solid  { background: var(--status-omen); color: var(--paper-0); }
+.me-badge--ward  { color: var(--status-ward-text); }
+.me-badge--ward.me-badge--solid  { background: var(--status-ward); color: var(--paper-0); }
+.me-badge--augur { color: var(--status-augur-text); }
+.me-badge--augur.me-badge--solid { background: var(--brass-700); color: var(--paper-0); }
+.me-badge--rumor { color: var(--status-rumor-text); }
+.me-badge--rumor.me-badge--solid { background: var(--status-rumor); color: var(--umbra-0); }
+.me-badge--gilt  { color: var(--gilt-text); border-color: var(--gilt); }
+/* Solid-badge legibility on dusk: ward/augur fills become light (-400) in dark
+   mode, so their text flips to dark ink for AA (cream would fail ~2:1). */
+[data-mode="dark"] .me-badge--ward.me-badge--solid,
+[data-theme="dark"] .me-badge--ward.me-badge--solid  { color: var(--umbra-0); }
+[data-mode="dark"] .me-badge--augur.me-badge--solid,
+[data-theme="dark"] .me-badge--augur.me-badge--solid { background: var(--status-augur); color: var(--umbra-0); }
+
+/* ---------------- Card / Plate ---------------- */
+.me-card {
+  background: var(--surface-card); color: var(--text-body);
+  border: 1px solid var(--border-hair); border-radius: var(--radius-card);
+  box-shadow: var(--shadow-2); padding: var(--pad-card); position: relative;
+}
+.me-card--plate { padding: var(--space-4); }
+.me-card--plate::after {
+  content: ""; position: absolute; inset: 6px; pointer-events: none;
+  border: 1px solid var(--gilt-quiet); opacity: 0.5; border-radius: 1px;
+}
+.me-card--inset { background: var(--surface-inset); box-shadow: var(--shadow-inset); }
+.me-card--raised { box-shadow: var(--shadow-3); }
+.me-card__title { font-family: var(--font-serif); font-weight: var(--weight-black);
+  font-size: var(--text-lg); color: var(--text-strong); margin: 0 0 var(--space-2); }
+.me-card__eyebrow { font-family: var(--font-sc); text-transform: uppercase;
+  letter-spacing: var(--tracking-wider); font-size: var(--text-2xs); color: var(--gilt-text); margin: 0 0 var(--space-1); }
+
+/* ---------------- Callout / Aside ---------------- */
+.me-callout {
+  display: grid; grid-template-columns: auto 1fr; gap: var(--space-3);
+  border-left: var(--bw-frame) solid var(--gilt);
+  background: color-mix(in oklab, var(--brass-500) 8%, var(--surface-raised));
+  padding: var(--space-4) var(--space-5); border-radius: 0 var(--radius-2) var(--radius-2) 0;
+  font-size: var(--text-sm);
+}
+.me-callout__icon { color: var(--gilt-text); font-size: 1.3em; line-height: 1.2; }
+.me-callout__title { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: var(--text-xs); font-weight: var(--weight-bold); margin: 0 0 var(--space-1); color: var(--text-strong); }
+.me-callout__body { margin: 0; color: var(--text-body); }
+.me-callout__body > :last-child { margin-bottom: 0; }
+.me-callout--omen  { border-left-color: var(--status-omen);  background: color-mix(in oklab, var(--blood-500) 9%, var(--surface-raised)); }
+.me-callout--omen  .me-callout__icon { color: var(--status-omen-text); }
+.me-callout--ward  { border-left-color: var(--status-ward);  background: color-mix(in oklab, var(--moss-500) 11%, var(--surface-raised)); }
+.me-callout--ward  .me-callout__icon { color: var(--status-ward-text); }
+.me-callout--rumor { border-left-color: var(--status-rumor); background: color-mix(in oklab, var(--glacier) 10%, var(--surface-raised)); }
+.me-callout--rumor .me-callout__icon { color: var(--status-rumor-text); }
+
+/* ---------------- Form controls ---------------- */
+.me-field { display: flex; flex-direction: column; gap: var(--space-2); }
+.me-label { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: var(--text-xs); font-weight: var(--weight-medium); color: var(--text-muted); }
+.me-input, .me-select, .me-textarea {
+  font-family: var(--font-serif); font-size: var(--text-base); color: var(--text-strong);
+  background: var(--surface-raised); border: var(--bw-rule) solid var(--border-hair);
+  border-radius: var(--radius-2); padding: 0.55em 0.7em; width: 100%;
+  box-shadow: var(--shadow-inset); transition: border-color var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out);
+}
+.me-textarea { line-height: var(--leading-snug); resize: vertical; }
+.me-input::placeholder, .me-textarea::placeholder { color: var(--text-faint); font-style: italic; }
+.me-input:focus, .me-select:focus, .me-textarea:focus {
+  outline: none; border-color: var(--gilt); box-shadow: var(--shadow-inset), 0 0 0 2px var(--ring); }
+.me-input:disabled, .me-select:disabled { opacity: 0.5; cursor: not-allowed; }
+.me-select { -webkit-appearance: none; appearance: none; padding-right: 2em;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-faint) 50%), linear-gradient(135deg, var(--text-faint) 50%, transparent 50%);
+  background-position: calc(100% - 1em) 55%, calc(100% - 0.7em) 55%; background-size: 0.32em 0.32em, 0.32em 0.32em; background-repeat: no-repeat; }
+.me-hint { font-family: var(--font-sans); font-size: var(--text-xs); color: var(--text-faint); }
+/* Error vocabulary — set aria-invalid="true" on the control, pair with .me-hint--error */
+.me-input[aria-invalid="true"], .me-select[aria-invalid="true"], .me-textarea[aria-invalid="true"] {
+  border-color: var(--status-omen); }
+.me-input[aria-invalid="true"]:focus, .me-select[aria-invalid="true"]:focus, .me-textarea[aria-invalid="true"]:focus {
+  border-color: var(--status-omen);
+  box-shadow: var(--shadow-inset), 0 0 0 2px color-mix(in oklab, var(--status-omen) 40%, transparent); }
+.me-hint--error { color: var(--status-omen-text); font-style: italic; }
+.me-label__req { color: var(--status-omen-text); margin-left: 0.25em; }
+
+/* checkbox & radio & switch */
+.me-check { display: inline-flex; align-items: center; gap: var(--space-2); cursor: pointer; font-size: var(--text-sm); color: var(--text-body); }
+.me-check input { position: absolute; opacity: 0; width: 0; height: 0; }
+.me-check__box { width: 1.15em; height: 1.15em; border: var(--bw-rule) solid var(--border-strong);
+  border-radius: var(--radius-1); background: var(--surface-raised); display: grid; place-items: center;
+  box-shadow: var(--shadow-inset); transition: background var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out); color: var(--paper-0); }
+.me-check__box--radio { border-radius: 999px; }
+.me-check input:checked + .me-check__box { background: var(--accent); border-color: var(--blood-600); }
+.me-check input:focus-visible + .me-check__box { outline: 2px solid var(--ring); outline-offset: 2px; }
+.me-check__mark { width: 0.7em; height: 0.7em; }
+.me-check__dot { width: 0.5em; height: 0.5em; border-radius: 999px; background: var(--paper-0); transform: scale(0); transition: transform var(--dur-1) var(--ease-out); }
+.me-check input:checked + .me-check__box .me-check__dot { transform: scale(1); }
+
+.me-switch { display: inline-flex; align-items: center; gap: var(--space-2); cursor: pointer; }
+.me-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.me-switch__track { width: 2.6em; height: 1.45em; border-radius: 999px; background: var(--surface-inset);
+  border: 1px solid var(--border-hair); box-shadow: var(--shadow-inset); position: relative; transition: background var(--dur-2) var(--ease-out); }
+.me-switch__thumb { position: absolute; top: 50%; left: 0.18em; width: 1.05em; height: 1.05em; border-radius: 999px;
+  background: var(--paper-0); box-shadow: var(--shadow-2); transform: translateY(-50%); transition: left var(--dur-2) var(--ease-out); }
+.me-switch input:checked + .me-switch__track { background: var(--herb-deep); border-color: var(--moss-900); }
+.me-switch input:checked + .me-switch__track .me-switch__thumb { left: calc(100% - 1.23em); }
+.me-switch__label { font-size: var(--text-sm); color: var(--text-body); }
+.me-check__label  { font-size: var(--text-sm); color: var(--text-body); }
+
+/* Input/Select size modifiers — matching Button's sm/md/lg scale */
+.me-field--sm .me-label { font-size: calc(var(--text-xs) * .9); }
+.me-field--sm .me-input,
+.me-field--sm .me-select { font-size: var(--text-sm); padding: var(--space-1) var(--space-2); }
+.me-field--lg .me-input,
+.me-field--lg .me-select { font-size: var(--text-lg); padding: var(--space-3) var(--space-4); }
+
+/* ---------------- Tabs ---------------- */
+.me-tabs { display: flex; gap: var(--space-1); border-bottom: 1px solid var(--border-hair); }
+.me-tab { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: var(--text-xs); font-weight: var(--weight-medium); color: var(--text-muted);
+  background: none; border: 0; padding: 0.7em 0.9em; cursor: pointer; position: relative; transition: color var(--dur-1) var(--ease-out); }
+.me-tab:hover { color: var(--text-strong); }
+.me-tab[aria-selected="true"] { color: var(--accent); }
+.me-tab[aria-selected="true"]::after { content: ""; position: absolute; left: 0.6em; right: 0.6em; bottom: -1px; height: 2px; background: var(--accent); }
+
+/* ============================================================
+   Track — the canonical score bar (SINGLE SOURCE OF TRUTH).
+   Consumed by Track.jsx (React), SkillField, the character sheet,
+   and the Aspects brand card. Hue comes from --track-c (an aspect
+   color); the negative fill is a muted blend of that hue into the
+   sunken surface so polarity reads at a glance. Do NOT re-implement
+   this bar anywhere — render .me-track markup (or mount <Track>).
+   Two shapes:
+     • .me-track            diverging −N…+N with a centre axis
+     • .me-track--linear    0…N run, blank at 0, optional +overflow
+   ============================================================ */
+.me-track { display: flex; align-items: stretch; height: 9px; width: 100%; }
+.me-track__half { display: flex; gap: 2px; flex: 1; }
+.me-track__half--pos { justify-content: flex-start; }
+.me-track__half--neg { justify-content: flex-end; }
+.me-track__axis { width: 1.5px; background: var(--border-strong); margin: 0 3px; border-radius: 1px; flex: none; align-self: stretch; }
+.me-track__axis--zero { background: var(--text-faint); width: 3px; height: 3px; margin: 0 3px; border-radius: 50%; align-self: center; }
+.me-track__seg { flex: 1; max-width: 13px; border-radius: 1.5px; background: transparent; box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--border-strong) 45%, transparent); }
+.me-track__seg--on { background: var(--track-c, var(--accent)); box-shadow: none; }
+.me-track__seg--on-neg { background: color-mix(in oklab, var(--track-c, var(--accent)) 42%, var(--surface-sunken)); box-shadow: none; }
+.me-track--linear { gap: 1.5px; }
+.me-track--linear .me-track__seg { max-width: none; }
+.me-track__overflow { font-family: var(--font-sans); font-size: 9px; font-weight: 700; color: var(--track-c, var(--accent)); margin-left: 3px; line-height: 1; align-self: center; }
+
+/* ─ SkillField — 4-column Knowledge Area grid ─ */
+.me-skillfield {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  border-radius: var(--radius-card); overflow: hidden;
+  border: 1px solid var(--border-hair); box-shadow: var(--shadow-2);
+  background: var(--surface-card);
+}
+.me-sf-col { display: flex; flex-direction: column; border-right: 1px solid var(--border-hair); }
+.me-sf-col:last-child { border-right: none; }
+.me-sf-col__head {
+  display: flex; align-items: center; gap: 9px; padding: 12px 14px 10px;
+  border-bottom: 3px solid var(--sf-c);
+  background: color-mix(in oklab, var(--sf-c) 9%, var(--surface-card));
+}
+.me-sf-col__glyph { font-size: 21px; line-height: 1; font-variant-emoji: text; }
+.me-sf-col__name { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .12em; font-size: 11px; font-weight: 700; color: var(--text-strong); }
+.me-sf-col__body { display: flex; flex-direction: column; flex: 1; padding: 4px 0; }
+.me-sf-char { padding: 4px 0 3px; }
+.me-sf-char + .me-sf-char { border-top: 1px solid var(--border-hair); }
+.me-sf-char__head { display: flex; align-items: baseline; justify-content: space-between; font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .09em; font-size: 9.5px; color: var(--sf-ink); padding: 4px 13px; opacity: .8; }
+.me-sf-char__name { flex: 1; }
+.me-sf-char__score { font-family: var(--font-sans); font-weight: 800; font-size: 11px; letter-spacing: 0; opacity: 1; }
+.me-sf-char__score[data-sign="pos"] { color: var(--sf-ink); }
+.me-sf-char__score[data-sign="neg"] { color: var(--text-faint); opacity: 1; }
+/* Aspect score in column header */
+.me-sf-col__aspect-score { font-family: var(--font-sans); font-variant-numeric: tabular-nums; font-weight: 800; font-size: 13px; margin-left: auto; flex: none; color: var(--text-disabled); }
+.me-sf-col__aspect-score[data-sign="pos"] { color: var(--sf-ink); }
+.me-sf-col__aspect-score[data-sign="neg"] { color: var(--text-faint); }
+.me-sf-skill { display: grid; grid-template-columns: 1fr 76px 22px; align-items: center; gap: 5px; padding: 4px 13px; min-height: 27px; transition: background var(--dur-1); }
+.me-sf-skill:hover { background: color-mix(in oklab, var(--text-body) 8%, transparent); }
+.me-skillfield--editable .me-sf-skill { grid-template-columns: 1fr 68px 22px 44px; }
+.me-sf-skill__name { font-family: var(--font-serif); font-size: 12px; color: var(--text-body); line-height: 1.25; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Selectable skill name (roll target) — neutralises button chrome, keeps __name type */
+.me-sf-skill__pick { background: transparent; border: 0; padding: 0; margin: 0; cursor: pointer; text-align: left; max-width: 100%; }
+.me-sf-skill__pick:hover { color: var(--sf-ink); }
+.me-sf-skill__pick:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; border-radius: 2px; }
+.me-sf-skill[data-sel] { background: color-mix(in oklab, var(--sf-c) 16%, transparent); border-radius: var(--radius-1); box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--sf-c) 50%, transparent); }
+.me-sf-skill[data-sel] .me-sf-skill__name { color: var(--sf-ink); font-weight: 700; }
+/* SkillField uses the canonical .me-track (linear, 7px) — see Track block above. */
+.me-sf-skill__val { font-family: var(--font-sans); font-variant-numeric: tabular-nums; font-size: 11px; font-weight: 700; text-align: right; color: var(--text-disabled); }
+.me-sf-skill__val[data-sign="pos"] { color: var(--sf-ink); }
+.me-sf-skill__val[data-sign="neg"] { font-family: var(--font-sans); font-size: 11px; color: var(--text-faint); }
+/* level legend */
+.me-sf-legend { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 7px 14px 9px; border-top: 1px solid var(--border-hair); background: var(--surface-sunken); }
+.me-sf-legend__item { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .08em; font-size: 9px; color: var(--text-faint); display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+.me-sf-legend__zero { color: var(--text-disabled); }
+.me-sf-legend__n { font-family: var(--font-sans); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 10px; color: var(--text-muted); }
+.me-sf-skill__step { display: flex; gap: 3px; }
+.me-sf-btn { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 4px; cursor: pointer; border: 1px solid var(--border-hair); background: var(--surface-raised); color: var(--text-muted); font-family: var(--font-sans); font-size: 13px; line-height: 1; padding: 0; transition: background var(--dur-1), border-color var(--dur-1), color var(--dur-1); }
+.me-sf-btn:hover { background: var(--surface-sunken); border-color: var(--border-strong); color: var(--text-strong); }
+
+/* ---------------- StatBlock (creature stats) ---------------- */
+.me-stat { background: var(--surface-card); border: 1px solid var(--border-hair); border-top: var(--bw-frame) solid var(--accent);
+  border-radius: var(--radius-2); box-shadow: var(--shadow-3); padding: var(--space-5); position: relative; }
+.me-stat__name { font-family: var(--font-display); font-size: var(--text-xl); color: var(--text-strong); margin: 0; line-height: 1.05; }
+.me-stat__sub { font-family: var(--font-serif); font-style: italic; font-size: var(--text-sm); color: var(--text-muted); margin: 0 0 var(--space-3); }
+.me-stat__rule { height: 1px; background: var(--gilt); opacity: 0.6; margin: var(--space-3) 0; }
+.me-stat__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3) var(--space-4); }
+.me-stat__cell { text-align: center; }
+.me-stat__cell .k { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.08em; font-size: var(--text-2xs); color: var(--text-faint); display: block; }
+.me-stat__cell .v { font-family: var(--font-serif); font-weight: var(--weight-bold); font-size: var(--text-md); color: var(--text-strong); font-variant-numeric: tabular-nums; }
+.me-stat__line { font-size: var(--text-sm); margin: var(--space-2) 0 0; }
+.me-stat__line b { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: 0.06em; font-size: var(--text-xs); color: var(--accent); margin-right: 0.4em; }
+
+/* ---------------- Divider (fleuron) ---------------- */
+.me-divider { display: flex; align-items: center; gap: var(--space-4); color: var(--gilt); margin: var(--space-5) 0; }
+.me-divider::before, .me-divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gilt-quiet), transparent); }
+.me-divider__mark { font-size: 1.1em; line-height: 1; }
+
+
+/* ============================================================
+   Navigation instruments — Outline, Breadcrumb, ThumbTabs, Ribbon
+   (see system/shelf.js for the persistence store)
+   ============================================================ */
+
+.me-vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Outline — the in-document table of contents */
+.me-outline { display: flex; flex-direction: column; gap: 18px; }
+.me-outline__title { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .16em; font-size: 11px; color: var(--text-faint); }
+.me-outline__grp { display: flex; flex-direction: column; gap: 2px; }
+.me-outline__part { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .12em; font-size: 11px; color: var(--gilt-text); margin-bottom: 5px; }
+.me-outline__item { display: block; width: 100%; text-align: left; background: none; border: 0; border-left: 2px solid transparent; cursor: pointer; font-family: var(--font-serif); font-size: 15px; line-height: 1.35; color: var(--text-muted); padding: 5px 10px; border-radius: var(--radius-2); }
+.me-outline__item:hover { color: var(--text-strong); background: color-mix(in oklab, var(--gilt) 12%, transparent); }
+.me-outline__item[data-active] { border-left-color: var(--accent); color: var(--accent); font-weight: 700; }
+.me-outline__item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Breadcrumb — Book · Chapter · Section */
+.me-crumb__list { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.me-crumb__li { display: flex; align-items: baseline; gap: 8px; }
+.me-crumb__link, .me-crumb__here { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .14em; font-size: 11px; }
+.me-crumb__link { background: none; border: 0; padding: 0; cursor: pointer; color: var(--text-faint); }
+.me-crumb__link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.me-crumb__link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.me-crumb__here { color: var(--gilt-text); }
+.me-crumb__li:last-child .me-crumb__here { color: var(--text-strong); }
+.me-crumb__sep { color: var(--gilt); }
+
+/* ThumbTabs — bible-style edge tabs, between documents */
+.me-thumbtabs { display: flex; flex-direction: column; gap: 8px; z-index: 90; }
+.me-thumbtabs[data-attach="viewport"] { position: fixed; top: 132px; }
+.me-thumbtabs[data-attach="frame"] { position: absolute; top: 54px; }
+.me-thumbtabs[data-side="right"] { right: 0; align-items: flex-end; }
+.me-thumbtabs[data-side="left"] { left: 0; align-items: flex-start; }
+.me-thumbtab { display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; min-height: 76px; width: 30px; padding: 12px 5px; border: 1px solid rgba(20, 12, 4, .28); border-right: 0; border-radius: 7px 0 0 7px; cursor: pointer; text-decoration: none; font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .12em; font-size: 11px; box-shadow: -2px 2px 6px rgba(0, 0, 0, .25); transition: width .15s ease, filter .15s ease; }
+.me-thumbtabs[data-side="left"] .me-thumbtab { writing-mode: vertical-lr; border-radius: 0 7px 7px 0; border: 1px solid rgba(20, 12, 4, .28); border-left: 0; box-shadow: 2px 2px 6px rgba(0, 0, 0, .25); }
+.me-thumbtab[data-tone="blood"] { background: var(--blood-500); color: #f6efe0; }
+.me-thumbtab[data-tone="brass"] { background: var(--brass-700); color: #f6efe0; }
+.me-thumbtab[data-tone="moss"] { background: var(--moss-500); color: #f6efe0; }
+.me-thumbtab:hover { width: 37px; filter: brightness(1.1); }
+.me-thumbtab[data-active] { width: 39px; font-weight: 700; box-shadow: -3px 3px 9px rgba(0, 0, 0, .32); }
+.me-thumbtab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Ribbon — the bookmark hung from the head of the page */
+.me-ribbon-set { z-index: 95; display: flex; flex-direction: column; align-items: center; gap: 6px; width: 30px; }
+.me-ribbon-set[data-attach="viewport"] { position: fixed; top: 0; }
+.me-ribbon-set[data-attach="frame"] { position: absolute; top: 0; }
+.me-ribbon { position: relative; width: 26px; height: 36px; border: 0; cursor: pointer; opacity: .5; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 10px), 0 100%); box-shadow: 0 2px 5px rgba(0, 0, 0, .3); transition: height .18s ease, opacity .18s ease; }
+.me-ribbon[data-tone="blood"] { background: linear-gradient(180deg, var(--blood-400), var(--blood-500)); }
+.me-ribbon[data-tone="brass"] { background: linear-gradient(180deg, var(--brass-300), var(--brass-700)); }
+.me-ribbon[data-tone="moss"] { background: linear-gradient(180deg, var(--moss-400), var(--moss-500)); }
+.me-ribbon:hover { opacity: .85; height: 46px; }
+.me-ribbon[data-marked] { opacity: 1; height: 64px; }
+.me-ribbon:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.me-ribbon__pin { position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--gilt); opacity: 0; transition: opacity .18s ease; }
+.me-ribbon[data-marked] .me-ribbon__pin { opacity: 1; }
+.me-ribbon-count { min-width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--gilt); background: var(--surface-raised); color: var(--gilt-text); font-family: var(--font-sc); font-size: 11px; cursor: pointer; }
+.me-ribbon-count:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.me-ribbon-panel { position: absolute; top: 76px; right: 0; width: 238px; background: var(--surface-raised); border: 1px solid var(--border-hair); border-radius: var(--radius-3); box-shadow: 0 10px 26px rgba(0, 0, 0, .28); padding: 12px 12px 10px; }
+.me-ribbon-panel__k { font-family: var(--font-sc); text-transform: uppercase; letter-spacing: .12em; font-size: 10.5px; color: var(--gilt-text); margin-bottom: 8px; }
+.me-ribbon-panel__empty { font-size: 12.5px; font-style: italic; color: var(--text-faint); margin: 0; line-height: 1.5; }
+.me-ribbon-row { display: flex; align-items: center; gap: 6px; }
+.me-ribbon-row__go { flex: 1; text-align: left; background: none; border: 0; cursor: pointer; font-family: var(--font-serif); font-size: 13.5px; color: var(--text-body); padding: 5px 4px; border-radius: var(--radius-2); }
+.me-ribbon-row__go:hover { color: var(--accent); background: color-mix(in oklab, var(--gilt) 12%, transparent); }
+.me-ribbon-row__go:focus-visible, .me-ribbon-row__x:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.me-ribbon-row__x { background: none; border: 0; cursor: pointer; color: var(--text-faint); font-size: 15px; line-height: 1; padding: 4px 6px; border-radius: var(--radius-2); }
+.me-ribbon-row__x:hover { color: var(--accent); }
+
+/* ── styles.css ── */
+
+
+/* ── tokens/fonts.css ── */
+
+/* ── tokens/colors.css ── */
+
+/* ── tokens/typography.css ── */
+
+/* ── tokens/spacing.css ── */
+
+/* ── tokens/base.css ── */
+
+/* ── tokens/aspects.css ── */
+
+/* ── tokens/annotations.css ── */
+
+/* ── components.css ── */
+
