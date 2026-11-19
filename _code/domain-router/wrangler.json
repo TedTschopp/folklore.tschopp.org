@@ -25,6 +25,14 @@
     {
       "pattern": "folklore.tschopp.org",
       "custom_domain": true
+    },
+    {
+      "pattern": "https://tedt.org/folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "https://tedt.org/folklore",
+      "zone_name": "tedt.org"
     }
   ]
 }

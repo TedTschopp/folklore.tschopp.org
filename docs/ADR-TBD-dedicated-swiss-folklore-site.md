@@ -115,8 +115,8 @@ Codex prepares and verifies implementation. No additional reviewer approval is a
 
 | ID | Question | Owner | Needed by | Status |
 | --- | --- | --- | --- | --- |
-| Q-01 | Does the new hostname resolve and have valid HTTPS? | Codex | Before cutover | Verify during release |
-| Q-02 | Is the additional domain recognized by the existing Webmention receiver? | Codex | Before cutover | Verify endpoint discovery; no real test messages |
+| Q-01 | Does the new hostname resolve and have valid HTTPS? | Codex | Before cutover | Verified HTTPS and all 203 pages |
+| Q-02 | Is the additional domain recognized by the existing Webmention receiver? | Codex | Before cutover | Verified receiver site 8391 after owner passkey sign-in; mocked submissions only |
 | Q-03 | What is the final tracked ADR index? | Ted Tschopp | Documentation governance | TBD |
 
 ## Supporting Materials
@@ -126,3 +126,7 @@ Codex prepares and verifies implementation. No additional reviewer approval is a
 - [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [Webmention receiver](https://github.com/aaronpk/webmention.io)
 - Publication-only repository README and migration route inventory accompany the implementation.
+
+The public folklore interface uses Märchen Engine Design v2, with parchment and
+dusk, self-hosted OFL fonts and semantic colors. Its public reading layouts remain
+responsive. This change does not alter the separate TTRPG site.

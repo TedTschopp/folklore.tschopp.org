@@ -1,0 +1,42 @@
+// Read-only live verification. No Webmentions or analytics events are sent.
+import { chromium, expect } from '@playwright/test';
+import { mkdir } from 'node:fs/promises';
+const output = process.env.FOLKLORE_PREVIEW_DIR || 'test-results';
+await mkdir(output, { recursive: true });
+const browser = await chromium.launch({ args: process.env.FOLKLORE_IPV4 ? [`--host-resolver-rules=MAP folklore.tschopp.org ${process.env.FOLKLORE_IPV4}`] : [] });
+try {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, colorScheme: 'light' });
+  await context.route(/https:\/\/(?:[^/]*google-analytics\.com|www\.googletagmanager\.com|[^/]*clarity\.ms|static\.cloudflareinsights\.com)\//, route => route.abort());
+  const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('https://folklore.tschopp.org/', { waitUntil: 'networkidle' });
+  await expect(page.locator('h1')).toHaveText('Swiss Folklore Collection');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('html')).toHaveAttribute('data-mode', 'light');
+  await page.screenshot({ path: output + '/folklore-live-parchment.png' });
+  await page.locator('[data-folklore-theme]').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page.screenshot({ path: output + '/folklore-live-dusk.png' });
+  await page.goto('https://folklore.tschopp.org/search/', { waitUntil: 'networkidle' });
+  await page.getByRole('searchbox', { name: 'Search this site' }).fill('Black Madonna');
+  const result = page.locator('pagefind-results').getByRole('link', { name: /Springs of the Schafmatt/ });
+  await expect(result).toBeVisible();
+  await result.click();
+  await expect(page.locator('h1')).toHaveText('The Springs of the Schafmatt');
+  await expect(page.locator('input[name="target"]')).toHaveValue('https://folklore.tschopp.org/stories/the-springs-of-the-schafmatt/');
+  await page.locator('[data-folklore-theme]').click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole('link', { name: 'Note 1 for Schafmatt' }).focus();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/#reader-note-1$/);
+  await expect(page.locator('#reader-note-1')).toContainText('Jura pass');
+  await page.locator('#reader-note-1').getByRole('link', { name: 'Return to note 1 in the translation' }).click();
+  await expect(page).toHaveURL(/#reader-note-ref-1$/);
+  await expect(page.getByRole('link', { name: 'Note 1 for Schafmatt' })).toBeFocused();
+  await page.goto('https://folklore.tschopp.org/stories/the-springs-of-the-schafmatt/', { waitUntil: 'networkidle' });
+  await page.screenshot({ path: output + '/folklore-live-mobile.png' });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect(errors).toEqual([]);
+  console.log('Live HTTPS browser verified parchment/dusk, English/German/note search, footnote navigation, canonical response target and mobile reading.');
+} finally { await browser.close(); }
