@@ -123,8 +123,10 @@ sitemap_stories.each do |entry|
   unless article.css('#original [lang] p').map(&:text) == edition.fetch('original_paragraphs')
     abort "Reader notes changed the approved original text at #{url}"
   end
-  unless notes.any? && article.css('#reader-notes ol > li').size == notes.size && article.at_css('.folklore-story-summary')&.text == guide.fetch('summary')
-    abort "Missing story summary or reader notes at #{url}"
+  summary = article.at_css('.folklore-story-summary')
+  valid_summary = guide['summary_kind'] == 'opening' ? summary.nil? : summary&.text == guide.fetch('summary')
+  unless notes.any? && article.css('#reader-notes ol > li').size == notes.size && valid_summary
+    abort "Missing reader notes or incorrect story introduction at #{url}"
   end
   sections = article.css('.folklore-reading-nav, #english, #reader-notes, #original, #story-context')
                     .map { |node| node['id'] || 'reading-nav' }

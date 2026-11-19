@@ -195,7 +195,7 @@ module IndieWeb
         # bounded and below the API's maximum of 50 targets per request.
         batch = []
         @manifest.aliases.keys.sort.each do |target|
-          if batch.length >= 30 || URI.encode_www_form(batch.map { |v| ['target[]', v] }).bytesize + target.bytesize * 3 > 10_000
+          if batch.length >= 50 || URI.encode_www_form(batch.map { |v| ['target[]', v] }).bytesize + target.bytesize * 3 > 10_000
             records.concat(fetch_pages(batch.map { |v| ['target[]', v] }))
             batch = []
           end
@@ -209,6 +209,10 @@ module IndieWeb
     def fetch_pages(parameters, headers = {})
       rows, page = [], 0
       loop do
+        # Thousands of stories still use the same public target API. Pace all
+        # requests, including pagination, and keep every historical alias.
+        @wait.call(2) if @requested_page
+        @requested_page = true
         query = URI.encode_www_form(parameters + [['per-page', '100'], ['page', page.to_s]])
         response = fetch_page(query, headers, page)
         raise RateLimited, response.headers.fetch('retry-after', []).first if response.status == 429

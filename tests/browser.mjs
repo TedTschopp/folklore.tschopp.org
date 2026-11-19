@@ -199,6 +199,8 @@ try {
       const storyNotes = guides.stories[id].notes;
       assert.equal([...html.matchAll(/id="reader-note-ref-(\d+)"/g)].length, storyNotes.filter(note => note.anchor).length, url);
     }
+    await response.dispose();
+    if (redirected) await redirected.dispose();
   }
   const sitemap = await (await tab.request.get(base + '/sitemap.xml')).text();
   for (const story of catalog.stories) assert.ok(sitemap.includes('https://folklore.tschopp.org' + story.url + '</loc>'), story.url);
@@ -207,6 +209,24 @@ try {
 
   await tab.goto(base + '/search/', { waitUntil: 'domcontentloaded' });
   const expandedSearch = tab.getByRole('searchbox', { name: 'Search this site' });
+  const newStory = catalog.stories.find(story => story.title === 'Up the Chimney and Never a Bump');
+  if (newStory) {
+    await expandedSearch.fill(newStory.title);
+    await expect(tab.locator('pagefind-results').getByRole('link', { name: newStory.title, exact: true })).toBeVisible({ timeout: 10000 });
+    await tab.goto(base + newStory.url, { waitUntil: 'domcontentloaded' });
+    await expect(tab.getByRole('heading', { level: 1 })).toHaveText(newStory.title);
+    await expect(tab.locator('.folklore-story-summary')).toHaveCount(0);
+    await expect(tab.locator('#reader-notes li')).toHaveCount(guides.stories[newStory.id].notes.length);
+    await checkContrast(tab);
+    assert.equal(await tab.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+    await tab.screenshot({ path: join(screenshots, 'new-story-mobile.png') });
+    const uri1929 = catalog.stories.find(story => !oldIds.has(story.id) && story.year === 1929 && story.author === 'Josef Müller');
+    assert.ok(uri1929, 'A newly verified Uri volume 2 story is present');
+    await tab.goto(base + uri1929.url, { waitUntil: 'domcontentloaded' });
+    await expect(tab.locator('.folklore-credits')).toContainText('vol. 2');
+    await expect(tab.locator('.folklore-credits')).toContainText('1929');
+    await tab.goto(base + '/search/', { waitUntil: 'domcontentloaded' });
+  }
   for (const query of ['The Heavy Child', 'The Giants of Iseltwald', 'The Devil and the Poacher', 'The Noblewoman of Milan']) {
     await expandedSearch.fill(query);
     await expect(tab.locator('pagefind-summary')).toContainText(query, { timeout: 10000 });
@@ -237,6 +257,7 @@ try {
     for (const story of catalog.stories) {
       if (html.includes('href="' + story.url + '"')) browseLinks.push(story.url);
     }
+    await response.dispose();
   }
   assert.deepEqual(browseLinks.sort(), catalog.stories.map(story => story.url).sort());
   await tab.goto(base + '/', { waitUntil: 'domcontentloaded' });
@@ -248,7 +269,7 @@ try {
   assert.ok(await tab.locator('h1').evaluate(node => getComputedStyle(node).fontFamily.includes('IM Fell English')));
   assert.ok(await tab.locator('#english p').first().evaluate(node => getComputedStyle(node).fontFamily.includes('Alegreya')));
   assert.deepEqual(await tab.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(node => { JSON.parse(node.textContent); return true; })), [true]);
-  console.log('Verified all five browse pages, shared sources, short entries, comparison-pair search, and mobile contrast.');
+  console.log('Verified all ' + catalog.page_count + ' browse pages, shared sources, short entries, comparison-pair search, and mobile contrast.');
 
   console.log('Passed canonical search, reading navigation, footnote return focus, discussion and mocked Webmention submission, mobile and keyboard checks, and ' + checks.length + ' canonical URLs and redirects.');
 } finally {
