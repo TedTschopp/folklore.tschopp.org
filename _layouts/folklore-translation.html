@@ -16,7 +16,7 @@ layout: folklore-shell
       {% include seo/entry-metadata.html %}
       {% include folklore/discussion-links.html %}
     </header>
-    {% if guide %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
+    {% if guide and guide.summary_kind != 'opening' %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
     <div class="e-content">
       {% include folklore/edition-text.html edition=edition %}
     </div>

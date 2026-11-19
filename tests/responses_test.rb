@@ -48,8 +48,30 @@ class FolkloreResponsesTest
     assert_equal 'An approved public reply.', result['by_target'][entry['url']]['replies'][0]['content']
     assert_equal 'https://tedt.org/folklore/stories/old-id/', raw['wm-target']
   end
+
+  def test_large_manifest_queries_every_alias_with_bounded_paced_requests
+    entries = 120.times.map { |n| { 'url' => "https://folklore.tschopp.org/stories/tale-#{n}/", 'aliases' => [], 'outgoing' => false } }
+    large = IndieWeb::Manifest.new('version' => 1, 'entries' => entries)
+    requests, waits = [], []
+    http = Object.new
+    http.define_singleton_method(:request) do |url, **_options|
+      requests << url
+      IndieWeb::Response.new(status: 200, headers: {}, body: '{"children":[]}', url: url)
+    end
+    result = IndieWeb::Mentions.new(large, {}, http: http, wait: ->(seconds) { waits << seconds }).fetch_all
+    targets = requests.flat_map do |url|
+      pairs = URI.decode_www_form(URI(url).query)
+      batch = pairs.select { |key, _| key == 'target[]' }.map(&:last)
+      raise 'Oversized target batch' if batch.size > 50 || URI(url).query.bytesize > 10_100
+      batch
+    end
+    assert_equal [], result
+    assert_equal large.aliases.keys.sort, targets.sort
+    assert_equal targets.uniq, targets
+    assert_equal [2] * (requests.size - 1), waits
+  end
 end
 
 checks = FolkloreResponsesTest.new
 checks.public_methods.grep(/^test_/).each { |name| checks.public_send(name) }
-puts "Response identity and moderation checks passed (3 scenarios)."
+puts "Response identity, moderation and paced bulk refresh checks passed (4 scenarios)."
