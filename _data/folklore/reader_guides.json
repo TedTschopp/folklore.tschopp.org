@@ -16122,6 +16122,11 @@
           "offset": 258,
           "anchor": "Rung Bluet",
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The dialect phrase Mannli machen denotes a hare sitting upright.",
+          "number": 2
         }
       ],
       "places": [
@@ -17867,12 +17872,8 @@
       "summary": "About the Poor Sinner",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The dialect verb pföselet was rendered as snuffles; it can suggest wheezing, fussing, or making an unattractive breathing noise.",
           "number": 1
         }
       ],
@@ -22372,6 +22373,11 @@
           "offset": 204,
           "anchor": "Hörli",
           "number": 3
+        },
+        {
+          "label": "",
+          "text": "Source note: the closing editorial paragraph refers to ‘the preceding two short legends,’ although this JSON source entry contains only the one treasure-digging account.",
+          "number": 4
         }
       ],
       "places": [
@@ -25110,6 +25116,11 @@
           "offset": 55,
           "anchor": "Nachtbuebe",
           "number": 2
+        },
+        {
+          "label": "",
+          "text": "The first occurrence of Tafel appears to be a dialect or transcription error for Tüfel, ‘Devil,’ which the story uses later.",
+          "number": 3
         }
       ],
       "places": [
@@ -26693,6 +26704,11 @@
           "offset": 158,
           "anchor": "Schwefelkies",
           "number": 3
+        },
+        {
+          "label": "",
+          "text": "Historical context: the closing commentary accurately translates the source's anti-Jewish stereotype as a historical claim and explicitly marks it as defamation; it should not be read as factual information about Jewish belief or practice.",
+          "number": 4
         }
       ],
       "places": [
@@ -35433,6 +35449,11 @@
           "offset": 264,
           "anchor": "Maßflasche",
           "number": 3
+        },
+        {
+          "label": "",
+          "text": "The source word fünferlei is unusual in its sentence and may be corrupt; it is rendered conservatively as five of Böhni’s barns rather than assigning an unsupported layout or category to them.",
+          "number": 4
         }
       ],
       "places": [
@@ -38844,6 +38865,11 @@
           "offset": 277,
           "anchor": "Apostützerei",
           "number": 5
+        },
+        {
+          "label": "",
+          "text": "The apparent OCR forms wad and ulmging are read contextually as ward and umging.",
+          "number": 6
         }
       ],
       "places": [
@@ -48708,6 +48734,11 @@
           "offset": 71,
           "anchor": "Mönli",
           "number": 8
+        },
+        {
+          "label": "",
+          "text": "Source uncertainty: the historical source itself breaks off after the capital letter ‘H’ in section c; no missing word or event has been inferred in this translation.",
+          "number": 9
         }
       ],
       "places": [
@@ -57968,12 +57999,8 @@
       "summary": "It is also reported of the Scheibenfluh in Schangnau—called Schibegütsch from 1812 onward—where the Emme rises, that a great hole descends into the same mountain, and that if someone wantonly throws something into it, violent weather results.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The source’s parenthetical attribution beginning with Hans Rudolf Grimm has no closing parenthesis; that incomplete punctuation has been retained rather than silently regularized.",
           "number": 1
         }
       ],
@@ -57999,12 +58026,8 @@
       "summary": "The knight Hans von Wilberg rode out to the Battle of Näfels. His only daughter, Gutta, troubled by dark forebodings, begged him to remain apart from the bloody struggle this one time.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The printed source appears to contain a corrupted word before the final sentence about wine growing above the ruins; the translation follows the clear contextual sense without adding further detail.",
           "number": 1
         }
       ],
@@ -59643,6 +59666,11 @@
           "offset": 80,
           "anchor": "Bistel",
           "number": 3
+        },
+        {
+          "label": "",
+          "text": "The dialect description of the afflicted woman literally says she became ‘backward’ after the bottle was opened; whether this means physically twisted, behaviorally altered, or generally deranged is not specified.",
+          "number": 4
         }
       ],
       "places": [
@@ -70031,6 +70059,11 @@
             "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
           },
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The apparent OCR form Weife is read as Weise.",
+          "number": 2
         }
       ],
       "places": [
@@ -70462,6 +70495,11 @@
           "offset": 235,
           "anchor": "Märchenerzählerinnen",
           "number": 2
+        },
+        {
+          "label": "",
+          "text": "Cultural context: confessions extracted under torture in witch trials are not reliable evidence. The narrative reproduces a historical collector's assumptions about guilt and execution rather than establishing that a woman actually transformed into a bird.",
+          "number": 3
         }
       ],
       "places": [
@@ -77135,12 +77173,8 @@
       "summary": "In the Herrenholz, a strip of woodland above Erlisbach near Aarau, the crying of a child can sometimes be heard by an abandoned bog-iron mine.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The apparent OCR form Baunm is read as Baum.",
           "number": 1
         }
       ],
@@ -82497,6 +82531,11 @@
             "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
           },
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The difficult hour refers to childbirth; Lauigraben was retained as the local ravine name.",
+          "number": 2
         }
       ],
       "places": [
@@ -88117,12 +88156,8 @@
       "summary": "J. Martin Usteri of Zürich relates in his Dichtungen (edition by D.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The phrase meide die Sprünge was rendered as avoid the drops in the mountain-path context; it could also echo the cheese's bounding leaps.",
           "number": 1
         }
       ],
@@ -89243,6 +89278,11 @@
           "offset": 353,
           "anchor": "Eggiwil-Fuhrmann",
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The source uses a preposition that literally reads ‘out of a gigantic green snake,’ although the image appears to be of a rider approaching on one; the translation follows that contextual reading while recording the ambiguity here.",
+          "number": 2
         }
       ],
       "places": [
@@ -96981,6 +97021,11 @@
           "label": "Fraufastenkind",
           "text": "literally a ‘Fraufasten child,’ someone born during the seasonal Fraufasten period and believed to possess second sight; here the girl can see dangerous spirits but is protected by keeping silent for twenty-four hours.",
           "number": 2
+        },
+        {
+          "label": "",
+          "text": "The source title mentions ‘hare’s paws,’ but no hare or paws appear in the surviving story text; the title has been translated without inventing a missing episode.",
+          "number": 3
         }
       ],
       "places": [
@@ -105898,6 +105943,11 @@
           "offset": 6677,
           "anchor": "Haasepfäffer",
           "number": 4
+        },
+        {
+          "label": "",
+          "text": "The dialect source first says the princess carries the hare in a small apron and then uses a different diminutive for the fold or container from which it escapes; the translation preserves the action without forcing a more exact garment identification.",
+          "number": 5
         }
       ],
       "places": [],
@@ -110601,6 +110651,11 @@
           "label": "Hinterrisi-Männli",
           "text": "literally ‘little man of the Hinterrisi’; the local weather spirit whose cries presage snow on the alpine pastures.",
           "number": 4
+        },
+        {
+          "label": "",
+          "text": "The first source passage calls the stony upper pasture Hinterlist, while the title and second passage use Hinterrisi; both forms are preserved because the source does not explain whether Hinterlist is a variant name or a transcription error.",
+          "number": 5
         }
       ],
       "places": [
@@ -112554,12 +112609,8 @@
       "summary": "A man from Kulm was tying bundles of brushwood below the village near the forest.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The source leaves Blas du mir.......! deliberately incomplete; it appears to begin a coarse or contemptuous dismissal, and the ellipsis is preserved.",
           "number": 1
         }
       ],
@@ -124638,6 +124689,11 @@
           "offset": 30,
           "anchor": "Rechner",
           "number": 2
+        },
+        {
+          "label": "",
+          "text": "The oath beim tausend is translated literally as ‘by a thousand’; what is implicitly counted is left unstated in the source.",
+          "number": 3
         }
       ],
       "places": [
@@ -127795,6 +127851,11 @@
             "url": "https://hls-dhs-dss.ch/de/articles/011450/2014-10-16/"
           },
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The source does not identify the ‘holy season’ more precisely, so it is not narrowed to a particular feast in English.",
+          "number": 2
         }
       ],
       "places": [
@@ -134278,6 +134339,11 @@
             "url": "https://www.kloster-einsiedeln.ch/kloster/geschichte/geschichte-der-wallfahrt"
           },
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The apparent source forms Mal and wildrs are read contextually as Einmal and wildes.",
+          "number": 2
         }
       ],
       "places": [
@@ -134489,6 +134555,11 @@
           "offset": 129,
           "anchor": "Sempacherkrieg",
           "number": 2
+        },
+        {
+          "label": "",
+          "text": "Textual note: the source title spells the inhabitants' name ‘Grundoldinger,’ while the narrative consistently gives the hamlet and its people as ‘Gundoldingen’ and ‘Gundoldinger’; both forms have been preserved in their respective fields.",
+          "number": 3
         }
       ],
       "places": [
@@ -139426,12 +139497,8 @@
       "summary": "At night, a man on a white horse is sometimes seen near Forsteck Castle. He rides from the castle, past the red stable, toward the farm.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The source reads steht man, which was interpreted as the apparent OCR error sieht man, meaning a man is seen.",
           "number": 1
         }
       ],
@@ -140583,6 +140650,11 @@
           "label": "Rochelmoore",
           "text": "the Bernese Oberland name used here for a noisy spectral mother sow or the porcine wild host associated with her; the creature's behavior is clear in context, but the name's exact dialect derivation is uncertain.",
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "Content note: this 1910 source transmits an antisemitic Christian legend that collectively casts Jews as Christ-mockers and animalizes their children. The historical wording is translated for documentation and requires context if published; it is not endorsed here.",
+          "number": 2
         }
       ],
       "places": [
@@ -147153,12 +147225,8 @@
       "summary": "At the head of the Fieschertal lies a beautiful plain called Unterberg. Many hundreds of years ago, numerous snakes lived there and spared no living soul.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "OCR/source uncertainty: ‘am Banner den Tod gegessen’ was rendered contextually as ‘ate themselves to death on the man’; ‘Banner’ appears likely to be a corruption of ‘Manne,’ but the source wording is not conclusive.",
           "number": 1
         }
       ],
@@ -153397,6 +153465,11 @@
           "offset": 783,
           "anchor": "Gemschtier",
           "number": 3
+        },
+        {
+          "label": "",
+          "text": "Source-language note: this tale is printed in highly compressed historical Valais dialect. The transformation, the three hunters, and the Milan recognition are clear, but parts of the woman's final explanation are syntactically uncertain and have been rendered conservatively rather than silently embellished.",
+          "number": 4
         }
       ],
       "places": [
@@ -154090,12 +154163,8 @@
       "summary": "There are countless legends that mention the extraordinary physical strength of individual people in the distant past. — Some have already been cited.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The source form Fürstbaum is understood contextually as a regional or archaic form of Firstbaum, the ridge beam of the barn.",
           "number": 1
         }
       ],
@@ -154541,6 +154610,11 @@
           "offset": 762,
           "anchor": "Malchis",
           "number": 6
+        },
+        {
+          "label": "",
+          "text": "Source note: The title translates Schnitter literally as ‘Reaper,’ while the body consistently calls the protagonist Schniderli or Schnider, a little tailor or tailor; the source’s title-body contradiction is preserved rather than silently harmonized.",
+          "number": 7
         }
       ],
       "places": [
@@ -157629,12 +157703,8 @@
       "summary": "Once there was a girl who, for as long as she could remember, had seen her father only in sorrow.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The source bibliography ends with the incomplete word ‘Mit’ (‘With’); the English field preserves that truncation as ‘With’ rather than silently supplying missing material.",
           "number": 1
         }
       ],
@@ -164648,12 +164718,8 @@
       "summary": "That same herdsman who, up on Tamunz, deliberately let a small herd of cattle plunge to its death must carry it up through the Boggries to the very top amid sighs and gasps, and then, with a shuddering laugh, let it roll back down again.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "In the dialect, erfallä luh was interpreted as deliberately letting the cattle fall to their death, and joulä as howling or yodeling.",
           "number": 1
         }
       ],
@@ -169236,6 +169302,11 @@
             "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/ii_what_is_this_sacrament_called.html"
           },
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The source record’s title refers to a werewolf, but its body tells a Christmas rose legend at Mariastein; the mismatch is preserved rather than silently corrected.",
+          "number": 2
         }
       ],
       "places": [
@@ -170716,6 +170787,11 @@
           "offset": 26,
           "anchor": "Berchtelistag",
           "number": 4
+        },
+        {
+          "label": "",
+          "text": "The source does not specify which period it calls the ‘holy season,’ so the wording remains general.",
+          "number": 5
         }
       ],
       "places": [
@@ -172086,6 +172162,11 @@
           "offset": 1063,
           "anchor": "Batzen",
           "number": 1
+        },
+        {
+          "label": "",
+          "text": "The source’s interrupted curse is preserved. Wildjäger in the title denotes the supernatural Wild Huntsman.",
+          "number": 2
         }
       ],
       "places": [
@@ -189050,12 +189131,8 @@
       "summary": "On a steep slope, far back in a ravine, there was once a little house; people called it the Crow’s Nest.",
       "notes": [
         {
-          "label": "About this telling",
-          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
-          "source": {
-            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
-            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
-          },
+          "label": "",
+          "text": "The dialect syntax in the reference to the earlier Äschlismatt story is genuinely ambiguous; the phrase about the cat is translated literally as going down the girl’s throat.",
           "number": 1
         }
       ],

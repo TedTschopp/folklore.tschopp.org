@@ -1,7 +1,7 @@
 # November 19, 2026 publication release
 
 This release adds **3,627 stories**, bringing the reading collection to **3,828
-bilingual pages**, **13,836 reader notes**, and the two existing source-note
+bilingual pages**, **13,861 reader notes**, and the two existing source-note
 pages. All stories appear in the 77-page catalogue, full-text search, and the
 canonical sitemap. New stories retain the existing English/notes/original
 reading navigation, discussion links, and Webmention controls.
@@ -22,6 +22,8 @@ and translate dialect phrases. Original titles remain under Original text.
 
 Existing annotated translations and the previous 201 reader guides are retained.
 Additional notes explain unfamiliar terms and practices with attributed sources.
+Translation annotations on source ambiguities, title/text mismatches, and historical
+prejudice are also retained; only processing metadata is omitted.
 Short tellings without a glossary term have unanchored genre context. New
 catalogue descriptions use identified story openings; the reading page does not
 repeat that opening as a second introduction above the full translation.
