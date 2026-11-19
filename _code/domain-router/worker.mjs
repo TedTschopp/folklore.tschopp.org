@@ -37,11 +37,15 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     const destination = legacyDestination(url);
-    if (destination) return new Response(null, { status: 301, headers: {
+    if (destination) {
+      const canonical = new URL(destination);
+      canonical.search = ''; canonical.hash = '';
+      return new Response(null, { status: 301, headers: {
       Location: destination,
       'Cache-Control': 'public, max-age=300',
-      Link: `<${destination}>; rel="canonical", <${receiver}>; rel="webmention"`,
-    } });
+      Link: `<${canonical.href}>; rel="canonical", <${receiver}>; rel="webmention"`,
+      } });
+    }
     // Unmapped legacy resources, including the embedded fiction fragment, retain their origin.
     if (url.hostname !== PUBLIC_HOST) return fetch(request);
     if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', {

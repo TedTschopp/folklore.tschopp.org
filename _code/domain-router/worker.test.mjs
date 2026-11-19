@@ -34,6 +34,8 @@ test('legacy HTTP response is permanent and advertises the existing receiver', a
   const response = await worker.fetch(new Request('https://tedt.org/folklore/?q=notes'));
   assert.equal(response.status, 301); assert.equal(response.headers.get('Location'), 'https://folklore.tschopp.org/?q=notes');
   assert.match(response.headers.get('Link'), /rel="webmention"/);
+  assert.match(response.headers.get('Link'), /<https:\/\/folklore\.tschopp\.org\/>; rel="canonical"/);
+  assert.ok(!response.headers.get('Link').includes('?q='));
 });
 test('public proxy strips credentials and retains static headers', async () => {
   const original = globalThis.fetch;
