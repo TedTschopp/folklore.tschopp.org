@@ -1,8 +1,8 @@
 {
-  "release": "2026-11-19-remaining",
-  "corpus_commit": "538bde54942ed769ac8ac35b9a1c56a8af69e3bf",
+  "release": "2026-11-19-source-clearances",
+  "corpus_commit": "f9a873e81ad7333c6444de2dab736f5d591b3645",
   "page_size": 50,
-  "page_count": 77,
+  "page_count": 78,
   "stories": [
     {
       "id": "d09829985ef3a6427d35b0b5f3e4439b5fdee97d",
@@ -1356,6 +1356,13 @@
       "author": "Alois Lütolf"
     },
     {
+      "id": "cff5e7140f77a5d539bdb208746e60033f8ca290",
+      "title": "Animals Guarding Treasure (the Little Castle at Seedorf)",
+      "url": "/stories/animals-guarding-treasure-the-little-castle-at-seedorf/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "27b58bf6e1ceeabf2b1595aa9bc6a0f21bbc7ab8",
       "title": "Anna Vögtli",
       "url": "/stories/anna-vogtli/",
@@ -1520,6 +1527,13 @@
       "id": "34cc430f6d8c903bcbed33abbdcc522c13a6f8a4",
       "title": "At the Urnerloch",
       "url": "/stories/at-the-urnerloch/",
+      "year": 1929,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "5fb431f29023d0912f4b8856aca1306be5c371ae",
+      "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+      "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/",
       "year": 1929,
       "author": "Josef Müller"
     },
@@ -1972,6 +1986,13 @@
       "author": "C. Kohlrusch"
     },
     {
+      "id": "99d2f2077a667d8bc808a4cfca7ce8ea8f50f4e7",
+      "title": "Changes in the Alpine Pastures",
+      "url": "/stories/changes-in-the-alpine-pastures/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "8b860ef4f16ddef894ae6af2a6f92f641b99a704",
       "title": "Charlemagne and the Serpent",
       "url": "/stories/charlemagne-and-the-serpent/",
@@ -2012,6 +2033,13 @@
       "url": "/stories/chimpettere/",
       "year": 1929,
       "author": "M. Sooder"
+    },
+    {
+      "id": "fbfd5c1889fabbd5f97ccacc1914f0dca95a787f",
+      "title": "Choosing a Bride",
+      "url": "/stories/choosing-a-bride/",
+      "year": 1857,
+      "author": "Jacob Grimm and Wilhelm Grimm"
     },
     {
       "id": "2d3a89434e0444051cc393e1f12db74ff0d65a57",
@@ -3358,6 +3386,13 @@
       "author": "C. Kohlrusch"
     },
     {
+      "id": "0510de7be9d94f6f462e9fbc5f84fd05dda436d1",
+      "title": "Fell While Setting Up the Cross",
+      "url": "/stories/fell-while-setting-up-the-cross/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "1096998811c80b7162a5c7c861e9fa2a93cecba1",
       "title": "Fenetta, the Island Maiden",
       "url": "/stories/fenetta-the-island-maiden/",
@@ -3384,6 +3419,13 @@
       "url": "/stories/fiddler-lux-of-buttwil/",
       "year": 1856,
       "author": "Ernst Ludwig Rochholz"
+    },
+    {
+      "id": "ec5d929c30d068b51f5312244dffefa25ce54e80",
+      "title": "Fighting with Spirits",
+      "url": "/stories/fighting-with-spirits/",
+      "year": 1929,
+      "author": "Josef Müller"
     },
     {
       "id": "0249f39e9cc637eb78a5c289267b491a6c7e25c5",
@@ -4273,6 +4315,13 @@
       "url": "/stories/heinrich-the-minnesanger/",
       "year": 1910,
       "author": "Hermann Hartmann"
+    },
+    {
+      "id": "84e026a701650a57841b185d7c63cf7fc4c09931",
+      "title": "Heitmenegg Is a Sunny Alp in the Schächen Valley",
+      "url": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/",
+      "year": 1929,
+      "author": "Josef Müller"
     },
     {
       "id": "cc94163eef957d8609a781b40b6a6981f5474dad",
@@ -5479,6 +5528,13 @@
       "author": "Jakob Kuoni"
     },
     {
+      "id": "6aedd58e14932514c32b6701bade1f154f088022",
+      "title": "May I Come to Sleep?",
+      "url": "/stories/may-i-come-to-sleep/",
+      "year": 1929,
+      "author": "Josef Müller"
+    },
+    {
       "id": "9939fb3ada2438bdbb69b1495e3010d4394ae5ba",
       "title": "Meier Waldis’s Butter Churn",
       "url": "/stories/meier-waldiss-butter-churn/",
@@ -5738,6 +5794,13 @@
       "author": "Jakob Kuoni"
     },
     {
+      "id": "863d63ca1146cfe583b1bf9693833b1d492a7a7c",
+      "title": "News from Eternity",
+      "url": "/stories/news-from-eternity/",
+      "year": 1929,
+      "author": "Josef Müller"
+    },
+    {
       "id": "893b6689d0dab1e0e6a34f0fd4a2ed4483974c77",
       "title": "Nidberg Castle",
       "url": "/stories/nidberg-castle/",
@@ -5764,6 +5827,13 @@
       "url": "/stories/nidelgret-t-vernaleken/",
       "year": 1858,
       "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "0d6d7c51b565a47e00add99305d62955a7ac870b",
+      "title": "Nidelgret, the Cream Witch",
+      "url": "/stories/nidelgret-the-cream-witch/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "68310fa5bf9b06ed7ff3dd314c3d3c1fc3730fb7",
@@ -6014,6 +6084,13 @@
       "id": "945791f92d5ac7b666aee0513cb90b4f0ea96a49",
       "title": "Of Treasures and Fahrende Schüler",
       "url": "/stories/of-treasures-and-fahrende-schuler/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "b8e16e83a00340d1b14804b5fe338bb0d2c93126",
+      "title": "Of Tyrannical Lords",
+      "url": "/stories/of-tyrannical-lords/",
       "year": 1926,
       "author": "Josef Müller"
     },
@@ -7416,6 +7493,13 @@
       "url": "/stories/swimmer-willi-of-meisterschwanden/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "273a116b7dd56d7130e197a60eacb5e80e84de3f",
+      "title": "Süffibalzi's Death",
+      "url": "/stories/suffibalzis-death/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "b652ef37e89ee83da5eddbc2c14a2d22c9fead91",
@@ -9210,6 +9294,20 @@
       "author": "Theodor Vernaleken"
     },
     {
+      "id": "0d7c8f2ce65d1801163f16473314c6f769c1d606",
+      "title": "The Carbuncle (Müller, 1926)",
+      "url": "/stories/the-carbuncle-muller-1926/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "fe85d3a95c0fa1099bc55fb555d9858a385ee7ad",
+      "title": "The Carbuncle at Bristenstock",
+      "url": "/stories/the-carbuncle-at-bristenstock/",
+      "year": 1929,
+      "author": "Josef Müller"
+    },
+    {
       "id": "285e41945c4952f9b987946b62dd10976938e86f",
       "title": "The Carbuncle in the Wallenstöcke",
       "url": "/stories/the-carbuncle-in-the-wallenstocke/",
@@ -9929,6 +10027,13 @@
       "url": "/stories/the-cradle-spirit/",
       "year": 1915,
       "author": "Meinrad Lienert"
+    },
+    {
+      "id": "d9cb736886046f91b66e89ce4ee79dc813380ca3",
+      "title": "The Cream Witch",
+      "url": "/stories/the-cream-witch/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "c7cfe9c00a25a2199701be8d57a40775ade696d3",
@@ -12346,6 +12451,13 @@
       "author": "Jakob Kuoni"
     },
     {
+      "id": "813c8758c8ef420e367bc2a4a4384f9d950c2d86",
+      "title": "The Former Lazarite Monastery at Seedorf",
+      "url": "/stories/the-former-lazarite-monastery-at-seedorf/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "793d335643407163a46d389732c03aa558cd9e3c",
       "title": "The Founding of Grasburg",
       "url": "/stories/the-founding-of-grasburg/",
@@ -12694,6 +12806,13 @@
       "url": "/stories/the-fahrlisau-with-her-young-at-the-kropfenbrunneli/",
       "year": 1903,
       "author": "Jakob Kuoni"
+    },
+    {
+      "id": "3b46c0e20813662133375169cfc6321989143a24",
+      "title": "The Fängge as a Man-Eater",
+      "url": "/stories/the-fangge-as-a-man-eater/",
+      "year": 1874,
+      "author": "Dietrich Jecklin"
     },
     {
       "id": "feb2e148672f8106df11404bb9dc7dca7c7e9649",
@@ -21796,6 +21915,13 @@
       "author": "Josef Müller"
     },
     {
+      "id": "7252b0f85891f45dba6405ab6882fdef3fc147db",
+      "title": "The Toad in the Grave",
+      "url": "/stories/the-toad-in-the-grave/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "859d6522e7f567b03d0d11b70b33322c6ef18442",
       "title": "The Toads (Rorschach, SG)",
       "url": "/stories/the-toads-rorschach-sg/",
@@ -22165,6 +22291,13 @@
       "url": "/stories/the-treasure-at-weingarten/",
       "year": 1915,
       "author": "Meinrad Lienert"
+    },
+    {
+      "id": "cb61f932fe8f1237e160f6bd68174dc1d05108ed",
+      "title": "The Treasure at Äsch",
+      "url": "/stories/the-treasure-at-asch/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "3bf8580bb50142bc9c4e92cc8b934c066d59004a",
@@ -22578,6 +22711,13 @@
       "url": "/stories/the-two-brothers/",
       "year": 1929,
       "author": "M. Sooder"
+    },
+    {
+      "id": "7800f8fc12d3922e4cbd7d0febc1346bb6cf1aee",
+      "title": "The Two Brothers and the Four Giants",
+      "url": "/stories/the-two-brothers-and-the-four-giants/",
+      "year": 1876,
+      "author": "Dietrich Jecklin"
     },
     {
       "id": "516c16c38ff616b2973abdbf9673f854c1a1c2b4",
@@ -23691,6 +23831,13 @@
       "url": "/stories/the-white-woman-frutigen/",
       "year": 1910,
       "author": "Hermann Hartmann"
+    },
+    {
+      "id": "8bf0829bf9494d9b9b6a589a091f564ceba1090a",
+      "title": "The White Woman—Altdorf",
+      "url": "/stories/the-white-woman-altdorf/",
+      "year": 1929,
+      "author": "Josef Müller"
     },
     {
       "id": "be9bb3b19ba74a5ceb299afc583a208117010b62",
@@ -25163,6 +25310,13 @@
       "author": "Josef Müller"
     },
     {
+      "id": "d6a1aec9a78729046692a60ae9639d669a6bda48",
+      "title": "Treasure-Guarding Animals",
+      "url": "/stories/treasure-guarding-animals/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "4dc7475fce87893687b7d4fa892feb19535d2b1a",
       "title": "Treasures and Crystals That Vanish",
       "url": "/stories/treasures-and-crystals-that-vanish/",
@@ -26022,6 +26176,13 @@
       "url": "/stories/when-the-milk-will-not-turn-to-butter/",
       "year": 1865,
       "author": "Alois Lütolf"
+    },
+    {
+      "id": "2d09df6d877d09334db7209e56a8471b1ebd54ec",
+      "title": "Whenever the Devout Alpine Dairyman…",
+      "url": "/stories/whenever-the-devout-alpine-dairyman/",
+      "year": 1929,
+      "author": "Josef Müller"
     },
     {
       "id": "22ca9d75cbef0c0e6d65854bd7e204d9f8413f40",
@@ -26884,6 +27045,7 @@
     "04febd878685917612d727c32e4e394a99d2b741": "/stories/seven-years/",
     "0505155a7e6d16214ec7781f68e35baa8d557fde": "/stories/the-vanished-duke/",
     "05077bdd5d5151256519105bebfacd88db9fcca1": "/stories/the-strong-servant/",
+    "0510de7be9d94f6f462e9fbc5f84fd05dda436d1": "/stories/fell-while-setting-up-the-cross/",
     "051ac3b795ea8ee603d484e4af60a2797d625e8c": "/stories/the-nebelmannlein/",
     "051af50b17146ab9702fe0ab4094422c70b1c9d6": "/stories/the-promise/",
     "052ca2b72f0e454ee7fe1649bfd1a8bb60ec7608": "/stories/the-rubi-at-schattdorf/",
@@ -27019,9 +27181,11 @@
     "0d532bb5a30e2cbff79db5c31600423cc6215073": "/stories/the-plague-in-weisstannen-1611/",
     "0d627361c3e24860a675193975125a7142f04e7b": "/stories/uncanny-st-gallen/",
     "0d6d69b95da39b4506ea8f683484c4b0e65f2df9": "/stories/reuss-serpent-and-dragons-hole/",
+    "0d6d7c51b565a47e00add99305d62955a7ac870b": "/stories/nidelgret-the-cream-witch/",
     "0d70f7bc1d65c9066db8f571ca2692b4e43785d9": "/stories/the-wild-hunt-sooder-1929/",
     "0d72b3fb59ad40bdd0afa54e275bb15b18a51748": "/stories/tell-the-marksman/",
     "0d77a94f040bdf2ebaf38cecde02cb1e5b35f20c": "/stories/lake-gondeli-in-the-kulm-valley/",
+    "0d7c8f2ce65d1801163f16473314c6f769c1d606": "/stories/the-carbuncle-muller-1926/",
     "0dc0d3bdd0a9b9d7dad76538f0d4113e69207629": "/stories/the-abducted-child-rigelibueb/",
     "0dfe7ef0b991c4f93889344dbd0eef011a13830b": "/stories/the-rothenburg-cannon-fire/",
     "0e18881e11d8ee916e9bf537eb7cc5bd895acf3e": "/stories/the-three-languages/",
@@ -27380,6 +27544,7 @@
     "270f08bc101706ec0b02e33ad6ccdc7b16a4fdc2": "/stories/combat-and-protection-against-ghosts/",
     "27224772574dd2803a9385b38232f5dc574510e4": "/stories/the-toggeli-and-the-urine-bottle/",
     "272360e32c341a25837d5178a01714d413de80ce": "/stories/she-cannot-stand-mockery/",
+    "273a116b7dd56d7130e197a60eacb5e80e84de3f": "/stories/suffibalzis-death/",
     "275276858e1bbec4a94652fa5f24d30eb3348644": "/stories/at-the-loom/",
     "2766a77190709c92e05ba924ce46901f6347af46": "/stories/the-snake-in-the-galgenholzli-in-the-wynental/",
     "2774309322ebd181dde47b0285a4c1d11843ceba": "/stories/the-sodbrunnen/",
@@ -27475,6 +27640,7 @@
     "2ce52b1a0316a284a5585e6f08612d086de12920": "/stories/the-spirit-from-landskron/",
     "2d074398cb27933b05be9b67f6134563119e6f33": "/stories/the-washerwoman-walenstadt-st-gallen/",
     "2d0955578b6f48b5cad63f0ebe6fe7074f2b6a26": "/stories/a-legendary-legal-dispute/",
+    "2d09df6d877d09334db7209e56a8471b1ebd54ec": "/stories/whenever-the-devout-alpine-dairyman/",
     "2d0bd3ec44b921d9dbbb0361367f24861508f87d": "/stories/hunemauch-near-zurzach/",
     "2d3a89434e0444051cc393e1f12db74ff0d65a57": "/stories/chriemhilds-ditch/",
     "2d4a0e3e2804ad7dd1b93b25bffe60f673a49bb3": "/stories/the-devil-as-brother-in-law-lucerne/",
@@ -27704,6 +27870,7 @@
     "3afba4bfb26514a718259a181f80e6c36ff45f52": "/stories/returned/",
     "3b34428675ae3bdc6cd64b6eeed5b058966ff293": "/stories/the-serpent-maiden-graubunden/",
     "3b3bdbe232f8b83d0f55d5676704dee76c161acc": "/stories/the-wild-mannli-near-luen/",
+    "3b46c0e20813662133375169cfc6321989143a24": "/stories/the-fangge-as-a-man-eater/",
     "3b6f3621f7e5cb8287fc6fc4f67017384c36dc80": "/stories/the-apprentice-of-the-fahrender-schuler/",
     "3b860385850e79c08df5663c17456fbf2047f23f": "/stories/no-shadow-anymore/",
     "3b87a62ea448ccf4b5b13e9be9fb5bd3e32f13ba": "/stories/the-chapel-in-duferswil-dialect/",
@@ -28270,6 +28437,7 @@
     "5f9459cc481f2839588fe1961a068f19d10eff91": "/stories/on-the-schatzbodeli/",
     "5f94615f302f1b8aaacce1e98b5e9ed4cd86a365": "/stories/the-burial-of-kienholz/",
     "5faaa812feb754f98c9b576f23085de5b5c4551c": "/stories/the-strange-vision/",
+    "5fb431f29023d0912f4b8856aca1306be5c371ae": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/",
     "5fb86b099f719acade372872173376ede9e2188a": "/stories/bristen-treasures-and-the-like/",
     "5fbff46e6e0846ae821e61e99f2d2216f9fc69e7": "/stories/how-the-heathen-city-of-roll-was-destroyed/",
     "5fc6588e159aa5f9abe983788ac7157a1a78f83b": "/stories/a-hundred-at-one-blow/",
@@ -28442,6 +28610,7 @@
     "6acdedda661b0be64b65ff3df51df21ffc1e60f0": "/stories/strong-karli-furrer-of-erstfeld/",
     "6add169a65dcf7a57d4f2c0b273855ee282fee03": "/stories/the-sigrist-and-the-funeral-procession/",
     "6aeb8c528735636a5627a29275a5788c9764d2f8": "/stories/the-springs-of-the-schafmatt/",
+    "6aedd58e14932514c32b6701bade1f154f088022": "/stories/may-i-come-to-sleep/",
     "6b2ccf436a8f6dfed845346029abcc43e7d93095": "/stories/swallowed-by-the-earth/",
     "6b49109a9bb0762c7b4d3a1ef73be323896dce4c": "/stories/witch-story/",
     "6b50e47df0a18d0fe86b88fa52036c6e061a7279": "/stories/the-rochelmore-kohlrusch/",
@@ -28564,6 +28733,7 @@
     "7244ea9214c9c94dc9324dfe6c3e1bd99e7c64ce": "/stories/radbod-of-habsburg/",
     "724b77ad124e8866c9bda1e3fd359ea7c3deaf27": "/stories/the-neunuhrbrot-at-steigfeld/",
     "724ca6b33cf038013a23683bdd9409246301c1d7": "/stories/the-gold-diggers-at-the-schnebelhorn/",
+    "7252b0f85891f45dba6405ab6882fdef3fc147db": "/stories/the-toad-in-the-grave/",
     "725436596e233a5acb83afda51fcb0f261330040": "/stories/the-erdmannlein-at-seeburg/",
     "72741fe3f77fb6e592e38c1c1665d3476703e7db": "/stories/the-baron-of-weissenburg/",
     "727661673c5ccf1eed020ef796e403c633195beb": "/stories/the-melkfassalpe/",
@@ -28644,6 +28814,7 @@
     "77e2c2c5b411bf84e168a9cb9d397a81726f467e": "/stories/the-toggeli-and-the-knife/",
     "77e5a87e71f697145449465092a2ba3e69cf2022": "/stories/ghrebellhou-prince-of-the-gnomes/",
     "77fca60e19067bf3671acb2c8123225d9508e5e2": "/stories/karl-among-the-women/",
+    "7800f8fc12d3922e4cbd7d0febc1346bb6cf1aee": "/stories/the-two-brothers-and-the-four-giants/",
     "781a130d5719fc34435ef30d0edde710c420b5fb": "/stories/the-witch-in-gulatsch/",
     "782efcfc6a62d1fcb1cbc2d46b7bcba5e6d2a6ed": "/stories/dangerous/",
     "784a056a9b2f92b35251d0f0d345c6b5bdc71f9b": "/stories/the-murderer-at-sandbrunnen/",
@@ -28790,6 +28961,7 @@
     "81217633f72e91e773857d4e26330aacfb66dd25": "/stories/the-countess-at-zen-tischen/",
     "8132671a4baab04fc5585d63e903f24ea6a62af5": "/stories/the-clever-beggar-and-the-man-eater/",
     "81397d36c6d3a3cb7ff38d16ffd3d7ddb31c5137": "/stories/the-tree-stump-and-the-witch/",
+    "813c8758c8ef420e367bc2a4a4384f9d950c2d86": "/stories/the-former-lazarite-monastery-at-seedorf/",
     "8157e8ea0edc41e804b603defc144e6e6bc615f0": "/stories/felix-and-regulas-fingerprints/",
     "819850a8cbaa1d6f82918d8873cf783a7959adbc": "/stories/of-the-buletod/",
     "81d20ea79eccb2bfcd43dcfe268a52fa96f2ebf6": "/stories/witches-eggersriet-sg/",
@@ -28841,6 +29013,7 @@
     "84ba93c84600e2acc300ace95f454cf3b55fb485": "/stories/the-totenlichter/",
     "84d012dcf9ba2932c38c835cc18580c32b2cf1bb": "/stories/the-heavy-child-on-the-seckenberg/",
     "84db71a855539a19d7bdb94a5a1c06c39a12f4a0": "/stories/the-origin-of-the-kuhreihen-lienert/",
+    "84e026a701650a57841b185d7c63cf7fc4c09931": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/",
     "84e9df7e9eb1911dc914aebfb07d79926335b736": "/stories/haxebase-and-haxebeeri/",
     "8510327697ff5ec5ded908c3fa8b04f841abb593": "/stories/the-wuetihee/",
     "852f1942c56897dda08d895219d58d574bef85ec": "/stories/the-mist-specter/",
@@ -28862,6 +29035,7 @@
     "8616950da650ed9b53cc801e9948d8ef43124cad": "/stories/the-kraftwurzel-the-strength-root/",
     "861b7815923f07ccc65fe1504ef1c8f103c7a7f6": "/stories/a-spirit-says-mass/",
     "8626ca87ce31618c0a87b069590172caee694e9b": "/stories/the-eagle-bride/",
+    "863d63ca1146cfe583b1bf9693833b1d492a7a7c": "/stories/news-from-eternity/",
     "8661e61bdd3dcd29fe4f1fd479df5d0f8df29a90": "/stories/the-brunnlig-driven-away-by-prayer/",
     "8662ad122966c79b3cd67a10dd73465083fedacb": "/stories/a-langerberg-sunday/",
     "8664ad5e08ca0d61e90fdb49934aeeb8c1f131d0": "/stories/the-disturber/",
@@ -28957,6 +29131,7 @@
     "8bc6b7345e6149ece70268fb900c5d1c6306daf1": "/stories/wiss-ampeisse-white-ants/",
     "8bdca0d6b2151a5efcdf17073ac39b86039c054a": "/stories/the-witch-in-the-riedertal/",
     "8bec867a6c319a1ffb047c2711d6855b7f701e99": "/stories/mercy-rewarded-isental/",
+    "8bf0829bf9494d9b9b6a589a091f564ceba1090a": "/stories/the-white-woman-altdorf/",
     "8bf3219d6767ea9aefe411757b305c968c66ae1c": "/stories/the-penitent-souls-in-the-rhone-glacier/",
     "8bf981a770399489adda40d228fee0bf48806e14": "/stories/timid/",
     "8c02a559e35aaf5b0d8a11cc77d8e41896b381d3": "/stories/nachtlutli-tanze-the-nachtlutli-dance/",
@@ -29184,6 +29359,7 @@
     "99a463273e9fd2f56dfbdd25e7ea8ca4a8e080df": "/stories/death-of-the-seven-dwarfs/",
     "99b26fff77270da712161bb8d2ef505dcb825ccb": "/stories/the-vanished-treasure-at-castellum/",
     "99bd216c7e6efcc90d386481ce19e9e7df3263b9": "/stories/the-lost-child/",
+    "99d2f2077a667d8bc808a4cfca7ce8ea8f50f4e7": "/stories/changes-in-the-alpine-pastures/",
     "99f09d0ec5a8f6e186f309ac6fdcc4cdeab3aa02": "/stories/the-witch-and-the-three-bells/",
     "9a2450b790353307ef5b3039e6acea4f1590630f": "/stories/the-witches-in-the-krinnen/",
     "9a2cd8ff197a56feb036301c7bc89eab372d220a": "/stories/driven-home-by-the-arme-seelen-billen/",
@@ -29621,6 +29797,7 @@
     "b8b6600c32dbdb74100486aaf4726b753719a5f9": "/stories/the-little-man-who-would-not-brush-against-anyone/",
     "b8c5896290344ea06a62d44d346ac3d7651fbf6c": "/stories/the-giant/",
     "b8d0add42aaabaafe3cc9f0e2d0e3a3392abe655": "/stories/the-sheep-in-the-birrhard/",
+    "b8e16e83a00340d1b14804b5fe338bb0d2c93126": "/stories/of-tyrannical-lords/",
     "b8e47cb9e010cc8ea55dcaba42f3f4fe10060ca2": "/stories/the-wishing-cave-near-arosa/",
     "b917ac8109ac131e6bef6b1233b9360b3278ec61": "/stories/about-witches/",
     "b9183eb61046643f2801279b21a2f65da5a28669": "/stories/the-spirit-by-the-turle-garten-in-cur/",
@@ -29884,6 +30061,7 @@
     "cb43583ec5e49f4323128c0035e8491c12ceeff1": "/stories/the-nocturnal-call-in-the-muhlimatte/",
     "cb5822756396821ec035467c753fa3023fc2184b": "/stories/witches-in-lungnez/",
     "cb5fbcc1d64cbc5f82d54ebaf847fb1a0621da10": "/stories/gold-and-silver/",
+    "cb61f932fe8f1237e160f6bd68174dc1d05108ed": "/stories/the-treasure-at-asch/",
     "cb67b07f377e002c8f5f573ccff6c1b725c0bda1": "/stories/will-o-the-wisps-2/",
     "cb7181ef3e3edd74496873b06cfc91b0768ab2ad": "/stories/the-origin-of-the-erdleutchen/",
     "cba116d1cc2d9c413922a7562d45392d6e25275b": "/stories/the-ravens-of-saint-meinrad/",
@@ -29950,6 +30128,7 @@
     "cfc8c86426e80d365878a171620ddd477d942f76": "/stories/i-dr-chuchi-in-the-kitchen/",
     "cfcd8c5d5ca3e6c0fbf34d5badeaca89b907a57c": "/stories/stimper-the-musician/",
     "cfd899e6f4ee28313f5898768344ae540c9e49d5": "/stories/the-witch-stone/",
+    "cff5e7140f77a5d539bdb208746e60033f8ca290": "/stories/animals-guarding-treasure-the-little-castle-at-seedorf/",
     "cffc60e9b875c6a494849142e6ff3fc335ff893b": "/stories/a-strange-fox-hunt/",
     "cffec3c5338c649a087f9bb1d9f60e75495dd3e6": "/stories/mit-de-totu-ist-nit-zgspassu-the-dead-are-not-to-be-trifled-with/",
     "d00796c7171ed51026ab0e2b12e4fc29e3db702c": "/stories/the-heumueterli-near-niederwil/",
@@ -30053,6 +30232,7 @@
     "d68688cd31e6a314a88872c0e1434acceb4d1dc6": "/stories/the-witch-in-wolf-form/",
     "d686f8b6c5bbc8e24a77069fcf8d575f79fb97b7": "/stories/the-gangbach-witch-and-the-schachen-witch-at-schattdorf/",
     "d6a0902619face7aa8d594573022b5ada0e861f9": "/stories/the-plaggeister/",
+    "d6a1aec9a78729046692a60ae9639d669a6bda48": "/stories/treasure-guarding-animals/",
     "d6a2eda50f5843f0902e81d53f8076bd7b87a2da": "/stories/the-golden-gate-lienert-1918/",
     "d6a56dea191f69b2c38d78b09f3e950700de21c3": "/stories/the-froshas/",
     "d6a6a3eade7a19c58ad4823cdc35d66b19b7b55d": "/stories/the-little-earth-men-on-the-ramsflue/",
@@ -30101,6 +30281,7 @@
     "d9bc69daa3515461098172ad04d91d049bc289bb": "/stories/the-treasure-and-the-three-legged-billy-goat/",
     "d9c1596b711ac776b3c699413ca08184edb2508e": "/stories/the-cradle-child-carried-off/",
     "d9c945a681e504143b074677002c89dce0353b77": "/stories/weather-witches/",
+    "d9cb736886046f91b66e89ce4ee79dc813380ca3": "/stories/the-cream-witch/",
     "da31a702aabbaa49bc9c50d1934c5a87178d9dfa": "/stories/the-nachtvolk-pfafers/",
     "da3206d11866be0e4f47e9a6a9b23f0461b7a4ed": "/stories/the-miraculous-lily-from-the-corpse/",
     "da38393ed52f3c93c66a243c818585bb4f3ac1de": "/stories/beatus-and-the-dwarfs/",
@@ -30350,6 +30531,7 @@
     "ec50a2ff004bcecc9f3a35118c93eef4ac2b689d": "/stories/curses/",
     "ec5936e85612a68f4a6a440ac305698097544d32": "/stories/a-foretelling-of-the-weisser-tod-white-death/",
     "ec59a221a13af6c605e33adbfa8bf46aa9896dab": "/stories/an-adventure-in-the-brunnital/",
+    "ec5d929c30d068b51f5312244dffefa25ce54e80": "/stories/fighting-with-spirits/",
     "ec73c72055fb0b36aae65fc5bde0a1b40177e0d7": "/stories/enchanted-maidens-and-hoards-ai/",
     "ec81af2b77dda8d93916b640023c2dad3d0fa3b1": "/stories/the-wandering-image/",
     "ec91358ae1503f8067f4f385ae57915334f1b7af": "/stories/the-devil-spends-the-night-in-the-tower-at-wyl/",
@@ -30600,6 +30782,7 @@
     "fba35a8d866740494a9a7c6d0afb0dac6f849066": "/stories/the-pretty-stone-on-the-goscheneralp/",
     "fbab0a4f420d4db79e40e7de649f93eec3102598": "/stories/the-mischievous-fanggenmannli/",
     "fbc155749c4748078536c0bb454bd1ba48ea3719": "/stories/funeral-processions-that-foretell-death/",
+    "fbfd5c1889fabbd5f97ccacc1914f0dca95a787f": "/stories/choosing-a-bride/",
     "fc04b9ee2fb34be3adc2774eb21a3ce18de230fe": "/stories/the-witches-dance-at-fetan/",
     "fc07ac0363849a67a4f254fdb6b6acb388543518": "/stories/e-lohersteiversetzer-a-mover-of-a-loherstei/",
     "fc080b90bd012809480e625a2541675121590b38": "/stories/the-staffelungeheuer/",
@@ -30642,6 +30825,7 @@
     "fe14d91017ac17af38940bf146b0cebb5f256baa": "/stories/the-interior-of-the-strichen-mountain/",
     "fe1d911ac1bdea9a3b1923ad69d69f48d5973203": "/stories/the-nachmittaglamm-in-the-tobelholzli/",
     "fe5ac34324c30c34269b3e5cb9d8a380e19fe935": "/stories/revenge-revenge/",
+    "fe85d3a95c0fa1099bc55fb555d9858a385ee7ad": "/stories/the-carbuncle-at-bristenstock/",
     "fe9efeccdc8668578680a455ed61bed59f150c22": "/stories/the-cheese-test/",
     "feb2e148672f8106df11404bb9dc7dca7c7e9649": "/stories/the-fanggenmannli-at-maladers/",
     "febbe00167780c72972d234468a1b72490d3862f": "/stories/the-venedigern-on-casanna/",
