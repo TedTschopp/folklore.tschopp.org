@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "origin": "https://folklore.tschopp.org",
   "source_origin": "https://tedt.org",
   "source_commit": "fe0d59408814b6be09cb97e0b2938bfda2bebe3f",
@@ -245,7 +245,31 @@
     "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/": "https://folklore.tschopp.org/stories/the-magic-book-helps-in-time-of-need/",
     "/folklore/stories/the-magic-book/": "https://folklore.tschopp.org/stories/the-magic-book/",
     "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/": "https://folklore.tschopp.org/stories/the-magic-book/",
-    "/folklore/themes/": "https://folklore.tschopp.org/themes/"
+    "/folklore/themes/": "https://folklore.tschopp.org/themes/",
+    "/Swiss-Folklore/Wodans-Revenge.html": "https://folklore.tschopp.org/stories/wodans-revenge/",
+    "/Swiss-Folklore/On-the-City-of-Saint-George.html": "https://folklore.tschopp.org/stories/on-saint-georgenberg/",
+    "/Swiss-Folklore/From-the-Swabian-War-Benedikt-Fontana.html": "https://folklore.tschopp.org/stories/from-the-swabian-war-benedikt-fontana/",
+    "/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/": "https://folklore.tschopp.org/stories/from-the-swabian-war-benedikt-fontana/",
+    "/2023/08/20/From-the-Swabian-War-Benedikt-Fontana/": "https://folklore.tschopp.org/stories/from-the-swabian-war-benedikt-fontana/",
+    "/Swiss-Folklore/The-Little-Shepherd-of-Mellikon.html": "https://folklore.tschopp.org/stories/the-herdmannli-of-mellikon/",
+    "/Swiss-Folklore/The-Army-in-Schrattenberg.html": "https://folklore.tschopp.org/stories/the-army-in-the-schratten-mountain/",
+    "/2023/08/20/2023-08-20-The-Army-in-Schrattenberg/": "https://folklore.tschopp.org/stories/the-army-in-the-schratten-mountain/",
+    "/2023/08/20/The-Army-in-Schrattenberg/": "https://folklore.tschopp.org/stories/the-army-in-the-schratten-mountain/",
+    "/Swiss-Folklore/The-Weatherman-in-P%C3%B6rtlialp.html": "https://folklore.tschopp.org/stories/the-wattermanndli-in-the-portlialp/",
+    "/Swiss-Folklore/The-Betten-Dog.html": "https://folklore.tschopp.org/stories/the-wattermanndli-in-the-portlialp/",
+    "/Swiss-Folklore/The-Basilisk-Egg/": "https://folklore.tschopp.org/stories/the-basilisks-egg/",
+    "/Swiss-Folklore/The-Well-at-Schwanden.html": "https://folklore.tschopp.org/stories/the-well-at-schwanden/",
+    "/Swiss-Folklore/the-well-at-schwanden": "https://folklore.tschopp.org/stories/the-well-at-schwanden/",
+    "/Swiss-Folklore/the-well-at-schwanden.html": "https://folklore.tschopp.org/stories/the-well-at-schwanden/",
+    "/Swiss-Folklore/The-Bailiff-of-Brunnegg.html": "https://folklore.tschopp.org/stories/the-burgvogt-of-brunnegg/",
+    "/folklore/The-Bailiff-of-Brunnegg": "https://folklore.tschopp.org/stories/the-burgvogt-of-brunnegg/",
+    "/folklore/The-Bailiff-of-Brunnegg.html": "https://folklore.tschopp.org/stories/the-burgvogt-of-brunnegg/",
+    "/The-Chriemhild-Trench/": "https://folklore.tschopp.org/stories/chriemhilds-ditch/",
+    "/category/folklore/": "https://folklore.tschopp.org/stories/",
+    "/category/Folklore.html": "https://folklore.tschopp.org/stories/",
+    "/category/folklore.html": "https://folklore.tschopp.org/stories/",
+    "/category/Folklore/": "https://folklore.tschopp.org/stories/",
+    "/folklore/stories/house-of-the-blood-comet.html": "https://tedt.org/stories/house-of-the-blood-comet.html"
   },
   "documents": [
     {
@@ -1730,8 +1754,131 @@
       ]
     }
   ],
-  "exceptions": [
-    "/folklore/stories/house-of-the-blood-comet.html",
-    "/folklore/The-Bailiff-of-Brunnegg.html"
+  "exceptions": [],
+  "updated": "2026-11-20",
+  "original_fiction": {
+    "old": "/folklore/stories/house-of-the-blood-comet.html",
+    "new": "/stories/house-of-the-blood-comet.html",
+    "sha256": "8fc399d60bb18d699472475747cceb9eff619f730dfd71153008fd121243b916"
+  },
+  "retired_articles": [
+    {
+      "title": "Wodan's Revenge",
+      "url": "/Swiss-Folklore/Wodans-Revenge.html",
+      "aliases": [
+        "/Swiss-Folklore/Wodans-Revenge.html"
+      ],
+      "story_id": "ce8f483e1f2b4537415931ef8818cae1356a3bb7",
+      "destination": "https://folklore.tschopp.org/stories/wodans-revenge/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "On the Mountain of Saint George",
+      "url": "/Swiss-Folklore/On-the-City-of-Saint-George.html",
+      "aliases": [
+        "/Swiss-Folklore/On-the-City-of-Saint-George.html"
+      ],
+      "story_id": "62632ca42e420e1fd5cdc23d10c35fce4fce4bfe",
+      "destination": "https://folklore.tschopp.org/stories/on-saint-georgenberg/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "From the Swabian War - Benedikt Fontana",
+      "url": "/Swiss-Folklore/From-the-Swabian-War-Benedikt-Fontana.html",
+      "aliases": [
+        "/Swiss-Folklore/From-the-Swabian-War-Benedikt-Fontana.html",
+        "/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/",
+        "/2023/08/20/From-the-Swabian-War-Benedikt-Fontana/"
+      ],
+      "story_id": "694212f96a175e940fce03e11966e4f7ea458e7b",
+      "destination": "https://folklore.tschopp.org/stories/from-the-swabian-war-benedikt-fontana/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Little Shepherd of Mellikon",
+      "url": "/Swiss-Folklore/The-Little-Shepherd-of-Mellikon.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Little-Shepherd-of-Mellikon.html"
+      ],
+      "story_id": "42dc847e823a2b3bd401ba98816e829abf3a38b9",
+      "destination": "https://folklore.tschopp.org/stories/the-herdmannli-of-mellikon/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Army in Schrattenberg",
+      "url": "/Swiss-Folklore/The-Army-in-Schrattenberg.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Army-in-Schrattenberg.html",
+        "/2023/08/20/2023-08-20-The-Army-in-Schrattenberg/",
+        "/2023/08/20/The-Army-in-Schrattenberg/"
+      ],
+      "story_id": "4a9b61cdded656966bd53141250d9a80234e7884",
+      "destination": "https://folklore.tschopp.org/stories/the-army-in-the-schratten-mountain/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Weatherman in Pörtlialp",
+      "url": "/Swiss-Folklore/The-Weatherman-in-P%C3%B6rtlialp.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Weatherman-in-P%C3%B6rtlialp.html"
+      ],
+      "story_id": "56875e68e7f452267f0101b6ea8a388ea0452723",
+      "destination": "https://folklore.tschopp.org/stories/the-wattermanndli-in-the-portlialp/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Betten Dog",
+      "url": "/Swiss-Folklore/The-Betten-Dog.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Betten-Dog.html"
+      ],
+      "story_id": "56875e68e7f452267f0101b6ea8a388ea0452723",
+      "destination": "https://folklore.tschopp.org/stories/the-wattermanndli-in-the-portlialp/",
+      "reason": "The article body is the Weatherman telling, despite its dog title."
+    },
+    {
+      "title": "The Basilisk",
+      "url": "/Swiss-Folklore/The-Basilisk-Egg/",
+      "aliases": [
+        "/Swiss-Folklore/The-Basilisk-Egg/"
+      ],
+      "story_id": "e8fe2126646492cac88330e72807708520dd3563",
+      "destination": "https://folklore.tschopp.org/stories/the-basilisks-egg/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Well in the Schächental Valley",
+      "url": "/Swiss-Folklore/The-Well-at-Schwanden.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Well-at-Schwanden.html",
+        "/Swiss-Folklore/the-well-at-schwanden",
+        "/Swiss-Folklore/the-well-at-schwanden.html"
+      ],
+      "story_id": "a9e7320019e814915ae97b41d13b2c2d70ffccbe",
+      "destination": "https://folklore.tschopp.org/stories/the-well-at-schwanden/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Bailiff of Brunnegg: A Swiss Legend",
+      "url": "/Swiss-Folklore/The-Bailiff-of-Brunnegg.html",
+      "aliases": [
+        "/Swiss-Folklore/The-Bailiff-of-Brunnegg.html",
+        "/folklore/The-Bailiff-of-Brunnegg",
+        "/folklore/The-Bailiff-of-Brunnegg.html"
+      ],
+      "story_id": "d0b7a6eb6e95ddc652f50a1c6d1f5821b44443f1",
+      "destination": "https://folklore.tschopp.org/stories/the-burgvogt-of-brunnegg/",
+      "reason": "Matched by source and narrative."
+    },
+    {
+      "title": "The Chriemhild Trench",
+      "url": "/The-Chriemhild-Trench/",
+      "aliases": [
+        "/The-Chriemhild-Trench/"
+      ],
+      "story_id": "2d3a89434e0444051cc393e1f12db74ff0d65a57",
+      "destination": "https://folklore.tschopp.org/stories/chriemhilds-ditch/",
+      "reason": "Matched by source and narrative."
+    }
   ]
 }
