@@ -105,6 +105,13 @@ export async function checkDiscovery({ tab, context, browser, base, discovery, s
     await plain.locator('.folklore-catalog h3 a').first().click();
     await expect(plain.locator('#english p').first()).toBeVisible();
     await expect(plain.locator('#reader-notes li').first()).toBeVisible();
+    await plain.goto(base + '/locations/#ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7');
+    await plain.locator('#ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7').getByRole('link', { name: 'Rotental', exact: true }).click();
+    await expect(plain).toHaveURL(base + '/research/place-profiles/#ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7');
+    await expect(plain.locator('#ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7')).toContainText('Rotental');
+    await plain.goto(base + '/research/');
+    await plain.getByRole('link', { name: 'Detailed place profiles', exact: true }).click();
+    await expect(plain.getByRole('heading', { level: 1 })).toHaveText('Selected place profiles');
   } finally { await plain.close(); }
 
   for (const path of ['/', '/themes/', '/locations/', '/guide/', '/search/']) {
