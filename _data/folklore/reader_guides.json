@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-19-source-clearances",
+  "release": "2026-11-19-evidence-followup",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -195392,6 +195392,232 @@
         }
       ],
       "summary_kind": "opening"
+    },
+    "4b5ddc2e6fef9b96e77854e7eb3c08d2f7f4cccf": {
+      "summary": "On the little hill where Dingten Castle once stood, a silver-bright spring bubbles out of the rock.",
+      "notes": [
+        {
+          "label": "Lee",
+          "text": "the source’s word for the body of water within the mountain; the historical Note later calls it a See, a lake, so the context supports an underground lake while the exact form Lee remains uncertain.",
+          "paragraph": 0,
+          "offset": 119,
+          "anchor": "Lee",
+          "number": 1
+        },
+        {
+          "label": "Brünnlein",
+          "text": "a small natural spring or fountain; in this legend it is the silver-bright water named for Magdhilde and a place where she bathes and foretells weather changes.",
+          "paragraph": 0,
+          "offset": 318,
+          "anchor": "Brünnlein",
+          "number": 2
+        },
+        {
+          "label": "Jungfernbrunnen",
+          "text": "literally the ‘Maidens’ Spring,’ the traditional name of the clear, cold spring in the Langholz forest connected with three murdered maidens.",
+          "paragraph": 4,
+          "offset": 403,
+          "anchor": "Jungfernbrunnen",
+          "number": 3
+        },
+        {
+          "label": "Hollenteiche",
+          "text": "ponds associated with Holla or Holle in traditions about the supernatural source of newborn children; the nearby historical discussion connects them with children’s springs rather than with infernal ‘hell ponds.’",
+          "paragraph": 6,
+          "offset": 144,
+          "anchor": "Hollenteiche",
+          "number": 4
+        },
+        {
+          "label": "Kleinkinderbrunnen",
+          "text": "literally ‘little-children’s springs’ or ‘infants’ wells,’ folkloric waters from which newborn children were said to be fetched and brought to their parents.",
+          "paragraph": 6,
+          "offset": 171,
+          "anchor": "Kleinkinderbrunnen",
+          "number": 5
+        },
+        {
+          "label": "Hollabrunn",
+          "text": "the spring-name in the closing children’s rhyme, associated in the historical note with the belief that a nursewoman fetches newborn children from water; the source rhyme is textually irregular, so no missing words are invented.",
+          "paragraph": 6,
+          "offset": 361,
+          "anchor": "Hollabrunn",
+          "number": 6
+        },
+        {
+          "label": "Magdhildenbrünnlein",
+          "text": "the named little spring or fountain near Dingten associated with the maiden Magdhilde; Brünnlein is the diminutive of Brunnen and may mean either a small spring or a small fountain.",
+          "number": 7
+        },
+        {
+          "label": "The 1862 source resolves a reading",
+          "text": "Rochholz's original page 143 reads See, meaning a lake, where the catalogue has Lee. The preserved translation follows that catalogue spelling. Read the opening as an underground lake inhabited by maidens; the digitized printing now resolves the uncertainty recorded in the earlier translation note. The catalogue also drops in from the closing rhyme: the printing says find’t ein Kind’l in der Sunn.",
+          "source": {
+            "label": "Ernst Ludwig Rochholz, Naturmythen. Neue Schweizersagen (Leipzig: B. G. Teubner, 1862), section 6, no. 14, p. 143, including the quoted portion of the author's note.",
+            "url": "https://www.digitale-sammlungen.de/de/view/bsb10454114?page=171"
+          },
+          "number": 8
+        },
+        {
+          "label": "Story and historical commentary",
+          "text": "The short story ends with Magdhilde appearing before a change in the weather, followed by the informant Jak. Matter's name. The material introduced as Note is Rochholz's nineteenth-century commentary. Its links to Saint Ursula, Holla and children fetched from springs are the collector's interpretation. They should be read separately from the villagers' account. The catalogue quotes that note through its nursery rhyme; Rochholz's subsequent biblical and medieval comparisons are outside this excerpt.",
+          "source": {
+            "label": "Ernst Ludwig Rochholz, Naturmythen. Neue Schweizersagen (Leipzig: B. G. Teubner, 1862), section 6, no. 14, p. 143, including the quoted portion of the author's note.",
+            "url": "https://www.digitale-sammlungen.de/de/view/bsb10454114?page=171"
+          },
+          "number": 9
+        },
+        {
+          "label": "Edition and transcription",
+          "text": "The story and quoted commentary come from Naturmythen. Neue Schweizersagen, published in Leipzig in 1862. The catalogue updates spelling and punctuation, uses dort for dorten and adds the labels Legend from Dingten and Note. The original wording and the existing English translation are preserved here, with these differences made explicit.",
+          "source": {
+            "label": "Ernst Ludwig Rochholz, Naturmythen. Neue Schweizersagen (Leipzig: B. G. Teubner, 1862), section 6, no. 14, p. 143, including the quoted portion of the author's note.",
+            "url": "https://www.digitale-sammlungen.de/de/view/bsb10454114?page=171"
+          },
+          "number": 10
+        }
+      ],
+      "places": [
+        {
+          "label": "Aargau",
+          "url": "/locations/#place-aargau"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/themes/#theme-pilgrimage-and-saints"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/themes/#theme-weather-lore"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "799cb78e486abb39bba8bb0bbf24abd92bcf2684": {
+      "summary": "When the Alpen lie buried beneath the weight of winter snow, people and livestock have descended into the valley, and, in the snowbound huts, the men carve wooden wares by the light of a flickering Kienspan while the women ply the old-fashioned spindle, the reign of the mountain spirits begins.",
+      "notes": [
+        {
+          "label": "Alpen",
+          "text": "here the plural of Alp, the high-mountain summer pastures and working landscapes abandoned during winter, not simply the Alps as a mountain chain.",
+          "paragraph": 0,
+          "offset": 14,
+          "anchor": "Alpen",
+          "number": 1
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 14,
+          "anchor": "Alpen",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 2
+        },
+        {
+          "label": "Kienspan",
+          "text": "a resin-rich pinewood splint burned as a small household light before modern lamps.",
+          "paragraph": 0,
+          "offset": 206,
+          "anchor": "Kienspan",
+          "number": 3
+        },
+        {
+          "label": "Household spinning",
+          "text": "Spinning turns prepared fibers into yarn; weaving turns yarn into cloth. In historical Swiss households, textile work could also provide income through merchants who supplied materials and bought the finished work. The spinning room could therefore combine domestic labor with economic and social life.",
+          "paragraph": 0,
+          "offset": 252,
+          "anchor": "spindle",
+          "source": {
+            "label": "Swiss National Museum: textile work in the household",
+            "url": "https://blog.nationalmuseum.ch/2021/10/von-der-heimarbeit-zum-home-office/"
+          },
+          "number": 4
+        },
+        {
+          "label": "Tobeln",
+          "text": "plural of Tobel, steep, narrow ravines or gorges in Swiss and southern German usage; the mountain spirits gather in these rocky clefts.",
+          "paragraph": 0,
+          "offset": 488,
+          "anchor": "Tobeln",
+          "number": 5
+        },
+        {
+          "label": "Chamois",
+          "text": "The chamois is a mountain-dwelling hoofed animal adapted to steep Alpine terrain. Its presence places the hunt in a demanding mountain environment. The animal’s supernatural behavior, if any, is part of the tale.",
+          "paragraph": 0,
+          "offset": 923,
+          "anchor": "chamois",
+          "source": {
+            "label": "Swiss National Park",
+            "url": "https://nationalpark.ch/en/flora-and-fauna/chamois/"
+          },
+          "number": 6
+        },
+        {
+          "label": "Strahler",
+          "text": "a Swiss Alpine crystal seeker or mineral hunter who enters rock cavities in search of specimens.",
+          "paragraph": 0,
+          "offset": 1168,
+          "anchor": "Strahler",
+          "number": 7
+        },
+        {
+          "label": "Strahlen",
+          "text": "literally ‘rays,’ a traditional Alpine term for rock crystals; the story treats them as the mountain spirits' finest adornment.",
+          "paragraph": 0,
+          "offset": 1273,
+          "anchor": "Strahlen",
+          "number": 8
+        },
+        {
+          "label": "The verified 1910 telling",
+          "text": "This is the complete account on page 42 of Hartmann's Berner Oberland in Sage und Geschichte, volume I: Sagen. Its printed title is Die Geister auf der Jungfrau. The catalogue updates spelling and punctuation, uses niedrigen for niederen and has welcher where the printing reads welchen. The sequence and content of the telling are preserved.",
+          "source": {
+            "label": "Hermann Hartmann, Berner Oberland in Sage und Geschichte, I: Sagen (Bümpliz: Benteli, 1910), p. 42, Die Geister auf der Jungfrau; Universitätsbibliothek Bern, MUE H XXXV 173.",
+            "url": "https://www.e-rara.ch/bes_1/content/pageview/15874249"
+          },
+          "number": 9
+        },
+        {
+          "label": "Hartmann's own source credit",
+          "text": "Under this paragraph Hartmann credits C. Vogt, Im Gebirg und auf den Gletschern. That line is absent from the catalogue transcription. The dated witness used for this page is Hartmann's 1910 printing; the source credit alone does not establish the wording or date of an earlier Vogt edition.",
+          "source": {
+            "label": "Hermann Hartmann, Berner Oberland in Sage und Geschichte, I: Sagen (Bümpliz: Benteli, 1910), p. 42, Die Geister auf der Jungfrau; Universitätsbibliothek Bern, MUE H XXXV 173.",
+            "url": "https://www.e-rara.ch/bes_1/content/pageview/15874249"
+          },
+          "number": 10
+        }
+      ],
+      "places": [
+        {
+          "label": "Bern",
+          "url": "/locations/#place-bern"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Hunting",
+          "url": "/themes/#theme-hunting"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
     }
   },
   "places": [
@@ -195692,6 +195918,10 @@
         {
           "title": "Little Mountain Men on the Haglestä",
           "url": "/stories/little-mountain-men-on-the-haglesta/"
+        },
+        {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
         },
         {
           "title": "Maiden’s Field near Olten",
@@ -199670,6 +199900,10 @@
         {
           "title": "The Spirits of Gsteig",
           "url": "/stories/the-spirits-of-gsteig/"
+        },
+        {
+          "title": "The Spirits of the Jungfrau",
+          "url": "/stories/the-spirits-of-the-jungfrau/"
         },
         {
           "title": "The Spirits on the Jungfrau",
@@ -218502,6 +218736,10 @@
           "url": "/stories/legends-of-the-green-lake-2/"
         },
         {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
+        },
+        {
           "title": "Meier Waldis’s Butter Churn",
           "url": "/stories/meier-waldiss-butter-churn/"
         },
@@ -220512,6 +220750,10 @@
           "url": "/stories/the-spectral-sennen-bern/"
         },
         {
+          "title": "The Spirits of the Jungfrau",
+          "url": "/stories/the-spirits-of-the-jungfrau/"
+        },
+        {
           "title": "The Spirits on the Jungfrau",
           "url": "/stories/the-spirits-on-the-jungfrau/"
         },
@@ -221958,6 +222200,10 @@
         {
           "title": "Lord Kaspar and the Schultheiss",
           "url": "/stories/lord-kaspar-and-the-schultheiss/"
+        },
+        {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
         },
         {
           "title": "Maiden’s Field near Olten",
@@ -225720,6 +225966,10 @@
           "url": "/stories/the-spirits-of-greifensee/"
         },
         {
+          "title": "The Spirits of the Jungfrau",
+          "url": "/stories/the-spirits-of-the-jungfrau/"
+        },
+        {
           "title": "The Spirits on the Jungfrau",
           "url": "/stories/the-spirits-on-the-jungfrau/"
         },
@@ -228534,6 +228784,10 @@
         {
           "title": "Lord Kaspar and the Schultheiss",
           "url": "/stories/lord-kaspar-and-the-schultheiss/"
+        },
+        {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
         },
         {
           "title": "Mary’s Milk in the Winepress at Döttingen",
@@ -234436,6 +234690,10 @@
         {
           "title": "Läng wie ne Bingbaum (Long as a Binding Pole)",
           "url": "/stories/lang-wie-ne-bingbaum-long-as-a-binding-pole/"
+        },
+        {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
         },
         {
           "title": "Making Weather through Sympathie",
