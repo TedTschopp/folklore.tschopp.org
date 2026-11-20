@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "created": "2026-11-20",
+  "method": "OpenAI built-in image generation; contemporary collection illustrations",
+  "style": "Märchen Engine v2 hand-tinted engraving plates",
+  "width": 1536,
+  "height": 1024,
+  "sizes": [
+    480,
+    768,
+    1200,
+    1536
+  ],
+  "assets": {
+    "high-valleys": {
+      "alt": "An engraved Alpine path crosses a stone bridge toward timber houses beneath mountain ridges.",
+      "caption": "Beyond the familiar."
+    },
+    "fireside-reading": {
+      "alt": "A closed book and glowing oil lamp rest beside a chair and farmhouse hearth, with mountains beyond the window.",
+      "caption": "A few minutes by the fireside."
+    },
+    "collectors-desk": {
+      "alt": "A collector’s notebook with botanical drawings, blank-spined books, a quill, herbs, an old key and a herder’s bell.",
+      "caption": "Gathered for the curious reader."
+    },
+    "paths-and-places": {
+      "alt": "An imagined, unlabelled hill-and-river sketch beside a compass, walking staff and pine sprig.",
+      "caption": "Following a path."
+    },
+    "ghosts-and-hauntings": {
+      "alt": "A faint cloaked figure waits beyond an old village gateway under a linden tree and pale moon.",
+      "caption": "At the old threshold."
+    },
+    "witches-and-magic": {
+      "alt": "A closed book, iron key, earthenware bowl and gathered herbs on a cottage windowsill, with a curl of steam.",
+      "caption": "What is gathered at the window."
+    },
+    "mountain-folk": {
+      "alt": "A small, elderly mountain dweller offers a wooden cup to a herder beneath a larch tree.",
+      "caption": "Helpers beyond the village."
+    },
+    "dragons-and-giants": {
+      "alt": "A scaled, winged dragon rests on a rocky ledge high above a Swiss valley.",
+      "caption": "Where the rocks take another shape."
+    },
+    "treasure-and-bargains": {
+      "alt": "An old chest, a key and a few coins lie among larch roots while a cloaked stranger waits farther along the path.",
+      "caption": "An offer beside the path."
+    },
+    "mountains-water-and-weather": {
+      "alt": "A glacier-fed river rushes beneath a stone bridge as storm clouds gather over Alpine ridges.",
+      "caption": "Water beneath the weather."
+    },
+    "saints-and-protection": {
+      "alt": "A candlelit wayside chapel, plain cross, walking staff and traveller’s hat beside a quiet pilgrim path.",
+      "caption": "Shelter by the pilgrim road."
+    },
+    "village-legends": {
+      "alt": "An old village street winds past timber houses, a stone fountain and linden tree toward a castle tower.",
+      "caption": "Places held in memory."
+    },
+    "family-and-home": {
+      "alt": "Two people stand together at a farmhouse threshold, with bowls on the table and a small wooden toy by the door.",
+      "caption": "The warmth of the threshold."
+    },
+    "wit-and-good-fortune": {
+      "alt": "A traveller carrying a cloth bundle crosses a small stone bridge while a fox watches from the bank.",
+      "caption": "A fortunate crossing."
+    },
+    "animals-and-the-hunt": {
+      "alt": "A deer and hare look back toward a winding path at the edge of an Alpine fir wood.",
+      "caption": "Watchers at the forest edge."
+    },
+    "customs-and-daily-life": {
+      "alt": "A herder leads two cattle along a high pasture path toward a dairy hut, beside a wooden pail and Alpine flowers.",
+      "caption": "The work of the high pasture."
+    }
+  },
+  "pages": {
+    "/": "high-valleys",
+    "/themes/": "collectors-desk",
+    "/locations/": "paths-and-places",
+    "/stories/": "collectors-desk",
+    "/short-tales/": "fireside-reading",
+    "/guide/": "collectors-desk",
+    "/about/": "collectors-desk",
+    "/research/": "collectors-desk",
+    "/themes/ghosts-and-hauntings/": "ghosts-and-hauntings",
+    "/themes/witches-and-magic/": "witches-and-magic",
+    "/themes/mountain-folk/": "mountain-folk",
+    "/themes/dragons-and-giants/": "dragons-and-giants",
+    "/themes/treasure-and-bargains/": "treasure-and-bargains",
+    "/themes/mountains-water-and-weather/": "mountains-water-and-weather",
+    "/themes/saints-and-protection/": "saints-and-protection",
+    "/themes/village-legends/": "village-legends",
+    "/themes/family-and-home/": "family-and-home",
+    "/themes/wit-and-good-fortune/": "wit-and-good-fortune",
+    "/themes/animals-and-the-hunt/": "animals-and-the-hunt",
+    "/themes/customs-and-daily-life/": "customs-and-daily-life"
+  }
+}

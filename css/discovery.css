@@ -90,3 +90,25 @@ pagefind-filter-dropdown { max-width: 100%; --pf-text: var(--text-body); --pf-te
 @media print { .folklore-local-bar, .folklore-pagination, .folklore-continue { display: none; } }
 
 .folklore-publication a.me-btn--solid, .folklore-publication a.me-btn--solid:hover { color: var(--text-on-accent); }
+
+/* Contemporary collection plates: the art remains on its own printed ground. */
+.folklore-illustrated-header { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-7); align-items: center; }
+.folklore-welcome.folklore-illustrated-header { max-width: none; }
+.folklore-illustrated-header > div { min-width: 0; }
+.folklore-plate { min-width: 0; margin: var(--space-1); }
+.folklore-plate .me-frame { padding: var(--space-2); }
+.folklore-plate img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; }
+.folklore-plate figcaption { margin-top: var(--space-3); color: var(--text-muted); font: var(--text-xs)/var(--leading-normal) var(--font-serif); }
+.folklore-plate figcaption a { white-space: nowrap; }
+.folklore-plate--thumbnail { margin: 0 0 var(--space-5); }
+.folklore-plate--thumbnail .me-frame { border: 0; outline: 0; padding: 0; }
+.folklore-topic-entry { display: block; height: 100%; text-decoration: none; }
+.folklore-topic-entry h2 { color: var(--gilt-text); text-decoration: underline; text-underline-offset: .15em; }
+.folklore-topic-entry > p:last-child { color: var(--text-body); }
+.folklore-topic-entry:hover h2 { color: var(--accent-text); }
+.folklore-prose > .folklore-plate { margin-block: var(--space-6); }
+@media (max-width: 48rem) {
+  .folklore-illustrated-header { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+  .folklore-illustrated-header .folklore-plate { width: min(100% - var(--space-2), 32rem); justify-self: center; }
+}
+@media print { .folklore-plate { break-inside: avoid; } }

@@ -39,6 +39,25 @@ filters. Named-place, collector and detailed-label filters are available on dema
 Results are paginated in groups of 24; query and filter state can be bookmarked.
 Reading times cover English story text at 200 words per minute, excluding notes.
 
+## Collection illustrations
+
+The homepage, main reading and reference routes, twelve topic cards and topic
+landing pages carry contemporary wordless illustrations. Region and named-place
+landing pages use a shared wayfinding still life, not a claimed view of that place.
+Paginated result pages keep their compact reading layout.
+
+`_data/folklore/illustrations.json` maps routes to the 16 plates and holds alt text,
+captions and generation provenance. `_includes/folklore/plate.html` serves four
+responsive WebP sizes, reserves the image dimensions, loads header plates eagerly
+and card art lazily. The existing semantic tokens and frame component supply the
+parchment/dusk presentation. No story front matter or approved text is changed.
+
+The original prompt set and asset details are in
+`docs/illustrations-2026-11-20.json`; originals are retained with the project
+artwork. The public About page distinguishes these new AI-assisted illustrations
+from historical source evidence. Reuse an existing plate via the route map rather
+than adding imagery to each generated listing stub.
+
 ## Build and verify
 
 Use Ruby 3.2+ and Node 22+:

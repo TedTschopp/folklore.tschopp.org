@@ -6,7 +6,8 @@ layout: folklore-shell
 {% assign page_size = archive.page_size | default: 50 %}
 {% assign offset = page_number | minus: 1 | times: page_size %}
 <main id="folklore-main" class="folklore-frame">
-  <header class="folklore-catalog-header">
+  <header class="folklore-catalog-header{% if page_number == 1 %} folklore-illustrated-header{% endif %}">
+    <div>
     <h1>{{ page.title | escape }}</h1>
     <p class="folklore-intro">The complete alphabetical catalogue. For a smaller starting point, choose <a href="/short-tales/">a short tale</a> or <a href="/themes/">a topic</a>.</p>
     <nav class="folklore-links" aria-label="Ways to explore">
@@ -15,6 +16,8 @@ layout: folklore-shell
       <a href="{{ '/themes/' | relative_url }}">Topics</a>
       <a href="{{ '/guide/' | relative_url }}">Folklore guide</a>
     </nav>
+    </div>
+    {% if page_number == 1 %}{% include folklore/page-plate.html %}{% endif %}
   </header>
   <h2>Browse {{ archive.stories.size }} tales</h2>
   <ul class="folklore-catalog">

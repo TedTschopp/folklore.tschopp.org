@@ -6,12 +6,15 @@ permalink: /
 ---
 {% assign discovery = site.data.folklore.discovery %}
 <main id="folklore-main" class="folklore-frame folklore-discovery">
-  <header class="folklore-welcome">
+  <header class="folklore-welcome folklore-illustrated-header">
+    <div>
     <p class="folklore-kicker">Tales from the high pastures and village lanes</p>
     <h1>A story waits beyond the familiar.</h1>
     <p class="folklore-intro">A hare in a hollow. A bargain at a river. A child no one can lift. Read the tales gathered from Switzerland, in English and in their original words, with notes along the way.</p>
     <a href="/short-tales/" class="me-btn me-btn--solid">Find a short tale</a>
     <p class="folklore-welcome-count"><a href="/stories/">Explore all {{ discovery.story_count }} stories</a></p>
+    </div>
+    {% include folklore/page-plate.html %}
   </header>
   <nav class="folklore-starting-points" aria-label="Choose a way into the collection">
     <a href="/short-tales/"><strong>A few minutes to read</strong><span>Short tales, with reading-time estimates.</span></a>
