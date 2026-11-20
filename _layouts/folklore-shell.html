@@ -16,9 +16,11 @@
   <link rel="stylesheet" href="/css/indieweb.css">
   <link rel="stylesheet" href="/css/comments-mastodon-tree.css">
   <link rel="stylesheet" href="/css/field-guide.css">
+  <link rel="stylesheet" href="/css/discovery.css">
   <script>try { if (!/(?:^|;\s*)tedt-appearance=/.test(document.cookie) && !localStorage.getItem('color-scheme')) localStorage.setItem('color-scheme', 'light'); } catch (_) {}</script>
   <script src="https://tedt.org/assets/global-header/v1/theme.js"></script>
   <script defer src="/js/field-guide.js"></script>
+  <script type="module" src="/js/discovery.js"></script>
   {% if page.url == '/search/' %}
   <link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">
   <script type="module" src="/pagefind/pagefind-component-ui.js"></script>
@@ -28,7 +30,9 @@
   <a class="visually-hidden-focusable folklore-skip" href="#folklore-main">Skip to content</a>
   {% include header.html %}
   <div class="folklore-masthead folklore-frame"><a class="folklore-wordmark" href="/"><img src="/assets/marchen/emblem.svg" alt="" width="52" height="52"><span>Swiss Folklore<span class="folklore-colophon">Collected tales · English translations · Reader notes</span></span></a><button type="button" class="me-btn me-btn--quiet me-btn--sm" data-folklore-theme aria-pressed="false">Dusk</button></div>
+  {% include folklore/local-navigation.html %}
+  {% include folklore/discovery-metadata.html %}
   {{ content }}
-  <footer class="folklore-footer"><div class="folklore-frame"><a href="/">Swiss Folklore Collection</a><a href="https://tedt.org/profile/#translation-and-folklore-disclosure">Translation disclosure</a><a href="https://tedt.org/Privacy-Policy/">Privacy policy</a><a href="https://tedt.org/stories/">More stories at TedT.org</a></div></footer>
+  <footer class="folklore-footer"><div class="folklore-frame"><a href="/about/">About the collection</a><a href="/research/">Sources and indexes</a><a href="https://tedt.org/profile/#translation-and-folklore-disclosure">Translation disclosure</a><a href="https://tedt.org/Privacy-Policy/">Privacy policy</a><a href="https://tedt.org/stories/">More stories at TedT.org</a></div></footer>
 </body>
 </html>

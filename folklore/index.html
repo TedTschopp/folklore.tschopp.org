@@ -1,8 +1,25 @@
 ---
-layout: folklore-index
-last_modified_at: "2026-11-16"
-title: "Swiss Folklore Collection"
-subtitle: "Tales from the Alps"
-description: "Read and search Swiss folklore in English and its original languages, with links to the historical source editions."
+layout: folklore-shell
+title: Swiss Folklore — a place to begin
+description: Read a short Swiss tale, follow a subject or explore the stories of a place. English translations, original texts and notes for the curious reader.
 permalink: /
 ---
+{% assign discovery = site.data.folklore.discovery %}
+<main id="folklore-main" class="folklore-frame folklore-discovery">
+  <header class="folklore-welcome">
+    <p class="folklore-kicker">Tales from the high pastures and village lanes</p>
+    <h1>A story waits beyond the familiar.</h1>
+    <p class="folklore-intro">A hare in a hollow. A bargain at a river. A child no one can lift. Read the tales gathered from Switzerland, in English and in their original words, with notes along the way.</p>
+    <a href="/short-tales/" class="me-btn me-btn--solid">Find a short tale</a>
+    <p class="folklore-welcome-count"><a href="/stories/">Explore all {{ discovery.story_count }} stories</a></p>
+  </header>
+  <nav class="folklore-starting-points" aria-label="Choose a way into the collection">
+    <a href="/short-tales/"><strong>A few minutes to read</strong><span>Short tales, with reading-time estimates.</span></a>
+    <a href="/themes/"><strong>A subject to follow</strong><span>Ghosts, witches, mountain folk and more.</span></a>
+    <a href="/locations/"><strong>A place to explore</strong><span>Begin with a region or a familiar name.</span></a>
+  </nav>
+  <section aria-labelledby="first-tales"><p class="folklore-kicker">A small selection</p><h2 id="first-tales">Three tales to begin with</h2><ul class="folklore-catalog folklore-featured">{% for sid in discovery.starters limit: 3 %}{% include folklore/story-card.html story_id=sid %}{% endfor %}</ul></section>
+  <section class="folklore-guide-aside" aria-labelledby="guide-intro"><div><p class="folklore-kicker">A companion to the tales</p><h2 id="guide-intro">New to Swiss folklore?</h2><p>An <em>Alp</em> is a working pasture, a <em>Senn</em> a dairyman. The guide introduces words, beliefs and customs that the old collectors often left unexplained.</p><a href="/guide/">Open the folklore guide</a></div><div><h3>Every story has three parts</h3><p>Read the English translation, follow the reader notes, and compare the original text. Historical source links accompany each telling.</p><a href="/about/">About this collection</a></div></section>
+  <section aria-labelledby="another-path"><h2 id="another-path">Choose another path</h2><ul class="folklore-compact-topics">{% for topic in discovery.topics limit: 6 %}<li><a href="{{ topic.url }}">{{ topic.label | escape }}</a></li>{% endfor %}</ul><p><a href="/themes/">Explore all twelve topics</a></p></section>
+  <section aria-labelledby="longer-tale"><h2 id="longer-tale">A little longer by the fireside</h2><ul class="folklore-catalog">{% assign sid = discovery.starters[6] %}{% include folklore/story-card.html story_id=sid %}{% assign sid = discovery.starters[5] %}{% include folklore/story-card.html story_id=sid %}</ul></section>
+</main>

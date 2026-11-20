@@ -1,5 +1,6 @@
 .PHONY: build check
 build:
+	python3 scripts/build_discovery.py
 	JEKYLL_ENV=production bundle exec jekyll build
 	npm run build:search
 	python3 scripts/site_analytics.py _site --mode standard

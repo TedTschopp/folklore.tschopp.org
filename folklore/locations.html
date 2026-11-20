@@ -1,7 +1,21 @@
 ---
-layout: folklore-location
-title: "Folklore Locations"
-subtitle: "Geographic Index of Swiss Folk Tales"
-description: "Explore the real-world locations mentioned in Swiss folklore—mountains, valleys, villages, rivers, and glaciers where legends were born."
+layout: folklore-shell
+title: Find stories from a place
+description: Explore Swiss folklore by region and canton, or find a village, valley, lake or mountain by name.
 permalink: /locations/
 ---
+<main id="folklore-main" class="folklore-frame folklore-discovery">
+  <header class="folklore-section-header"><p class="folklore-kicker">Follow a place</p><h1>Where shall the story begin?</h1><p class="folklore-intro">Choose a region or canton, or look for a particular place below. A canton is one of Switzerland’s constituent states.</p></header>
+  <section aria-labelledby="place-finder" class="folklore-directory" data-directory>
+    <h2 id="place-finder">Find a place by name</h2>
+    <label for="place-name">Village, valley, river, mountain or canton</label><input id="place-name" type="search" data-directory-query placeholder="For example, Rüti, Uri or Aletsch">
+    <details data-directory-details><summary>All named places</summary><p data-directory-status role="status">{{ site.data.folklore.discovery.places.size }} places and regional labels</p>
+      <ul class="folklore-name-list">{% for place in site.data.folklore.discovery.places %}<li data-directory-item data-search-terms="{{ place.search_terms | escape }}"><a href="{{ place.url }}">{{ place.label | escape }}</a> <span>{{ place.count }} tales</span>{% for old_id in place.legacy_ids %}<span id="{{ old_id }}" data-legacy-target="{{ place.url }}"></span>{% endfor %}</li>{% endfor %}</ul>
+    </details>
+  </section>
+  <section aria-labelledby="regions-heading"><h2 id="regions-heading">Explore a region or canton</h2><p class="folklore-intro">Basel and Appenzell are shown as regions where the recorded labels do not distinguish their separate cantons. Some tales name places across borders.</p>
+    <ul class="folklore-region-grid">{% for region in site.data.folklore.discovery.regions %}<li><h3><a href="{{ region.url }}">{{ region.label | escape }}</a></h3><p>{{ region.count }} tales{% if region.slug == 'graubunden' %} · also known as the Grisons{% elsif region.slug == 'valais' %} · also known as Wallis{% endif %}</p></li>{% endfor %}</ul>
+  </section>
+  <div hidden>{% for pair in site.data.folklore.locations %}<span id="{{ pair[0] }}" data-legacy-target="/research/place-profiles/#{{ pair[0] }}"></span>{% endfor %}</div>
+  <p><a href="/locations/across-switzerland/">Tales recorded across Switzerland</a> · <a href="/research/">How places are recorded</a></p>
+</main>

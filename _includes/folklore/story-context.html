@@ -6,12 +6,12 @@
     {% unless include.hide_places or guide.places.size == 0 %}
     <div>
       <dt>Places</dt>
-      <dd>{% for place in guide.places %}<a href="{{ place.url | relative_url }}">{{ place.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+      <dd>{% for place in guide.places %}{% assign place_link = site.data.folklore.discovery.place_links[place.url] | default: place.url %}<a href="{{ place_link | relative_url }}">{{ place.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
     </div>
     {% endunless %}
     <div>
       <dt>Themes</dt>
-      <dd>{% for theme in guide.themes %}<a href="{{ theme.url | relative_url }}">{{ theme.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+      <dd>{% for theme in guide.themes %}{% assign theme_link = site.data.folklore.discovery.theme_links[theme.url] | default: theme.url %}<a href="{{ theme_link | relative_url }}">{{ theme.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
     </div>
   </dl>
 </section>

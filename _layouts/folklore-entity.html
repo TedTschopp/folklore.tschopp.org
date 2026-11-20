@@ -98,31 +98,7 @@ layout: folklore-shell
                     </div>
                   </nav>
 
-                  {%- comment -%} Quick navigation by threat level {%- endcomment -%}
-                  <nav class="mb-4" aria-label="Threat level navigation">
-                    <strong class="small me-2">By Threat Level:</strong>
-                    <div class="d-inline-flex flex-wrap gap-2">
-                      {% assign threat_levels = "Dangerous,Ominous,None" | split: "," %}
-                      {% for level in threat_levels %}
-                        {% assign level_count = 0 %}
-                        {% for ent_pair in site.data.folklore.entities %}
-                          {% if ent_pair[1].threat_level == level %}
-                            {% assign level_count = level_count | plus: 1 %}
-                          {% endif %}
-                        {% endfor %}
-                        {% if level_count > 0 %}
-                        <a href="#threat-{{ level | slugify }}" class="btn btn-sm 
-                          {%- case level -%}
-                            {%- when 'Dangerous' -%} btn-outline-danger
-                            {%- when 'Ominous' -%} btn-outline-warning
-                            {%- when 'None' -%} btn-outline-success
-                          {%- endcase -%}">
-                          {{ level }} ({{ level_count }})
-                        </a>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
-                  </nav>
+
 
                   {%- comment -%} List by entity type {%- endcomment -%}
                   {%- assign __threat_anchor_dangerous_added = false -%}

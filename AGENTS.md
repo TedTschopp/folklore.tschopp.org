@@ -18,3 +18,16 @@ source documents, unreviewed stories, or private incoming response data.
 - Keep legacy URLs as response aliases; all publication entries have outgoing:false.
 - Domain routing lives in _code/domain-router. Run its Node tests before deploying
   with the existing Cloudflare login. Do not create or broaden credentials.
+
+## Reader discovery
+
+- Keep the welcoming homepage separate from the full `/stories/` catalogue.
+- Run `python3 scripts/build_discovery.py` after changing approved exports or
+  `_data/folklore/discovery_editorial.json`; generated files are committed for
+  ordinary GitHub Pages-compatible Jekyll builds. Use no generator plugin.
+- Preserve old theme/place fragment mappings and every story permalink.
+- Topic/place and search result pages show at most 24 stories at a time.
+- Preserve the five early detailed profiles as explicitly selected coverage;
+  never present their classifications as a collection-wide inventory.
+- Keep region, named-place and reading-time data honest. Do not infer coordinates,
+  exact canton membership or suitability for children from story keywords.

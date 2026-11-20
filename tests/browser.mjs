@@ -4,6 +4,7 @@ import { readFile, stat, mkdir } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import { extname, join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkDiscovery } from './discovery.mjs';
 
 const directory = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const require = createRequire(join(directory, 'package.json'));
@@ -12,6 +13,7 @@ const { default: AxeBuilder } = await import('@axe-core/playwright');
 const built = resolve(directory, '_site');
 const catalog = JSON.parse(await readFile(join(directory, '_data/folklore/archive.json'), 'utf8'));
 const guides = JSON.parse(await readFile(join(directory, '_data/folklore/reader_guides.json'), 'utf8'));
+const discovery = JSON.parse(await readFile(join(directory, '_data/folklore/discovery.json'), 'utf8'));
 const migration = JSON.parse(await readFile(join(directory, '_data/folklore/migration.json'), 'utf8'));
 const screenshots = resolve(directory, 'test-results');
 await mkdir(screenshots, { recursive: true });
@@ -73,7 +75,7 @@ try {
     await input.fill(query);
     await expect(summary).toContainText(query, { timeout: 10000 });
     await expect(summary).not.toContainText(/searching|error/i);
-    const result = tab.locator('pagefind-results').getByRole('link', { name: /Springs of the Schafmatt/ });
+    const result = tab.locator('#search-results').getByRole('link', { name: 'The Springs of the Schafmatt', exact: true });
     await expect(result).toBeVisible({ timeout: 10000 });
     assert.equal(await result.evaluate(link => new URL(link.href).pathname), storyUrl);
     console.log('Search matched the story for ' + query);
@@ -84,7 +86,7 @@ try {
   for (const query of ['Wydenweiblein', 'Wütisheer']) {
     await input.fill(query);
     await expect(summary).toContainText(query, { timeout: 10000 });
-    const matched = await tab.locator('pagefind-results').getByRole('link').evaluateAll(nodes => nodes.map(node => new URL(node.href).pathname));
+    const matched = await tab.locator('#search-results').getByRole('link').evaluateAll(nodes => nodes.map(node => new URL(node.href).pathname));
     assert.ok(matched.every(url => !catalog.source_notes.some(note => note.url === url)));
   }
   assert.deepEqual(browserErrors, []);
@@ -95,7 +97,7 @@ try {
   await expect(dark.locator('html')).toHaveAttribute('data-theme', 'dark');
   await expect(dark.locator('html')).toHaveAttribute('data-mode', 'dark');
   await dark.getByRole('searchbox', { name: 'Search this site' }).fill('Wallfahrer');
-  await expect(dark.locator('pagefind-results').getByRole('link', { name: /Springs of the Schafmatt/ })).toBeVisible();
+  await expect(dark.locator('#search-results').getByRole('link', { name: 'The Springs of the Schafmatt', exact: true })).toBeVisible();
   await checkContrast(dark);
   await tab.goto(base + storyUrl, { waitUntil: 'domcontentloaded' });
   await expect(tab.getByRole('heading', { level: 1 })).toHaveText('The Springs of the Schafmatt');
@@ -127,11 +129,11 @@ try {
   const guide = guides.stories[primary.id];
   for (const entry of [guide.places[0], guide.themes[0]]) {
     const link = tab.locator('.folklore-context').getByRole('link', { name: entry.label, exact: true });
-    await expect(link).toHaveAttribute('href', entry.url);
+    const destination = discovery.place_links[entry.url] || discovery.theme_links[entry.url];
+    await expect(link).toHaveAttribute('href', destination);
     await link.click();
-    const id = entry.url.split('#')[1];
-    await expect(tab.locator('#' + id)).toHaveText(entry.label);
-    await expect(tab.locator('#' + id + ' + ul').getByRole('link', { name: 'The Springs of the Schafmatt' })).toHaveAttribute('href', storyUrl);
+    await expect(tab.getByRole('heading', { level: 1 })).toHaveText(entry.label);
+    await expect(tab.locator('.folklore-catalog').getByRole('link', { name: 'The Springs of the Schafmatt', exact: true })).toHaveAttribute('href', storyUrl);
     await tab.goBack();
   }
   await tab.locator('.folklore-discussion-links').getByRole('link', { name: 'Discussion', exact: true }).click();
@@ -160,7 +162,7 @@ try {
   await expect(tab.locator('#reader-note-5')).toContainText('Black Madonna');
   const plain = await browser.newPage({ javaScriptEnabled: false });
   const listingIndex = Math.floor(catalog.stories.findIndex(story => story.id === primary.id) / catalog.page_size);
-  const listingUrl = listingIndex ? '/page/' + (listingIndex + 1) + '/' : '/';
+  const listingUrl = listingIndex ? '/page/' + (listingIndex + 1) + '/' : '/stories/';
   await plain.goto(base + listingUrl, { waitUntil: 'domcontentloaded' });
   await expect(plain.locator('.folklore-catalog h3 a')).toHaveCount(Math.min(catalog.page_size, catalog.stories.length - listingIndex * catalog.page_size));
   await expect(plain.getByRole('link', { name: 'Reader notes for The Springs of the Schafmatt' })).toHaveAttribute('href', storyUrl + '#reader-notes');
@@ -212,7 +214,7 @@ try {
   const newStory = catalog.stories.find(story => story.title === 'Up the Chimney and Never a Bump');
   if (newStory) {
     await expandedSearch.fill(newStory.title);
-    await expect(tab.locator('pagefind-results').getByRole('link', { name: newStory.title, exact: true })).toBeVisible({ timeout: 10000 });
+    await expect(tab.locator('#search-results').getByRole('link', { name: newStory.title, exact: true })).toBeVisible({ timeout: 10000 });
     await tab.goto(base + newStory.url, { waitUntil: 'domcontentloaded' });
     await expect(tab.getByRole('heading', { level: 1 })).toHaveText(newStory.title);
     await expect(tab.locator('.folklore-story-summary')).toHaveCount(0);
@@ -231,7 +233,7 @@ try {
     await expandedSearch.fill(query);
     await expect(tab.locator('pagefind-summary')).toContainText(query, { timeout: 10000 });
     for (const story of catalog.stories.filter(story => story.title.startsWith(query + ' ('))) {
-      const result = tab.locator('pagefind-results').getByRole('link', { name: story.title, exact: true });
+      const result = tab.locator('#search-results').getByRole('link', { name: story.title, exact: true });
       await expect(result).toBeVisible({ timeout: 10000 });
       assert.equal(await result.evaluate(node => new URL(node.href).pathname), story.url);
     }
@@ -250,7 +252,7 @@ try {
   }
   const browseLinks = [];
   for (let number = 1; number <= catalog.page_count; number++) {
-    const url = number === 1 ? '/' : '/page/' + number + '/';
+    const url = number === 1 ? '/stories/' : '/page/' + number + '/';
     const response = await tab.request.get(base + url);
     assert.equal(response.status(), 200);
     const html = await response.text();
@@ -269,6 +271,8 @@ try {
   assert.ok(await tab.locator('h1').evaluate(node => getComputedStyle(node).fontFamily.includes('IM Fell English')));
   assert.ok(await tab.locator('#english p').first().evaluate(node => getComputedStyle(node).fontFamily.includes('Alegreya')));
   assert.deepEqual(await tab.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(node => { JSON.parse(node.textContent); return true; })), [true]);
+  await checkDiscovery({ tab, context, browser, base, discovery, screenshots, expect, checkContrast });
+  assert.deepEqual(browserErrors, []);
   console.log('Verified all ' + catalog.page_count + ' browse pages, shared sources, short entries, comparison-pair search, and mobile contrast.');
 
   console.log('Passed canonical search, reading navigation, footnote return focus, discussion and mocked Webmention submission, mobile and keyboard checks, and ' + checks.length + ' canonical URLs and redirects.');

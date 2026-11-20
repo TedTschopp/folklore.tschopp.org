@@ -4,13 +4,30 @@ last_modified_at: "2026-11-16"
 title: Search Swiss Folklore
 description: Search English translations and original-language texts in the Swiss Folklore Collection.
 permalink: /search/
+noindex: true
+sitemap: false
 ---
 <main id="folklore-main" class="folklore-frame">
-  <a href="{{ '/' | relative_url }}">Browse all tales</a>
+  <a href="{{ '/stories/' | relative_url }}">Browse all tales</a>
   <h1>{{ page.title }}</h1>
-  <p>Search by title, author, or a word in either text.</p>
-  <pagefind-config bundle-path="{{ '/pagefind/' | relative_url }}" base-url="{{ '/' | relative_url }}"></pagefind-config>
+  <p class="folklore-intro">Search a title or a word in either text, or use the filters to find a tale for the time and place you have in mind.</p>
+  <pagefind-config bundle-path="{{ '/pagefind/' | relative_url }}" base-url="{{ '/' | relative_url }}" faceted preload></pagefind-config>
   <pagefind-input placeholder="Search tales"></pagefind-input>
+  <div class="folklore-search-filters" aria-label="Narrow your search">
+    <pagefind-filter-dropdown filter="topic" label="Topic" sort="alphabetical"></pagefind-filter-dropdown>
+    <pagefind-filter-dropdown filter="region" label="Region or canton" sort="alphabetical"></pagefind-filter-dropdown>
+    <pagefind-filter-dropdown filter="length" label="Time to read"></pagefind-filter-dropdown>
+  </div>
+  <details class="folklore-directory"><summary>A named place, collector or detailed topic</summary><div class="folklore-search-filters">
+    <pagefind-filter-dropdown filter="place" label="Named place" sort="alphabetical"></pagefind-filter-dropdown>
+    <pagefind-filter-dropdown filter="collector" label="Collector" sort="alphabetical"></pagefind-filter-dropdown>
+    <pagefind-filter-dropdown filter="tag" label="Recorded topic label" sort="alphabetical"></pagefind-filter-dropdown>
+  </div></details>
+  <p><button type="button" class="me-btn me-btn--quiet" data-search-reset>Clear search and filters</button></p>
   <pagefind-summary></pagefind-summary>
-  <pagefind-results></pagefind-results>
+  <p id="search-page-status" role="status" aria-live="polite"></p>
+  <div data-search-error role="alert" hidden>Search could not load. <a href="/stories/">Browse the alphabetical catalogue</a> or <a href="/themes/">choose a topic</a>.</div>
+  <ul id="search-results" class="folklore-catalog" aria-label="Matching stories"></ul>
+  <nav class="folklore-pagination" aria-label="Search result pages" data-search-pagination hidden><button type="button" class="me-btn me-btn--ghost" data-search-previous>Previous results</button><span data-search-page></span><button type="button" class="me-btn me-btn--ghost" data-search-next>Next results</button></nav>
+  <noscript><p>Full-text search needs JavaScript. The <a href="/stories/">complete catalogue</a>, <a href="/themes/">topics</a> and <a href="/locations/">places</a> remain available without it.</p></noscript>
 </main>
