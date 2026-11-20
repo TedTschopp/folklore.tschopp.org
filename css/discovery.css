@@ -1,0 +1,92 @@
+/* Reading and discovery, using Märchen Engine v2 semantic tokens on both grounds. */
+/* Switch link ink and its ground together; interpolation briefly loses contrast. */
+.folklore-publication :is(a, button, input, select, [role="option"]) { transition: none; }
+.folklore-local-bar { padding-block: var(--space-3); border-bottom: var(--bw-hair) solid var(--border-hair); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.folklore-local-bar nav { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); }
+.folklore-local-bar nav a { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-sans); font-size: var(--text-sm); }
+.folklore-local-bar nav a[aria-current] { color: var(--text-strong); font-weight: var(--weight-bold); text-decoration-color: var(--accent-text); text-decoration-thickness: 2px; }
+.folklore-site-search { display: flex; gap: var(--space-2); max-width: 24rem; flex: 1 1 17rem; }
+.folklore-site-search input { min-width: 0; width: 100%; }
+.folklore-site-search button { flex-shrink: 0; }
+.folklore-publication input[type="search"], .folklore-publication select { background: var(--surface-inset); color: var(--text-body); border: 1px solid var(--border-strong); padding: var(--space-3); border-radius: var(--radius-card); min-height: 44px; font: inherit; }
+.folklore-publication input::placeholder { color: var(--text-faint); opacity: 1; }
+.folklore-publication label { display: block; color: var(--text-body); font-family: var(--font-sans); font-size: var(--text-sm); margin-block: var(--space-3) var(--space-2); }
+.folklore-publication [hidden] { display: none !important; }
+.folklore-kicker { color: var(--herb-text); font: var(--text-xs)/var(--leading-normal) var(--font-sc); letter-spacing: var(--tracking-wide); margin-bottom: var(--space-3); }
+.folklore-welcome { max-width: 56rem; padding-block: var(--space-3) var(--space-6); }
+.folklore-welcome h1 { max-width: 17ch; margin-block: var(--space-3) var(--space-5); }
+.folklore-welcome .folklore-intro { max-width: 54ch; }
+.folklore-welcome-count { display: inline-block; font-size: var(--text-sm); margin-left: var(--space-5); }
+.folklore-starting-points { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--gutter); margin-block: var(--space-4) var(--space-8); }
+.folklore-starting-points > a { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--pad-card); background: var(--surface-inset); border: 1px solid var(--border-strong); border-radius: var(--radius-card); text-decoration: none; }
+.folklore-starting-points strong { font-family: var(--font-display); font-size: var(--text-lg); text-decoration: underline; text-underline-offset: .2em; }
+.folklore-starting-points span { color: var(--text-body); font-size: var(--text-sm); }
+.folklore-starting-points a:hover { background: var(--surface-card); }
+.folklore-discovery > section, .folklore-discovery > aside { margin-block: var(--space-8); }
+.folklore-section-header { margin-bottom: var(--space-7); padding-bottom: var(--space-6); border-bottom: 3px double var(--gilt); }
+.folklore-section-header h1 { max-width: 24ch; }
+.folklore-discovery .folklore-catalog, .folklore-continue .folklore-catalog { padding: 0; list-style: none; }
+.folklore-catalog .folklore-discovery-card { min-width: 0; padding: var(--pad-card); }
+.folklore-catalog .folklore-kicker { font-size: var(--text-xs); }
+.folklore-catalog .folklore-card-source { color: var(--text-muted); font-size: var(--text-xs); margin-bottom: 0; }
+.folklore-catalog h3 a { overflow-wrap: anywhere; }
+.folklore-topic-grid, .folklore-region-grid, .folklore-compact-topics, .folklore-name-list { list-style: none; padding: 0; }
+.folklore-topic-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--gutter); }
+.folklore-topic-grid > li { background: var(--surface-card); padding: var(--pad-card); border: var(--bw-hair) solid var(--border-hair); border-top: 3px solid var(--herb); border-radius: var(--radius-card); }
+.folklore-topic-grid h2 { font-size: var(--text-lg); }
+.folklore-topic-grid p { font-size: var(--text-sm); }
+.folklore-region-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--space-4); }
+.folklore-region-grid > li { padding: var(--space-4); background: var(--surface-card); border: var(--bw-hair) solid var(--border-hair); border-radius: var(--radius-card); }
+.folklore-region-grid h3 { font-size: var(--text-lg); }
+.folklore-region-grid p { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: 0; }
+.folklore-compact-topics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2) var(--gutter); }
+.folklore-compact-topics a { min-height: 44px; display: inline-flex; align-items: center; }
+.folklore-guide-aside { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--space-7); padding: var(--pad-card-lg); background: var(--surface-inset); border-left: 3px solid var(--herb); }
+.folklore-guide-aside > h2 { grid-column: 1 / -1; }
+.folklore-guide-aside > p { grid-column: 1 / -1; margin-bottom: 0; }
+.folklore-guide-aside h3 { font-size: var(--text-lg); }
+.folklore-directory { background: var(--surface-card); border: var(--bw-hair) solid var(--border-hair); padding: var(--pad-card); border-radius: var(--radius-card); margin-block: var(--space-6); }
+.folklore-directory summary { cursor: pointer; min-height: 44px; padding-block: var(--space-2); color: var(--text-strong); font-weight: var(--weight-bold); }
+.folklore-directory input { width: min(100%, 36rem); }
+.folklore-name-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-3) var(--gutter); margin-top: var(--space-5); }
+.folklore-name-list li { padding-block: var(--space-2); border-bottom: var(--bw-hair) solid var(--border-hair); overflow-wrap: anywhere; }
+.folklore-name-list a { display: inline-block; min-height: 32px; }
+.folklore-name-list li > span { font-size: var(--text-xs); color: var(--text-muted); }
+.folklore-glossary { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--gutter); }
+.folklore-glossary > div { background: var(--surface-card); padding: var(--pad-card); border: var(--bw-hair) solid var(--border-hair); border-radius: var(--radius-card); }
+.folklore-glossary dt { font-size: var(--text-lg); font-weight: var(--weight-bold); color: var(--text-strong); }
+.folklore-glossary dd { margin: var(--space-3) 0 0; }
+.folklore-glossary a { font-size: var(--text-sm); }
+.folklore-prose { max-width: var(--w-prose); }
+.folklore-prose h2 { margin-top: var(--space-7); }
+.folklore-breadcrumb { display: flex; flex-wrap: wrap; gap: var(--space-3); font-size: var(--text-sm); margin-bottom: var(--space-5); }
+.folklore-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); padding-block: var(--space-5); border-block: var(--bw-hair) solid var(--border-hair); margin-block: var(--space-6); }
+.folklore-pagination > a { min-height: 44px; display: inline-flex; align-items: center; }
+.folklore-pagination span, .folklore-listing-exit { font-size: var(--text-sm); color: var(--text-muted); }
+.folklore-continue { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 3px double var(--gilt); }
+.folklore-publication .folklore-continue h2 { font-size: var(--text-xl); }
+.folklore-continue p { font-size: var(--text-sm); }
+.folklore-search-filters { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+pagefind-filter-dropdown { max-width: 100%; --pf-text: var(--text-body); --pf-text-secondary: var(--text-muted); --pf-text-muted: var(--text-muted); --pf-background: var(--surface-card); --pf-border: var(--border-strong); --pf-border-focus: var(--gilt-text); --pf-outline-focus: var(--gilt-text); --pf-hover: var(--surface-inset); }
+#search-results { padding: 0; list-style: none; }
+#search-results .folklore-search-match { font-size: var(--text-sm); }
+.folklore-reading .folklore-related { grid-template-columns: 1fr; }
+.folklore-reading .folklore-related h3 { font-size: var(--text-lg); }
+@media (max-width: 64rem) { .folklore-topic-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .folklore-region-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media (max-width: 48rem) {
+  .folklore-local-bar nav { gap: 0 var(--space-4); }
+  .folklore-site-search { max-width: none; flex-basis: 100%; }
+  .folklore-local-bar nav a { font-size: var(--text-sm); }
+  .folklore-welcome h1 { font-size: clamp(2.3rem, 8vw, 3rem); }
+  .folklore-welcome .folklore-intro { font-size: var(--text-base); }
+  .folklore-welcome-count { display: block; margin: var(--space-4) 0 0; }
+  .folklore-starting-points, .folklore-topic-grid, .folklore-glossary, .folklore-guide-aside, .folklore-name-list, .folklore-compact-topics { grid-template-columns: 1fr; }
+  .folklore-starting-points { gap: var(--space-3); }
+  .folklore-starting-points > a { padding: var(--space-4); gap: var(--space-2); }
+  .folklore-region-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .folklore-guide-aside { padding: var(--pad-card); }
+  .folklore-name-list a { min-height: 44px; }
+}
+@media print { .folklore-local-bar, .folklore-pagination, .folklore-continue { display: none; } }
+
+.folklore-publication a.me-btn--solid, .folklore-publication a.me-btn--solid:hover { color: var(--text-on-accent); }

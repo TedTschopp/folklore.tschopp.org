@@ -11,6 +11,7 @@ site = Pathname.new(ARGV.fetch(0, '_site'))
 root = Pathname.new(__dir__).parent
 archive = JSON.parse(root.join('_data/folklore/archive.json').read)
 guides = JSON.parse(root.join('_data/folklore/reader_guides.json').read)
+discovery = JSON.parse(root.join('_data/folklore/discovery.json').read)
 story_stubs = root.glob('folklore/stories/**/*.html').filter_map do |path|
   fields = path.read[/\A---\n(\{.*?\})\n---/m, 1]
   next unless fields
@@ -103,8 +104,10 @@ indexes = {
   'places' => page(site, '/locations/'),
   'themes' => page(site, '/themes/')
 }
+discovery_groups = %w[topics tags places regions].flat_map { |key| discovery.fetch(key) }.to_h { |group| [group.fetch('url'), group.fetch('story_ids')] }
 
 sitemap_stories.each do |entry|
+  story_id = entry.fetch('id')
   url = entry.fetch('url')
   document = page(site, url)
   article = document.at_css('[data-pagefind-body]')
@@ -150,8 +153,10 @@ sitemap_stories.each do |entry|
   indexes.each do |field, index|
     guide.fetch(field).each do |entry|
       target = index.at_css("##{entry.fetch('url').split('#').last}")
-      unless target&.parent&.at_css("a[href='#{url}']")
-        abort "Missing #{field} index backlink at #{url}"
+      mapping = discovery.fetch(field == 'places' ? 'place_links' : 'theme_links')
+      destination = mapping.fetch(entry.fetch('url'))
+      unless target && target['data-legacy-target'] == destination && discovery_groups.fetch(destination).include?(story_id)
+        abort "Missing #{field} index mapping or membership at #{url}"
       end
     end
   end
@@ -172,7 +177,7 @@ search = page(site, '/search/').at_css('pagefind-config')
 unless search&.[]('base-url') == '/' && search['bundle-path'] == '/pagefind/'
   abort 'Folklore search must resolve story results from the site root'
 end
-archive_pages = archive.fetch('page_count').times.map { |i| i.zero? ? '/' : "/page/#{i + 1}/" }
+archive_pages = archive.fetch('page_count').times.map { |i| i.zero? ? '/stories/' : "/page/#{i + 1}/" }
 browse_links = archive_pages.flat_map do |url|
   listing = page(site, url)
   links = listing.css('.folklore-catalog h3 a').map { |link| link['href'] }
@@ -180,5 +185,23 @@ browse_links = archive_pages.flat_map do |url|
   links
 end
 abort 'Bilingual stories and archive browse links differ' unless published == browse_links
+
+# Check the rendered result pages independently of their generated data.
+# These are bounded static pages, so all stories remain reachable without JS.
+root.glob('folklore/discovery-pages/*.html').each do |path|
+  fields = JSON.parse(path.read[/\A---\n(\{.*?\})\n---/m, 1])
+  listing = page(site, fields.fetch('permalink'))
+  expected_links = fields.fetch('story_ids').map { |id| discovery.fetch('stories').fetch(id).fetch('url') }
+  actual_links = listing.css('.folklore-catalog h3 a').map { |link| link['href'] }
+  unless actual_links == expected_links && actual_links.size <= discovery.fetch('page_size') &&
+         listing.css('h1').size == 1 && listing.at_css('h1').text == fields.fetch('title')
+    abort "Incorrect or unbounded discovery listing at #{fields.fetch('permalink')}"
+  end
+  listing.css('a[rel=next], a[rel=prev]').each do |link|
+    abort "Missing discovery pagination target #{link['href']}" unless site.join(link['href'].delete_prefix('/'), 'index.html').file?
+  end
+end
+abort 'Discovery exposes held source notes' unless discovery.fetch('stories').keys.sort == guides.fetch('stories').keys.sort
+
 reader_note_count = guides.fetch('stories').values.sum { |guide| guide.fetch('notes').size }
 puts "Folklore archive OK (#{published.size} bilingual pages, #{reader_note_count} reader notes, #{source_notes.size} source notes, #{index_count} indexed)"

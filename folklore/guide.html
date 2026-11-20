@@ -1,0 +1,13 @@
+---
+layout: folklore-shell
+title: A guide to Swiss folklore
+description: A reader’s introduction to Alpine words, beings and customs, with examples from the published tales.
+permalink: /guide/
+---
+<main id="folklore-main" class="folklore-frame folklore-discovery">
+  <header class="folklore-section-header"><p class="folklore-kicker">A companion to the collection</p><h1>A guide to Swiss folklore</h1><p class="folklore-intro">The old collectors could expect their neighbours to know a pasture’s work, a local name or a familiar prayer. These notes offer a way in for readers from elsewhere.</p></header>
+  <nav class="folklore-links" aria-label="In this guide"><a href="#words">Words along the way</a><a href="#beings">Beings and beliefs</a><a href="#reading">Reading the sources</a></nav>
+  <section id="words"><h2>Words along the way</h2><dl class="folklore-glossary">{% for entry in site.data.folklore.discovery.glossary %}<div id="{{ entry.id }}"><dt>{{ entry.term | escape }}</dt><dd><p>{{ entry.description | escape }}</p><a href="{{ entry.example_url }}">Read the note in {{ entry.example_title | escape }}</a></dd></div>{% endfor %}</dl></section>
+  <section id="beings"><h2>Beings and beliefs</h2><p>A name can change its meaning from valley to valley. Begin with a subject, then follow the notes attached to a particular telling.</p><ul class="folklore-name-list"><li><a href="/themes/ghosts-and-hauntings/">Ghosts, returning spirits and uncanny encounters</a></li><li><a href="/themes/witches-and-magic/">Witches, spells and enchanted objects</a></li><li><a href="/themes/mountain-folk/">Little mountain dwellers and wild people</a></li><li><a href="/themes/dragons-and-giants/">Dragons, giants and strange beasts</a></li><li><a href="/themes/saints-and-protection/">Saints, pilgrims and protective customs</a></li></ul><p><a href="/entities/">Selected profiles of beings, objects and customs</a> cover five early tales in the collection. The topic pages include the wider published collection.</p></section>
+  <section id="reading"><h2>Reading the sources</h2><p>A local legend may name a bridge, a family or a hillside; a wonder tale may follow an impossible journey. The telling records a belief or a story, rather than establishing that its events occurred.</p><p>Each reading page keeps the English translation, reader notes and original text in separate sections. The source credit links to the edition used for that page. Different tellings of a similar story remain distinct where their wording or events differ.</p><p><a href="/about/">About the collection and its translations</a> · <a href="/research/">Sources and detailed indexes</a></p></section>
+</main>

@@ -26,12 +26,12 @@ layout: folklore-shell
                   <div class="post-hero mb-2">
                     <h1 class="p-name card-title post-title mb-1">{{ page.title | default: story.title }}</h1>
                     {% if story.author %}
-                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary" data-pagefind-ignore>
                       Source author: <span class="p-author h-card"><span class="p-name">{{ story.author | escape }}</span></span>
                     </p>
                     {% endif %}
                   </div>
-                  <p class="small text-body-secondary mb-2 content-credits">
+                  <p class="small text-body-secondary mb-2 content-credits" data-pagefind-ignore>
                     <span class="content-credit content-credit-translation-editor">Translator and curator: <a class="p-translator h-card" href="{{ 'https://tedt.org/profile/' | relative_url }}">{{ site.profile.name | default: 'Ted Tschopp' }}</a></span>
                     <span aria-hidden="true"> · </span>
                     <a href="{{ 'https://tedt.org/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a>
@@ -109,7 +109,7 @@ layout: folklore-shell
                 <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
                   <div class="row">
                     <div class="col-md-4 mb-2">
-                      <a href="{{ site.url }}/" class="btn btn-outline-secondary w-100">
+                      <a href="{{ site.url }}/stories/" class="btn btn-outline-secondary w-100">
                         All Stories
                       </a>
                     </div>
@@ -119,8 +119,8 @@ layout: folklore-shell
                       </a>
                     </div>
                     <div class="col-md-4 mb-2">
-                      <a href="{{ site.url }}/entities/" class="btn btn-outline-secondary w-100">
-                        Browse Entities
+                      <a href="{{ site.url }}/guide/" class="btn btn-outline-secondary w-100">
+                        Folklore guide
                       </a>
                     </div>
                   </div>
@@ -128,6 +128,7 @@ layout: folklore-shell
 
               </div>
             </article>
+            {% include folklore/continue-reading.html %}
           </main>
 
           {% include folklore/discussion.html target_label='this tale' %}

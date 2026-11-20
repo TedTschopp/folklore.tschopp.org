@@ -1,0 +1,7 @@
+{% assign item = site.data.folklore.discovery.stories[include.story_id] %}
+<li class="folklore-discovery-card">
+  <p class="folklore-kicker">{{ item.reading_label | escape }}{% if item.region_labels.size > 0 %} · {{ item.region_labels.first | escape }}{% endif %}</p>
+  <h3><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h3>
+  <p class="folklore-catalog-summary">{{ item.summary | escape }}</p>
+  <p class="folklore-card-source">{{ item.author | escape }} · {{ item.year }} · <a href="{{ item.url | append: '#reader-notes' | relative_url }}" aria-label="Reader notes for {{ item.title | escape }}">Reader notes</a></p>
+</li>

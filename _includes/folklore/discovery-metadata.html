@@ -1,0 +1,15 @@
+{% assign discovery_story = site.data.folklore.discovery.stories[page.story_id] %}
+{% if discovery_story %}
+<div hidden data-pagefind-ignore>
+  <span data-pagefind-meta="title">{{ discovery_story.title | escape }}</span>
+  <span data-pagefind-meta="summary">{{ discovery_story.summary | escape }}</span>
+  <span data-pagefind-meta="reading">{{ discovery_story.reading_label | escape }}</span>
+  <span data-pagefind-meta="region">{{ discovery_story.region_labels | join: ', ' | escape }}</span>
+  <span data-pagefind-filter="length">{{ discovery_story.length | escape }}</span>
+  <span data-pagefind-filter="collector">{{ discovery_story.author | escape }}</span>
+  {% for key in discovery_story.topics %}{% assign topic = site.data.folklore.discovery.topics | where: 'slug', key | first %}<span data-pagefind-filter="topic">{{ topic.label | escape }}</span>{% endfor %}
+  {% for label in discovery_story.region_labels %}<span data-pagefind-filter="region">{{ label | escape }}</span>{% endfor %}
+  {% for label in discovery_story.places %}<span data-pagefind-filter="place">{{ label | escape }}</span>{% endfor %}
+  {% for label in discovery_story.tags %}<span data-pagefind-filter="tag">{{ label | escape }}</span>{% endfor %}
+</div>
+{% endif %}

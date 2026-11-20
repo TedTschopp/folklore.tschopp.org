@@ -1,0 +1,19 @@
+{
+  "baseline_commit": "bcc2dc360868be631740e2d0d31ce887978c5b28",
+  "approved_source_files_byte_identical": 3862,
+  "story_stubs_preserved": 3860,
+  "archive_and_reader_guide_data_preserved": true,
+  "deterministic_generation_under_different_python_hash_seed": true,
+  "generated_listing_pages_checked": 1126,
+  "make_check": "passed",
+  "pagefind_indexed_stories": 3858,
+  "canonical_reading_pages": 3860,
+  "reader_notes_preserved": 14038,
+  "catalogue_pages": 78,
+  "router_tests": 7,
+  "new_discovery_journeys": "passed",
+  "mobile_both_appearances": "passed",
+  "real_webmention_submissions": 0,
+  "four_comparison_pairs": "remain separate",
+  "combined_copy_groups": 18
+}

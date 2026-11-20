@@ -1,0 +1,27 @@
+---
+layout: folklore-shell
+---
+<main id="folklore-main" class="folklore-frame folklore-discovery">
+  <nav class="folklore-breadcrumb" aria-label="Breadcrumb"><a href="/">Start here</a> <span aria-hidden="true">/</span> <a href="{{ page.parent_url }}">{{ page.parent_label | escape }}</a></nav>
+  <header class="folklore-section-header">
+    <p class="folklore-kicker">{{ page.result_count }} tales · page {{ page.listing_page }} of {{ page.listing_pages }}</p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="folklore-intro">{{ page.description | escape }}</p>
+    <a class="me-btn me-btn--ghost" href="{{ page.search_url | escape }}">Narrow these choices</a>
+  </header>
+  {% if page.named_places.size > 0 %}
+  <details class="folklore-directory"><summary>Places named in these tales</summary><p>These are names recorded in the stories associated with this region; a name is not a precise map location.</p><ul class="folklore-name-list">{% for place in page.named_places %}<li><a href="{{ place.url }}">{{ place.label | escape }}</a> <span>{{ place.count }}</span></li>{% endfor %}</ul></details>
+  {% endif %}
+  <h2 class="visually-hidden">Stories</h2>
+  <ul class="folklore-catalog">
+    {% for sid in page.story_ids %}{% include folklore/story-card.html story_id=sid %}{% endfor %}
+  </ul>
+  {% if page.listing_pages > 1 %}
+  <nav class="folklore-pagination" aria-label="Story pages">
+    {% if page.listing_page > 1 %}{% assign previous = page.listing_page | minus: 1 %}<a rel="prev" href="{{ page.listing_root }}{% if previous > 1 %}page/{{ previous }}/{% endif %}">Previous page</a>{% endif %}
+    <span>Page {{ page.listing_page }} of {{ page.listing_pages }}</span>
+    {% if page.listing_page < page.listing_pages %}{% assign next = page.listing_page | plus: 1 %}<a rel="next" href="{{ page.listing_root }}page/{{ next }}/">Next page</a>{% endif %}
+  </nav>
+  {% endif %}
+  <p class="folklore-listing-exit"><a href="{{ page.parent_url }}">Back to {{ page.parent_label | downcase | escape }}</a> · <a href="/stories/">Browse all stories</a></p>
+</main>

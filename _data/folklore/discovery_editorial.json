@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-20",
+  "topics": [
+    {
+      "slug": "ghosts-and-hauntings",
+      "label": "Ghosts and hauntings",
+      "description": "Restless spirits, uncanny encounters and places where the dead are said to return.",
+      "tags": [
+        "Ghosts",
+        "Spirits of the dead",
+        "Alpine hauntings",
+        "Haunted crossings",
+        "Haunted landscapes",
+        "Haunted waters",
+        "Doubles and apparitions",
+        "Spirit banishment",
+        "Restless guardians",
+        "Restless punishment",
+        "Death omens",
+        "Omens and premonitions",
+        "Night oppression",
+        "Uncanny encounters",
+        "Uncanny sounds",
+        "Wild Hunt",
+        "Glacier penance"
+      ]
+    },
+    {
+      "slug": "witches-and-magic",
+      "label": "Witches and magic",
+      "description": "Witchcraft, enchanted books and transformations: stories of powers that rarely come without a condition.",
+      "tags": [
+        "Witchcraft",
+        "Magic books",
+        "Magic and transformation",
+        "Dangerous magic",
+        "Dangerous words",
+        "Ritual magic",
+        "Enchantment and release",
+        "Enchanted maidens",
+        "Magical brides",
+        "Magical gifts",
+        "Magical helpers",
+        "Protective names",
+        "Protective rituals",
+        "Supernatural teaching"
+      ]
+    },
+    {
+      "slug": "mountain-folk",
+      "label": "Mountain folk and wild people",
+      "description": "Little mountain dwellers, wild people and the unexpected helpers encountered beyond the village.",
+      "tags": [
+        "Wild people",
+        "Alpine spirits",
+        "Mountain spirits",
+        "Mine spirits",
+        "Protective spirits",
+        "Underground worlds",
+        "Respectful encounters",
+        "Reciprocal favors",
+        "Seasonal spirits"
+      ]
+    },
+    {
+      "slug": "dragons-and-giants",
+      "label": "Dragons, giants and strange beasts",
+      "description": "Great strength, monstrous visitors and encounters with creatures that leave their mark on the landscape.",
+      "tags": [
+        "Dragons",
+        "Giants",
+        "Monsters",
+        "Serpent lore",
+        "Extraordinary strength"
+      ]
+    },
+    {
+      "slug": "treasure-and-bargains",
+      "label": "Treasure and bargains",
+      "description": "Hidden wealth, promises and uneasy bargains. Read what happens when an opportunity carries an obligation.",
+      "tags": [
+        "Hidden treasure",
+        "Treasure seeking",
+        "Magical wealth",
+        "Dangerous bargains",
+        "Diabolical bargains",
+        "Promises and bargains",
+        "Lost opportunities",
+        "Lost abundance",
+        "Wealth and punishment",
+        "Restless guardians"
+      ]
+    },
+    {
+      "slug": "mountains-water-and-weather",
+      "label": "Mountains, water and weather",
+      "description": "Storms, glaciers, springs and dangerous crossings, as remembered in the tales of a working landscape.",
+      "tags": [
+        "Weather lore",
+        "Weather omens",
+        "Mountain dangers",
+        "Flood legends",
+        "Drowning and rescue",
+        "Disaster and rescue",
+        "Disaster legends",
+        "Disaster and punishment",
+        "Healing springs",
+        "Haunted waters",
+        "Water spirits",
+        "Landscape legends",
+        "Glacier penance",
+        "Sunken settlements"
+      ]
+    },
+    {
+      "slug": "saints-and-protection",
+      "label": "Saints, pilgrims and protection",
+      "description": "Pilgrimage, prayers, healing and the customs used to seek protection from harm.",
+      "tags": [
+        "Pilgrimage and saints",
+        "Religious customs",
+        "Religious intercession",
+        "Religious protection",
+        "Religious transgression",
+        "Healing legends",
+        "Healing quests",
+        "Healing springs",
+        "Protective rituals",
+        "Protective names",
+        "Penance and restitution",
+        "Sacrifice and loyalty"
+      ]
+    },
+    {
+      "slug": "village-legends",
+      "label": "Village legends and landmarks",
+      "description": "Stories attached to castles, roads and familiar places, including memories of rulers, disputes and local events.",
+      "tags": [
+        "Local memory",
+        "Local beliefs",
+        "Local boundaries",
+        "Boundary disputes",
+        "Origins of landmarks",
+        "Landscape memory",
+        "Castles and lordship",
+        "Civic legends",
+        "Communal identity",
+        "War and local history",
+        "Political conflict",
+        "Resistance to rulers",
+        "Justice and rulers",
+        "Buried cities",
+        "Epidemic memory",
+        "Water rights and mills"
+      ]
+    },
+    {
+      "slug": "family-and-home",
+      "label": "Love, family and home",
+      "description": "Courtship, marriage, household obligations and the strange visitors who cross a family’s threshold.",
+      "tags": [
+        "Courtship and marriage",
+        "Marriage and household life",
+        "Marriage and kinship",
+        "Maternal care",
+        "Family obligations",
+        "Sibling rivalry",
+        "Wedding gifts",
+        "Magical brides",
+        "Enchanted maidens",
+        "Changelings",
+        "Uncanny children",
+        "Child abduction",
+        "Child endangerment",
+        "Birth and fertility",
+        "Household protection",
+        "Hospitality",
+        "Death and mourning"
+      ]
+    },
+    {
+      "slug": "wit-and-good-fortune",
+      "label": "Wit, courage and good fortune",
+      "description": "Clever answers, difficult tests and fortunes changed by kindness, courage or a well-timed trick.",
+      "tags": [
+        "Courage and cunning",
+        "Courage and reward",
+        "Cunning and disguise",
+        "Dangerous challenges",
+        "Dreams and tests",
+        "Good fortune",
+        "Charity and reward",
+        "Identity and deception",
+        "Rescue and reward",
+        "Tests of courage",
+        "Trickery",
+        "Trickster victories",
+        "Unexpected wisdom",
+        "Youngest-child tales"
+      ]
+    },
+    {
+      "slug": "animals-and-the-hunt",
+      "label": "Animals and the hunt",
+      "description": "Animal helpers, hunters and creatures whose behaviour gives a warning or conceals another nature.",
+      "tags": [
+        "Animal helpers",
+        "Animal speech",
+        "Animal spirits",
+        "Animal transformation",
+        "Enchanted animals",
+        "Grateful animals",
+        "Hunting",
+        "Hunting taboos",
+        "Livestock and livelihood"
+      ]
+    },
+    {
+      "slug": "customs-and-daily-life",
+      "label": "Customs, work and daily life",
+      "description": "Herding, household work, music and seasonal gatherings: ordinary life at the edge of the extraordinary.",
+      "tags": [
+        "Alpine work",
+        "Alpine music",
+        "Everyday work",
+        "Everyday speech",
+        "Spinning and household work",
+        "Music and dance",
+        "Festivals and customs",
+        "Calendar customs",
+        "Household customs",
+        "Hunger and poverty",
+        "Property and obligation",
+        "Communal identity",
+        "Children’s beliefs",
+        "Secret societies",
+        "Uncanny gatherings"
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "slug": "aargau",
+      "label": "Aargau",
+      "aliases": [
+        "Aargau"
+      ]
+    },
+    {
+      "slug": "appenzell",
+      "label": "Appenzell region",
+      "aliases": [
+        "Appenzell"
+      ]
+    },
+    {
+      "slug": "basel",
+      "label": "Basel region",
+      "aliases": [
+        "Basel"
+      ]
+    },
+    {
+      "slug": "bern",
+      "label": "Bern",
+      "aliases": [
+        "Bern"
+      ]
+    },
+    {
+      "slug": "fribourg",
+      "label": "Fribourg",
+      "aliases": [
+        "Fribourg"
+      ]
+    },
+    {
+      "slug": "geneva",
+      "label": "Geneva",
+      "aliases": [
+        "Geneva"
+      ]
+    },
+    {
+      "slug": "glarus",
+      "label": "Glarus",
+      "aliases": [
+        "Glarus"
+      ]
+    },
+    {
+      "slug": "graubunden",
+      "label": "Graubünden",
+      "aliases": [
+        "Graubünden",
+        "Grisons"
+      ]
+    },
+    {
+      "slug": "jura",
+      "label": "Jura region",
+      "aliases": [
+        "Jura"
+      ]
+    },
+    {
+      "slug": "lucerne",
+      "label": "Lucerne",
+      "aliases": [
+        "Lucerne",
+        "Luzern"
+      ]
+    },
+    {
+      "slug": "nidwalden",
+      "label": "Nidwalden",
+      "aliases": [
+        "Nidwalden"
+      ]
+    },
+    {
+      "slug": "obwalden",
+      "label": "Obwalden",
+      "aliases": [
+        "Obwalden"
+      ]
+    },
+    {
+      "slug": "schaffhausen",
+      "label": "Schaffhausen",
+      "aliases": [
+        "Schaffhausen"
+      ]
+    },
+    {
+      "slug": "schwyz",
+      "label": "Schwyz",
+      "aliases": [
+        "Schwyz"
+      ]
+    },
+    {
+      "slug": "solothurn",
+      "label": "Solothurn",
+      "aliases": [
+        "Solothurn"
+      ]
+    },
+    {
+      "slug": "st-gallen",
+      "label": "St. Gallen",
+      "aliases": [
+        "St. Gallen"
+      ]
+    },
+    {
+      "slug": "thurgau",
+      "label": "Thurgau",
+      "aliases": [
+        "Thurgau"
+      ]
+    },
+    {
+      "slug": "ticino",
+      "label": "Ticino",
+      "aliases": [
+        "Ticino",
+        "Tessin"
+      ]
+    },
+    {
+      "slug": "uri",
+      "label": "Uri",
+      "aliases": [
+        "Uri"
+      ]
+    },
+    {
+      "slug": "valais",
+      "label": "Valais",
+      "aliases": [
+        "Valais",
+        "Wallis"
+      ]
+    },
+    {
+      "slug": "vaud",
+      "label": "Vaud",
+      "aliases": [
+        "Vaud"
+      ]
+    },
+    {
+      "slug": "zug",
+      "label": "Zug",
+      "aliases": [
+        "Zug"
+      ]
+    },
+    {
+      "slug": "zurich",
+      "label": "Zürich",
+      "aliases": [
+        "Zürich",
+        "Zurich"
+      ]
+    }
+  ],
+  "place_aliases": {
+    "All of Switzerland": "Across Switzerland",
+    "All Switzerland": "Across Switzerland",
+    "Switzerland": "Across Switzerland",
+    "Throughout Switzerland": "Across Switzerland"
+  },
+  "starters": [
+    {
+      "url": "/stories/the-three-legged-hare/",
+      "summary": "A hare waits in a hollow high above Rüti. Anyone who enters it needs someone else to call them out."
+    },
+    {
+      "url": "/stories/the-devils-bridge-reuss/",
+      "summary": "A herdsman gets the bridge he wishes for, then must find a way around the Devil’s price."
+    },
+    {
+      "url": "/stories/the-heavy-child-jecklin/",
+      "summary": "Two travellers try to help an abandoned child, but even their servants cannot lift it from the ground."
+    },
+    {
+      "url": "/stories/the-giants-of-iseltwald-hartmann/",
+      "summary": "Three giants go to war in place of an army and ask for an unexpected reward."
+    },
+    {
+      "url": "/stories/the-springs-of-the-schafmatt/",
+      "summary": "Pilgrims stop beside two springs to pray that the flood believed to lie beneath the mountain stays there."
+    },
+    {
+      "url": "/stories/beatus-drives-away-the-dragon/",
+      "summary": "A visiting preacher promises to drive a dragon from its cave beside the lake."
+    },
+    {
+      "url": "/stories/the-marvelous-barge/",
+      "summary": "A farmer’s son builds a barge that travels over land and water, then asks a king to keep his promise."
+    },
+    {
+      "url": "/stories/the-wild-hunt-sooder-1929/",
+      "summary": "Between Christmas and New Year, a roaring hunt passes through the countryside. The accompanying commentary connects the host with the storm."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Alp",
+      "description": "A high seasonal pasture and its working landscape, including huts, livestock and dairy work. It does not simply mean a mountain peak.",
+      "note_label": "Alp"
+    },
+    {
+      "term": "Senn",
+      "description": "An Alpine dairyman responsible for the herd, milk processing and cheesemaking. Other workers and occupations appear beside the Senn in these tales.",
+      "note_label": "Senn"
+    },
+    {
+      "term": "Föhn",
+      "description": "A warm downslope wind in the Alps, sometimes described in the stories as violent or dangerous.",
+      "note_label": "Föhn"
+    },
+    {
+      "term": "Bergmännchen",
+      "description": "Literally a little mountain man: a supernatural mountain dweller. Its appearance and role depend on the particular telling.",
+      "note_label": "Bergmännchen"
+    },
+    {
+      "term": "Toggeli",
+      "description": "A regional name often associated with a nightmare or pressure spirit. Local accounts do not always describe the same form.",
+      "note_label": "Toggeli"
+    },
+    {
+      "term": "Bann",
+      "description": "A binding, prohibition or spell. In some tales it holds a person in place; its meaning should be read in context.",
+      "note_label": "Bann"
+    },
+    {
+      "term": "Chamois",
+      "description": "A horned mountain mammal adapted to steep, rocky terrain in the European Alps.",
+      "note_label": "chamois"
+    },
+    {
+      "term": "Canton",
+      "description": "One of Switzerland’s constituent states. Place names such as Aargau may name a whole canton, rather than a single village.",
+      "note_label": "Aargau"
+    }
+  ]
+}

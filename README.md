@@ -16,6 +16,29 @@ source review clears another 23 translations; see
 The Kuoni 1903 witness adds The Three-Legged Hare with four reader notes; see
 [the Kuoni review](docs/publication-kuoni-witness-2026-11-19.md).
 
+## Reading and discovery
+
+The homepage offers a few reviewed starting stories and routes into short tales,
+twelve topics and places. The complete alphabetical catalogue is at `/stories/`;
+the existing `/page/2/` and subsequent catalogue URLs remain available.
+
+`/guide/` explains unfamiliar words with links to existing reader notes.
+`/research/` retains all recorded topic labels. Places consolidate the four
+across-Switzerland labels; Basel, Appenzell and Jura are shown as regions rather
+than assigned to a guessed canton. The selected legacy profiles remain available.
+
+Navigation data and ordinary Jekyll listing pages are built by
+`scripts/build_discovery.py` from approved public exports and the reviewed copy
+in `_data/folklore/discovery_editorial.json`. Run `make build` after an approved
+export; it refreshes the derived data and generated pages. Never edit the generated
+listing stubs directly. A plain `bundle exec jekyll build` can also use the
+committed generated files. See [ADR 0002](docs/ADR-0002-reader-discovery.md).
+
+Search retains the installed Pagefind components with topic, region and reading-time
+filters. Named-place, collector and detailed-label filters are available on demand.
+Results are paginated in groups of 24; query and filter state can be bookmarked.
+Reading times cover English story text at 200 words per minute, excluding notes.
+
 ## Build and verify
 
 Use Ruby 3.2+ and Node 22+:

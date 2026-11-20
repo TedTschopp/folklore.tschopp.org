@@ -1,0 +1,10 @@
+{% assign current = site.data.folklore.discovery.stories[page.story_id] %}
+{% if current.related.size > 0 %}
+<aside class="folklore-continue" aria-labelledby="continue-heading" data-pagefind-ignore>
+  <h2 id="continue-heading">Continue exploring</h2>
+  <p>More tales connected by their recorded topics or places.</p>
+  <ul class="folklore-catalog folklore-related">
+    {% for sid in current.related %}{% include folklore/story-card.html story_id=sid %}{% endfor %}
+  </ul>
+</aside>
+{% endif %}

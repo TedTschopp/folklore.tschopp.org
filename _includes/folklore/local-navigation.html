@@ -1,0 +1,14 @@
+<div class="folklore-local-bar folklore-frame">
+  <nav aria-label="Swiss Folklore">
+    <a href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>Start here</a>
+    <a href="/stories/"{% if page.url contains '/stories/' or page.archive_page %} aria-current="page"{% endif %}>All stories</a>
+    <a href="/themes/"{% if page.url contains '/themes/' %} aria-current="page"{% endif %}>Topics</a>
+    <a href="/locations/"{% if page.url contains '/locations/' %} aria-current="page"{% endif %}>Places</a>
+    <a href="/guide/"{% if page.url contains '/guide/' or page.url contains '/entities/' %} aria-current="page"{% endif %}>Folklore guide</a>
+  </nav>
+  <form action="/search/" method="get" role="search" class="folklore-site-search">
+    <label class="visually-hidden" for="site-story-query">Search all stories</label>
+    <input id="site-story-query" name="q" type="search" placeholder="Search all stories" autocomplete="off">
+    <button class="me-btn me-btn--ghost me-btn--sm" type="submit">Search</button>
+  </form>
+</div>
