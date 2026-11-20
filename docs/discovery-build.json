@@ -5,10 +5,10 @@
   "named_place_groups": 243,
   "detailed_tags": 156,
   "generated_listing_pages": 1126,
-  "source_release": "2026-11-19-kuoni-witness",
+  "source_release": "2026-11-20-editorial-integrity",
   "source_sha256": {
-    "_data/folklore/archive.json": "2155974731e65bc046f24b227b129e4d9adfb000b9035426ea04f7ff6b6bedad",
-    "_data/folklore/reader_guides.json": "c6464ac0b1846a75fb5baa6608351297d49a7027c8d9672f17eeb09e576910d3",
+    "_data/folklore/archive.json": "e3984a98a6d75680781cfe3101950a026843e9c9ed2ed971a77f4889fcfe0be7",
+    "_data/folklore/reader_guides.json": "5fe2470d04b8bb60770effede7b4cee8ec1974fa6010e5a90cdae9cf0e9f5961",
     "_data/folklore/discovery_editorial.json": "641d210edde228a3ffc578746b11b762243fd199e9bc61cbc5943ced7ab513bd"
   }
 }

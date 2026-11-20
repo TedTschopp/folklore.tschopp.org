@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'digest'
 require 'nokogiri'
 require 'pathname'
 require 'rexml/document'
@@ -12,6 +13,8 @@ root = Pathname.new(__dir__).parent
 archive = JSON.parse(root.join('_data/folklore/archive.json').read)
 guides = JSON.parse(root.join('_data/folklore/reader_guides.json').read)
 discovery = JSON.parse(root.join('_data/folklore/discovery.json').read)
+editorial_review = JSON.parse(root.join('docs/editorial-integrity-2026-11-20.json').read)
+canonical_redirects = JSON.parse(root.join('_code/domain-router/canonical-redirects.json').read)
 story_stubs = root.glob('folklore/stories/**/*.html').filter_map do |path|
   fields = path.read[/\A---\n(\{.*?\})\n---/m, 1]
   next unless fields
@@ -21,6 +24,12 @@ story_stubs = root.glob('folklore/stories/**/*.html').filter_map do |path|
 end.to_h
 sitemap_stories = archive.fetch('stories')
 all_entries = sitemap_stories + archive.fetch('source_notes')
+all_aliases = story_stubs.flat_map { |url, fields| fields.fetch('redirect_from', []).map { |old| [old, url] } }.to_h
+abort 'Domain redirects differ from the published response aliases' unless canonical_redirects == all_aliases
+editorial_review.fetch('title_corrections').each do |correction|
+  entry = all_entries.find { |story| story.fetch('id') == correction.fetch('id') }
+  abort 'A reviewed English title regressed' unless entry&.fetch('title') == correction.fetch('after')
+end
 origin = 'https://folklore.tschopp.org'
 indieweb = JSON.parse(site.join('indieweb-manifest.json').read).fetch('entries').to_h { |entry| [entry.fetch('url'), entry] }
 sitemap = REXML::Document.new(site.join('sitemap.xml').read)
@@ -118,8 +127,30 @@ sitemap_stories.each do |entry|
 
   guide = guides.fetch('stories').fetch(entry.fetch('id'))
   notes = guide.fetch('notes')
+  editorial_review.fetch('preserved_note_ids').fetch(story_id, []).each do |old_note|
+    current = notes.find { |note| note.fetch('id', note.fetch('number')) == old_note.fetch('id') }
+    unless current && current.fetch('label') == old_note.fetch('label') && Digest::SHA256.hexdigest(current.fetch('text')) == old_note.fetch('text_sha256')
+      abort "An existing reader-note bookmark changed meaning at #{url}"
+    end
+  end
   english, references = published_english(article)
   edition = story_stubs.fetch(url).fetch('edition')
+  if context = guide['reading_context']
+    rendered = article.at_css('aside[aria-label="Reading context"]')
+    unless rendered&.at_css('p')&.text == context.fetch('text') &&
+           rendered.css('a').map { |link| [link.text, link['href']] } == context.fetch('stories').map { |story| story.values_at('title', 'url') } &&
+           context.fetch('stories').all? { |story| story_stubs.key?(story.fetch('url')) }
+      abort "Missing or incorrect companion story context at #{url}"
+    end
+  end
+  %w[heading_correction opening_correction].each do |kind|
+    next unless correction = edition[kind]
+
+    reviewed = editorial_review.fetch(kind == 'heading_correction' ? 'heading_corrections' : 'opening_corrections').find { |row| row.fetch('public_page_id') == story_id }
+    unless reviewed && correction.values_at('before', 'after') == reviewed.values_at('before', 'after') && english.first == reviewed.fetch('after')
+      abort "Unreviewed editorial change at #{url}"
+    end
+  end
   unless english == edition.fetch('english_paragraphs')
     abort "Reader notes changed the approved English text at #{url}"
   end
@@ -140,11 +171,13 @@ sitemap_stories.each do |entry|
   end
   notes.each do |note|
     number = note.fetch('number')
-    body = article.at_css("#reader-note-#{number}")
+    note_id = note.fetch('id', number)
+    body = article.at_css("#reader-note-#{note_id}")
+    abort "Reader note text differs from its approved explanation at #{url}" unless body&.at_css('p')&.text == note.fetch('text')
     next unless note['anchor']
 
-    reference = "reader-note-ref-#{number}"
-    expected = [note.fetch('paragraph'), note.fetch('offset'), "#reader-note-#{number}"]
+    reference = "reader-note-ref-#{note_id}"
+    expected = [note.fetch('paragraph'), note.fetch('offset'), "#reader-note-#{note_id}"]
     unless references.delete(reference) == expected && body&.at_css("a[href='##{reference}']")
       abort "Invalid reader note #{number} reference or return link at #{url}"
     end

@@ -1,9 +1,32 @@
 import routes from './routes.json' with { type: 'json' };
+import canonicalRedirects from './canonical-redirects.json' with { type: 'json' };
 
 export const PUBLIC_HOST = 'folklore.tschopp.org';
 export const ORIGIN = 'https://tedtschopp.github.io';
 export const ORIGIN_PREFIX = '/folklore.tschopp.org';
 const receiver = 'https://webmention.io/tedt.org/webmention';
+
+export function canonicalDestination(value) {
+  const url = new URL(value);
+  if (url.hostname !== PUBLIC_HOST) return null;
+  const path = url.pathname.replace(/\/index\.html$/, '/');
+  const target = canonicalRedirects[path] || canonicalRedirects[path + '/'];
+  if (!target) return null;
+  const destination = new URL(target, `https://${PUBLIC_HOST}`);
+  destination.search = url.search;
+  destination.hash = url.hash;
+  return destination.href;
+}
+
+function permanentRedirect(destination) {
+  const canonical = new URL(destination);
+  canonical.search = ''; canonical.hash = '';
+  return new Response(null, { status: 301, headers: {
+    Location: destination,
+    'Cache-Control': 'public, max-age=300',
+    Link: `<${canonical.href}>; rel="canonical", <${receiver}>; rel="webmention"`,
+  } });
+}
 
 export function legacyDestination(value) {
   const url = new URL(value);
@@ -37,20 +60,14 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     const destination = legacyDestination(url);
-    if (destination) {
-      const canonical = new URL(destination);
-      canonical.search = ''; canonical.hash = '';
-      return new Response(null, { status: 301, headers: {
-      Location: destination,
-      'Cache-Control': 'public, max-age=300',
-      Link: `<${canonical.href}>; rel="canonical", <${receiver}>; rel="webmention"`,
-      } });
-    }
+    if (destination) return permanentRedirect(destination);
     // Unmapped legacy resources, including the embedded fiction fragment, retain their origin.
     if (url.hostname !== PUBLIC_HOST) return fetch(request);
     if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', {
       status: 405, headers: { Allow: 'GET, HEAD', 'Cache-Control': 'no-store' },
     });
+    const canonical = canonicalDestination(url);
+    if (canonical) return permanentRedirect(canonical);
     const headers = new Headers();
     // This is a public static origin: never forward cookies, authentication, or request bodies.
     for (const name of ['Accept', 'Accept-Encoding', 'Accept-Language', 'If-None-Match', 'If-Modified-Since', 'Range']) {

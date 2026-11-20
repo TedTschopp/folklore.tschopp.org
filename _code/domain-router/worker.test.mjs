@@ -1,8 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import worker, { legacyDestination, originURL, publicLocation } from './worker.mjs';
+import worker, { canonicalDestination, legacyDestination, originURL, publicLocation } from './worker.mjs';
 const routes = JSON.parse(await readFile(new URL('./routes.json', import.meta.url)));
+const aliases = JSON.parse(await readFile(new URL('./canonical-redirects.json', import.meta.url)));
+test('all former publication URLs redirect directly to their own canonical story', async () => {
+  assert.ok(Object.keys(aliases).length > 0);
+  for (const [path, target] of Object.entries(aliases)) {
+    assert.ok(!Object.hasOwn(aliases, target), 'No redirect chains');
+    const canonical = 'https://folklore.tschopp.org' + target;
+    assert.equal(canonicalDestination(`https://folklore.tschopp.org${path}?from=old#reader-note-1`), canonical + '?from=old#reader-note-1');
+    assert.equal(canonicalDestination(`https://folklore.tschopp.org${path}index.html`), canonical);
+    assert.equal(canonicalDestination(`https://folklore.tschopp.org${path.slice(0,-1)}`), canonical);
+    for (const method of ['GET','HEAD']) {
+      const response = await worker.fetch(new Request(`https://folklore.tschopp.org${path}?from=old`, {method}));
+      assert.equal(response.status,301);assert.equal(response.headers.get('Location'),canonical+'?from=old');
+      assert.match(response.headers.get('Link'),/rel="webmention"/);
+    }
+  }
+  assert.equal(canonicalDestination('https://example.com'+Object.keys(aliases)[0]),null);
+  assert.equal(canonicalDestination('https://folklore.tschopp.org/stories/unknown/'),null);
+});
+test('alias redirects preserve method restrictions and legacy routes have no extra hop', async () => {
+  const path=Object.keys(aliases)[0];
+  assert.equal((await worker.fetch(new Request('https://folklore.tschopp.org'+path,{method:'POST',body:'private'}))).status,405);
+  for(const target of Object.values(routes))assert.ok(!Object.hasOwn(aliases,new URL(target).pathname));
+});
 test('every inventoried URL redirects directly with query and fragment preserved', () => {
   for (const [path, target] of Object.entries(routes)) {
     for (const host of ['tedt.org', 'www.tedt.org']) {

@@ -48,6 +48,7 @@ layout: folklore-shell
                 {% include social/syndication-links.html %}
                 {% include folklore/discussion-links.html %}
                 {% if guide %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
+                {% include folklore/reading-context.html context=guide.reading_context %}
 
                 {%- comment -%} Translation Tabs {%- endcomment -%}
                 <div class="e-content">
