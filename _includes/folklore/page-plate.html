@@ -1,0 +1,6 @@
+{% assign plate_id = site.data.folklore.illustrations.pages[page.url] %}
+{% if page.listing_page == 1 %}
+  {% assign plate_id = site.data.folklore.illustrations.pages[page.listing_root] %}
+  {% if page.listing_kind == 'region' or page.listing_kind == 'place' %}{% assign plate_id = 'paths-and-places' %}{% endif %}
+{% endif %}
+{% if plate_id %}{% include folklore/plate.html id=plate_id eager=true %}{% endif %}

@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-20",
+  "mode": "built-in image_gen",
+  "type": "illustration-story",
+  "style_prompt": "Use case: illustration-story. Asset type: original editorial illustration for the Swiss Folklore reading website, in the Märchen Engine v2 Romantic-naturalist field-guide style. Landscape canvas, 3:2 ratio, approximately 1536 by 1024. A delicately hand-tinted nineteenth-century copperplate engraving: exceptionally fine bistre linework and crosshatching, warm pale cream paper, restrained herbarium sage, tarnished brass and a trace of oxblood; warm, muted and airy. Tactile printed art, composed as a real landscape or still life, not a collage of icons. Patient mystery, welcoming enough for a reading collection; no overt horror. Keep the complete central subject safely inside the central 85 percent for responsive display. Full scene to the edges, no drawn border or frame. Absolutely no lettering, words, numbers, captions, signatures, watermarks or logos. No glossy digital rendering, photography, cartoon outlines, modern objects, game mechanics or RPG iconography. This is a contemporary collection illustration, not a claim of being an archival source image.",
+  "prompts": [
+    {
+      "id": "high-valleys",
+      "subject": "An inviting footpath descends through a high Swiss valley, crosses a modest old stone arch bridge over a clear stream, and leads to a handful of timber farmhouses and a distant church spire below steep Alpine ridges. Fir branches and a little gentian frame the foreground; cloud and mountains open in the distance. A single small light shows in one distant farmhouse window. A coherent broad valley panorama, balanced depth and generous pale sky, not a depiction of a named real location."
+    },
+    {
+      "id": "fireside-reading",
+      "subject": "The quiet corner of an old Alpine farmhouse at evening: a modest wooden chair and table beside a stone hearth, a small closed clothbound book and a brass oil lamp, a wool shawl over the chair, and a window framing distant mountains. Warm light rests on the book; pine shadows gather outside. Human domestic scale, inviting still life within a convincing room, no people, no open book text."
+    },
+    {
+      "id": "collectors-desk",
+      "subject": "A folklorist's field-guide desk seen at a gentle oblique angle: an open unlettered notebook containing only a few fine line drawings of Alpine gentian and pine, two closed modest clothbound books with completely blank spines, a quill, small ink bottle, a sprig of pressed herbs, a plain old key and a small herder's bell. Quiet naturalist arrangement on warm paper, spacious and beautiful, no readable writing or pseudo-letters anywhere."
+    },
+    {
+      "id": "paths-and-places",
+      "subject": "A journey through the collection, shown as a naturalist travel still life: a softly folded unlabelled sketch of river and hill contours on a wooden table, a small old brass compass, a plain walking staff and a pine sprig, with a softly drawn distant landscape beyond. The paper is an imagined sketch, not a real map: no text, no place names, no national or canton borders, no geographic claims. A considered composition about following a path."
+    },
+    {
+      "id": "ghosts-and-hauntings",
+      "subject": "An old stone gateway at the edge of a Swiss village at twilight, with a linden tree and a narrow path; a single faint human-shaped figure in an old cloak stands just beyond the gate, almost dissolving into mist. Pale moon over distant ridges. Quiet, restrained folkloric haunting, the landscape and threshold matter more than the figure; no skulls, violence or jump-scare horror."
+    },
+    {
+      "id": "witches-and-magic",
+      "subject": "A naturalist's close view of an old cottage windowsill: a closed unlettered grimoire bound in dark cloth, a simple iron key, a small earthenware bowl and gathered Alpine herbs hung to dry. A thin curl of steam catches the window light and suggests an almost-human silhouette without becoming a cartoon. A fir wood beyond. Folkloric enchantment treated with restraint, no modern occult logos, no pentagram and no readable writing."
+    },
+    {
+      "id": "mountain-folk",
+      "subject": "At the edge of a high Swiss pasture beneath a great old larch, one small mountain dweller in plain moss-coloured homespun and a soft cap offers a wooden cup to a travel-worn herder. The little helper is child-sized but clearly an old adult, natural and human in bearing, not a garden gnome. Timber hut, larch roots and mountain flowers, quiet generosity with mystery, finely observed and never cartoonish."
+    },
+    {
+      "id": "dragons-and-giants",
+      "subject": "A long, sinuous Alpine dragon with a modest wing, scaled body and four clearly formed feet rests on a rocky ledge above a Swiss valley, its body curling with the shape of the stone. Small village far below establishes the great scale. A patient folkloric beast rendered like a naturalist's engraving, restrained and beautiful rather than a battle scene. No riders, armor, weapons or game symbols."
+    },
+    {
+      "id": "treasure-and-bargains",
+      "subject": "A weathered wooden chest half revealed beneath the roots of an ancient larch beside a rocky path. A few old indistinct coins catch a little warm light, and an iron key lies on the lid; a barely perceptible old cloaked stranger waits farther along the path. The offer and the waiting, rather than a pile of glitter. No readable marks or numerals on coins, no violence, no modern money."
+    },
+    {
+      "id": "mountains-water-and-weather",
+      "subject": "A rushing glacier-fed river beneath a steep Swiss mountain gorge, an old stone bridge in the middle distance and blue-white glacier high beyond. One bank is in soft sun, while a patient storm gathers above the ridge. Larch and tiny spring flowers near the water. Convincing Alpine geography, warm bistre engraving with sparing muted glacier-blue wash; no people, modern dams or buildings."
+    },
+    {
+      "id": "saints-and-protection",
+      "subject": "A very small old wayside chapel beside a pilgrim footpath in the Swiss hills. A plain wooden cross marks the doorway, a candle glows inside, and a modest staff and travel hat rest on a stone bench. Protective herbs and a flowering branch in the foreground; quiet respect and shelter, no supernatural spectacle. No saint name, inscriptions, lettering, modern religious merch or political emblems."
+    },
+    {
+      "id": "village-legends",
+      "subject": "A narrow old Swiss village street curving past timber houses, an old public stone fountain and a distant modest castle tower. A broad linden shades the fountain; a worn cobbled path tells of many generations. Tiny human silhouettes in plain historical working clothes may appear in the distance only. Remembered local life, sunlit yet gently mysterious. No banners, readable shop signs, clocks with numbers or specific named-location claims."
+    },
+    {
+      "id": "family-and-home",
+      "subject": "The open threshold of an old Alpine farmhouse at early evening, with a simple wooden table laid with two earthenware bowls visible inside and a child's small carved wooden animal beside the doorstep. Two adults in plain historical clothes stand quietly together by the door, shown small and naturally from behind, looking toward the path. Shelter, care and the possibility of a strange visitor. No text, modern objects or overt threat."
+    },
+    {
+      "id": "wit-and-good-fortune",
+      "subject": "A young adult traveller in plain historical Swiss working clothes crosses a modest stone footbridge, carrying a small cloth bundle tied to a walking staff, while a fox watches from the bank. At the far end the path opens toward a sunlit village. Good fortune suggested by a clever choice of path and a small encounter, not by magical glitter; believable human anatomy, naturalist fox, quiet humour."
+    },
+    {
+      "id": "animals-and-the-hunt",
+      "subject": "A red deer and a hare pause at the edge of an Alpine fir forest, looking back toward a path that disappears among old trunks. Delicate ferns, roots and tracks in the foreground, pale mountains through the trees. Their alert behaviour suggests a warning. Accurate natural animal anatomy, no weapons, dead animals, collars, exaggerated anthropomorphism or readable markings."
+    },
+    {
+      "id": "customs-and-daily-life",
+      "subject": "A small historical Alpine herding scene: two cattle with simple traditional bells follow a herder along a high pasture path toward a timber dairy hut, while a wooden pail and a few Alpine flowers sit near a low stone wall. Plain believable working clothes, modest tools and patient everyday work; intimate rather than a grand parade. No national flags, signage, words or modern farm machinery."
+    }
+  ],
+  "notes": "Original contemporary illustrations created for this collection. No historical-edition or named-location claims. Responsive derivatives are resized and encoded as WebP without artistic alteration.",
+  "originals": [
+    {
+      "id": "high-valleys",
+      "generated_filename": "exec-66e5e493-ec5b-4bc3-886c-3167e6f23234.png",
+      "sha256": "609e942b0dffcddd9fa5edd18b1b6f3394b0e034d0db50bf08d766408de3a7c0"
+    },
+    {
+      "id": "fireside-reading",
+      "generated_filename": "exec-746b1792-1492-4d01-9e28-44b80a010dc7.png",
+      "sha256": "67251d0ff2b6f19c87cf0c2d16280df6ede4eb620f374f78b1b2034d680511b2"
+    },
+    {
+      "id": "collectors-desk",
+      "generated_filename": "exec-75ac2249-2c05-446a-9918-beb512cb6979.png",
+      "sha256": "a7a9016a10a28c370f8fc9b5668bab275c680753797547dfecc4b69fff2cec32"
+    },
+    {
+      "id": "paths-and-places",
+      "generated_filename": "exec-271f5dc8-0548-4b80-b78d-f6de0c7a21e6.png",
+      "sha256": "ffb02e6e4a1408c4ce969b98cc1b6eca77c7bae0703b433a165beebb31b35394"
+    },
+    {
+      "id": "ghosts-and-hauntings",
+      "generated_filename": "exec-bb30e60b-8565-40a4-949c-1c53b32cb729.png",
+      "sha256": "fd275f62f7c984d52fe9ebf37d82109bfc69e72d14096e4b5e48d1784dd1e712"
+    },
+    {
+      "id": "witches-and-magic",
+      "generated_filename": "exec-2cefe458-3036-4bca-bd1c-688fe96bd04c.png",
+      "sha256": "700e1302ac355938584a279213a5e6c5fddc371df765400089b504eecc160aa9"
+    },
+    {
+      "id": "mountain-folk",
+      "generated_filename": "exec-5262d015-ca39-4976-9ca6-dc22de47912e.png",
+      "sha256": "a9285c7847e71b2aa9879c53b7a0e7bdbe66342d7581e480f636b5f014340de5"
+    },
+    {
+      "id": "dragons-and-giants",
+      "generated_filename": "exec-6d2cdafb-ecad-4206-ae09-f3918c3ce747.png",
+      "sha256": "db28eb3511480ef05641338202cae3a546389c90ac17c8eebbe3285c50d8c5b4"
+    },
+    {
+      "id": "treasure-and-bargains",
+      "generated_filename": "exec-fc69af1c-3096-41a8-831d-b9e47e7dc25c.png",
+      "sha256": "1ab0c8a8ec728fc67aafc0c5307675079c14b24e247c0605c5f5df10843bf0b9"
+    },
+    {
+      "id": "mountains-water-and-weather",
+      "generated_filename": "exec-b360fc20-d575-4d01-9423-ab8ef1ebb833.png",
+      "sha256": "cfaacbb18b2653c078f1de0d8e87dd75359be8aef769981adfa89db27924bbca"
+    },
+    {
+      "id": "saints-and-protection",
+      "generated_filename": "exec-d2b4327b-6fe5-4b48-8793-1e21e34ed4ca.png",
+      "sha256": "8517b2083efa6af700a75242b3868c0cc5f856ca10cd029170618c03fc435466"
+    },
+    {
+      "id": "village-legends",
+      "generated_filename": "exec-2bbadb6c-53e6-4a06-b15e-7a7b7d347da9.png",
+      "sha256": "dd1a37a724901e153cf0662bc6ff59ee2e4f82b2d97871c286599184b8810c18"
+    },
+    {
+      "id": "family-and-home",
+      "generated_filename": "exec-2faa6c84-ce1d-4496-8273-e31f0cab53fa.png",
+      "sha256": "a05ddf24a176571348b7df9b18eecee2775a2bed3e285ac8b372bb3b3f4d49fe"
+    },
+    {
+      "id": "wit-and-good-fortune",
+      "generated_filename": "exec-e86960ce-0650-4f77-aefb-607b087dadc4.png",
+      "sha256": "6b4a8e0d5c3ad2fd14777e4a1b0b013cf9f7cc688abd4c8e6f7ea907da1cfa7c"
+    },
+    {
+      "id": "animals-and-the-hunt",
+      "generated_filename": "exec-f03bd8d9-6cb5-41f7-abb0-dfa530193133.png",
+      "sha256": "9a5a3f41bf7ca0f531fbbb2c5c027a982c762fffecae0555a73b51cc95cad916"
+    },
+    {
+      "id": "customs-and-daily-life",
+      "generated_filename": "exec-4ed2b6bb-0faf-4b07-8f40-f92890c0eaf0.png",
+      "sha256": "fc9e94f39c4fef99e4cd2a3eb4857840968d483cdda3b4e06e745e0afa8c956d"
+    }
+  ],
+  "webp": [
+    {
+      "file": "animals-and-the-hunt-1200.webp",
+      "bytes": 266726,
+      "sha256": "3506b71a0d22a1fd977d5b474ca9b1ad04bdbe33dde2b300c67c5cd6249450f0"
+    },
+    {
+      "file": "animals-and-the-hunt-1536.webp",
+      "bytes": 512588,
+      "sha256": "91895cb34028eb73b293282c1b71b7d1fd9226e3a7530b863e9332b96f0c9429"
+    },
+    {
+      "file": "animals-and-the-hunt-480.webp",
+      "bytes": 43354,
+      "sha256": "c0600c64ac30ed91c2a51e50c110b2104abb35d420e24f0634511fe1d9a77b70"
+    },
+    {
+      "file": "animals-and-the-hunt-768.webp",
+      "bytes": 126218,
+      "sha256": "e32bc26fe3315ef5e9d282f7dd53d4d5e961cdd57ddceb831b77028d6a702351"
+    },
+    {
+      "file": "collectors-desk-1200.webp",
+      "bytes": 219546,
+      "sha256": "cea1da577281fa2ea8e901a33e600dc9c3a5141e11998a6ffc41e780dca7ac6b"
+    },
+    {
+      "file": "collectors-desk-1536.webp",
+      "bytes": 437176,
+      "sha256": "807c86a437026a366035394cf0a6595358a949200d460174943814950cbf7d7d"
+    },
+    {
+      "file": "collectors-desk-480.webp",
+      "bytes": 33822,
+      "sha256": "b452aaead8a1d4a53ba930a3970b1013fc83cdbc482b70e7a6c0beee4eb1789a"
+    },
+    {
+      "file": "collectors-desk-768.webp",
+      "bytes": 104908,
+      "sha256": "b1b6505a5da47eb7ec0a6603026e3931d7b13e7adfa30c34450d2231520f1ffb"
+    },
+    {
+      "file": "customs-and-daily-life-1200.webp",
+      "bytes": 272078,
+      "sha256": "1e7d0250c7aa06942d6883a42a492138ce9b1c4c6b8ed82fa25436a4dec8eb88"
+    },
+    {
+      "file": "customs-and-daily-life-1536.webp",
+      "bytes": 529082,
+      "sha256": "f709b2ea5cec28bd17df5038860337c73cffb00294aac0887406915293450816"
+    },
+    {
+      "file": "customs-and-daily-life-480.webp",
+      "bytes": 42864,
+      "sha256": "caddb0c24b41bf02fce072f83bc4bcef4485091038c19cf6bb48c4173effc778"
+    },
+    {
+      "file": "customs-and-daily-life-768.webp",
+      "bytes": 127864,
+      "sha256": "1db44fa9cde56bd4d40d00d7e0cc3b847ee4eed76878fe652c02d909803f8ac2"
+    },
+    {
+      "file": "dragons-and-giants-1200.webp",
+      "bytes": 228172,
+      "sha256": "4f75540e80f21ad118bf67ef4747bc4ab8edcfe1260b32f6e4387824c8408f58"
+    },
+    {
+      "file": "dragons-and-giants-1536.webp",
+      "bytes": 449238,
+      "sha256": "e62d7ff1568ea04569383aeab935839309670560ddaf1882e1f3d3282a941477"
+    },
+    {
+      "file": "dragons-and-giants-480.webp",
+      "bytes": 38598,
+      "sha256": "d320ed3bf53bbe6793ded1af164d5c8ee3f92fcde0706650274b050ccf91c4b0"
+    },
+    {
+      "file": "dragons-and-giants-768.webp",
+      "bytes": 112774,
+      "sha256": "2bcf5ef64fd94328bd1bb637c97e6b911f68daf1ff219a3b4aee88575df6a421"
+    },
+    {
+      "file": "family-and-home-1200.webp",
+      "bytes": 248972,
+      "sha256": "81d75089cceaa7eb413566c26eb79ebddd8e2ec17e19bae8776d541f18cc15ae"
+    },
+    {
+      "file": "family-and-home-1536.webp",
+      "bytes": 482908,
+      "sha256": "79eeaba92c80919e2f1f7f34c2d4019b133951e18abfc4508c8173e26b90133d"
+    },
+    {
+      "file": "family-and-home-480.webp",
+      "bytes": 38782,
+      "sha256": "5591a04c3d7dfda789279a092a048faf8d846114e9b83a64a935cc0907dfd990"
+    },
+    {
+      "file": "family-and-home-768.webp",
+      "bytes": 119028,
+      "sha256": "6d2b0facf8a1dc7a4087ef2044fe66b4733e029107d289fa61ebe48517670e5f"
+    },
+    {
+      "file": "fireside-reading-1200.webp",
+      "bytes": 241124,
+      "sha256": "3ec2c7814370b4e0142febd7a3e0f750d6857357d0a4998652068d009eb0d4da"
+    },
+    {
+      "file": "fireside-reading-1536.webp",
+      "bytes": 493964,
+      "sha256": "c9e058576fd41f04133ccd939a71520792198e40ec1d93195bb177f1dcfa76e8"
+    },
+    {
+      "file": "fireside-reading-480.webp",
+      "bytes": 33414,
+      "sha256": "37ac9bee49fa64d01f1a6e00fbd594237ef869ebbd84aa2b8b8bc76284dd353f"
+    },
+    {
+      "file": "fireside-reading-768.webp",
+      "bytes": 111324,
+      "sha256": "00604ebcbfa17c0e19c4c6dc0ffb06b1e07f325d5d0ecad469229ef1a3bc80d4"
+    },
+    {
+      "file": "ghosts-and-hauntings-1200.webp",
+      "bytes": 225340,
+      "sha256": "f8c0933a0808260505c91ac07ab05410a7035b57174dd4ef2bb3781dd4d137e8"
+    },
+    {
+      "file": "ghosts-and-hauntings-1536.webp",
+      "bytes": 462720,
+      "sha256": "732292f503faed53821585030a605af6412ea14f192dcd1bf0eb0e76fa145843"
+    },
+    {
+      "file": "ghosts-and-hauntings-480.webp",
+      "bytes": 31586,
+      "sha256": "352c1d486607733da04e4a708a791a22000fe5da529c22a4b031c5b5bb237d69"
+    },
+    {
+      "file": "ghosts-and-hauntings-768.webp",
+      "bytes": 104538,
+      "sha256": "56d00d71f2fd426e9c75f3af7d1e1657f9ad96bc4dfb3d3de7e90e0821439063"
+    },
+    {
+      "file": "high-valleys-1200.webp",
+      "bytes": 260616,
+      "sha256": "868f1d62a3d13adbcec9b79c14d145e1066ed4fa1a1a2f6c8183dc928c263d7b"
+    },
+    {
+      "file": "high-valleys-1536.webp",
+      "bytes": 495424,
+      "sha256": "360c9fe831651927ecba97579ff507068b42362b9f6722f26993079861a2f7a5"
+    },
+    {
+      "file": "high-valleys-480.webp",
+      "bytes": 42790,
+      "sha256": "e0ef66dd41798c6f418906c2b08ab65ad62ac0f9d8e9a5cda4e4284325c0d8a6"
+    },
+    {
+      "file": "high-valleys-768.webp",
+      "bytes": 125090,
+      "sha256": "25f0852df629c66559ba3ea1f6b2eb404e26ad8fe87693e51dc9a7f9a4557f76"
+    },
+    {
+      "file": "mountain-folk-1200.webp",
+      "bytes": 263950,
+      "sha256": "addd268dfd0da708a664d885347c8ad84d38b54c4d8f1773ee80d0d385da9257"
+    },
+    {
+      "file": "mountain-folk-1536.webp",
+      "bytes": 513442,
+      "sha256": "5ed6a76e5c372a33ef3840784a9cfd1f91223b2bb875beb07d195620ac43d5e9"
+    },
+    {
+      "file": "mountain-folk-480.webp",
+      "bytes": 41206,
+      "sha256": "3f0f647e3c41aa9316e3eb8d318bcbd0a6cf583abd64ff12e4bbbfb597a1ed7d"
+    },
+    {
+      "file": "mountain-folk-768.webp",
+      "bytes": 123150,
+      "sha256": "9c93e5d2b453af108d6169be165e404642171c18a40ca72cd828b80cde07033a"
+    },
+    {
+      "file": "mountains-water-and-weather-1200.webp",
+      "bytes": 253242,
+      "sha256": "5d8b6474ccd08720caec2738f56228103c46f2d820ccfa344e4164bce2a61532"
+    },
+    {
+      "file": "mountains-water-and-weather-1536.webp",
+      "bytes": 497544,
+      "sha256": "6554bfb2d6bb0033b32b75d3c82aca76c762f3de65dd29220dd195cac4e7daae"
+    },
+    {
+      "file": "mountains-water-and-weather-480.webp",
+      "bytes": 41854,
+      "sha256": "1adab09f4234fd04f27161e386e48e5b7015d5e13905b1da9a968f888c55492d"
+    },
+    {
+      "file": "mountains-water-and-weather-768.webp",
+      "bytes": 122120,
+      "sha256": "332020dcd3cfae463bc0b9e0e935b739645b00c3f619655de105a85362dfd0b5"
+    },
+    {
+      "file": "paths-and-places-1200.webp",
+      "bytes": 253396,
+      "sha256": "de98b9a3d71beeac1b130f0e55832727046f8841b77050ea7085c653ce178997"
+    },
+    {
+      "file": "paths-and-places-1536.webp",
+      "bytes": 485532,
+      "sha256": "90d23cc7ebc8d41c3c91dd8a011351a757a5ca9dcf21676a7c9e899cec216dae"
+    },
+    {
+      "file": "paths-and-places-480.webp",
+      "bytes": 41254,
+      "sha256": "7ca33341ff3605c50c9f21f33fea5eb16a89107f6cfc536ec6f97c2cae6418a3"
+    },
+    {
+      "file": "paths-and-places-768.webp",
+      "bytes": 123290,
+      "sha256": "665c0cb5bac954649f08cfc0cd2cd2f1dbd11958729c8f83c8d97501c62266de"
+    },
+    {
+      "file": "saints-and-protection-1200.webp",
+      "bytes": 254148,
+      "sha256": "fe1ca51b1cc6f2b84703046ed29e18e516fbb57909ddf55b3e63ef11cc463120"
+    },
+    {
+      "file": "saints-and-protection-1536.webp",
+      "bytes": 485876,
+      "sha256": "25c5f1f5c9703c700556f6ec09d527cdb9b416fd7fd4bc7fbecae9a3ad812325"
+    },
+    {
+      "file": "saints-and-protection-480.webp",
+      "bytes": 40116,
+      "sha256": "0f560f688f2671456033743388fb03f80e6780ddbb7446167fe6b0e41444915d"
+    },
+    {
+      "file": "saints-and-protection-768.webp",
+      "bytes": 118778,
+      "sha256": "bc9ef8cd80a33b13184850f1f3b808a23c922e91b9c48a54a0418e0293a7b113"
+    },
+    {
+      "file": "treasure-and-bargains-1200.webp",
+      "bytes": 276528,
+      "sha256": "5734580e8f15b90f04699a18537748c631d2dee17704ad93eedc0710eb368c2c"
+    },
+    {
+      "file": "treasure-and-bargains-1536.webp",
+      "bytes": 526762,
+      "sha256": "b1d0d96ede4eb52d6dfbe1af2019284c678681da4b9a4ad4a2dc4d624c8694ed"
+    },
+    {
+      "file": "treasure-and-bargains-480.webp",
+      "bytes": 44908,
+      "sha256": "85278d4555e6766aa5dccf48e22fe5f8c8149cd507652d40a3a8077575a9ed12"
+    },
+    {
+      "file": "treasure-and-bargains-768.webp",
+      "bytes": 130848,
+      "sha256": "1c1586f8e71e5b78c639b80e6ae7a4131efe4e3fbf68f36887c9b83c0fc28a6c"
+    },
+    {
+      "file": "village-legends-1200.webp",
+      "bytes": 275596,
+      "sha256": "952284d3aab03cfc1de066ee6253168617fd7663b0a500c045d5c0f8db263374"
+    },
+    {
+      "file": "village-legends-1536.webp",
+      "bytes": 522876,
+      "sha256": "38d9d13a7ba5893ff53ff51128aadd44f1b2216d6cc8ef4528646c9fababc26f"
+    },
+    {
+      "file": "village-legends-480.webp",
+      "bytes": 45194,
+      "sha256": "685c282cf0dd80312221418d5720fec806339a95e00685274c93ca7a9ace1b03"
+    },
+    {
+      "file": "village-legends-768.webp",
+      "bytes": 131912,
+      "sha256": "2313e1c75b001d1cc7188918361113ec509d8a745673365686e9d4aec43bddde"
+    },
+    {
+      "file": "wit-and-good-fortune-1200.webp",
+      "bytes": 250664,
+      "sha256": "4db01e07887939b3e7c89e1ddee6d78eaf0d20273b62846fba832892dbc2277a"
+    },
+    {
+      "file": "wit-and-good-fortune-1536.webp",
+      "bytes": 492494,
+      "sha256": "506d66a490bb451220609e980620f8b8cd5fbbd4bf775c175e9f8f641f4e7fc6"
+    },
+    {
+      "file": "wit-and-good-fortune-480.webp",
+      "bytes": 39714,
+      "sha256": "8f7b94c91efa3a58d27aeeb2264595f05eb7961a8d5de848f9b0ec528644fe01"
+    },
+    {
+      "file": "wit-and-good-fortune-768.webp",
+      "bytes": 118620,
+      "sha256": "d18e6875aa21a200ec809b21799baf939a55c92aeccbafe3534570350152e420"
+    },
+    {
+      "file": "witches-and-magic-1200.webp",
+      "bytes": 227540,
+      "sha256": "a04b693495ce27404da42cf0a0fcc88c6644bbd9ab4031067a8673b20604ba89"
+    },
+    {
+      "file": "witches-and-magic-1536.webp",
+      "bytes": 454262,
+      "sha256": "ea392a8702bba1f4837bb9b3b2f1db93e927fc50d2490c3787790d83ded4d9f6"
+    },
+    {
+      "file": "witches-and-magic-480.webp",
+      "bytes": 37154,
+      "sha256": "c640840aab6312696140105df72a7c5c58ce8913d7eb9d55f4fdbcccd78c37aa"
+    },
+    {
+      "file": "witches-and-magic-768.webp",
+      "bytes": 113754,
+      "sha256": "60f39393f59ab1d603d52635d116b4a554e9bda4ec94f7511361b4510ff48cb5"
+    }
+  ]
+}

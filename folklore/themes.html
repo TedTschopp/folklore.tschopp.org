@@ -5,9 +5,9 @@ description: Find a Swiss tale about ghosts, witches, mountain folk, hidden trea
 permalink: /themes/
 ---
 <main id="folklore-main" class="folklore-frame folklore-discovery">
-  <header class="folklore-section-header"><p class="folklore-kicker">Follow a subject</p><h1>What draws you into a tale?</h1><p class="folklore-intro">Begin with a subject. Each collection opens a short list of stories, with room to explore further.</p></header>
+  <header class="folklore-section-header folklore-illustrated-header"><div><p class="folklore-kicker">Follow a subject</p><h1>What draws you into a tale?</h1><p class="folklore-intro">Begin with a subject. Each collection opens a short list of stories, with room to explore further.</p></div>{% include folklore/page-plate.html %}</header>
   <ul class="folklore-topic-grid">
-    {% for topic in site.data.folklore.discovery.topics %}<li><p class="folklore-kicker">{{ topic.count }} tales</p><h2><a href="{{ topic.url }}">{{ topic.label | escape }}</a></h2><p>{{ topic.description | escape }}</p></li>{% endfor %}
+    {% for topic in site.data.folklore.discovery.topics %}<li><a class="folklore-topic-entry" href="{{ topic.url }}" aria-labelledby="topic-{{ topic.slug }}">{% include folklore/plate.html id=topic.slug thumbnail=true %}<p class="folklore-kicker">{{ topic.count }} tales</p><h2 id="topic-{{ topic.slug }}">{{ topic.label | escape }}</h2><p>{{ topic.description | escape }}</p></a></li>{% endfor %}
   </ul>
   <aside class="folklore-guide-aside"><h2>A word or a creature you don’t know?</h2><p>The <a href="/guide/">folklore guide</a> explains terms such as <em>Alp</em>, <em>Senn</em> and <em>Toggeli</em>, with examples from the tales.</p></aside>
   <details class="folklore-directory" data-directory>

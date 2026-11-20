@@ -3,11 +3,14 @@ layout: folklore-shell
 ---
 <main id="folklore-main" class="folklore-frame folklore-discovery">
   <nav class="folklore-breadcrumb" aria-label="Breadcrumb"><a href="/">Start here</a> <span aria-hidden="true">/</span> <a href="{{ page.parent_url }}">{{ page.parent_label | escape }}</a></nav>
-  <header class="folklore-section-header">
+  <header class="folklore-section-header{% if page.listing_page == 1 and page.listing_kind != 'tag' %} folklore-illustrated-header{% endif %}">
+    <div>
     <p class="folklore-kicker">{{ page.result_count }} tales · page {{ page.listing_page }} of {{ page.listing_pages }}</p>
     <h1>{{ page.title | escape }}</h1>
     <p class="folklore-intro">{{ page.description | escape }}</p>
     <a class="me-btn me-btn--ghost" href="{{ page.search_url | escape }}">Narrow these choices</a>
+    </div>
+    {% if page.listing_page == 1 %}{% include folklore/page-plate.html %}{% endif %}
   </header>
   {% if page.named_places.size > 0 %}
   <details class="folklore-directory"><summary>Places named in these tales</summary><p>These are names recorded in the stories associated with this region; a name is not a precise map location.</p><ul class="folklore-name-list">{% for place in page.named_places %}<li><a href="{{ place.url }}">{{ place.label | escape }}</a> <span>{{ place.count }}</span></li>{% endfor %}</ul></details>
