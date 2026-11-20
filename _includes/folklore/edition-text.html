@@ -13,9 +13,10 @@
     {%- assign cursor = 0 -%}
     <p>
       {%- for reference in references -%}
+        {%- assign reference_id = reference.id | default: reference.number -%}
         {%- assign segment_length = reference.offset | minus: cursor -%}
         {{- paragraph | slice: cursor, segment_length | escape | newline_to_br -}}
-        <sup class="folklore-note-reference" data-pagefind-ignore><a id="reader-note-ref-{{ reference.number }}" href="#reader-note-{{ reference.number }}" aria-label="Note {{ reference.number }} for {{ reference.label | escape }}">{{ reference.number }}</a></sup>
+        <sup class="folklore-note-reference" data-pagefind-ignore><a id="reader-note-ref-{{ reference_id }}" href="#reader-note-{{ reference_id }}" aria-label="Note {{ reference.number }} for {{ reference.label | escape }}">{{ reference.number }}</a></sup>
         {%- assign cursor = reference.offset -%}
       {%- endfor -%}
       {{- paragraph | slice: cursor, paragraph.size | escape | newline_to_br -}}

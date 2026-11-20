@@ -1,0 +1,10 @@
+{% if include.context %}
+<aside class="folklore-context" aria-label="Reading context">
+  <p>{{ include.context.text | escape }}</p>
+  <ul>
+    {% for companion in include.context.stories %}
+    <li><a href="{{ companion.url | relative_url }}">{{ companion.title | escape }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
