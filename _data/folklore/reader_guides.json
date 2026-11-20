@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-20-transcription-scans",
+  "release": "2026-11-20-little-cat-scan",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -120464,6 +120464,15 @@
           "offset": 572,
           "anchor": "Rippbeimännlein",
           "number": 3
+        },
+        {
+          "label": "Transcription correction",
+          "text": "The printed Harvard copy begins “Vor vielen hundert Jahren” with an ornamental capital V, which was missing from the digital transcription. The V is restored here. This undated copy is catalogued as [1917]; the separately cited 1915 edition has not been inspected. Other wording is retained.",
+          "source": {
+            "label": "Meinrad Lienert, Schweizer Sagen und Heldengeschichten, der Jugend erzählt (Stuttgart and Olten: Levy u. Müller, undated; HathiTrust catalogue [1917]), Das Kätzlein, pp. 210–211. Harvard University copy, hvd.32044089074066.",
+            "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044089074066&seq=232"
+          },
+          "number": 4
         }
       ],
       "places": [

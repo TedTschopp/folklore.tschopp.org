@@ -1,6 +1,6 @@
 {
   "reviewed_on": "2026-11-20",
-  "release": "2026-11-20-transcription-scans",
+  "release": "2026-11-20-little-cat-scan",
   "confirmed": [
     {
       "id": "50e7fb25127894ade0a8b14f4ae501f7b2003981",
@@ -45,40 +45,55 @@
       },
       "basis": "Visually inspected the later printed reprint on pp. 63–64. Its first character is capital I, the dialect first-person pronoun. The 1929 book itself was not available as a page scan; the later witness is identified explicitly and its other spelling variants are not imported.",
       "scan_sha256": "e22cab3af43aeb5edb158ac8c13e563e82c7f9544f8b5145a928b32134b906e6"
-    }
-  ],
-  "unresolved": [
+    },
     {
       "id": "1ca53a024b89f7ff8090e675738b31a3178995c6",
       "title": "The Little Cat",
       "url": "/stories/the-little-cat/",
-      "status": "awaiting_readable_scan",
-      "proposed_prefix": "Vor ",
-      "current_prefix": "or ",
-      "basis": "SAGEN.at’s proofread transcription and the current Märchenstiftung text both read Vor. No readable page image of the cited 1915 edition or a corresponding early print was obtained; the 1917 and 1929 Google Books records exposed matching-page metadata but blank snippet images. No publication correction is approved from metadata or grammar alone.",
-      "text_witnesses": [
-        "https://www.sagen.at/texte/sagen/schweiz/allgemein/kaetzlein.html",
-        "https://www.maerchenstiftung.ch/maerchendatenbank/5176/das-kaetzlein"
-      ],
-      "book_records": [
-        "https://books.google.com/books?id=yGkBwW1jMOEC",
-        "https://books.google.com/books?id=Hy_gAAAAMAAJ"
-      ],
-      "searched": [
-        "Internet Archive catalogue",
-        "Open Library editions",
-        "HathiTrust catalogue/API",
-        "e-rara/Wikisource discovery",
-        "Google Books 1917 and 1929 authorized previews",
-        "Swiss folklore digital library catalogue"
-      ]
+      "status": "confirmed_and_approved",
+      "paragraph": 0,
+      "before": "or vielen hundert Jahren brachten einmal die Pestleutchen den großen Tod aus fremden Ländern in die Walliser Berge. Niemand konnte ihn sehen, obwohl er Tag und Nacht im Lande umging und fürchterlich hauste. Besonders bös trieb er's in Richelsmatt und Lauinen. In Richelsmatt hat damals ein Kindlein alle seine Verwandten bis auf den neunten Grad in einer einzigen Nacht beerbt, denn der große Tod brachte sie alle um. Und eine so gewaltige Anzahl Menschen tötete der große Tod, daß eine Kuh während zwölf Stunden bis an den zehnten Bauern kam, da alle vor ihm weggerafft wurden.",
+      "after": "Vor vielen hundert Jahren brachten einmal die Pestleutchen den großen Tod aus fremden Ländern in die Walliser Berge. Niemand konnte ihn sehen, obwohl er Tag und Nacht im Lande umging und fürchterlich hauste. Besonders bös trieb er's in Richelsmatt und Lauinen. In Richelsmatt hat damals ein Kindlein alle seine Verwandten bis auf den neunten Grad in einer einzigen Nacht beerbt, denn der große Tod brachte sie alle um. Und eine so gewaltige Anzahl Menschen tötete der große Tod, daß eine Kuh während zwölf Stunden bis an den zehnten Bauern kam, da alle vor ihm weggerafft wurden.",
+      "before_sha256": "76857da8d4bb8b545f256b6bcbcd590c6eb53c2eae46f8063c8a79cc0ff52707",
+      "after_sha256": "d4ee45285f21df8ed5b37c9bbf7b8d3f081c8870b64d339ba62b4663a79d5826",
+      "before_prefix": "or ",
+      "after_prefix": "Vor ",
+      "basis": "Visually inspected the complete telling on printed pp. 210–211 (scan sequences 232–233), the title and imprint pages, and the contents. The opening has an ornamental capital V followed by or vielen hundert Jahren. HathiTrust dates this undated Harvard copy [1917]; it is not a verified 1915 scan. Restore only the missing initial; retain all other approved wording even where it differs from this witness.",
+      "witness": {
+        "kind": "early_print_witness",
+        "year": 1917,
+        "date_basis": "Supplied catalogue date [1917]; the inspected title and imprint pages are undated.",
+        "printed_page": "210",
+        "citation": "Meinrad Lienert, Schweizer Sagen und Heldengeschichten, der Jugend erzählt (Stuttgart and Olten: Levy u. Müller, undated; HathiTrust catalogue [1917]), Das Kätzlein, pp. 210–211. Harvard University copy, hvd.32044089074066.",
+        "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044089074066&seq=232",
+        "catalogue_url": "https://catalog.hathitrust.org/Record/102663077"
+      },
+      "scan_sha256": "36fc91fb0347a21613f94829c8cf6824aebc10babb6732ad39f73962836fb129"
     }
   ],
+  "unresolved": [],
   "published_story_count": 3858,
   "source_note_count": 2,
-  "reader_note_count": 14059,
-  "preserved_existing_note_count": 14057,
-  "preserved_existing_note_ids": 14057,
+  "reader_note_count": 14060,
+  "preserved_existing_note_count": 14059,
+  "preserved_existing_note_ids": 14059,
   "unchanged_english_story_count": 3858,
-  "unchanged_story_urls": true
+  "unchanged_story_urls": true,
+  "edition_followups": [
+    {
+      "id": "1ca53a024b89f7ff8090e675738b31a3178995c6",
+      "title": "The Little Cat",
+      "status": "exact_1915_scan_not_found",
+      "basis": "The opening V is confirmed in an undated printed Harvard copy catalogued [1917]. The separately cited 1915 edition has not been inspected.",
+      "inspected_witness": {
+        "kind": "early_print_witness",
+        "year": 1917,
+        "date_basis": "Supplied catalogue date [1917]; the inspected title and imprint pages are undated.",
+        "printed_page": "210",
+        "citation": "Meinrad Lienert, Schweizer Sagen und Heldengeschichten, der Jugend erzählt (Stuttgart and Olten: Levy u. Müller, undated; HathiTrust catalogue [1917]), Das Kätzlein, pp. 210–211. Harvard University copy, hvd.32044089074066.",
+        "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044089074066&seq=232",
+        "catalogue_url": "https://catalog.hathitrust.org/Record/102663077"
+      }
+    }
+  ]
 }

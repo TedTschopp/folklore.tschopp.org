@@ -5,10 +5,10 @@
   "named_place_groups": 243,
   "detailed_tags": 156,
   "generated_listing_pages": 1126,
-  "source_release": "2026-11-20-transcription-scans",
+  "source_release": "2026-11-20-little-cat-scan",
   "source_sha256": {
-    "_data/folklore/archive.json": "0025c90bd0fbaa1ffe27a94a7bc11cb7710c1130c3dc7d9dfd5ba263b79726f9",
-    "_data/folklore/reader_guides.json": "a082ba1e9b7edd765a757df1ef968b2c27c479f09aab11d88a2ba67e8f42c7c3",
+    "_data/folklore/archive.json": "f1f8209561f1d72f3238cf3a1dceecc0c217b6d176c59edc3019af9349596acb",
+    "_data/folklore/reader_guides.json": "0163c48436ed6d0e93876a01bf61abaa476253c4bb11637dd3f2e7f77ce70f55",
     "_data/folklore/discovery_editorial.json": "641d210edde228a3ffc578746b11b762243fd199e9bc61cbc5943ced7ab513bd"
   }
 }
