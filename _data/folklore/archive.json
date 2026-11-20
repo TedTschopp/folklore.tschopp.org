@@ -1,6 +1,6 @@
 {
-  "release": "2026-11-19-source-clearances",
-  "corpus_commit": "f9a873e81ad7333c6444de2dab736f5d591b3645",
+  "release": "2026-11-19-evidence-followup",
+  "corpus_commit": "c46f557016a23a95a9d4828a1a65a6ea8ccfefcd",
   "page_size": 50,
   "page_count": 78,
   "stories": [
@@ -5456,6 +5456,13 @@
       "url": "/stories/magdenau-abbey/",
       "year": 1903,
       "author": "Jakob Kuoni"
+    },
+    {
+      "id": "4b5ddc2e6fef9b96e77854e7eb3c08d2f7f4cccf",
+      "title": "Magdhilde’s Spring near Dingten",
+      "url": "/stories/magdhildes-spring-near-dingten/",
+      "year": 1862,
+      "author": "Ernst Ludwig Rochholz"
     },
     {
       "id": "5dcca7103f97a0d9d569e83ff59d1ebe409262a9",
@@ -20704,6 +20711,13 @@
       "author": "Hermann Hartmann"
     },
     {
+      "id": "799cb78e486abb39bba8bb0bbf24abd92bcf2684",
+      "title": "The Spirits of the Jungfrau",
+      "url": "/stories/the-spirits-of-the-jungfrau/",
+      "year": 1910,
+      "author": "Hermann Hartmann"
+    },
+    {
       "id": "aa429ba02359951f48a75767ebb81f75b17854d5",
       "title": "The Spirits on the Jungfrau",
       "url": "/stories/the-spirits-on-the-jungfrau/",
@@ -28118,6 +28132,7 @@
     "4b0f34f93d1b0cfa1551822499df614c69111dd8": "/stories/signs-of-whether-a-woman-is-a-witch-or-not/",
     "4b268ab89f96b075c61b24f1c836a4f5e95e8447": "/stories/the-appearance-of-a-wild-man-on-fontanen/",
     "4b30e90f9da215bf44b3941cca6b0b42ed4c70d8": "/stories/the-geissler-of-klosters/",
+    "4b5ddc2e6fef9b96e77854e7eb3c08d2f7f4cccf": "/stories/magdhildes-spring-near-dingten/",
     "4b80c9d87e028c1ec204e791e73eb1204fb70335": "/stories/the-man-of-muntclu/",
     "4b8576217f863ddaa03132b4982b2f3507a65a25": "/stories/dancing-with-the-toggeli/",
     "4b90148698e5fb338e0fab0e5d2bf33cfdea929e": "/stories/the-capricious-alpbutz/",
@@ -28838,6 +28853,7 @@
     "79821acf1b7f8a5513b866e47c6a4ee586fbe5f4": "/stories/the-child-and-the-cat/",
     "799095b132f2a74a93784a0683607cfe7d709e0c": "/stories/the-heiden-flums-sg/",
     "79923e83b19946270147291fc70348447956fc5e": "/stories/the-devils-footprints-on-the-gestelenalp/",
+    "799cb78e486abb39bba8bb0bbf24abd92bcf2684": "/stories/the-spirits-of-the-jungfrau/",
     "79a36775fea9e8f259dcc28101cae25659d5f8d9": "/stories/of-hail-and-the-wetterhexe-in-the-siess-mountains/",
     "79b2fd61837cf401fa6564361fd21b43b48db289": "/stories/the-schwedenross/",
     "79c170f0a4ccf23a35d7c45f479b29654e13d972": "/stories/s-rot-frauli-the-little-red-lady/",
