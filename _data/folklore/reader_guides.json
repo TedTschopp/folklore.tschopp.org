@@ -195479,8 +195479,8 @@
       ],
       "places": [
         {
-          "label": "Aargau",
-          "url": "/locations/#place-aargau"
+          "label": "Dingten",
+          "url": "/locations/#place-dingten"
         }
       ],
       "themes": [
@@ -195918,10 +195918,6 @@
         {
           "title": "Little Mountain Men on the Haglestä",
           "url": "/stories/little-mountain-men-on-the-haglesta/"
-        },
-        {
-          "title": "Magdhilde’s Spring near Dingten",
-          "url": "/stories/magdhildes-spring-near-dingten/"
         },
         {
           "title": "Maiden’s Field near Olten",
@@ -200792,6 +200788,16 @@
         {
           "title": "The Devil’s Bridge (St. Gallen)",
           "url": "/stories/the-devils-bridge-st-gallen/"
+        }
+      ]
+    },
+    {
+      "id": "place-dingten",
+      "label": "Dingten",
+      "stories": [
+        {
+          "title": "Magdhilde’s Spring near Dingten",
+          "url": "/stories/magdhildes-spring-near-dingten/"
         }
       ]
     },
