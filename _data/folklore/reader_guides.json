@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-19-remaining",
+  "release": "2026-11-19-source-clearances",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -193724,6 +193724,1674 @@
         }
       ],
       "summary_kind": "opening"
+    },
+    "cff5e7140f77a5d539bdb208746e60033f8ca290": {
+      "summary": "The treasure in the little castle at Seedorf is guarded by the Evil One; but on Good Friday, or also on Palm Sunday, ‘during the Passion he must leave it, he must flee.’ ‘From the Schopfli where we lived, every Good Friday my mother saw an animal as large as a calf come out through the castle gate…",
+      "notes": [
+        {
+          "label": "Schopfli",
+          "text": "a diminutive of Schopf, a shed, lean-to, or small outbuilding, here used for the family’s home or named homestead; the exact structure from which the mother watches is uncertain.",
+          "paragraph": 0,
+          "offset": 188,
+          "anchor": "Schopfli",
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "5fb431f29023d0912f4b8856aca1306be5c371ae": {
+      "summary": "1. At Wischenwassern in Guretzmettlen in the Meien Valley, something often threw pebbles at the Älpler.",
+      "notes": [
+        {
+          "label": "Älpler",
+          "text": "a person living or working seasonally on an Alp, tending livestock and participating in its pastoral economy; here the plural refers to workers pelted with stones at Wischenwassern.",
+          "paragraph": 0,
+          "offset": 102,
+          "anchor": "Älpler",
+          "number": 1
+        },
+        {
+          "label": "Alp",
+          "text": "a high seasonal mountain pasture together with its huts, livestock, and working landscape, not simply a mountain; stones repeatedly strike a particular place on the Gornern Alp.",
+          "paragraph": 1,
+          "offset": 53,
+          "anchor": "Alp",
+          "number": 2
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 1,
+          "offset": 53,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 3
+        },
+        {
+          "label": "Helgenstöckli",
+          "text": "a Swiss German diminutive for a small wayside devotional shrine, image-post, or niche bearing a holy image; the stone shower surrounds the traveler near this landmark without striking him.",
+          "paragraph": 2,
+          "offset": 58,
+          "anchor": "Helgenstöckli",
+          "number": 4
+        },
+        {
+          "label": "Witch accusations",
+          "text": "Swiss witch persecutions affected both women and men. Accusations included harm to people, livestock, and crops through magic. A legend may present an accused person as a real witch; that is the telling’s claim and should not be treated as proof about a historical person.",
+          "paragraph": 7,
+          "offset": 134,
+          "anchor": "witches",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: witch persecutions",
+            "url": "https://hls-dhs-dss.ch/de/articles/011450/2014-10-16/"
+          },
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Witchcraft",
+          "url": "/themes/#theme-witchcraft"
+        },
+        {
+          "label": "Ghosts",
+          "url": "/themes/#theme-ghosts"
+        },
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "99d2f2077a667d8bc808a4cfca7ce8ea8f50f4e7": {
+      "summary": "In ancient times our Alp pastures extended much higher and were used far more intensively than they are today.",
+      "notes": [
+        {
+          "label": "Alp",
+          "text": "a high seasonal mountain pasture together with its grazing rights, livestock, huts, and dairy operation, not simply a mountain peak; the account describes the former extent and intensity of these pastoral holdings.",
+          "paragraph": 0,
+          "offset": 24,
+          "anchor": "Alp",
+          "number": 1
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 24,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 2
+        },
+        {
+          "label": "Älpler",
+          "text": "people living and working on a seasonal high-mountain pasture; here they collectively manage the cattle beyond the Märcht.",
+          "paragraph": 1,
+          "offset": 37,
+          "anchor": "Älpler",
+          "number": 3
+        },
+        {
+          "label": "Sennten",
+          "text": "a full organized Alpine cattle herd or cattle-and-dairy unit under pastoral management, not merely an unstructured group of cows; the entire Sennten is lost in the disaster.",
+          "paragraph": 1,
+          "offset": 54,
+          "anchor": "Sennten",
+          "number": 4
+        },
+        {
+          "label": "Märcht",
+          "text": "an Alpine regional word for a boundary or boundary line and also the local name attached to this divide; the source locates the old grazing ground beyond it without defining its exact course.",
+          "paragraph": 1,
+          "offset": 99,
+          "anchor": "Märcht",
+          "number": 5
+        },
+        {
+          "label": "Fluh",
+          "text": "an Alpine German term for a steep rock face, cliff, or crag; the frightened herd plunges over one more than 100 meters high.",
+          "paragraph": 1,
+          "offset": 292,
+          "anchor": "Fluh",
+          "number": 6
+        },
+        {
+          "label": "Trinkelkuh",
+          "text": "the leading cow wearing a Trinkel or Trychel, a large hammered sheet-metal livestock bell; the herdsman grabs her bell strap in an attempt to turn the whole following herd.",
+          "paragraph": 1,
+          "offset": 382,
+          "anchor": "Trinkelkuh",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/themes/#theme-weather-lore"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "fbfd5c1889fabbd5f97ccacc1914f0dca95a787f": {
+      "summary": "There was once a young herdsman who wished to marry and knew three sisters, each as beautiful as the others, so that choosing was difficult for him and he could not decide to give any one of them preference.",
+      "notes": [
+        {
+          "label": "The cheese test",
+          "text": "The mother uses three ways of cutting cheese to judge household thrift: eating the rind, discarding edible cheese, or trimming carefully.",
+          "paragraph": 0,
+          "offset": 286,
+          "anchor": "cheese",
+          "source": {
+            "label": "Jacob Grimm and Wilhelm Grimm, Kinder- und Haus-Märchen, seventh edition, volume II (Göttingen: Dieterich, 1857), KHM 155, p. 287, Die Brautschau.",
+            "url": "https://de.wikisource.org/wiki/Die_Brautschau_(1857)"
+          },
+          "number": 1
+        },
+        {
+          "label": "Edition and spelling",
+          "text": "This is KHM 155 in the Grimms' 1857 seventh edition. The catalogue transcription modernizes spellings such as heirathen, Rath and that; the short description appended by the catalogue is omitted from the story.",
+          "source": {
+            "label": "Jacob Grimm and Wilhelm Grimm, Kinder- und Haus-Märchen, seventh edition, volume II (Göttingen: Dieterich, 1857), KHM 155, p. 287, Die Brautschau.",
+            "url": "https://de.wikisource.org/wiki/Die_Brautschau_(1857)"
+          },
+          "number": 2
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Courtship and marriage",
+          "url": "/themes/#theme-courtship-and-marriage"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "0510de7be9d94f6f462e9fbc5f84fd05dda436d1": {
+      "summary": "When the heavy iron cross was to be placed atop the high, slender steeple of the parish church in Spiringen, a criminal condemned to death was entrusted with this life-threatening task and promised that his life would be spared if he succeeded.",
+      "notes": [
+        {
+          "label": "The parish",
+          "text": "A parish is an enduring local religious community, historically responsible for worship and pastoral care within a larger church organization. Its territory need not be identical to the civil village. Parish membership could shape where people attended services and which church served an outlying settlement.",
+          "paragraph": 0,
+          "offset": 87,
+          "anchor": "parish",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: parish communities",
+            "url": "https://hls-dhs-dss.ch/it/articles/011744/2023-09-04/"
+          },
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "ec5d929c30d068b51f5312244dffefa25ce54e80": {
+      "summary": "A jovial young fellow whom I knew well, and who was almost always whistling and whooping to himself, was walking along the Rynächt one night.",
+      "notes": [
+        {
+          "label": "Gässli",
+          "text": "an Alemannic diminutive for a little lane or narrow way; here it leads from the Rynächt toward communal land opposite the Bälmli.",
+          "paragraph": 0,
+          "offset": 168,
+          "anchor": "Gässli",
+          "number": 1
+        },
+        {
+          "label": "Allmend",
+          "text": "communally held or used land, often meadow, pasture, or open ground belonging to a local community rather than a private owner.",
+          "paragraph": 0,
+          "offset": 194,
+          "anchor": "Allmend",
+          "number": 2
+        },
+        {
+          "label": "Communal grazing rights",
+          "text": "Grazing on a shared Alp was governed by membership and defined rights. These could limit whose animals used the pasture and how many could be kept there. A boundary or an extra animal could therefore affect the livelihood of an entire group of households.",
+          "paragraph": 0,
+          "offset": 194,
+          "anchor": "Allmend",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: Alpine grazing rights",
+            "url": "https://hls-dhs-dss.ch/de/articles/045275/2025-02-24/"
+          },
+          "number": 3
+        },
+        {
+          "label": "Betglocke",
+          "text": "the prayer bell, whose morning ringing repeatedly ends the spirits’ nighttime power in these accounts.",
+          "paragraph": 0,
+          "offset": 521,
+          "anchor": "Betglocke",
+          "number": 4
+        },
+        {
+          "label": "z'Stubeten",
+          "text": "to go on a Stubeten, an evening social or courting visit traditionally made to a household; the expression does not mean merely visiting a public inn.",
+          "paragraph": 1,
+          "offset": 156,
+          "anchor": "z'Stubeten",
+          "number": 5
+        },
+        {
+          "label": "Stubeten",
+          "text": "an evening household gathering or courting visit in Alpine custom; several men meet spirits while returning from one.",
+          "paragraph": 1,
+          "offset": 156,
+          "anchor": "Stubeten",
+          "number": 6
+        },
+        {
+          "label": "Häägglä",
+          "text": "a local finger-hooking strength contest resembling finger wrestling; the challengers lock hands or fingers, which explains the three broken middle fingers.",
+          "paragraph": 1,
+          "offset": 263,
+          "anchor": "Häägglä",
+          "number": 7
+        },
+        {
+          "label": "Ratsherr",
+          "text": "a member of a local or cantonal council; the historical Swiss civic office is more specific than a generic adviser.",
+          "paragraph": 2,
+          "offset": 27,
+          "anchor": "Ratsherr",
+          "number": 8
+        },
+        {
+          "label": "Schindäli",
+          "text": "an Alemannic diminutive for a small shingle, splinter, or thin piece of wood; the councilman prudently offers it instead of touching the redeemed spirit’s hand.",
+          "paragraph": 2,
+          "offset": 750,
+          "anchor": "Schindäli",
+          "number": 9
+        },
+        {
+          "label": "Ungeheuer",
+          "text": "in the narrator’s local supernatural taxonomy, a troublesome uncanny being distinct from a Gespenst; the narrator insists on the distinction but cannot define its exact nature.",
+          "paragraph": 3,
+          "offset": 12,
+          "anchor": "Ungeheuer",
+          "number": 10
+        },
+        {
+          "label": "Gespenst",
+          "text": "a ghost or spectral apparition; the narrator says Gespenster are more harmful, malicious, and difficult to redeem than Ungeheuer.",
+          "paragraph": 3,
+          "offset": 27,
+          "anchor": "Gespenst",
+          "number": 11
+        },
+        {
+          "label": "Hostet",
+          "text": "a regional word for an orchard, homestead plot, or named farm property; here it identifies the dwelling place on the Vorder Mühlebach.",
+          "paragraph": 3,
+          "offset": 257,
+          "anchor": "Hostet",
+          "number": 12
+        },
+        {
+          "label": "Stübli",
+          "text": "a diminutive of Stube, the small heated parlor or living room into which the being carries the child.",
+          "paragraph": 3,
+          "offset": 634,
+          "anchor": "Stübli",
+          "number": 13
+        },
+        {
+          "label": "Grotzen",
+          "text": "a regional landscape term for rough conifer growth, stunted trees, roots, or woody scrub; the source does not identify the vegetation more narrowly.",
+          "paragraph": 4,
+          "offset": 238,
+          "anchor": "Grotzen",
+          "number": 14
+        },
+        {
+          "label": "Schwinget",
+          "text": "a wrestling bout in the Swiss Schwingen tradition; the word makes the spirit’s attack sound like a recognized folk contest even though its outcome is deadly.",
+          "paragraph": 4,
+          "offset": 302,
+          "anchor": "Schwinget",
+          "number": 15
+        },
+        {
+          "label": "Tschopen",
+          "text": "a regional term for a man’s jacket or short coat; Spittler removes it with his hat and vows never to put it on again.",
+          "paragraph": 4,
+          "offset": 564,
+          "anchor": "Tschopen",
+          "number": 16
+        },
+        {
+          "label": "Nacht-büebähosä",
+          "text": "literally the trousers of a Nachtbub, a young man making nighttime social or courting visits; the spirit treats the garment as the only thing preventing it from grinding the wearer like stones.",
+          "paragraph": 5,
+          "offset": 329,
+          "anchor": "Nacht-büebähosä",
+          "number": 17
+        },
+        {
+          "label": "Hosenlupf",
+          "text": "literally a ‘trouser lift,’ a traditional Swiss wrestling move or bout based on gripping and throwing an opponent by the clothing.",
+          "paragraph": 6,
+          "offset": 227,
+          "anchor": "Hosenlupf",
+          "number": 18
+        },
+        {
+          "label": "Nachtbub",
+          "text": "literally a ‘night lad,’ a young man who goes out after dark for revelry or courting visits; the term can be teasing or disapproving rather than a claim of criminal conduct.",
+          "paragraph": 8,
+          "offset": 411,
+          "anchor": "Nachtbub",
+          "number": 19
+        },
+        {
+          "label": "Betenläuten",
+          "text": "the ringing that calls the community to prayer; like the Betglocke and Ave, it marks the dawn boundary at which the apparition loses power.",
+          "paragraph": 8,
+          "offset": 656,
+          "anchor": "Betenläuten",
+          "number": 20
+        },
+        {
+          "label": "Ave",
+          "text": "the bell-ringing for the Ave Maria or Angelus; its first note makes the wrestling Gespenst disappear.",
+          "paragraph": 9,
+          "offset": 522,
+          "anchor": "Ave",
+          "number": 21
+        },
+        {
+          "label": "ä Güegä",
+          "text": "Uri dialect for a beetle or small bug; the bizarre creature emerges from Franz Zurfluh’s nose and then vanishes from a glass.",
+          "paragraph": 10,
+          "offset": 443,
+          "anchor": "ä Güegä",
+          "number": 22
+        },
+        {
+          "label": "Gspor",
+          "text": "dialect for tracks, traces, or a trail; the snow shows only Arnold’s own marks and the disturbance of his unseen struggle.",
+          "paragraph": 11,
+          "offset": 545,
+          "anchor": "Gspor",
+          "number": 23
+        },
+        {
+          "label": "Mit diër wil-i scho schwingä! Lüegä wil-i, ob-i nitt stercher syg ass dü!",
+          "text": "Bifängler-Hansi’s exact Uri-dialect challenge, ‘I will wrestle with you! I want to see whether I am not stronger than you!’",
+          "paragraph": 12,
+          "offset": 1015,
+          "anchor": "Mit diër wil-i scho schwingä! Lüegä wil-i, ob-i nitt stercher syg ass dü!",
+          "number": 24
+        },
+        {
+          "label": "Heer und Dokter",
+          "text": "literally ‘priest and doctor’ in this Uri usage; the paired expression calls for both spiritual and medical aid after the supernatural wrestling match.",
+          "paragraph": 12,
+          "offset": 1424,
+          "anchor": "Heer und Dokter",
+          "number": 25
+        },
+        {
+          "label": "Butzenscheiben",
+          "text": "old bull’s-eye or bottle-glass windowpanes whose thick centers and greenish glass make the view partly opaque.",
+          "paragraph": 13,
+          "offset": 386,
+          "anchor": "Butzenscheiben",
+          "number": 26
+        },
+        {
+          "label": "Hüss-Jumpfärä!",
+          "text": "a nighttime suitor’s traditional call to the ‘house maiden’ at a woman’s window; here it summons an uncanny woman instead.",
+          "paragraph": 13,
+          "offset": 551,
+          "anchor": "Hüss-Jumpfärä!",
+          "number": 27
+        },
+        {
+          "label": "Achseln zu putschen",
+          "text": "literally to bump or shove shoulders, a former strength contest among Nachtbuben; the source explains the custom but not a fixed set of rules.",
+          "paragraph": 13,
+          "offset": 927,
+          "anchor": "Achseln zu putschen",
+          "number": 28
+        },
+        {
+          "label": "Blagg",
+          "text": "a harsh dialect insult for an unpleasant, ugly, or contemptible female figure; its precise shade is uncertain, so the source word remains in the challenge.",
+          "paragraph": 13,
+          "offset": 1202,
+          "anchor": "Blagg",
+          "number": 29
+        },
+        {
+          "label": "Englischer Gruss",
+          "text": "the Angelic Salutation, traditionally the Ave Maria; fervently praying it makes the attacking apparition vanish.",
+          "paragraph": 13,
+          "offset": 1495,
+          "anchor": "Englischer Gruss",
+          "number": 30
+        },
+        {
+          "label": "Dorfen",
+          "text": "nighttime village-going, social visiting, or courting; the narrator wonders whether the experience made the young man abandon the custom, while its exact local practice is not further described.",
+          "paragraph": 14,
+          "offset": 41,
+          "anchor": "Dorfen",
+          "number": 31
+        },
+        {
+          "label": "Historical wording",
+          "text": "These accounts correspond to entries 759–772 of the 1929 volume. The catalogue uses Arzt where the historical transcription has the older dative form Arzte; the sense is unchanged.",
+          "source": {
+            "label": "Josef Müller, Sagen aus Uri, volume 2, edited by Hanns Bächtold-Stäubli (Basel: G. Krebs, 1929), nos. 759–772, pp. 183–189.",
+            "url": "https://d-nb.info/780177339"
+          },
+          "number": 32
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Courtship and marriage",
+          "url": "/themes/#theme-courtship-and-marriage"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "84e026a701650a57841b185d7c63cf7fc4c09931": {
+      "summary": "1. a) Heitmenegg is a sunny Alp in the Schächen valley at the foot of the rugged Windgällenstock.",
+      "notes": [
+        {
+          "label": "Alp",
+          "text": "a high mountain pasture together with its seasonal livestock, dairy work, huts, and workers; Heitmenegg and Etzlialp are complete summer farming operations, not simply mountain scenery.",
+          "paragraph": 0,
+          "offset": 31,
+          "anchor": "Alp",
+          "number": 1
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 31,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 2
+        },
+        {
+          "label": "Senn",
+          "text": "the senior Alpine dairyman responsible for cheesemaking and often for directing the other seasonal workers; in these variants he is the master who disguises himself to frighten a junior boy.",
+          "paragraph": 0,
+          "offset": 235,
+          "anchor": "Senn",
+          "number": 3
+        },
+        {
+          "label": "Nischt",
+          "text": "the sleeping nest, bunk, or bed space in an Alpine hut; the Senn takes the horse blanket from it, but its exact construction is not described.",
+          "paragraph": 0,
+          "offset": 488,
+          "anchor": "Nischt",
+          "number": 4
+        },
+        {
+          "label": "Büebli",
+          "text": "an affectionate or diminutive Swiss German word for a little boy; here the adjective marks the timid junior worker whom the Senn intends to frighten.",
+          "paragraph": 0,
+          "offset": 701,
+          "anchor": "Büebli",
+          "number": 5
+        },
+        {
+          "label": "Kähle",
+          "text": "a local topographic word for a steep channel, gully, or ravine; the disguised Senn slides down its stony slope, but the feature’s exact size is not given.",
+          "paragraph": 0,
+          "offset": 925,
+          "anchor": "Kähle",
+          "number": 6
+        },
+        {
+          "label": "Kreuzfingerring",
+          "text": "literally a ‘cross finger-ring,’ a ring bearing a cross or used as a Christian protective sign; its survival identifies the vanished Senn, although the story does not explain its precise devotional use.",
+          "paragraph": 0,
+          "offset": 1062,
+          "anchor": "Kreuzfingerring",
+          "number": 7
+        },
+        {
+          "label": "Älpler",
+          "text": "the people living and working seasonally with livestock on an Alp; here they are the hut community that recognizes the Senn’s ring and searches for him.",
+          "paragraph": 0,
+          "offset": 1109,
+          "anchor": "Älpler",
+          "number": 8
+        },
+        {
+          "label": "Handbub",
+          "text": "a junior male helper or general hand in an Alp’s dairying and herding workforce; here he repeatedly fetches water for the Senn.",
+          "paragraph": 4,
+          "offset": 15,
+          "anchor": "Handbub",
+          "number": 9
+        },
+        {
+          "label": "Bräntä",
+          "text": "a regional wooden vessel or carrying tub worn on the back for transporting milk, water, or another liquid; here the Handbub takes it to the stream for water.",
+          "paragraph": 4,
+          "offset": 519,
+          "anchor": "Bräntä",
+          "number": 10
+        },
+        {
+          "label": "Handbueb",
+          "text": "an Uri spelling variant of Handbub, the junior male Alp helper who throws the stone back at his disguised master.",
+          "paragraph": 4,
+          "offset": 760,
+          "anchor": "Handbueb",
+          "number": 11
+        },
+        {
+          "label": "Alpgnof",
+          "text": "a parenthetical name or source designation attached to this variant; the record does not explain whether it is a place, household name, or narrator identifier, so its precise reference remains uncertain.",
+          "paragraph": 5,
+          "offset": 40,
+          "anchor": "Alpgnof",
+          "number": 12
+        },
+        {
+          "label": "Schnitzeldecke",
+          "text": "a patchwork covering made, as the source explains, from scraps or ends of woolen cloth; the Senn uses it as a ghost disguise.",
+          "paragraph": 5,
+          "offset": 87,
+          "anchor": "Schnitzeldecke",
+          "number": 13
+        },
+        {
+          "label": "Tinder",
+          "text": "a local title for a junior herding or Alp worker in the Ursern variant; the source distinguishes him from the Hirt but does not state his exact duties.",
+          "paragraph": 7,
+          "offset": 43,
+          "anchor": "Tinder",
+          "number": 14
+        },
+        {
+          "label": "Holy water and blessings",
+          "text": "Catholic blessings often use prayer together with a gesture or a material sign, including the cross or holy water. The tales can extend these practices into protection from uncanny beings; that supernatural episode belongs to the story, rather than a guarantee made by the Church.",
+          "paragraph": 7,
+          "offset": 166,
+          "anchor": "sign of the cross",
+          "source": {
+            "label": "Catholic Catechism: blessings and sacramentals",
+            "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_four/article_1.html"
+          },
+          "number": 15
+        },
+        {
+          "label": "Handknab",
+          "text": "another regional form for a junior male farm or Alp hand; at Römerstalden he is the water-carrier obstructed by the disguised Senn.",
+          "paragraph": 8,
+          "offset": 107,
+          "anchor": "Handknab",
+          "number": 16
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Ghosts",
+          "url": "/themes/#theme-ghosts"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "6aedd58e14932514c32b6701bade1f154f088022": {
+      "summary": "At Obergadmen behind Sisikon, one friend once said to another: ‘When I am dead one day, I will come sleep beside you.’ And indeed, it was not long before he died.",
+      "notes": [
+        {
+          "label": "Chan-i chu schlafä?",
+          "text": "Uri dialect for ‘May I come sleep?’ or ‘May I come and sleep beside you?’; the compressed wording recalls the dead friend’s promise, and the immediate opening of the door makes the living man’s attempted consent consequential.",
+          "paragraph": 0,
+          "offset": 247,
+          "anchor": "Chan-i chu schlafä?",
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "863d63ca1146cfe583b1bf9693833b1d492a7a7c": {
+      "summary": "1. Three priests had disputed a great deal with one another about eternity.",
+      "notes": [
+        {
+          "label": "Maitli",
+          "text": "an Uri spelling of Meitli, Swiss German for girls or young women; here the two friends make the dangerous promise about returning after death.",
+          "paragraph": 2,
+          "offset": 13,
+          "anchor": "Maitli",
+          "number": 1
+        },
+        {
+          "label": "Obergaden",
+          "text": "the upper level, loft, or hay floor of a traditional barn or farm outbuilding; here it is used as a sleeping place beside the hay door.",
+          "paragraph": 2,
+          "offset": 188,
+          "anchor": "Obergaden",
+          "number": 2
+        },
+        {
+          "label": "Gnäu",
+          "text": "Uri dialect related to genau, carrying the sense of exact, strict, severe, or close; paired with a warning finger and reports of judgment, it suggests rigorous accounting, but no single English word captures the utterance fully.",
+          "paragraph": 4,
+          "offset": 141,
+          "anchor": "Gnäu",
+          "number": 3
+        },
+        {
+          "label": "gnäu",
+          "text": "the lower-case Uri form of Gnäu, meaning exact, strict, severe, or close; here the paired phrase hert und gnäu says that conditions in the afterlife are hard and rigorously exacting.",
+          "paragraph": 4,
+          "offset": 141,
+          "anchor": "Gnäu",
+          "number": 4
+        },
+        {
+          "label": "Zäi",
+          "text": "Uri dialect for tough, tenacious, hard, or unyielding; the collector glosses it with standard German zähe, and it serves as a variant of the warning Gnäu.",
+          "paragraph": 4,
+          "offset": 159,
+          "anchor": "Zäi",
+          "number": 5
+        },
+        {
+          "label": "Spitzli",
+          "text": "literally little points, tips, or pointed ornaments; paired with Chrüsäli in a purgatorial verse, it may refer to fashionable adornments, but the exact objects being condemned are uncertain.",
+          "paragraph": 11,
+          "offset": 7,
+          "anchor": "Spitzli",
+          "number": 6
+        },
+        {
+          "label": "Chrüsäli",
+          "text": "literally little curls, frills, or crimped ornaments; the purgatorial verse probably targets decorative fashion, but the source does not identify the exact garment or hairstyle.",
+          "paragraph": 11,
+          "offset": 20,
+          "anchor": "Chrüsäli",
+          "number": 7
+        },
+        {
+          "label": "Fäckfyr",
+          "text": "an Uri dialect form of Fegefeuer, purgatorial fire; in Catholic folk belief it is the place or condition of purification where the dead suffer before release.",
+          "paragraph": 11,
+          "offset": 50,
+          "anchor": "Fäckfyr",
+          "number": 8
+        },
+        {
+          "label": "Büttig",
+          "text": "an Uri regional term for a craftsman’s workshop or workroom; the source itself glosses it as Werkstatt, and here it is the carpenter’s shop.",
+          "paragraph": 14,
+          "offset": 31,
+          "anchor": "Büttig",
+          "number": 9
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "0d6d7c51b565a47e00add99305d62955a7ac870b": {
+      "summary": "Not far from Andermatt lies a large white block of stone. Many years ago, a house is said to have stood on that spot, inhabited by an old woman.",
+      "notes": [
+        {
+          "label": "Nidelgret",
+          "text": "literally ‘Cream Gret,’ combining Nidel, ‘cream,’ with Gret, a short form of Margret; it is the byname of the old woman whose magically abundant cream leads to her imprisonment in stone.",
+          "paragraph": 0,
+          "offset": 169,
+          "anchor": "Nidelgret",
+          "number": 1
+        },
+        {
+          "label": "Nidel",
+          "text": "Swiss German for rich cream skimmed from milk; its impossible abundance from a single cow establishes Nidelgret's reputation and later kills the greedy herdsman.",
+          "paragraph": 0,
+          "offset": 237,
+          "anchor": "Nidel",
+          "number": 2
+        },
+        {
+          "label": "Sommerfahrt",
+          "text": "literally ‘summer journey,’ the seasonal drive of cattle to high pasture and a period of abundant Alpine milk production.",
+          "paragraph": 0,
+          "offset": 304,
+          "anchor": "Sommerfahrt",
+          "number": 3
+        },
+        {
+          "label": "Küher",
+          "text": "a cattle herder or cowherd, particularly one working with dairy cattle; here he spies on Nidelgret, copies her charm, and greedily enlarges its demand.",
+          "paragraph": 0,
+          "offset": 334,
+          "anchor": "Küher",
+          "number": 4
+        },
+        {
+          "label": "Gebs",
+          "text": "a shallow wooden dairy vessel used for holding milk or cream; exact shapes and spellings vary regionally.",
+          "paragraph": 0,
+          "offset": 452,
+          "anchor": "Gebs",
+          "number": 5
+        },
+        {
+          "label": "Hexengut",
+          "text": "literally ‘witches' goods’ or ‘witch-property,’ part of the cream-gathering charm; its function overlaps with Sennenzoll and is not explained separately.",
+          "paragraph": 1,
+          "offset": 9,
+          "anchor": "Hexengut",
+          "number": 6
+        },
+        {
+          "label": "Sennenzoll",
+          "text": "literally the ‘Senn's toll,’ a supposed portion taken from every cow; the charm presents supernatural dairy theft as a customary due.",
+          "paragraph": 1,
+          "offset": 24,
+          "anchor": "Sennenzoll",
+          "number": 7
+        },
+        {
+          "label": "Senn",
+          "text": "an Alpine dairy herdsman responsible for cattle and milk work on a high pasture; the final sentence applies this role-name to the greedy Küher.",
+          "paragraph": 4,
+          "offset": 502,
+          "anchor": "Senn",
+          "number": 8
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 4,
+          "offset": 502,
+          "anchor": "Senn",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 9
+        },
+        {
+          "label": "Niedergret",
+          "text": "the title's spelling of the old woman's byname; the body consistently gives Nidelgret, so the difference is preserved as a source variation rather than silently corrected.",
+          "number": 10
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Witchcraft",
+          "url": "/themes/#theme-witchcraft"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "b8e16e83a00340d1b14804b5fe338bb0d2c93126": {
+      "summary": "a) On the tower in the Dörfli at Silenen, according to the tradition attested by several people, there formerly stood a wooden house, which is certainly correct.",
+      "notes": [
+        {
+          "label": "Landvögte",
+          "text": "plural of Landvogt, a territorial bailiff or governor exercising delegated authority in the older Swiss political order; the tradition groups them with coercive lords.",
+          "paragraph": 1,
+          "offset": 22,
+          "anchor": "Landvögte",
+          "number": 1
+        },
+        {
+          "label": "Zwingherren",
+          "text": "coercive feudal lords or tyrannical castle-holders, from a word associated with compulsion; the stories portray forced deliveries, waste, and claimed sexual rights over subjects' wives.",
+          "paragraph": 1,
+          "offset": 37,
+          "anchor": "Zwingherren",
+          "number": 2
+        },
+        {
+          "label": "Trägänä",
+          "text": "loads or carrying containers of eggs, probably baskets, trays, or loads borne with a carrying device; the exact vessel is uncertain, but the plural emphasizes the quantity demanded.",
+          "paragraph": 1,
+          "offset": 194,
+          "anchor": "Trägänä",
+          "number": 3
+        },
+        {
+          "label": "The parish",
+          "text": "A parish is an enduring local religious community, historically responsible for worship and pastoral care within a larger church organization. Its territory need not be identical to the civil village. Parish membership could shape where people attended services and which church served an outlying settlement.",
+          "paragraph": 2,
+          "offset": 86,
+          "anchor": "parish",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: parish communities",
+            "url": "https://hls-dhs-dss.ch/it/articles/011744/2023-09-04/"
+          },
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "273a116b7dd56d7130e197a60eacb5e80e84de3f": {
+      "summary": "Older people still speak often of Süffibalzi, an eccentric, harmless vagabond who traveled through the canton of Uri about half a century ago and lived on people's charity.",
+      "notes": [
+        {
+          "label": "Süffibalzi",
+          "text": "the man's local nickname, derived in the source from his fondness for Ziegersüffi; the Balzi element may echo a personal name, but its precise formation is not explained.",
+          "paragraph": 0,
+          "offset": 44,
+          "anchor": "Süffibalzi",
+          "number": 1
+        },
+        {
+          "label": "Ziegersüffi",
+          "text": "an Uri dish based on Ziger, the Swiss whey-cheese or curd product, prepared in a soft or soupy form; the exact recipe is not given, and adding rennet causes the fatal fermentation in the tale.",
+          "paragraph": 0,
+          "offset": 184,
+          "anchor": "Ziegersüffi",
+          "number": 2
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 596,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 3
+        },
+        {
+          "label": "Sennten",
+          "text": "an Alpine cattle herd understood as a managed, often bell-bearing dairy collective; Süffibalzi humorously recreates one from toy cows and lice.",
+          "paragraph": 0,
+          "offset": 864,
+          "anchor": "Sennten",
+          "number": 4
+        },
+        {
+          "label": "Stäfel",
+          "text": "a seasonal station, level, or cluster of buildings within an Alpine pasture system; the source uses it as a destination but does not define its exact local extent at Alpgnof.",
+          "paragraph": 1,
+          "offset": 224,
+          "anchor": "Stäfel",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "0d7c8f2ce65d1801163f16473314c6f769c1d606": {
+      "summary": "1. Maxä-Toni's Sepp of Bürglen related: One day our young farmhand was tending the cows on Alp Mättädall at the foot of the Rosstock.",
+      "notes": [
+        {
+          "label": "Alp",
+          "text": "in Swiss usage, a high seasonal mountain pasture and its livestock-and-dairy operation, not simply a mountain peak; Mättädall is the named Alp where the boy tends cattle.",
+          "paragraph": 0,
+          "offset": 94,
+          "anchor": "Alp",
+          "number": 1
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 94,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 2
+        },
+        {
+          "label": "Gwätti",
+          "text": "an Uri dialect word apparently denoting a joint, notch, or recess in the barn's timberwork where the glowing stone is lodged; the source does not identify the exact structural feature, so its closest physical equivalent is uncertain.",
+          "paragraph": 0,
+          "offset": 440,
+          "anchor": "Gwätti",
+          "number": 3
+        },
+        {
+          "label": "Strahlen",
+          "text": "literally ‘rays,’ a traditional Swiss Alpine term for rock crystals or crystal points sought in the mountains; here one exceptional crystal makes the whole collection shine, though the source does not identify its mineral species.",
+          "paragraph": 2,
+          "offset": 42,
+          "anchor": "Strahlen",
+          "number": 4
+        },
+        {
+          "label": "The parish",
+          "text": "A parish is an enduring local religious community, historically responsible for worship and pastoral care within a larger church organization. Its territory need not be identical to the civil village. Parish membership could shape where people attended services and which church served an outlying settlement.",
+          "paragraph": 3,
+          "offset": 41,
+          "anchor": "parish",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: parish communities",
+            "url": "https://hls-dhs-dss.ch/it/articles/011744/2023-09-04/"
+          },
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "fe85d3a95c0fa1099bc55fb555d9858a385ee7ad": {
+      "summary": "High in the Teiftal on the slope of the Bristenstock, a Karfunkel shone brightly enough to be seen for hours' journey around.",
+      "notes": [
+        {
+          "label": "Karfunkel",
+          "text": "the legendary carbuncle, imagined as a precious red gemstone that shines with its own fiery light; this mountain stone is visible across the Reuss valley and supernaturally defends itself from seekers.",
+          "paragraph": 0,
+          "offset": 65,
+          "anchor": "Karfunkel",
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "d9cb736886046f91b66e89ce4ee79dc813380ca3": {
+      "summary": "a) In a Heimkuhalpeli, entirely apart from the other people, lived a Wybervölchli who seldom went out, never fetched provisions, and yet lived well.",
+      "notes": [
+        {
+          "label": "Heimkuhalpeli",
+          "text": "a diminutive Alpine term for a small pasture or holding used by home-kept cows; the source gives the pastoral setting but not its precise tenure or distance from the settlement.",
+          "paragraph": 0,
+          "offset": 21,
+          "anchor": "Heimkuhalpeli",
+          "number": 1
+        },
+        {
+          "label": "Wybervölchli",
+          "text": "an archaic Alemannic diminutive for a woman or ‘little female person,’ sometimes familiar or dismissive; here it labels the solitary suspected witch without securely indicating her age or stature.",
+          "paragraph": 0,
+          "offset": 81,
+          "anchor": "Wybervölchli",
+          "number": 2
+        },
+        {
+          "label": "Nidel",
+          "text": "Swiss German for cream, especially the rich layer skimmed from milk; the witch steals it from Alpine dairy cellars and converts her magic into an impossible supply.",
+          "paragraph": 0,
+          "offset": 179,
+          "anchor": "Nidel",
+          "number": 3
+        },
+        {
+          "label": "Anken",
+          "text": "the traditional Swiss German word for butter; it is both the product created in the witch’s churn and the inherited store that repeatedly returns.",
+          "paragraph": 0,
+          "offset": 189,
+          "anchor": "Anken",
+          "number": 4
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 404,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 5
+        },
+        {
+          "label": "Witch accusations",
+          "text": "Swiss witch persecutions affected both women and men. Accusations included harm to people, livestock, and crops through magic. A legend may present an accused person as a real witch; that is the telling’s claim and should not be treated as proof about a historical person.",
+          "paragraph": 0,
+          "offset": 658,
+          "anchor": "witch",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: witch persecutions",
+            "url": "https://hls-dhs-dss.ch/de/articles/011450/2014-10-16/"
+          },
+          "number": 6
+        },
+        {
+          "label": "Züsiliächtli",
+          "text": "an Uri diminutive for a tiny flickering or glimmering light seen in the witch’s hut; its exact fuel, color, and magical function are not described.",
+          "paragraph": 0,
+          "offset": 701,
+          "anchor": "Züsiliächtli",
+          "number": 7
+        },
+        {
+          "label": "Ankenkübel",
+          "text": "a large tub or churn for making Anken; the story describes the witch working the vessel but not its precise mechanism.",
+          "paragraph": 0,
+          "offset": 912,
+          "anchor": "Ankenkübel",
+          "number": 8
+        },
+        {
+          "label": "Stämpfel",
+          "text": "a regional diminutive for a pestle, plunger, or churn-dasher inserted into the Ankenkübel; its exact construction is not specified.",
+          "paragraph": 0,
+          "offset": 958,
+          "anchor": "Stämpfel",
+          "number": 9
+        },
+        {
+          "label": "Lüzifer, vor Raphael, Schneeveegel, Läckdafis, Pumpis a' diä Wyggä",
+          "text": "the witch’s exact repeated incantation. Lüzifer and Raphael resemble the names Lucifer and Raphael, while the remaining words and the formula’s literal syntax are too uncertain to normalize without invention.",
+          "paragraph": 0,
+          "offset": 1182,
+          "anchor": "Lüzifer, vor Raphael, Schneeveegel, Läckdafis, Pumpis a' diä Wyggä",
+          "number": 10
+        },
+        {
+          "label": "Büebli",
+          "text": "an Alemannic diminutive for a little boy; here it names the tiny pitch-black being produced from the churn rather than establishing that it is a human child.",
+          "paragraph": 0,
+          "offset": 1292,
+          "anchor": "Büebli",
+          "number": 11
+        },
+        {
+          "label": "Schibel",
+          "text": "an uncertain Uri quantity word, apparently a lump, batch, or substantial portion; the source does not establish how much Anken the witch removes.",
+          "paragraph": 0,
+          "offset": 1419,
+          "anchor": "Schibel",
+          "number": 12
+        },
+        {
+          "label": "Älpler",
+          "text": "people living and working seasonally with livestock on an Alp, especially its herders and dairy workers; they discover that their milk has already been skimmed.",
+          "paragraph": 0,
+          "offset": 1480,
+          "anchor": "Älpler",
+          "number": 13
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Witchcraft",
+          "url": "/themes/#theme-witchcraft"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "813c8758c8ef420e367bc2a4a4384f9d950c2d86": {
+      "summary": "is said to have been so wealthy that a member of the monastery traveling from Seedorf to Jerusalem could spend every evening (or every second evening) on property belonging to his religious house.",
+      "notes": [
+        {
+          "label": "About this telling",
+          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
+            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
+          },
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "3b46c0e20813662133375169cfc6321989143a24": {
+      "summary": "A little boy and a girl who had gone out to pick strawberries lost their way in the forest near Conters.",
+      "notes": [
+        {
+          "label": "Waldfängge",
+          "text": "literally a forest Fängge, one of the wild beings associated with Alpine woods and mountains; the account locates this one in a cave near Conters.",
+          "paragraph": 0,
+          "offset": 312,
+          "anchor": "Waldfängge",
+          "number": 1
+        },
+        {
+          "label": "Waldfänggin",
+          "text": "the feminine form for a female forest Fängge; unlike her man-eating husband, she pities the lost children and leads them safely home.",
+          "paragraph": 0,
+          "offset": 446,
+          "anchor": "Waldfänggin",
+          "number": 2
+        },
+        {
+          "label": "Fängge",
+          "text": "a Graubünden and Alpine name for a wild, giant-like, or ogre-like supernatural being; this male Fängge is explicitly a devourer of children.",
+          "number": 3
+        },
+        {
+          "label": "A small transcription difference",
+          "text": "Jecklin's 1874 printing says ihre Noth ('their distress'); the catalogue transcription has Not without ihre. Spelling and punctuation have also been modernized. The telling otherwise follows the complete page-30 account.",
+          "source": {
+            "label": "Dietrich Jecklin, Volksthümliches aus Graubünden, part I (Zürich: Orell Füssli, 1874), p. 30, Der Fängge als Menschenfresser.",
+            "url": "https://www.digitale-sammlungen.de/de/view/bsb11184724"
+          },
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Graubünden",
+          "url": "/locations/#place-graubunden"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Wild people",
+          "url": "/themes/#theme-wild-people"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "7252b0f85891f45dba6405ab6882fdef3fc147db": {
+      "summary": "A miser ordered that the money he had scraped together be placed in his coffin after his death, and this was done.",
+      "notes": [
+        {
+          "label": "About this telling",
+          "text": "The German genre Sage often ties an extraordinary event to a named place, time, or witness. Such details establish the telling’s local authority, but do not independently verify the event. The source credit identifies the recorded version preserved here.",
+          "source": {
+            "label": "Historical Dictionary of Switzerland: Sagen und Legenden",
+            "url": "https://hls-dhs-dss.ch/de/articles/011302/2012-01-06/"
+          },
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Storytelling and belief",
+          "url": "/themes/#theme-storytelling-and-belief"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "cb61f932fe8f1237e160f6bd68174dc1d05108ed": {
+      "summary": "a) Old Biäl-Leni-Chaspi of Unterschächen often claimed that enough money was verlochet—hidden away—beneath the little chapel at Äsch.",
+      "notes": [
+        {
+          "label": "verlochet",
+          "text": "an Alpine German verb meaning concealed, stowed, or hidden away, especially underground; the old man claims ample money is cached beneath the later chapel.",
+          "paragraph": 0,
+          "offset": 86,
+          "anchor": "verlochet",
+          "number": 1
+        },
+        {
+          "label": "fahrender Schüler",
+          "text": "literally a ‘wandering scholar’ or student, a recurring German-speaking folklore figure credited with occult learning and secret knowledge; here he reveals the buried gold's location and number of vessels.",
+          "paragraph": 0,
+          "offset": 153,
+          "anchor": "fahrender Schüler",
+          "number": 2
+        },
+        {
+          "label": "Häfen",
+          "text": "in this Alpine German context, large pots, cauldrons, or vessels rather than modern harbor basins; three of them are said to be filled with gold.",
+          "paragraph": 0,
+          "offset": 183,
+          "anchor": "Häfen",
+          "number": 3
+        },
+        {
+          "label": "Gott b'hiät-is davor",
+          "text": "Uri dialect for ‘God preserve us from it’; the protective aside distances narrator and listener from naming or encountering the living Devil.",
+          "paragraph": 0,
+          "offset": 447,
+          "anchor": "Gott b'hiät-is davor",
+          "number": 4
+        },
+        {
+          "label": "Frechlinge",
+          "text": "bold, brazen, or foolhardy fellows; the source characterizes the three treasure seekers by their daring, with a disapproving shade that ‘brave men’ would miss.",
+          "paragraph": 2,
+          "offset": 130,
+          "anchor": "Frechlinge",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "7800f8fc12d3922e4cbd7d0febc1346bb6cf1aee": {
+      "summary": "Many hundreds of years ago, when giants still existed, there were once two brothers in Scarl.",
+      "notes": [
+        {
+          "label": "Scarl",
+          "text": "Jecklin's historical spelling for the Lower Engadine village now generally written S-charl; the source form is retained as a place-name.",
+          "paragraph": 0,
+          "offset": 92,
+          "anchor": "Scarl",
+          "number": 1
+        },
+        {
+          "label": "The ending",
+          "text": "Although the title names two brothers, this printed telling follows the younger one and ends with his wedding. The older brother's further fate is not given on pages 120–121.",
+          "source": {
+            "label": "Dietrich Jecklin, Volksthümliches aus Graubünden, part II (Chur: Jost & Albin, 1876), H. Märchen, no. 1, pp. 120–121, Die zwei Brüder und die vier Riesen.",
+            "url": "https://www.digitale-sammlungen.de/de/view/bsb11333892"
+          },
+          "number": 2
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Giants",
+          "url": "/themes/#theme-giants"
+        },
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Courtship and marriage",
+          "url": "/themes/#theme-courtship-and-marriage"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "8bf0829bf9494d9b9b6a589a091f564ceba1090a": {
+      "summary": "1. ‘At that time I was serving in the house of Mr.",
+      "notes": [
+        {
+          "label": "Landammann",
+          "text": "the traditional chief magistrate or presiding official of a Swiss canton or rural polity; Xaver Arnold’s title situates the remembered house in Altdorf’s civic history.",
+          "paragraph": 0,
+          "offset": 198,
+          "anchor": "Landammann",
+          "number": 1
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Local memory",
+          "url": "/themes/#theme-local-memory"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "d6a1aec9a78729046692a60ae9639d669a6bda48": {
+      "summary": "1. A young man wished to raise a treasure guarded by a ghost.",
+      "notes": [
+        {
+          "label": "Grebel",
+          "text": "a regional digging implement such as a hoe, mattock, or grubber; the young man first excavates with it and the shovel, then must strike the guardian animals.",
+          "paragraph": 0,
+          "offset": 104,
+          "anchor": "Grebel",
+          "number": 1
+        },
+        {
+          "label": "Chrott",
+          "text": "Uri dialect for a toad; this prose form names the monstrous animal charged to guard the Fronalp treasure.",
+          "paragraph": 2,
+          "offset": 134,
+          "anchor": "Chrott",
+          "number": 2
+        },
+        {
+          "label": "vergaumä",
+          "text": "Uri dialect for watching over, guarding, or keeping custody of something; the toad's assigned task is to prevent access to the treasure.",
+          "paragraph": 2,
+          "offset": 150,
+          "anchor": "vergaumä",
+          "number": 3
+        },
+        {
+          "label": "Mülärä",
+          "text": "an uncertain dialect personal or house-name associated with the treasure, possibly a feminine Miller or Müller designation; the source calls the figure verschwignä, taciturn or secretive, but gives no further identity.",
+          "paragraph": 2,
+          "offset": 215,
+          "anchor": "Mülärä",
+          "number": 4
+        },
+        {
+          "label": "fahrändä Schueler",
+          "text": "Uri dialect for a fahrender Schüler, literally a ‘wandering scholar,’ a folklore figure credited with occult learning and secret knowledge; here he is also described as shrewd and experienced.",
+          "paragraph": 2,
+          "offset": 275,
+          "anchor": "fahrändä Schueler",
+          "number": 5
+        },
+        {
+          "label": "Krott",
+          "text": "the verse's form of the dialect word for a toad; the rhyme magnifies her to the size of an oven with pane-like eyes.",
+          "paragraph": 3,
+          "offset": 16,
+          "anchor": "Krott",
+          "number": 6
+        },
+        {
+          "label": "Taapen",
+          "text": "a regional plural for paws, feet, or broad limbs; the giant toad beckons with them, though the source does not specify their exact shape.",
+          "paragraph": 3,
+          "offset": 84,
+          "anchor": "Taapen",
+          "number": 7
+        },
+        {
+          "label": "Judsfad",
+          "text": "the historical local place-name above the Rotgand at Meien, apparently containing an older ethnic label for a Jewish person; readers should recognize the period wording rather than treat it as neutral current usage.",
+          "paragraph": 6,
+          "offset": 17,
+          "anchor": "Judsfad",
+          "number": 8
+        },
+        {
+          "label": "Franzosenzeit",
+          "text": "literally the ‘French period,’ the regional historical name for the era of French invasion, occupation, and political upheaval around 1798; the tale dates the hidden treasure only to that general period.",
+          "paragraph": 6,
+          "offset": 96,
+          "anchor": "Franzosenzeit",
+          "number": 9
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Ghosts",
+          "url": "/themes/#theme-ghosts"
+        },
+        {
+          "label": "Dragons",
+          "url": "/themes/#theme-dragons"
+        },
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "2d09df6d877d09334db7209e56a8471b1ebd54ec": {
+      "summary": "1. Whenever the devout Senn of an Alp in Meien called out the Gospel of St.",
+      "notes": [
+        {
+          "label": "Senn",
+          "text": "the lead Alpine dairyman responsible for cattle and dairy work; in the first account, his religious duty includes projecting the Gospel call across the Alp.",
+          "paragraph": 0,
+          "offset": 27,
+          "anchor": "Senn",
+          "number": 1
+        },
+        {
+          "label": "Alp",
+          "text": "a high seasonal mountain pasture together with its hut, livestock, and dairy operation, not simply a mountain; the Senn's Gospel call and both fatal encounters occur within that pastoral setting.",
+          "paragraph": 0,
+          "offset": 37,
+          "anchor": "Alp",
+          "number": 2
+        },
+        {
+          "label": "Alpine summer farming",
+          "text": "An Alp is a high seasonal grazing area. Families and hired herders moved livestock uphill for summer, cared for the animals, and made dairy products there. A hut in these stories is often a workplace away from the permanent village, rather than a vacation cabin.",
+          "paragraph": 0,
+          "offset": 37,
+          "anchor": "Alp",
+          "source": {
+            "label": "UNESCO: Alpine pasture season",
+            "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
+          },
+          "number": 3
+        },
+        {
+          "label": "Folle",
+          "text": "an Uri Alpine object or feature through which the Senn projects the Gospel of St. John, likely a funnel-like dairy implement used as a speaking horn; its exact construction is not identified in the passage.",
+          "paragraph": 0,
+          "offset": 98,
+          "anchor": "Folle",
+          "number": 4
+        },
+        {
+          "label": "Handknab",
+          "text": "a junior male Alpine worker or dairyman's assistant; the role is subordinate to the Senn and herdsman, but its exact duties here are not stated.",
+          "paragraph": 0,
+          "offset": 275,
+          "anchor": "Handknab",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Uri",
+          "url": "/locations/#place-uri"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Ghosts",
+          "url": "/themes/#theme-ghosts"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        }
+      ],
+      "summary_kind": "opening"
     }
   },
   "places": [
@@ -200032,6 +201700,10 @@
         {
           "title": "The Fräulein of Ruchenberg and the Golden Kegelspiel",
           "url": "/stories/the-fraulein-of-ruchenberg-and-the-golden-kegelspiel/"
+        },
+        {
+          "title": "The Fängge as a Man-Eater",
+          "url": "/stories/the-fangge-as-a-man-eater/"
         },
         {
           "title": "The Fänggenmannli at Maladers",
@@ -206712,6 +208384,10 @@
           "url": "/stories/an-upside-down-broom-drives-away-a-witch/"
         },
         {
+          "title": "Animals Guarding Treasure (the Little Castle at Seedorf)",
+          "url": "/stories/animals-guarding-treasure-the-little-castle-at-seedorf/"
+        },
+        {
           "title": "Are You Coming Right After Me?",
           "url": "/stories/are-you-coming-right-after-me/"
         },
@@ -206730,6 +208406,10 @@
         {
           "title": "At the Urnerloch",
           "url": "/stories/at-the-urnerloch/"
+        },
+        {
+          "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+          "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/"
         },
         {
           "title": "Baschi Frech",
@@ -206762,6 +208442,10 @@
         {
           "title": "Cat Driven Away by the Sign of the Cross",
           "url": "/stories/cat-driven-away-by-the-sign-of-the-cross/"
+        },
+        {
+          "title": "Changes in the Alpine Pastures",
+          "url": "/stories/changes-in-the-alpine-pastures/"
         },
         {
           "title": "Chumm flingg — Come Quickly",
@@ -206902,6 +208586,14 @@
         {
           "title": "Fatal Weather-Making",
           "url": "/stories/fatal-weather-making/"
+        },
+        {
+          "title": "Fell While Setting Up the Cross",
+          "url": "/stories/fell-while-setting-up-the-cross/"
+        },
+        {
+          "title": "Fighting with Spirits",
+          "url": "/stories/fighting-with-spirits/"
         },
         {
           "title": "Finger Wrestling with a Ghost (Maderanertal)",
@@ -207052,6 +208744,10 @@
           "url": "/stories/heidenkehle-or-heidkehle/"
         },
         {
+          "title": "Heitmenegg Is a Sunny Alp in the Schächen Valley",
+          "url": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/"
+        },
+        {
           "title": "His Mother's Cross",
           "url": "/stories/his-mothers-cross/"
         },
@@ -207192,6 +208888,10 @@
           "url": "/stories/making-weather-through-sympathie/"
         },
         {
+          "title": "May I Come to Sleep?",
+          "url": "/stories/may-i-come-to-sleep/"
+        },
+        {
           "title": "Melk Tresch and the Giant",
           "url": "/stories/melk-tresch-and-the-giant/"
         },
@@ -207236,6 +208936,10 @@
           "url": "/stories/neglecting-the-betruf/"
         },
         {
+          "title": "News from Eternity",
+          "url": "/stories/news-from-eternity/"
+        },
+        {
           "title": "Nidelgret",
           "url": "/stories/nidelgret/"
         },
@@ -207246,6 +208950,10 @@
         {
           "title": "Nidelgret (T. Vernaleken)",
           "url": "/stories/nidelgret-t-vernaleken/"
+        },
+        {
+          "title": "Nidelgret, the Cream Witch",
+          "url": "/stories/nidelgret-the-cream-witch/"
         },
         {
           "title": "Noise Foretelling Deaths",
@@ -207286,6 +208994,10 @@
         {
           "title": "Of Treasures and Fahrende Schüler",
           "url": "/stories/of-treasures-and-fahrende-schuler/"
+        },
+        {
+          "title": "Of Tyrannical Lords",
+          "url": "/stories/of-tyrannical-lords/"
         },
         {
           "title": "Oh, You Poor Little Fox, Where Are You?",
@@ -207426,6 +209138,10 @@
         {
           "title": "Swallowed by the Earth",
           "url": "/stories/swallowed-by-the-earth/"
+        },
+        {
+          "title": "Süffibalzi's Death",
+          "url": "/stories/suffibalzis-death/"
         },
         {
           "title": "Take the Key above the Door!",
@@ -207616,6 +209332,14 @@
           "url": "/stories/the-burned-goat/"
         },
         {
+          "title": "The Carbuncle (Müller, 1926)",
+          "url": "/stories/the-carbuncle-muller-1926/"
+        },
+        {
+          "title": "The Carbuncle at Bristenstock",
+          "url": "/stories/the-carbuncle-at-bristenstock/"
+        },
+        {
           "title": "The Cat and the Death of Livestock",
           "url": "/stories/the-cat-and-the-death-of-livestock/"
         },
@@ -207686,6 +209410,10 @@
         {
           "title": "The Cradle Child Carried Off",
           "url": "/stories/the-cradle-child-carried-off/"
+        },
+        {
+          "title": "The Cream Witch",
+          "url": "/stories/the-cream-witch/"
         },
         {
           "title": "The Cry on the Alpine Pasture",
@@ -207850,6 +209578,10 @@
         {
           "title": "The Foretelling Woman",
           "url": "/stories/the-foretelling-woman/"
+        },
+        {
+          "title": "The Former Lazarite Monastery at Seedorf",
+          "url": "/stories/the-former-lazarite-monastery-at-seedorf/"
         },
         {
           "title": "The Four-Leaf Clover",
@@ -208568,6 +210300,10 @@
           "url": "/stories/the-toad-and-the-treasure/"
         },
         {
+          "title": "The Toad in the Grave",
+          "url": "/stories/the-toad-in-the-grave/"
+        },
+        {
           "title": "The Tobelfraueli",
           "url": "/stories/the-tobelfraueli/"
         },
@@ -208626,6 +210362,10 @@
         {
           "title": "The Treasure at Weingarten",
           "url": "/stories/the-treasure-at-weingarten/"
+        },
+        {
+          "title": "The Treasure at Äsch",
+          "url": "/stories/the-treasure-at-asch/"
         },
         {
           "title": "The Treasure Guardian",
@@ -208816,6 +210556,10 @@
           "url": "/stories/the-white-dove-uri/"
         },
         {
+          "title": "The White Woman—Altdorf",
+          "url": "/stories/the-white-woman-altdorf/"
+        },
+        {
           "title": "The Wiggle (Tawny Owl)",
           "url": "/stories/the-wiggle-tawny-owl/"
         },
@@ -208976,6 +210720,10 @@
           "url": "/stories/treasure-shows-itself/"
         },
         {
+          "title": "Treasure-Guarding Animals",
+          "url": "/stories/treasure-guarding-animals/"
+        },
+        {
           "title": "Treasures and Crystals That Vanish",
           "url": "/stories/treasures-and-crystals-that-vanish/"
         },
@@ -209062,6 +210810,10 @@
         {
           "title": "What the Witch Left Behind",
           "url": "/stories/what-the-witch-left-behind/"
+        },
+        {
+          "title": "Whenever the Devout Alpine Dairyman…",
+          "url": "/stories/whenever-the-devout-alpine-dairyman/"
         },
         {
           "title": "Where One Sins, One Must Atone",
@@ -211332,6 +213084,10 @@
           "url": "/stories/annelis-grotzli/"
         },
         {
+          "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+          "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/"
+        },
+        {
           "title": "Banished",
           "url": "/stories/banished/"
         },
@@ -211366,6 +213122,10 @@
         {
           "title": "Caves and Holes",
           "url": "/stories/caves-and-holes/"
+        },
+        {
+          "title": "Changes in the Alpine Pastures",
+          "url": "/stories/changes-in-the-alpine-pastures/"
         },
         {
           "title": "Cheap",
@@ -211478,6 +213238,10 @@
         {
           "title": "Haunting on the Hut Roof",
           "url": "/stories/haunting-on-the-hut-roof/"
+        },
+        {
+          "title": "Heitmenegg Is a Sunny Alp in the Schächen Valley",
+          "url": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/"
         },
         {
           "title": "His Own Wife as a Witch",
@@ -211606,6 +213370,10 @@
         {
           "title": "Nidelgret",
           "url": "/stories/nidelgret/"
+        },
+        {
+          "title": "Nidelgret, the Cream Witch",
+          "url": "/stories/nidelgret-the-cream-witch/"
         },
         {
           "title": "Oblinden (The Origin of Goldingen)",
@@ -211742,6 +213510,10 @@
         {
           "title": "Strong Means",
           "url": "/stories/strong-means/"
+        },
+        {
+          "title": "Süffibalzi's Death",
+          "url": "/stories/suffibalzis-death/"
         },
         {
           "title": "Tales of Magic on the Augstbortalpe",
@@ -211984,6 +213756,10 @@
           "url": "/stories/the-capricious-alpbutz/"
         },
         {
+          "title": "The Carbuncle (Müller, 1926)",
+          "url": "/stories/the-carbuncle-muller-1926/"
+        },
+        {
           "title": "The Cat",
           "url": "/stories/the-cat/"
         },
@@ -212026,6 +213802,10 @@
         {
           "title": "The Cows’ Mysterious Departure (Hartmann)",
           "url": "/stories/the-cows-mysterious-departure-hartmann/"
+        },
+        {
+          "title": "The Cream Witch",
+          "url": "/stories/the-cream-witch/"
         },
         {
           "title": "The Cross on le petit vanni",
@@ -213252,6 +215032,10 @@
           "url": "/stories/wheel-tracks-in-the-high-mountains/"
         },
         {
+          "title": "Whenever the Devout Alpine Dairyman…",
+          "url": "/stories/whenever-the-devout-alpine-dairyman/"
+        },
+        {
           "title": "Where the Emmengold Comes From",
           "url": "/stories/where-the-emmengold-comes-from/"
         },
@@ -213704,6 +215488,10 @@
           "url": "/stories/at-the-basatienwand/"
         },
         {
+          "title": "Choosing a Bride",
+          "url": "/stories/choosing-a-bride/"
+        },
+        {
           "title": "Christnacht",
           "url": "/stories/christnacht/"
         },
@@ -213726,6 +215514,10 @@
         {
           "title": "Fiddler Lux of Buttwil",
           "url": "/stories/fiddler-lux-of-buttwil/"
+        },
+        {
+          "title": "Fighting with Spirits",
+          "url": "/stories/fighting-with-spirits/"
         },
         {
           "title": "Frau Ude the Good",
@@ -214198,6 +215990,10 @@
         {
           "title": "The Treasure-Guarding Dragon",
           "url": "/stories/the-treasure-guarding-dragon/"
+        },
+        {
+          "title": "The Two Brothers and the Four Giants",
+          "url": "/stories/the-two-brothers-and-the-four-giants/"
         },
         {
           "title": "The Value of Innocence",
@@ -214844,6 +216640,10 @@
           "url": "/stories/treasure-in-the-dragon-cave-near-ennetmoos/"
         },
         {
+          "title": "Treasure-Guarding Animals",
+          "url": "/stories/treasure-guarding-animals/"
+        },
+        {
           "title": "Winkelried Kills the Lindwurm",
           "url": "/stories/winkelried-kills-the-lindwurm/"
         }
@@ -215178,6 +216978,10 @@
           "url": "/stories/at-the-heidenburg/"
         },
         {
+          "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+          "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/"
+        },
+        {
           "title": "Beliefs and Customs Concerning Domestic Animals",
           "url": "/stories/beliefs-and-customs-concerning-domestic-animals/"
         },
@@ -215272,6 +217076,10 @@
         {
           "title": "Haunted Places",
           "url": "/stories/haunted-places/"
+        },
+        {
+          "title": "Heitmenegg Is a Sunny Alp in the Schächen Valley",
+          "url": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/"
         },
         {
           "title": "His Mother's Cross",
@@ -215982,6 +217790,10 @@
           "url": "/stories/touching-a-spirit-rynacht/"
         },
         {
+          "title": "Treasure-Guarding Animals",
+          "url": "/stories/treasure-guarding-animals/"
+        },
+        {
           "title": "Türst",
           "url": "/stories/turst/"
         },
@@ -215996,6 +217808,10 @@
         {
           "title": "Vom Chünde — The Death-Sign",
           "url": "/stories/vom-chunde-the-death-sign/"
+        },
+        {
+          "title": "Whenever the Devout Alpine Dairyman…",
+          "url": "/stories/whenever-the-devout-alpine-dairyman/"
         },
         {
           "title": "Wicked Hänzli",
@@ -216320,6 +218136,10 @@
           "url": "/stories/the-three-tellen-and-the-giant-in-the-dominiloch/"
         },
         {
+          "title": "The Two Brothers and the Four Giants",
+          "url": "/stories/the-two-brothers-and-the-four-giants/"
+        },
+        {
           "title": "The Wütisheer (C. Kohlrusch)",
           "url": "/stories/the-wutisheer-c-kohlrusch/"
         },
@@ -216538,12 +218358,20 @@
           "url": "/stories/an-animal-that-uncovers-treasure/"
         },
         {
+          "title": "Animals Guarding Treasure (the Little Castle at Seedorf)",
+          "url": "/stories/animals-guarding-treasure-the-little-castle-at-seedorf/"
+        },
+        {
           "title": "At the Crossroads",
           "url": "/stories/at-the-crossroads/"
         },
         {
           "title": "At the Heidenburg",
           "url": "/stories/at-the-heidenburg/"
+        },
+        {
+          "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+          "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/"
         },
         {
           "title": "Baptismal Font of the Church of Rein",
@@ -217386,6 +219214,10 @@
           "url": "/stories/the-treasure-at-weingarten/"
         },
         {
+          "title": "The Treasure at Äsch",
+          "url": "/stories/the-treasure-at-asch/"
+        },
+        {
           "title": "The Treasure Beans",
           "url": "/stories/the-treasure-beans/"
         },
@@ -217582,6 +219414,10 @@
           "url": "/stories/the-treasure-keeper-of-fracstein/"
         },
         {
+          "title": "The Two Brothers and the Four Giants",
+          "url": "/stories/the-two-brothers-and-the-four-giants/"
+        },
+        {
           "title": "The Two Treasure Guardians",
           "url": "/stories/the-two-treasure-guardians/"
         },
@@ -217640,6 +219476,10 @@
         {
           "title": "The White Woman of Leissigen",
           "url": "/stories/the-white-woman-of-leissigen/"
+        },
+        {
+          "title": "The White Woman—Altdorf",
+          "url": "/stories/the-white-woman-altdorf/"
         },
         {
           "title": "The White-Horse Treasure Wagon",
@@ -217712,6 +219552,10 @@
         {
           "title": "Treasure Shows Itself",
           "url": "/stories/treasure-shows-itself/"
+        },
+        {
+          "title": "Treasure-Guarding Animals",
+          "url": "/stories/treasure-guarding-animals/"
         },
         {
           "title": "Treasures and Crystals That Vanish",
@@ -219328,6 +221172,10 @@
           "url": "/stories/animal-heads-that-ward-off-pestilence/"
         },
         {
+          "title": "Animals Guarding Treasure (the Little Castle at Seedorf)",
+          "url": "/stories/animals-guarding-treasure-the-little-castle-at-seedorf/"
+        },
+        {
           "title": "Anna Vögtli",
           "url": "/stories/anna-vogtli/"
         },
@@ -219632,6 +221480,10 @@
           "url": "/stories/fiddler-lux-of-buttwil/"
         },
         {
+          "title": "Fighting with Spirits",
+          "url": "/stories/fighting-with-spirits/"
+        },
+        {
           "title": "Foolish Michel",
           "url": "/stories/foolish-michel/"
         },
@@ -219818,6 +221670,10 @@
         {
           "title": "Heinrich the Minnesänger",
           "url": "/stories/heinrich-the-minnesanger/"
+        },
+        {
+          "title": "Heitmenegg Is a Sunny Alp in the Schächen Valley",
+          "url": "/stories/heitmenegg-is-a-sunny-alp-in-the-schachen-valley/"
         },
         {
           "title": "Helf dir Gott",
@@ -220992,6 +222848,14 @@
           "url": "/stories/the-captured-wild-little-man-of-conters/"
         },
         {
+          "title": "The Carbuncle (Müller, 1926)",
+          "url": "/stories/the-carbuncle-muller-1926/"
+        },
+        {
+          "title": "The Carbuncle at Bristenstock",
+          "url": "/stories/the-carbuncle-at-bristenstock/"
+        },
+        {
           "title": "The Carbuncle in the Wallenstöcke",
           "url": "/stories/the-carbuncle-in-the-wallenstocke/"
         },
@@ -221194,6 +223058,10 @@
         {
           "title": "The Cows’ Mysterious Departure (Hartmann)",
           "url": "/stories/the-cows-mysterious-departure-hartmann/"
+        },
+        {
+          "title": "The Cream Witch",
+          "url": "/stories/the-cream-witch/"
         },
         {
           "title": "The Cross",
@@ -224284,6 +226152,10 @@
           "url": "/stories/the-treasure-at-weingarten/"
         },
         {
+          "title": "The Treasure at Äsch",
+          "url": "/stories/the-treasure-at-asch/"
+        },
+        {
           "title": "The Treasure Diggers (J. Kuoni)",
           "url": "/stories/the-treasure-diggers-j-kuoni/"
         },
@@ -224398,6 +226270,10 @@
         {
           "title": "The Turtmann Glacier in Valais",
           "url": "/stories/the-turtmann-glacier-in-valais/"
+        },
+        {
+          "title": "The Two Brothers and the Four Giants",
+          "url": "/stories/the-two-brothers-and-the-four-giants/"
         },
         {
           "title": "The Two Friends",
@@ -224682,6 +226558,10 @@
         {
           "title": "The White Woman — Frutigen",
           "url": "/stories/the-white-woman-frutigen/"
+        },
+        {
+          "title": "The White Woman—Altdorf",
+          "url": "/stories/the-white-woman-altdorf/"
         },
         {
           "title": "The White-Clad Avenging Spirit on Schwanau",
@@ -228702,6 +230582,10 @@
           "url": "/stories/felix-and-regulas-fingerprints/"
         },
         {
+          "title": "Fell While Setting Up the Cross",
+          "url": "/stories/fell-while-setting-up-the-cross/"
+        },
+        {
           "title": "Fennetta, the Inselweibchen (Little Island Woman)",
           "url": "/stories/fennetta-the-inselweibchen-little-island-woman/"
         },
@@ -229050,6 +230934,10 @@
           "url": "/stories/martin-grass-of-closters/"
         },
         {
+          "title": "May I Come to Sleep?",
+          "url": "/stories/may-i-come-to-sleep/"
+        },
+        {
           "title": "Milk-Sucking Snakes and a White Rooster",
           "url": "/stories/milk-sucking-snakes-and-a-white-rooster/"
         },
@@ -229082,6 +230970,10 @@
           "url": "/stories/nails-rossise-and-bohnli/"
         },
         {
+          "title": "News from Eternity",
+          "url": "/stories/news-from-eternity/"
+        },
+        {
           "title": "No einisch will dr hälfe! — I’ll Help You One More Time!",
           "url": "/stories/no-einisch-will-dr-halfe-ill-help-you-one-more-time/"
         },
@@ -229112,6 +231004,10 @@
         {
           "title": "Of the Türsten-Gjäg",
           "url": "/stories/of-the-tursten-gjag/"
+        },
+        {
+          "title": "Of Tyrannical Lords",
+          "url": "/stories/of-tyrannical-lords/"
         },
         {
           "title": "Old Customs",
@@ -230060,6 +231956,10 @@
         {
           "title": "The Forget-Me-Not",
           "url": "/stories/the-forget-me-not/"
+        },
+        {
+          "title": "The Former Lazarite Monastery at Seedorf",
+          "url": "/stories/the-former-lazarite-monastery-at-seedorf/"
         },
         {
           "title": "The Four Musicians",
@@ -231338,6 +233238,10 @@
           "url": "/stories/the-toad-sargans-sg/"
         },
         {
+          "title": "The Toad in the Grave",
+          "url": "/stories/the-toad-in-the-grave/"
+        },
+        {
           "title": "The Toggi",
           "url": "/stories/the-toggi/"
         },
@@ -232372,6 +234276,10 @@
         {
           "title": "Castle Spirit of the Botenstein Ruins",
           "url": "/stories/castle-spirit-of-the-botenstein-ruins/"
+        },
+        {
+          "title": "Changes in the Alpine Pastures",
+          "url": "/stories/changes-in-the-alpine-pastures/"
         },
         {
           "title": "Clever Peterli",
@@ -234042,6 +235950,10 @@
           "url": "/stories/the-erdmannchens-help-goats-cheese-and-watch/"
         },
         {
+          "title": "The Fängge as a Man-Eater",
+          "url": "/stories/the-fangge-as-a-man-eater/"
+        },
+        {
           "title": "The Fänggin Selbthan",
           "url": "/stories/the-fanggin-selbthan/"
         },
@@ -234154,6 +236066,10 @@
         {
           "title": "Are You Coming Right After Me?",
           "url": "/stories/are-you-coming-right-after-me/"
+        },
+        {
+          "title": "At Wischenwassern in Guretzmettlen in the Meien Valley",
+          "url": "/stories/at-wischenwassern-in-guretzmettlen-in-the-meien-valley/"
         },
         {
           "title": "Beliefs and Customs Concerning Domestic Animals",
@@ -234348,6 +236264,10 @@
           "url": "/stories/nidelgret-t-vernaleken/"
         },
         {
+          "title": "Nidelgret, the Cream Witch",
+          "url": "/stories/nidelgret-the-cream-witch/"
+        },
+        {
           "title": "Nidelgrethe",
           "url": "/stories/nidelgrethe/"
         },
@@ -234462,6 +236382,10 @@
         {
           "title": "The Conversion",
           "url": "/stories/the-conversion/"
+        },
+        {
+          "title": "The Cream Witch",
+          "url": "/stories/the-cream-witch/"
         },
         {
           "title": "The Dancing Places",

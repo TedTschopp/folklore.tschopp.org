@@ -1,5 +1,9 @@
 # November 19, 2026 publication release
 
+This records the initial bulk release. The
+[subsequent source-clearance review](publication-source-clearances-2026-11-19.md)
+publishes 23 of its 649 holds and leaves 626 held.
+
 This release adds **3,627 stories**, bringing the reading collection to **3,828
 bilingual pages**, **13,861 reader notes**, and the two existing source-note
 pages. All stories appear in the 77-page catalogue, full-text search, and the
