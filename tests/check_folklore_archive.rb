@@ -14,6 +14,7 @@ archive = JSON.parse(root.join('_data/folklore/archive.json').read)
 guides = JSON.parse(root.join('_data/folklore/reader_guides.json').read)
 discovery = JSON.parse(root.join('_data/folklore/discovery.json').read)
 editorial_review = JSON.parse(root.join('docs/editorial-integrity-2026-11-20.json').read)
+scan_review = JSON.parse(root.join('docs/transcription-scans-2026-11-20.json').read)
 canonical_redirects = JSON.parse(root.join('_code/domain-router/canonical-redirects.json').read)
 story_stubs = root.glob('folklore/stories/**/*.html').filter_map do |path|
   fields = path.read[/\A---\n(\{.*?\})\n---/m, 1]
@@ -135,6 +136,20 @@ sitemap_stories.each do |entry|
   end
   english, references = published_english(article)
   edition = story_stubs.fetch(url).fetch('edition')
+  scanned = scan_review.fetch('confirmed').find { |row| row.fetch('id') == story_id }
+  repairs = edition.fetch('transcription_corrections', [])
+  if scanned
+    repair = repairs.first
+    unless repairs.size == 1 && repair.fetch('before') == scanned.fetch('before') &&
+           repair.fetch('after') == scanned.fetch('after') && repair.fetch('witness') == scanned.fetch('witness') &&
+           edition.fetch('original_paragraphs').fetch(scanned.fetch('paragraph')) == scanned.fetch('after') &&
+           Digest::SHA256.hexdigest(repair.fetch('before')) == scanned.fetch('before_sha256') &&
+           notes.any? { |note| note['label'] == 'Transcription correction' && note.dig('source', 'url') == scanned.dig('witness', 'url') }
+      abort "Scan-attested transcription or evidence link differs from its review at #{url}"
+    end
+  elsif repairs.any?
+    abort "Unreviewed original-language transcription change at #{url}"
+  end
   if context = guide['reading_context']
     rendered = article.at_css('aside[aria-label="Reading context"]')
     unless rendered&.at_css('p')&.text == context.fetch('text') &&

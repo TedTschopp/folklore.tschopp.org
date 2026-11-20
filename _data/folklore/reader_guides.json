@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-20-editorial-integrity",
+  "release": "2026-11-20-transcription-scans",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -39442,6 +39442,15 @@
             "url": "https://ich.unesco.org/en/RL/living-traditions-of-the-alpina-desalpe-01966"
           },
           "number": 2
+        },
+        {
+          "label": "Transcription correction",
+          "text": "The 1929 printing begins “Von jeher” (“from time immemorial”). Its initial V was missing from the digital transcription and is restored here.",
+          "source": {
+            "label": "Josef Müller, Sagen aus Uri, Band II (Basel, 1929), no. 614, p. 96.",
+            "url": "https://books.google.com/books?id=PEDgAAAAMAAJ&pg=PA96"
+          },
+          "number": 3
         }
       ],
       "places": [
@@ -43565,6 +43574,15 @@
           "offset": 676,
           "anchor": "Lisebethli",
           "number": 3
+        },
+        {
+          "label": "Transcription correction",
+          "text": "The scanned reprint (1976, p. 63) begins “I glaube…”: capital I is the dialect word for “I.” The digital transcription’s lower-case l has been corrected. Other dialect spellings are retained.",
+          "source": {
+            "label": "Melchior Sooder, I dr Lohäule, reprinted in Karl Stettler, Sagen aus dem Oberaargau, Jahrbuch des Oberaargaus 19 (1976), pp. 63–64; the introduction on p. 59 identifies Sooder’s 1929 collection.",
+            "url": "https://www.e-periodica.ch/view/oag-001/1976/19/77"
+          },
+          "number": 4
         }
       ],
       "places": [
