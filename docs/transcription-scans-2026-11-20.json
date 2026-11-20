@@ -1,0 +1,84 @@
+{
+  "reviewed_on": "2026-11-20",
+  "release": "2026-11-20-transcription-scans",
+  "confirmed": [
+    {
+      "id": "50e7fb25127894ade0a8b14f4ae501f7b2003981",
+      "title": "Haunting on the Hut Roof",
+      "url": "/stories/haunting-on-the-hut-roof/",
+      "status": "confirmed_and_approved",
+      "paragraph": 0,
+      "before": "on jeher hiess es, in der Hütte der Alp Bärrlibutz im Erstfeldertale syg's nitt sübers. Einst übernachtete da eine Gesellschaft Erstfelder, die in die Farnstreue gehen wollten. Aber wohl! nach Mitternacht kam's. Wie der ärgste Hagel prasselte es auf das Hüttendach nieder. Das soll wahr sein, es sei noch gar nicht lange her.",
+      "after": "Von jeher hiess es, in der Hütte der Alp Bärrlibutz im Erstfeldertale syg's nitt sübers. Einst übernachtete da eine Gesellschaft Erstfelder, die in die Farnstreue gehen wollten. Aber wohl! nach Mitternacht kam's. Wie der ärgste Hagel prasselte es auf das Hüttendach nieder. Das soll wahr sein, es sei noch gar nicht lange her.",
+      "before_sha256": "0b3ac8983d37edb40fc75b14d5898a49f110d37a251fc9fd3ad95203d823277f",
+      "after_sha256": "ef0dd24f83ac8118a52768fa9c75a7989af3841e0f7729d7ecfef2be077f65dc",
+      "before_prefix": "on ",
+      "after_prefix": "Von ",
+      "witness": {
+        "kind": "original_edition",
+        "year": 1929,
+        "printed_page": "96",
+        "citation": "Josef Müller, Sagen aus Uri, Band II (Basel, 1929), no. 614, p. 96.",
+        "url": "https://books.google.com/books?id=PEDgAAAAMAAJ&pg=PA96"
+      },
+      "basis": "Visually inspected no. 614 on printed page 96 and the dated Band II title page. The original 1929 printing begins Von jeher.",
+      "scan_sha256": "c8a348eae0604e13d774281cf6274c82548d09e30e2d565df9a86a4e22fb2055"
+    },
+    {
+      "id": "e571ac6c3d79151949d861bb9ed0b9fb4d9af054",
+      "title": "In the Lohäule",
+      "url": "/stories/in-the-lohaule/",
+      "status": "confirmed_and_approved",
+      "paragraph": 1,
+      "before": "l glaube süscht nid a Geischter u sötiigs Züg. Das isch doch alls nüt. Ume die, wo si gäng förchte, gseh öppis. Aber einischt han i doch öppis erläbt, wo mer z’dänke het gä.",
+      "after": "I glaube süscht nid a Geischter u sötiigs Züg. Das isch doch alls nüt. Ume die, wo si gäng förchte, gseh öppis. Aber einischt han i doch öppis erläbt, wo mer z’dänke het gä.",
+      "before_sha256": "7e0b62c1fa362c91d0f7ffb8b46fff51007511c5a0b50ad74c9f7ee08bed028e",
+      "after_sha256": "ecf61e6ed25a84458743046ec2678e47d9c45a772bff226a645e3643dd786ac4",
+      "before_prefix": "l ",
+      "after_prefix": "I ",
+      "witness": {
+        "kind": "later_reprint",
+        "year": 1976,
+        "printed_page": "63",
+        "citation": "Melchior Sooder, I dr Lohäule, reprinted in Karl Stettler, Sagen aus dem Oberaargau, Jahrbuch des Oberaargaus 19 (1976), pp. 63–64; the introduction on p. 59 identifies Sooder’s 1929 collection.",
+        "url": "https://www.e-periodica.ch/view/oag-001/1976/19/77"
+      },
+      "basis": "Visually inspected the later printed reprint on pp. 63–64. Its first character is capital I, the dialect first-person pronoun. The 1929 book itself was not available as a page scan; the later witness is identified explicitly and its other spelling variants are not imported.",
+      "scan_sha256": "e22cab3af43aeb5edb158ac8c13e563e82c7f9544f8b5145a928b32134b906e6"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "1ca53a024b89f7ff8090e675738b31a3178995c6",
+      "title": "The Little Cat",
+      "url": "/stories/the-little-cat/",
+      "status": "awaiting_readable_scan",
+      "proposed_prefix": "Vor ",
+      "current_prefix": "or ",
+      "basis": "SAGEN.at’s proofread transcription and the current Märchenstiftung text both read Vor. No readable page image of the cited 1915 edition or a corresponding early print was obtained; the 1917 and 1929 Google Books records exposed matching-page metadata but blank snippet images. No publication correction is approved from metadata or grammar alone.",
+      "text_witnesses": [
+        "https://www.sagen.at/texte/sagen/schweiz/allgemein/kaetzlein.html",
+        "https://www.maerchenstiftung.ch/maerchendatenbank/5176/das-kaetzlein"
+      ],
+      "book_records": [
+        "https://books.google.com/books?id=yGkBwW1jMOEC",
+        "https://books.google.com/books?id=Hy_gAAAAMAAJ"
+      ],
+      "searched": [
+        "Internet Archive catalogue",
+        "Open Library editions",
+        "HathiTrust catalogue/API",
+        "e-rara/Wikisource discovery",
+        "Google Books 1917 and 1929 authorized previews",
+        "Swiss folklore digital library catalogue"
+      ]
+    }
+  ],
+  "published_story_count": 3858,
+  "source_note_count": 2,
+  "reader_note_count": 14059,
+  "preserved_existing_note_count": 14057,
+  "preserved_existing_note_ids": 14057,
+  "unchanged_english_story_count": 3858,
+  "unchanged_story_urls": true
+}

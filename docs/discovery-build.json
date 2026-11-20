@@ -5,10 +5,10 @@
   "named_place_groups": 243,
   "detailed_tags": 156,
   "generated_listing_pages": 1126,
-  "source_release": "2026-11-20-editorial-integrity",
+  "source_release": "2026-11-20-transcription-scans",
   "source_sha256": {
-    "_data/folklore/archive.json": "e3984a98a6d75680781cfe3101950a026843e9c9ed2ed971a77f4889fcfe0be7",
-    "_data/folklore/reader_guides.json": "5fe2470d04b8bb60770effede7b4cee8ec1974fa6010e5a90cdae9cf0e9f5961",
+    "_data/folklore/archive.json": "0025c90bd0fbaa1ffe27a94a7bc11cb7710c1130c3dc7d9dfd5ba263b79726f9",
+    "_data/folklore/reader_guides.json": "a082ba1e9b7edd765a757df1ef968b2c27c479f09aab11d88a2ba67e8f42c7c3",
     "_data/folklore/discovery_editorial.json": "641d210edde228a3ffc578746b11b762243fd199e9bc61cbc5943ced7ab513bd"
   }
 }
