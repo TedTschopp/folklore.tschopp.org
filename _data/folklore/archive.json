@@ -1,6 +1,6 @@
 {
-  "release": "2026-11-19-keller-witnesses",
-  "corpus_commit": "2700fdf9a4f1b1961701329d39cffb8bfe74c1a2",
+  "release": "2026-11-19-kuoni-witness",
+  "corpus_commit": "c59f3dd1c96fab329afb6010a11395c98c714e2a",
   "page_size": 50,
   "page_count": 78,
   "stories": [
@@ -21894,6 +21894,13 @@
       "author": "Ernst Ludwig Rochholz"
     },
     {
+      "id": "ba2750da6b803cab20306227e2c5b47487b24ea3",
+      "title": "The Three-Legged Hare",
+      "url": "/stories/the-three-legged-hare/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
       "id": "e3cfe0d4404749887d4c5a28541d3099e74cc6e6",
       "title": "The Three-Legged Horse in Enggersch",
       "url": "/stories/the-three-legged-horse-in-enggersch/",
@@ -29865,6 +29872,7 @@
     "ba1238d3eb3e929d9b9c5608ff12e466d8873d4e": "/stories/the-wild-hunter-or-the-thurst/",
     "ba1c6db0baef51c4de7dad95e4fcdc2c53ec6350": "/stories/the-fox-of-fulun/",
     "ba20dbee398db053247232991334b7175354a9bd": "/stories/the-nighttime-carter/",
+    "ba2750da6b803cab20306227e2c5b47487b24ea3": "/stories/the-three-legged-hare/",
     "ba28d259fad054e0c287b60fe1b1be4c977e2b9c": "/stories/strong-hans-sutermeister/",
     "ba2c10a032bfe00a70704beffc162c6978f991ea": "/stories/the-bowaldler-of-wittnau/",
     "ba3eb7090c7370ad79a28d951d2034e50ad60914": "/stories/the-venetian-and-the-man-from-weisstannen/",

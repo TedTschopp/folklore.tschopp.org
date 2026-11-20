@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-19-keller-witnesses",
+  "release": "2026-11-19-kuoni-witness",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -195803,6 +195803,63 @@
         }
       ],
       "summary_kind": "opening"
+    },
+    "ba2750da6b803cab20306227e2c5b47487b24ea3": {
+      "summary": "High up on an Alp near Rüti, a three-legged hare stayed in a hollow. Whoever got into it could not get out again until someone called to them.",
+      "notes": [
+        {
+          "label": "Alp",
+          "text": "a high seasonal pasture and its working landscape, not merely a mountain peak; the haunted hollow lies high on one near Rüti.",
+          "paragraph": 0,
+          "offset": 17,
+          "anchor": "Alp",
+          "number": 1
+        },
+        {
+          "label": "The hare and the witch",
+          "text": "After this account, Kuoni adds: “The three-legged hare is a witch.” That separate closing explanation is absent from the catalogue text translated here. The tale does not explain how the animal came to have three legs.",
+          "source": {
+            "label": "Jakob Kuoni, Sagen des Kantons St. Gallen (St. Gallen: Wiser & Frey, Buchdruckerei Merkur, 1903), no. 81, p. 37. The catalogue omits the separate closing witch comment, translated in Reader notes.",
+            "url": "https://babel.hathitrust.org/cgi/pt?id=chi.088179859&seq=67"
+          },
+          "number": 2
+        },
+        {
+          "label": "Which Rüti?",
+          "text": "Kuoni groups this story under Rüti in the Oberrheintal district of St. Gallen. The name refers to the story’s locality; the text does not identify the particular hollow or pasture.",
+          "source": {
+            "label": "Jakob Kuoni, Sagen des Kantons St. Gallen (St. Gallen: Wiser & Frey, Buchdruckerei Merkur, 1903), no. 81, p. 37. The catalogue omits the separate closing witch comment, translated in Reader notes.",
+            "url": "https://babel.hathitrust.org/cgi/pt?id=chi.088179859&seq=67"
+          },
+          "number": 3
+        },
+        {
+          "label": "The verified 1903 source",
+          "text": "The complete short account and its Henne-Am Rhyn source credit appear as no. 81 on page 37 of Kuoni’s Sagen des Kantons St. Gallen, published in 1903. The catalogue narrative and its existing English translation are preserved. The separate witch comment is supplied above as historical context.",
+          "source": {
+            "label": "Jakob Kuoni, Sagen des Kantons St. Gallen (St. Gallen: Wiser & Frey, Buchdruckerei Merkur, 1903), no. 81, p. 37. The catalogue omits the separate closing witch comment, translated in Reader notes.",
+            "url": "https://babel.hathitrust.org/cgi/pt?id=chi.088179859&seq=67"
+          },
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Rüti (St. Gallen)",
+          "url": "/locations/#place-ruti-st-gallen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Witchcraft",
+          "url": "/themes/#theme-witchcraft"
+        },
+        {
+          "label": "Alpine work",
+          "url": "/themes/#theme-alpine-work"
+        }
+      ],
+      "summary_kind": "opening"
     }
   },
   "places": [
@@ -205519,6 +205576,16 @@
       ]
     },
     {
+      "id": "place-ruti-st-gallen",
+      "label": "Rüti (St. Gallen)",
+      "stories": [
+        {
+          "title": "The Three-Legged Hare",
+          "url": "/stories/the-three-legged-hare/"
+        }
+      ]
+    },
+    {
       "id": "place-saas-valley",
       "label": "Saas Valley",
       "stories": [
@@ -215179,6 +215246,10 @@
         {
           "title": "The Three Sleeping Liberators",
           "url": "/stories/the-three-sleeping-liberators/"
+        },
+        {
+          "title": "The Three-Legged Hare",
+          "url": "/stories/the-three-legged-hare/"
         },
         {
           "title": "The Three-Legged Horse in Enggersch",
@@ -237313,6 +237384,10 @@
         {
           "title": "The Three-Headed Witch",
           "url": "/stories/the-three-headed-witch/"
+        },
+        {
+          "title": "The Three-Legged Hare",
+          "url": "/stories/the-three-legged-hare/"
         },
         {
           "title": "The Toggeli and the Urine Bottle",
