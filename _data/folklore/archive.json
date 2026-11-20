@@ -1,6 +1,6 @@
 {
-  "release": "2026-11-19-evidence-followup",
-  "corpus_commit": "c46f557016a23a95a9d4828a1a65a6ea8ccfefcd",
+  "release": "2026-11-19-keller-witnesses",
+  "corpus_commit": "2700fdf9a4f1b1961701329d39cffb8bfe74c1a2",
   "page_size": 50,
   "page_count": 78,
   "stories": [
@@ -11611,6 +11611,13 @@
       "author": "Theodor Vernaleken"
     },
     {
+      "id": "2799009f8beb5601ed4ceda094f7b995f2a10c38",
+      "title": "The Enchanted Jug",
+      "url": "/stories/the-enchanted-jug/",
+      "year": 1927,
+      "author": "Walter Keller"
+    },
+    {
       "id": "2a545be91c6448baff6164ef3e883a0d777f12cd",
       "title": "The Enchanted King’s Daughter",
       "url": "/stories/the-enchanted-kings-daughter/",
@@ -16672,6 +16679,13 @@
       "author": "C. Kohlrusch"
     },
     {
+      "id": "270a29811fbaec89bc31d68dfb8e621c692cac2a",
+      "title": "The Marvelous Barge",
+      "url": "/stories/the-marvelous-barge/",
+      "year": 1927,
+      "author": "Walter Keller"
+    },
+    {
       "id": "0aeeeed613f51d98f7e0b0f2166b7e7511e517bc",
       "title": "The Master of a Thousand Arts",
       "url": "/stories/the-master-of-a-thousand-arts/",
@@ -18525,6 +18539,13 @@
       "url": "/stories/the-poor-souls-in-the-aletsch-glacier/",
       "year": 1872,
       "author": "Moritz Tscheinen and Peter Joseph Ruppen"
+    },
+    {
+      "id": "54f3d8487f294b0dce493c79c1168b5df8e3fc55",
+      "title": "The Poor Weaver and His Good Fortune",
+      "url": "/stories/the-poor-weaver-and-his-good-fortune/",
+      "year": 1927,
+      "author": "Walter Keller"
     },
     {
       "id": "31aa3fba4f8566b9741103f2f18e6bd072affbc7",
@@ -21052,6 +21073,13 @@
       "url": "/stories/the-storks-of-veltheim/",
       "year": 1856,
       "author": "Ernst Ludwig Rochholz"
+    },
+    {
+      "id": "4356cedeb88c98483d6801eb2b5a51ea63d54df9",
+      "title": "The Story of a Sorcerer",
+      "url": "/stories/the-story-of-a-sorcerer/",
+      "year": 1927,
+      "author": "Walter Keller"
     },
     {
       "id": "9c16b8733a52ee823672d1975816baff5203edc6",
@@ -27555,6 +27583,7 @@
     "26b7dee8f8a2132b1f0fa7a631fe13ffb4d370f2": "/stories/he-remains-in-my-place/",
     "26d72db097e100dbeda62cc23ce5b8e2e35841ab": "/stories/eggs-aplenty/",
     "26fc7a6ee717a6d858836a2847b8db2c59612462": "/stories/the-witches-stone-in-bauen/",
+    "270a29811fbaec89bc31d68dfb8e621c692cac2a": "/stories/the-marvelous-barge/",
     "270f08bc101706ec0b02e33ad6ccdc7b16a4fdc2": "/stories/combat-and-protection-against-ghosts/",
     "27224772574dd2803a9385b38232f5dc574510e4": "/stories/the-toggeli-and-the-urine-bottle/",
     "272360e32c341a25837d5178a01714d413de80ce": "/stories/she-cannot-stand-mockery/",
@@ -27563,6 +27592,7 @@
     "2766a77190709c92e05ba924ce46901f6347af46": "/stories/the-snake-in-the-galgenholzli-in-the-wynental/",
     "2774309322ebd181dde47b0285a4c1d11843ceba": "/stories/the-sodbrunnen/",
     "279852a36ecb48916b19cb7dd4f8a9b5fc5493b0": "/stories/the-alp-called-erb-at-davos/",
+    "2799009f8beb5601ed4ceda094f7b995f2a10c38": "/stories/the-enchanted-jug/",
     "279b05d5197084d549f43af0d4d4be3e5ccdbfde": "/stories/the-path-of-napfhans-le-chemin-de-jean-bolieta/",
     "279bfcd31a29f4326f31f9c482a452ad2124f262": "/stories/zigeuner-on-st-gotthard/",
     "27b2ccb139d12d8a675ab40f25ab20ad81339b45": "/stories/the-dragon-in-the-alp-of-macun/",
@@ -28010,6 +28040,7 @@
     "431896f5f2bb6c065713682ab60645cbc3749fc8": "/stories/treasure-cave-near-bellikon/",
     "4321a9d375763bd547a7f5335392d76bd597b7a7": "/stories/the-baumstark-riedbub/",
     "434e1c6212cefb2c179cebaefb73d062fb021de8": "/stories/the-magic-book/",
+    "4356cedeb88c98483d6801eb2b5a51ea63d54df9": "/stories/the-story-of-a-sorcerer/",
     "435c8e09c9ce90d9ade9bbe7fb4ef1cb9cd9f68f": "/stories/the-sigristin-of-bremgarten/",
     "4395ccacdae68bde177eb0e70f50350bc532a086": "/stories/when-the-milk-will-not-turn-to-butter/",
     "43a0de496ea8858e30a5f06174800a96ba645e2f": "/stories/the-herder-on-sulsalp/",
@@ -28277,6 +28308,7 @@
     "54bd22936dc490c9f391a52a38c89e207faa54ab": "/stories/the-mountain-climber/",
     "54d74711464080e2f8bf2c8d6e7f87d198880e2c": "/stories/the-nocturnal-cry-for-help/",
     "54da42680ef4659d144047f1a24c9034c915c680": "/stories/the-performance-unexpectedly-cut-short/",
+    "54f3d8487f294b0dce493c79c1168b5df8e3fc55": "/stories/the-poor-weaver-and-his-good-fortune/",
     "551c18fae1379d54a846cc727efd37df942da920": "/stories/the-wild-hunt-on-the-fuhrebarg/",
     "551fba69bff52184e00cf2a503e99baf732a2374": "/stories/the-witches-place-near-laupen/",
     "5526ee5e237d639dddb54093c29213cf284bf123": "/stories/a-sterbent/",

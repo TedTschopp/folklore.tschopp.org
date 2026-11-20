@@ -1,5 +1,5 @@
 {
-  "release": "2026-11-19-evidence-followup",
+  "release": "2026-11-19-keller-witnesses",
   "stories": {
     "6aeb8c528735636a5627a29275a5788c9764d2f8": {
       "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
@@ -195618,6 +195618,191 @@
         }
       ],
       "summary_kind": "opening"
+    },
+    "2799009f8beb5601ed4ceda094f7b995f2a10c38": {
+      "summary": "Lucio was a mountain herder about twenty-five years old, always cheerful and modest.",
+      "notes": [
+        {
+          "label": "A Roman storage jar",
+          "text": "An amphora is an ancient vessel associated with storing and transporting food and drink. Roman terracotta amphorae carried wine and olive oil; the familiar storage vessel becomes the tale’s magical source of wealth.",
+          "paragraph": 1,
+          "offset": 68,
+          "anchor": "amphora",
+          "source": {
+            "label": "The Metropolitan Museum of Art: Roman amphora and terracotta transport jars",
+            "url": "https://www.metmuseum.org/art/collection/search/249564"
+          },
+          "number": 1
+        },
+        {
+          "label": "",
+          "text": "The source calls Lucio’s cow ‘Bionda’ at the beginning but uses the German equivalent ‘Blonde’ near the end; both names have been preserved in their original positions.",
+          "number": 2
+        },
+        {
+          "label": "Bionda and the earlier printing",
+          "text": "The catalogue calls Lucio’s cow Bionda near the beginning and Blonde later. Keller’s 1927 text uses the German form Blonde at both points. Both mean “blond.” This transcription preserves the catalogue’s names; the jug adventure, its magical verses and its ending already appear on pages 243–248 of the earlier book.",
+          "source": {
+            "label": "Walter Keller, Tessiner Märchen, gesammelt und übertragen (Frauenfeld and Leipzig: Huber & Co., 1927), pp. 243–248; catalogue transcription with the variants described in Reader notes.",
+            "url": "https://books.google.com/books?id=b5wOAQAAMAAJ&pg=PA243"
+          },
+          "number": 3
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Hidden treasure",
+          "url": "/themes/#theme-hidden-treasure"
+        },
+        {
+          "label": "Magic and transformation",
+          "url": "/themes/#theme-magic-and-transformation"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "270a29811fbaec89bc31d68dfb8e621c692cac2a": {
+      "summary": "There was once a farming family: father, mother, and two boys. They lived on a farm out in the countryside, and their little house stood in the middle of an extensive estate that they cultivated themselves.",
+      "notes": [
+        {
+          "label": "Wallhölzer",
+          "text": "a regional word for cylindrical rolling pins used to roll dough; the dishonest brother’s false answer causes one to spring from the tree with every ax stroke.",
+          "paragraph": 4,
+          "offset": 144,
+          "anchor": "Wallhölzer",
+          "number": 1
+        },
+        {
+          "label": "Lot",
+          "text": "a small historical unit of weight; ‘Lot by Lot’ means that the princess will waste away in tiny increments, though the source does not specify a modern equivalent.",
+          "paragraph": 27,
+          "offset": 504,
+          "anchor": "Lot",
+          "number": 2
+        },
+        {
+          "label": "The 1927 printing and this transcription",
+          "text": "The complete barge adventure appears on pages 7–18 of Keller’s 1927 book. This catalogue transcription changes spelling, a few ordinary words and phrase positions. It calls the boat “dear” where the first verse says “good,” and adds that the courtiers were waiting for Valentino. The later catalogue citation and the narrator’s date are not the publication date of this earlier telling.",
+          "source": {
+            "label": "Walter Keller, Tessiner Märchen, gesammelt und übertragen (Frauenfeld and Leipzig: Huber & Co., 1927), pp. 7–18; catalogue transcription with the variants described in Reader notes.",
+            "url": "https://books.google.com/books?id=b5wOAQAAMAAJ&pg=PA7"
+          },
+          "number": 3
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Courtship and marriage",
+          "url": "/themes/#theme-courtship-and-marriage"
+        },
+        {
+          "label": "Magic and transformation",
+          "url": "/themes/#theme-magic-and-transformation"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "54f3d8487f294b0dce493c79c1168b5df8e3fc55": {
+      "summary": "Antonio Löla was a weaver. No one in the village understood how to weave such splendid, strong linen as he did.",
+      "notes": [
+        {
+          "label": "Gerla",
+          "text": "a Ticino and Alpine Italian-style back basket used for carrying loads; Antonio places four linen bales in this broad carrier for the walk to market.",
+          "paragraph": 3,
+          "offset": 250,
+          "anchor": "Gerla",
+          "number": 1
+        },
+        {
+          "label": "Marengo",
+          "text": "a historical gold coin named after the Battle of Marengo and used in northern Italian and Swiss-border monetary contexts; the tale equates twenty-five coins with five hundred francs, while exact values could vary by issue.",
+          "paragraph": 3,
+          "offset": 396,
+          "anchor": "Marengo",
+          "source": {
+            "label": "Swissmint: why gold Vreneli are called Marengo in Ticino",
+            "url": "https://www.swissmint.ch/en/frequently-asked-question"
+          },
+          "number": 2
+        },
+        {
+          "label": "Marenghi",
+          "text": "the Italian plural form of Marengo; Antonio offers all twenty-five coins for the donkey, preserving the source’s change of form.",
+          "paragraph": 5,
+          "offset": 160,
+          "anchor": "Marenghi",
+          "source": {
+            "label": "Swissmint: why gold Vreneli are called Marengo in Ticino",
+            "url": "https://www.swissmint.ch/en/frequently-asked-question"
+          },
+          "number": 3
+        },
+        {
+          "label": "Why this telling is dated 1927",
+          "text": "Keller printed this complete story in Tessiner Märchen in 1927, on pages 143–147. The catalogue’s attribution to a telling in 1929 therefore does not establish its first publication. Spelling, word spacing and a few small grammatical differences are retained in this transcription.",
+          "source": {
+            "label": "Walter Keller, Tessiner Märchen, gesammelt und übertragen (Frauenfeld and Leipzig: Huber & Co., 1927), pp. 143–147; catalogue transcription with the variants described in Reader notes.",
+            "url": "https://books.google.com/books?id=b5wOAQAAMAAJ&pg=PA143"
+          },
+          "number": 4
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Good fortune",
+          "url": "/themes/#theme-good-fortune"
+        }
+      ],
+      "summary_kind": "opening"
+    },
+    "4356cedeb88c98483d6801eb2b5a51ea63d54df9": {
+      "summary": "A father had two sons. One day he told the elder, whose name was Giovannino, to go into town and buy small cheeses so that they could eat them with polenta.",
+      "notes": [
+        {
+          "label": "Polenta in Ticino",
+          "text": "Polenta, made from ground maize, was a staple food in Ticino for centuries. Cheese or milk commonly accompanied it, so Giovannino’s errand begins with an ordinary household meal.",
+          "paragraph": 0,
+          "offset": 155,
+          "anchor": "polenta",
+          "source": {
+            "label": "Ticino Turismo: Polenta ticinese",
+            "url": "https://www.ticino.ch/en/commons/details/Polenta-ticinese/95106.html"
+          },
+          "number": 1
+        },
+        {
+          "label": "Musi, musi, pumpelusi",
+          "text": "this nonsense-like magical sniffing formula precedes the sorcerer’s claim to smell human flesh; its literal meaning, source language influence, and traditional variants are uncertain.",
+          "paragraph": 1,
+          "offset": 21,
+          "anchor": "Musi, musi, pumpelusi",
+          "number": 2
+        },
+        {
+          "label": "The missing sentence about the wedges",
+          "text": "Keller’s 1927 printing explicitly says that Giovannino takes only ninety-nine of the one hundred and one wedges. That short sentence is absent from this transcription; the following paragraph still says that he deliberately leaves two wedges behind. The trick and the rest of the narrative are already present in the 1927 text.",
+          "source": {
+            "label": "Walter Keller, Tessiner Märchen, gesammelt und übertragen (Frauenfeld and Leipzig: Huber & Co., 1927), pp. 139–142; catalogue transcription with the variants described in Reader notes.",
+            "url": "https://books.google.com/books?id=b5wOAQAAMAAJ&pg=PA139"
+          },
+          "number": 3
+        }
+      ],
+      "places": [],
+      "themes": [
+        {
+          "label": "Trickery",
+          "url": "/themes/#theme-trickery"
+        },
+        {
+          "label": "Magic and transformation",
+          "url": "/themes/#theme-magic-and-transformation"
+        }
+      ],
+      "summary_kind": "opening"
     }
   },
   "places": [
@@ -216124,6 +216309,10 @@
           "url": "/stories/the-man-who-went-to-the-devil/"
         },
         {
+          "title": "The Marvelous Barge",
+          "url": "/stories/the-marvelous-barge/"
+        },
+        {
           "title": "The Murder at the Bergüner-Stein",
           "url": "/stories/the-murder-at-the-berguner-stein/"
         },
@@ -218428,6 +218617,16 @@
       ]
     },
     {
+      "id": "theme-good-fortune",
+      "label": "Good fortune",
+      "stories": [
+        {
+          "title": "The Poor Weaver and His Good Fortune",
+          "url": "/stories/the-poor-weaver-and-his-good-fortune/"
+        }
+      ]
+    },
+    {
       "id": "theme-grateful-animals",
       "label": "Grateful animals",
       "stories": [
@@ -218956,6 +219155,10 @@
         {
           "title": "The Enchanted Castle in the Arben Forest",
           "url": "/stories/the-enchanted-castle-in-the-arben-forest/"
+        },
+        {
+          "title": "The Enchanted Jug",
+          "url": "/stories/the-enchanted-jug/"
         },
         {
           "title": "The Enchanted Maiden",
@@ -227446,6 +227649,24 @@
       ]
     },
     {
+      "id": "theme-magic-and-transformation",
+      "label": "Magic and transformation",
+      "stories": [
+        {
+          "title": "The Enchanted Jug",
+          "url": "/stories/the-enchanted-jug/"
+        },
+        {
+          "title": "The Marvelous Barge",
+          "url": "/stories/the-marvelous-barge/"
+        },
+        {
+          "title": "The Story of a Sorcerer",
+          "url": "/stories/the-story-of-a-sorcerer/"
+        }
+      ]
+    },
+    {
       "id": "theme-magic-books",
       "label": "Magic books",
       "stories": [
@@ -234250,6 +234471,16 @@
         {
           "title": "Hans Baschi Jakober of Uri",
           "url": "/stories/hans-baschi-jakober-of-uri/"
+        }
+      ]
+    },
+    {
+      "id": "theme-trickery",
+      "label": "Trickery",
+      "stories": [
+        {
+          "title": "The Story of a Sorcerer",
+          "url": "/stories/the-story-of-a-sorcerer/"
         }
       ]
     },

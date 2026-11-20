@@ -3,14 +3,16 @@
 The public reading site at **https://folklore.tschopp.org/**. It has its own
 Jekyll build, Pagefind index, sitemap, and GitHub Pages deployment.
 
-This repository contains the approved public edition: 3,853 bilingual tales,
-14,021 reader notes, and two held source-note pages. The private authoring corpus,
+This repository contains the approved public edition: 3,857 bilingual tales,
+14,034 reader notes, and two held source-note pages. The private authoring corpus,
 raw source documents, unreviewed backlog and editorial tools remain in
 `TedTschopp/swiss-folklore`. The November 19 release adds 3,627 explicitly reviewed stories; the source and
 publication checks are recorded in docs/publication-2026-11-19.md. The subsequent
 source review clears another 23 translations; see
 [the clearance release](docs/publication-source-clearances-2026-11-19.md). The next evidence follow-up adds two more; see
-[the follow-up review](docs/publication-evidence-followup-2026-11-19.md).
+[the follow-up review](docs/publication-evidence-followup-2026-11-19.md). The complete
+1927 Keller scan clears four further tellings with 13 reader notes; see
+[the Keller review](docs/publication-keller-witnesses-2026-11-19.md).
 
 ## Build and verify
 
