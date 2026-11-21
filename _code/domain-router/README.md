@@ -17,6 +17,7 @@ wrangler deploy --config _code/domain-router/wrangler.json
 The configured scopes cover the dedicated custom domain, the old `/folklore`
 collection, `/Swiss-Folklore` articles, the Chriemhild article, category addresses,
 and four dated aliases. Legacy scopes cover both TedT hostnames and HTTP/HTTPS.
+Legacy route scopes end in a wildcard so Cloudflare also matches query strings.
 Only the explicit entries in `routes.json` redirect; unknown paths pass through
 to TedT.org. The Blood Comet fragment redirects to its new raw TedT `/stories/`
 address. Old translation addresses resolve to current English URLs in one hop.
