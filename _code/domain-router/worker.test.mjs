@@ -92,8 +92,12 @@ test('configured Cloudflare route scopes cover every migrated URL', async () => 
   const config = JSON.parse(await readFile(new URL('./wrangler.json', import.meta.url)));
   for (const path of Object.keys(routes)) {
     for (const host of ['tedt.org', 'www.tedt.org']) {
-      const url = host + path;
-      assert.ok(config.routes.some(route => route.pattern && new RegExp('^' + route.pattern.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$').test(url)), url);
+      const variants = path.endsWith('/') ? [path, path.slice(0, -1), path + 'index.html'] : [path];
+      if (!path.endsWith('/') && !/\.[a-z]+$/i.test(path)) variants.push(path + '/', path + '/index.html');
+      for (const variant of variants) {
+        const url = host + variant;
+        assert.ok(config.routes.some(route => route.pattern && new RegExp('^' + route.pattern.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$').test(url)), url);
+      }
     }
   }
 });
