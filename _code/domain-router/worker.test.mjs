@@ -45,7 +45,7 @@ test('comparison pairs remain separate and aliases converge', () => {
   }
 });
 test('unrelated legacy resources do not redirect', () => {
-  for (const path of ['/stories/house-of-the-blood-comet.html', '/RPG/', '/profile/', '/folklore/stories/unknown/']) assert.equal(legacyDestination('https://tedt.org' + path), null);
+  for (const path of ['/stories/house-of-the-blood-comet.html', '/RPG/', '/profile/', '/folklore/stories/unknown/', '/category/folklore-news/', '/The-Chriemhild-Trench-another-story/']) assert.equal(legacyDestination('https://tedt.org' + path), null);
   assert.equal(legacyDestination('https://example.com/folklore/'), null);
 });
 test('publication origin and origin redirect remain scoped', () => {
@@ -95,8 +95,10 @@ test('configured Cloudflare route scopes cover every migrated URL', async () => 
       const variants = path.endsWith('/') ? [path, path.slice(0, -1), path + 'index.html'] : [path];
       if (!path.endsWith('/') && !/\.[a-z]+$/i.test(path)) variants.push(path + '/', path + '/index.html');
       for (const variant of variants) {
-        const url = host + variant;
-        assert.ok(config.routes.some(route => route.pattern && new RegExp('^' + route.pattern.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$').test(url)), url);
+        for (const query of ['', '?from=old&reader=1']) {
+          const url = host + variant + query;
+          assert.ok(config.routes.some(route => route.pattern && new RegExp('^' + route.pattern.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$').test(url)), url);
+        }
       }
     }
   }
