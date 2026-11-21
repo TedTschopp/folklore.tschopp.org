@@ -27,11 +27,155 @@
       "custom_domain": true
     },
     {
-      "pattern": "https://tedt.org/folklore/*",
+      "pattern": "tedt.org/folklore",
       "zone_name": "tedt.org"
     },
     {
-      "pattern": "https://tedt.org/folklore",
+      "pattern": "tedt.org/folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/Swiss-Folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/The-Chriemhild-Trench",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/The-Chriemhild-Trench/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/folklore",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/Folklore",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/Folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/Folklore.html",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/category/folklore.html",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/2023-08-20-The-Army-in-Schrattenberg",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/2023-08-20-The-Army-in-Schrattenberg/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/From-the-Swabian-War-Benedikt-Fontana",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/From-the-Swabian-War-Benedikt-Fontana/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/The-Army-in-Schrattenberg",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "tedt.org/2023/08/20/The-Army-in-Schrattenberg/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/folklore",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/Swiss-Folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/The-Chriemhild-Trench",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/The-Chriemhild-Trench/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/folklore",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/Folklore",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/Folklore/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/Folklore.html",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/category/folklore.html",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/2023-08-20-From-the-Swabian-War-Benedikt-Fontana/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/2023-08-20-The-Army-in-Schrattenberg",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/2023-08-20-The-Army-in-Schrattenberg/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/From-the-Swabian-War-Benedikt-Fontana",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/From-the-Swabian-War-Benedikt-Fontana/*",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/The-Army-in-Schrattenberg",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "www.tedt.org/2023/08/20/The-Army-in-Schrattenberg/*",
       "zone_name": "tedt.org"
     }
   ]

@@ -16,6 +16,8 @@ layout: folklore-shell
       {% include seo/entry-metadata.html %}
       {% include folklore/discussion-links.html %}
     </header>
+    {% assign story_plate = site.data.folklore.illustrations.pages[page.url] %}
+    {% if story_plate %}{% include folklore/plate.html id=story_plate eager=true story=true %}{% endif %}
     {% if guide and guide.summary_kind != 'opening' %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
     {% include folklore/reading-context.html context=guide.reading_context %}
     <div class="e-content">

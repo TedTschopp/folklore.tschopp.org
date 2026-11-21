@@ -253,3 +253,22 @@ abort 'Discovery exposes held source notes' unless discovery.fetch('stories').ke
 
 reader_note_count = guides.fetch('stories').values.sum { |guide| guide.fetch('notes').size }
 puts "Folklore archive OK (#{published.size} bilingual pages, #{reader_note_count} reader notes, #{source_notes.size} source notes, #{index_count} indexed)"
+
+# Every promoted story has its own reviewed art on its canonical reading page.
+features = JSON.parse(root.join('_data/folklore/featured_stories.json').read).fetch('stories')
+art = JSON.parse(root.join('_data/folklore/illustrations.json').read)
+provenance = JSON.parse(root.join('docs/featured-illustrations-2026-11-20.json').read).fetch('stories')
+abort 'Featured story selection is not 99 distinct tales' unless features.size == 99 && features.map { |story| story.fetch('id') }.uniq.size == 99 && features.map { |story| story.fetch('url') }.uniq.size == 99
+features.each do |story|
+  path = URI(story.fetch('url')).path
+  document = page(site, path)
+  plate_id = art.fetch('pages').fetch(path)
+  image = document.at_css('article .folklore-plate img')
+  expected = '/assets/folklore/illustrations/' + plate_id
+  abort "Featured illustration missing at #{path}" unless image && image['src'] == expected + '-768.webp' && image['alt'] == story.dig('image', 'alt') && image['width'] == '1536' && image['height'] == '1024' && image['srcset'].split(',').size == 4 && image.ancestors('figure').first['data-pagefind-ignore'] != nil
+  abort "Featured social image differs at #{path}" unless document.at_css('meta[property="og:image"]')['content'] == origin + expected + '-1536.webp'
+  provenance.find { |record| record.fetch('id') == story.fetch('id') }.fetch('derivatives').each do |asset|
+    abort "Featured derivative changed: #{asset.fetch('path')}" unless Digest::SHA256.file(root.join(asset.fetch('path'))).hexdigest == asset.fetch('sha256')
+  end
+end
+puts 'Featured art OK (99 individual illustrations, alt text, responsive sizes, and social images)'

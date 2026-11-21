@@ -57,17 +57,24 @@ landing pages carry contemporary wordless illustrations. Region and named-place
 landing pages use a shared wayfinding still life, not a claimed view of that place.
 Paginated result pages keep their compact reading layout.
 
-`_data/folklore/illustrations.json` maps routes to the 16 plates and holds alt text,
+`_data/folklore/illustrations.json` maps routes to the 16 browsing plates and 99 individual story illustrations and holds alt text,
 captions and generation provenance. `_includes/folklore/plate.html` serves four
 responsive WebP sizes, reserves the image dimensions, loads header plates eagerly
 and card art lazily. The existing semantic tokens and frame component supply the
-parchment/dusk presentation. No story front matter or approved text is changed.
+parchment/dusk presentation. Approved English text, original text, reader notes, and source groups remain unchanged.
 
 The original prompt set and asset details are in
 `docs/illustrations-2026-11-20.json`; originals are retained with the project
 artwork. The public About page distinguishes these new AI-assisted illustrations
 from historical source evidence. Reuse an existing plate via the route map rather
 than adding imagery to each generated listing stub.
+
+The approved 99-story promotion pool is `_data/folklore/featured_stories.json`.
+TedT.org commits a matching static snapshot and samples three stories on each
+homepage load. Its cards link directly to these canonical story pages. Generation
+records and derivative hashes are in `docs/featured-illustrations-2026-11-20.json`;
+the private authoring project retains the masters, full prompts, and visual review.
+Run its `scripts/export_featured_folklore.py` to verify and refresh both manifests.
 
 ## Build and verify
 
@@ -113,8 +120,10 @@ The native Pages origin is `https://tedtschopp.github.io/folklore.tschopp.org/`.
 A small Cloudflare Worker owns the public custom domain and fetches that static
 origin. The Worker also redirects explicitly mapped old collection URLs directly
 to their new canonical pages, retaining query strings and browser fragments.
-Unrelated routes, including the embedded Blood Comet fragment and the older
-Brunnegg article alias, continue to belong to TedT.org.
+Unmapped TedT.org paths pass through unchanged. Retired translation articles and
+category addresses redirect directly to their matching canonical stories or
+catalogue. The Blood Comet fragment remains on TedT.org at its new `/stories/`
+address, with an HTTP redirect preserving consumers of the old address.
 
 `_data/folklore/migration.json` records the old canonical URLs and aliases. All
 approved source records, the four comparison pairs and story slugs are retained.

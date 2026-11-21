@@ -4,6 +4,9 @@ import canonicalRedirects from './canonical-redirects.json' with { type: 'json' 
 export const PUBLIC_HOST = 'folklore.tschopp.org';
 export const ORIGIN = 'https://tedtschopp.github.io';
 export const ORIGIN_PREFIX = '/folklore.tschopp.org';
+// URL.pathname escapes Unicode but retains the case of existing percent escapes.
+const routeKey = path => new URL(path, 'https://tedt.org').pathname.replace(/%[0-9a-f]{2}/gi, escape => escape.toUpperCase());
+const legacyRoutes = Object.fromEntries(Object.entries(routes).map(([path, target]) => [routeKey(path), target]));
 const receiver = 'https://webmention.io/tedt.org/webmention';
 
 export function canonicalDestination(value) {
@@ -31,8 +34,8 @@ function permanentRedirect(destination) {
 export function legacyDestination(value) {
   const url = new URL(value);
   if (!['tedt.org', 'www.tedt.org'].includes(url.hostname)) return null;
-  let path = url.pathname.replace(/\/index\.html$/, '/');
-  let target = routes[path] || routes[path + '/'];
+  const path = routeKey(url.pathname.replace(/\/index\.html$/, '/'));
+  const target = legacyRoutes[path] || legacyRoutes[path + '/'] || (path.endsWith('/') ? legacyRoutes[path.slice(0, -1)] : null);
   if (!target) return null;
   const destination = new URL(target);
   destination.search = url.search;
@@ -61,7 +64,7 @@ export default {
     const url = new URL(request.url);
     const destination = legacyDestination(url);
     if (destination) return permanentRedirect(destination);
-    // Unmapped legacy resources, including the embedded fiction fragment, retain their origin.
+    // Unmapped TedT resources retain their origin, including unrelated fiction and RPG pages.
     if (url.hostname !== PUBLIC_HOST) return fetch(request);
     if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', {
       status: 405, headers: { Allow: 'GET, HEAD', 'Cache-Control': 'no-store' },

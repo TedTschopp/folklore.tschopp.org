@@ -30,6 +30,7 @@ test('every inventoried URL redirects directly with query and fragment preserved
   for (const [path, target] of Object.entries(routes)) {
     for (const host of ['tedt.org', 'www.tedt.org']) {
       assert.equal(legacyDestination(`https://${host}${path}?utm_source=test#reader-note-1`), `${target}?utm_source=test#reader-note-1`);
+      if (!path.endsWith('/') && !/\.[a-z]+$/i.test(path)) assert.equal(legacyDestination(`https://${host}${path}/index.html`), target);
       if (path.endsWith('/')) {
         assert.equal(legacyDestination(`https://${host}${path}index.html`), target);
         assert.equal(legacyDestination(`https://${host}${path.slice(0, -1)}`), target);
@@ -43,8 +44,8 @@ test('comparison pairs remain separate and aliases converge', () => {
     assert.ok(one && two); assert.notEqual(one, two);
   }
 });
-test('unrelated and exceptional legacy resources do not redirect', () => {
-  for (const path of ['/folklore/stories/house-of-the-blood-comet.html', '/folklore/The-Bailiff-of-Brunnegg.html', '/RPG/', '/profile/', '/folklore/stories/unknown/']) assert.equal(legacyDestination('https://tedt.org' + path), null);
+test('unrelated legacy resources do not redirect', () => {
+  for (const path of ['/stories/house-of-the-blood-comet.html', '/RPG/', '/profile/', '/folklore/stories/unknown/']) assert.equal(legacyDestination('https://tedt.org' + path), null);
   assert.equal(legacyDestination('https://example.com/folklore/'), null);
 });
 test('publication origin and origin redirect remain scoped', () => {
@@ -73,4 +74,30 @@ test('public proxy strips credentials and retains static headers', async () => {
 });
 test('publication refuses non-reading methods', async () => {
   assert.equal((await worker.fetch(new Request('https://folklore.tschopp.org/', { method: 'POST', body: 'private' }))).status, 405);
+});
+
+test('migrated original fiction retains its own TedT destination', async () => {
+  const old = 'https://tedt.org/folklore/stories/house-of-the-blood-comet.html';
+  const target = 'https://tedt.org/stories/house-of-the-blood-comet.html';
+  assert.equal(legacyDestination(old), target);
+  assert.equal((await worker.fetch(new Request(old))).headers.get('Location'), target);
+});
+test('Unicode and percent-encoded former article URLs share one destination', () => {
+  const target = 'https://folklore.tschopp.org/stories/the-wattermanndli-in-the-portlialp/';
+  for (const name of ['Pörtlialp','P%C3%B6rtlialp','P%c3%b6rtlialp']) {
+    assert.equal(legacyDestination('http://www.tedt.org/Swiss-Folklore/The-Weatherman-in-' + name + '.html'), target);
+  }
+});
+test('configured Cloudflare route scopes cover every migrated URL', async () => {
+  const config = JSON.parse(await readFile(new URL('./wrangler.json', import.meta.url)));
+  for (const path of Object.keys(routes)) {
+    for (const host of ['tedt.org', 'www.tedt.org']) {
+      const variants = path.endsWith('/') ? [path, path.slice(0, -1), path + 'index.html'] : [path];
+      if (!path.endsWith('/') && !/\.[a-z]+$/i.test(path)) variants.push(path + '/', path + '/index.html');
+      for (const variant of variants) {
+        const url = host + variant;
+        assert.ok(config.routes.some(route => route.pattern && new RegExp('^' + route.pattern.split('*').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$').test(url)), url);
+      }
+    }
+  }
 });

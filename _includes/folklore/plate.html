@@ -1,10 +1,10 @@
 {% assign plate = site.data.folklore.illustrations.assets[include.id] %}
 {% if plate %}
-<figure class="folklore-plate{% if include.thumbnail %} folklore-plate--thumbnail{% endif %}">
+<figure data-pagefind-ignore class="folklore-plate{% if include.thumbnail %} folklore-plate--thumbnail{% endif %}">
   <div class="me-frame">
     <img src="/assets/folklore/illustrations/{{ include.id }}-768.webp"
       srcset="/assets/folklore/illustrations/{{ include.id }}-480.webp 480w, /assets/folklore/illustrations/{{ include.id }}-768.webp 768w, /assets/folklore/illustrations/{{ include.id }}-1200.webp 1200w, /assets/folklore/illustrations/{{ include.id }}-1536.webp 1536w"
-      sizes="{% if include.thumbnail %}(min-width: 64rem) 26vw, (min-width: 48rem) 42vw, calc(100vw - 5rem){% else %}(min-width: 64rem) 560px, (min-width: 48rem) 42vw, calc(100vw - 3rem){% endif %}"
+      sizes="{% if include.thumbnail %}(min-width: 64rem) 26vw, (min-width: 48rem) 42vw, calc(100vw - 5rem){% elsif include.story %}(min-width: 52rem) 760px, calc(100vw - 3rem){% else %}(min-width: 64rem) 560px, (min-width: 48rem) 42vw, calc(100vw - 3rem){% endif %}"
       width="1536" height="1024" alt="{% unless include.thumbnail %}{{ plate.alt | escape }}{% endunless %}"
       loading="{% if include.eager %}eager{% else %}lazy{% endif %}" decoding="async"{% if include.eager %} fetchpriority="high"{% endif %}>
   </div>
